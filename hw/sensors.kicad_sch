@@ -1,0 +1,18 @@
+(kicad_sch (version 20211123) (generator eeschema)
+
+  (uuid c41c21c6-fb17-4a25-a83b-b6037b45a09b)
+
+  (paper "A4")
+
+  (title_block
+    (title "MPPT")
+    (date "2023-01-30")
+    (rev "v0.0.0")
+    (comment 1 "Nishant Gupta")
+    (comment 2 "Jacob Pustilnik")
+  )
+
+  (lib_symbols
+  )
+
+)

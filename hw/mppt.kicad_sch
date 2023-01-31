@@ -1,0 +1,99 @@
+(kicad_sch (version 20211123) (generator eeschema)
+
+  (uuid 06fd3a42-664d-41bc-bf0f-b5ee0ddcc902)
+
+  (paper "A4")
+
+  (title_block
+    (title "MPPT")
+    (date "2023-01-30")
+    (rev "v0.0.0")
+    (comment 1 "Nishant Gupta")
+    (comment 2 "Jacob Pustilnik")
+    (comment 3 "Matthew Yu")
+  )
+
+  (lib_symbols
+  )
+
+
+  (sheet (at 34.29 35.56) (size 38.1 25.4) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid) (color 0 0 0 0))
+    (fill (color 0 0 0 0.0000))
+    (uuid 90f57858-b3ac-468b-8edb-acb0ab266950)
+    (property "Sheet name" "controller" (id 0) (at 34.29 34.8484 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheet file" "controller.kicad_sch" (id 1) (at 34.29 61.5446 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+  )
+
+  (sheet (at 34.29 67.31) (size 38.1 25.4) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid) (color 0 0 0 0))
+    (fill (color 0 0 0 0.0000))
+    (uuid 92f2c78d-fd2c-4f90-b3c1-261313d81f32)
+    (property "Sheet name" "sensors" (id 0) (at 34.29 66.5984 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheet file" "sensors.kicad_sch" (id 1) (at 34.29 93.2946 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+  )
+
+  (sheet (at 85.09 35.56) (size 38.1 25.4) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid) (color 0 0 0 0))
+    (fill (color 0 0 0 0.0000))
+    (uuid 9cd55a57-0ec8-481d-b571-b5fdbe353ce7)
+    (property "Sheet name" "converter" (id 0) (at 85.09 34.8484 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheet file" "converter.kicad_sch" (id 1) (at 85.09 61.5446 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+  )
+
+  (sheet (at 85.09 67.31) (size 38.1 25.4) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid) (color 0 0 0 0))
+    (fill (color 0 0 0 0.0000))
+    (uuid d2872b58-d342-47d2-86ca-67a04f8e2122)
+    (property "Sheet name" "gate_driver" (id 0) (at 85.09 66.5984 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheet file" "gate_driver.kicad_sch" (id 1) (at 85.09 93.2946 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+  )
+
+  (sheet_instances
+    (path "/" (page "1"))
+    (path "/90f57858-b3ac-468b-8edb-acb0ab266950" (page "2"))
+    (path "/9cd55a57-0ec8-481d-b571-b5fdbe353ce7" (page "3"))
+    (path "/92f2c78d-fd2c-4f90-b3c1-261313d81f32" (page "4"))
+    (path "/d2872b58-d342-47d2-86ca-67a04f8e2122" (page "5"))
+  )
+
+  (symbol_instances
+    (path "/9cd55a57-0ec8-481d-b571-b5fdbe353ce7/c084f7a7-35a1-42ed-baea-7a54d03d9c5f"
+      (reference "C?") (unit 1) (value "10uF") (footprint "Capacitor_SMD:C_1210_3225Metric")
+    )
+    (path "/9cd55a57-0ec8-481d-b571-b5fdbe353ce7/f6d2203d-0deb-4464-b8c4-e932da809522"
+      (reference "C?") (unit 1) (value "330uF") (footprint "Capacitor_THT:CP_Radial_D18.0mm_P7.50mm")
+    )
+    (path "/9cd55a57-0ec8-481d-b571-b5fdbe353ce7/0cb29f6c-ebce-4503-8646-970d1a876689"
+      (reference "J?") (unit 1) (value "Conn_01x02") (footprint "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Horizontal")
+    )
+    (path "/9cd55a57-0ec8-481d-b571-b5fdbe353ce7/d2d4d4d9-e7ce-4cb4-9891-44165133416a"
+      (reference "J?") (unit 1) (value "Conn_01x02") (footprint "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Horizontal")
+    )
+    (path "/9cd55a57-0ec8-481d-b571-b5fdbe353ce7/b017081d-61fa-47f9-b178-42d8a315f8c5"
+      (reference "L?") (unit 1) (value "1529uH") (footprint "Inductor_THT:L_CommonMode_Toroid_Vertical_L43.2mm_W22.9mm_Px17.78mm_Py30.48mm_Bourns_8100")
+    )
+    (path "/9cd55a57-0ec8-481d-b571-b5fdbe353ce7/1c48378c-a948-4d20-82cf-5f98dd347ef0"
+      (reference "Q?") (unit 1) (value "Q_NMOS_DGS") (footprint "Package_TO_SOT_SMD:TO-263-2")
+    )
+    (path "/9cd55a57-0ec8-481d-b571-b5fdbe353ce7/7b31bef0-1fff-468d-b105-33c6f05fc449"
+      (reference "Q?") (unit 1) (value "Q_NMOS_DGS") (footprint "Package_TO_SOT_SMD:TO-263-2")
+    )
+  )
+)
