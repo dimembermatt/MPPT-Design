@@ -56,8 +56,8 @@ if __name__ == "__main__":
 
     # Step 1. Generate a set of v_in/v_out pairs
     # Generate surface map representing power transfer, power loss, duty cycle
-    v_in_resolution = 1
-    v_out_resolution = 1
+    v_in_resolution = 5
+    v_out_resolution = 5
     x_v_in = []
     y_v_out = []
     z_i_in = []
@@ -122,8 +122,8 @@ if __name__ == "__main__":
     print(f"Switch lower bound I_ds maximum rating: {i_sw_ds_min} A")
 
     # Step 3. After selecting the switch, calculate the FOM
-    c_oss = input("C_OSS (F)")
-    r_ds_on = input("R_DS_ON (Ohm)")
+    c_oss = float(input("C_OSS (F)"))
+    r_ds_on = float(input("R_DS_ON (Ohm)"))
     tau = c_oss * r_ds_on
     print(f"FOM for this switch: {tau} (s)")
 
@@ -214,9 +214,9 @@ if __name__ == "__main__":
     print(f"Minimum suggested c_out: {np.min(z_co_min) * 10 ** -6} (uF)")
     print(f"Minimum suggested l: {np.min(z_l_min) * 10 ** -6} (uH)")
 
-    c_in = input("C_IN (F)")
-    c_out = input("C_OUT (F)")
-    l = input("L (H)")
+    c_in = float(input("C_IN (F)"))
+    c_out = float(input("C_OUT (F)"))
+    l = float(input("L (H)"))
 
     # Step 7. Determine the switching and conductance losses caused by the
     # circuit.
