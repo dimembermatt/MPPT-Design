@@ -7,8 +7,10 @@
 """
 
 import argparse
+import math
 import os
 import sys
+from itertools import combinations
 from math import sqrt
 
 import matplotlib.pyplot as plt
@@ -56,31 +58,148 @@ if __name__ == "__main__":
 
     # Step 1. Generate a set of v_in/v_out pairs
     # Generate surface map representing power transfer, power loss, duty cycle
-    v_in_resolution = 5
-    v_out_resolution = 5
-    x_v_in = []
-    y_v_out = []
-    z_i_in = []
-    z_p_in = []
-    z_p_loss = []
-    z_duty = []
-    for v_in in np.arange(v_in_range[0], v_in_range[1], v_in_resolution):
-        for v_out in np.arange(v_out_range[0], v_out_range[1], v_out_resolution):
-            i_in = model_nonideal_cell(1000, 298.15, 0, 100, v_in / num_cells)
-            p_in = v_in * i_in
-            p_loss = p_in * (1 - eff)
-            duty = 1 - v_in / v_out
+    _dict = {}
+    v_in_combos = np.linspace(v_in_range[0], v_in_range[1], num=15, endpoint=False)
+    v_out_combos = np.linspace(v_out_range[0], v_out_range[1], num=15, endpoint=False)
+    for v_in in v_in_combos:
+        i_in = model_nonideal_cell(1000, 298.15, 0, 100, v_in / num_cells)
+        p_in = v_in * i_in
+        for v_out in v_out_combos:
+            _dict[(v_in, v_out)] = {
+                "i_in": i_in,
+                "p_in": v_in * i_in,
+                "p_loss": p_in * (1 - eff),
+                "duty": 1 - v_in / v_out,
+            }
 
-            # print(f"Input power: {p_in} W")
-            # print(f"Target maximum power loss: {p_loss} W")
-            # print(f"Required duty cycle: {duty}")
 
-            x_v_in.append(v_in)
-            y_v_out.append(v_out)
-            z_i_in.append(i_in)
-            z_p_in.append(p_in)
-            z_p_loss.append(p_loss)
-            z_duty.append(duty)
+    # Step 2. For the set if input and output voltages, derive the switch
+    # requirements for the worst case scenario.
+    v_sw_ds_min = sf * np.max(v_out_range[1])
+    print(f"Switch lower bound V_ds maximum rating: {v_sw_ds_min} V")
+
+    v_in = []
+    v_out = []
+    p_in = []
+    for (v_i, v_o), entry in _dict.items():
+        v_in.append(v_i)
+        v_out.append(v_o)
+        p_in.append(entry["p_in"])
+
+    avg_i_l = np.divide(p_in, v_in)
+    avg_i_sw_2 = np.divide(p_in, v_out)
+    avg_i_sw_1 = np.subtract(avg_i_l, avg_i_sw_2)
+    i_sw_ds_min = sf * np.max([np.max(avg_i_sw_1), np.max(avg_i_sw_2)])
+    print(f"Switch lower bound I_ds maximum rating: {i_sw_ds_min} A")
+
+
+    c_oss = float(input("C_OSS (pF): ")) * 10**-12
+    r_ds_on = float(input("R_DS_ON (Ohm): "))
+
+
+    # Step 3. After selecting the switch, calculate the FOM
+    tau = c_oss * r_ds_on
+    print(f"FOM for this switch: {tau} (s)")
+
+    # Step 4. Determine the maximum switching frequency given the switch FOM.
+    # Step 5. Determine the minimum dead time to drive at ZVS.
+    f_max = []
+    f_soft_max = []
+    dt_min = []
+    for (v_in, v_out), entry in _dict.items():
+        entry["f_max"] = (
+            (entry["p_loss"] / entry["p_in"]) ** 2 * (v_out / v_in) ** 2
+        ) / (8 * (1 / 3 * r_l**2 + 1) * tau)
+
+        entry["f_max_soft"] = entry["f_max"] * 2
+        entry["dead_time"] = 2 * c_oss * v_in * v_out / (entry["p_in"] * (1 + r_l))
+
+        f_max.append(entry["f_max"])
+        f_soft_max.append(entry["f_max_soft"])
+        dt_min.append(entry["dead_time"])
+
+    print(f"Maximum suggested f_s: {np.min(f_max)} (hz)")
+    # print(f"Maximum suggested soft switching f_s: {np.min(f_soft_max)} (hz)")
+    # print(f"Minimum soft_switch deadtime: {np.min(dt_min) * 10 ** 9} (ns)")
+
+    # Step 6. Run a frequency analysis to determine minimum switching losses.
+    f_s_vals = range(1000, math.floor(np.min(f_max)), 10000)
+
+    x = []
+    y = []
+    z = []
+    c = []
+    for (v_in, v_out), entry in _dict.items():
+        entry["conduction_loss"] = {}
+        entry["switching_loss"] = {}
+        entry["switching_loss_soft"] = {}
+        for f_s in f_s_vals:
+            sw1_a = (2 * entry["i_in"] * r_l * f_s) / entry["duty"]
+            sw1_b = entry["i_in"] * (1 - r_l)
+
+            sw2_a = -(2 * entry["i_in"] * r_l * f_s) / (1 - entry["duty"])
+            sw2_b = entry["i_in"] * (1 + (2 / (1 - entry["duty"]) * r_l) - r_l)
+
+            i_sw1_rms = sqrt(
+                (sw1_a**2 * entry["duty"] ** 3) / (3 * f_s**2)
+                + (sw1_a * sw1_b * entry["duty"] ** 2) / f_s
+                + sw1_b**2 * entry["duty"]
+            )
+            i_sw2_rms = sqrt(
+                (sw2_a**2 * (1 - entry["duty"]) ** 3) / (3 * f_s**2)
+                + (sw2_a * sw2_b * (1 - entry["duty"]) ** 2) / f_s
+                + sw2_b**2 * (1 - entry["duty"])
+            )
+
+            entry["conduction_loss"][f_s] = (i_sw1_rms**2 + i_sw2_rms**2) * r_ds_on
+            entry["switching_loss"][f_s] = (2 * v_out**2 * f_s * tau) / r_ds_on
+            entry["switching_loss_soft"][f_s] = entry["switching_loss"][f_s] / 2
+
+            x.append(f_s)
+            y.append(v_in)
+            z.append(v_out)
+            c.append((i_sw1_rms**2 + i_sw2_rms**2) * r_ds_on + (2 * v_out**2 * f_s * tau) / r_ds_on)
+
+    ax = fig.add_subplot(projection='3d')
+    ax.scatter(x, y, z, c=c)
+    ax.set_title("Total switch loss as a function of frequency, inp/out voltage")
+    ax.set_xlabel("Switching Frequency (Hz)")
+    ax.set_ylabel("Input Voltage (V)")
+    ax.set_zlabel("Output Voltage (V)")
+    plt.show()
+
+    sys.exit(0)
+
+    f_s = int(input("Assuming fixed frequency converter, f_s (hz): "))
+
+    # Step 6. Determine minimum inductance and capacitances required to drive at
+    # the desired switching frequency.
+    ci_min = []
+    co_min = []
+    l_min = []
+    for (v_in, v_out), entry in _dict.items():
+        entry["ci_min"] = (r_l * entry["p_in"]) / (
+            8 * r_ci * v_in**2 * f_s
+        )
+        entry["co_min"] = ((v_out - v_in) * entry["p_in"]) / (
+            2 * r_co * v_out**3 * f_s
+        )
+        entry["l_min"] = (
+            v_in**2 / (2 * entry["p_in"] * r_l * f_s) * (1 - v_in / v_out)
+        )
+
+        ci_min.append(entry["ci_min"])
+        co_min.append(entry["co_min"])
+        l_min.append(entry["l_min"])
+
+    print(f"Minimum suggested c_in: {np.min(ci_min) * 10 ** 6} (uF)")
+    print(f"Minimum suggested c_out: {np.min(co_min) * 10 ** 6} (uF)")
+    print(f"Minimum suggested l: {np.min(l_min) * 10 ** 6} (uH)")
+
+
+    c_in = float(input("C_IN (uF): ")) * 10**-6
+    c_out = float(input("C_OUT (uF): ")) * 10**-6
+    l = float(input("L (uH): ")) * 10**-6
 
     ax0 = fig.add_subplot(3, 4, 1, projection="3d")
     ax0.scatter(x_v_in, y_v_out, z_i_in, c=z_i_in)
@@ -109,64 +228,6 @@ if __name__ == "__main__":
     ax3.set_xlabel("V_IN (V)")
     ax3.set_ylabel("V_OUT (V)")
     ax3.set_zlabel("DUTY")
-
-    # Step 2. For the set if input and output voltages, derive the switch
-    # requirements for the worst case scenario.
-    v_sw_ds_min = sf * np.max(v_out)
-    print(f"Switch lower bound V_ds maximum rating: {v_sw_ds_min} V")
-
-    avg_i_l = np.divide(z_p_in, x_v_in)
-    avg_i_sw_2 = np.divide(z_p_in, y_v_out)
-    avg_i_sw_1 = np.subtract(avg_i_l, avg_i_sw_2)
-    i_sw_ds_min = sf * np.max([np.max(avg_i_sw_1), np.max(avg_i_sw_2)])
-    print(f"Switch lower bound I_ds maximum rating: {i_sw_ds_min} A")
-
-    # Step 3. After selecting the switch, calculate the FOM
-    c_oss = float(input("C_OSS (F)"))
-    r_ds_on = float(input("R_DS_ON (Ohm)"))
-    tau = c_oss * r_ds_on
-    print(f"FOM for this switch: {tau} (s)")
-
-    # Step 4. Determine the maximum switching frequency given the switch FOM.
-    # Step 5. Determine the minimum dead time to drive at ZVS.
-    # Step 6. Determine minimum inductance and capacitances required to drive at
-    # the desired switching frequency.
-    z_f_max = []
-    z_f_max_soft = []
-    z_dead = []
-    z_l_min = []
-    z_ci_min = []
-    z_co_min = []
-    for v_in in np.arange(v_in_range[0], v_in_range[1], v_in_resolution):
-        for v_out in np.arange(v_out_range[0], v_out_range[1], v_out_resolution):
-            i_in = model_nonideal_cell(1000, 298.15, 0, 100, v_in / num_cells)
-            p_in = v_in * i_in
-            p_loss = p_in * (1 - eff)
-
-            f_max = ((p_loss / p_in) ** 2 * (v_out / v_in) ** 2) / (
-                8 * (1 / 3 * r_l**2 + 1) * tau
-            )
-            z_f_max.append(f_max)
-
-            f_max_soft = ((p_loss / p_in) ** 2 * (v_out / v_in) ** 2) / (
-                4 * (1 / 3 * r_l**2 + 1) * tau
-            )
-
-            z_f_max_soft.append(f_max_soft)
-
-            dead_time = (2 * c_oss * v_in * v_out / (p_in * (1 - r_l))) * 10**-9
-            z_dead.append(dead_time)
-
-            l_min = (v_out - v_in) * v_in / (2 * r_l * p_in * v_out * f_max) * 10**-6
-            z_l_min.append(l_min)
-
-            ci_min = (r_l * p_in) / (8 * r_ci * v_in**2 * f_max) * 10**-6
-            z_ci_min.append(ci_min)
-
-            co_min = (
-                ((v_out - v_in) * p_in) / (2 * r_co * v_out**3 * f_max) * 10**-6
-            )
-            z_co_min.append(co_min)
 
     ax5 = fig.add_subplot(3, 4, 5, projection="3d")
     ax5.scatter(x_v_in, y_v_out, z_f_max, c=z_f_max)
@@ -210,63 +271,6 @@ if __name__ == "__main__":
     ax10.set_ylabel("V_OUT (V)")
     ax10.set_zlabel("Min Out. Capacitance (uF)")
 
-    print(f"Minimum suggested c_in: {np.min(z_ci_min) * 10 ** -6} (uF)")
-    print(f"Minimum suggested c_out: {np.min(z_co_min) * 10 ** -6} (uF)")
-    print(f"Minimum suggested l: {np.min(z_l_min) * 10 ** -6} (uH)")
-
-    c_in = float(input("C_IN (F)"))
-    c_out = float(input("C_OUT (F)"))
-    l = float(input("L (H)"))
-
-    # Step 7. Determine the switching and conductance losses caused by the
-    # circuit.
-    z_conduction = []
-    z_switching = []
-    z_soft_switching = []
-    z_total = []
-    z_soft_total = []
-    for v_in in np.arange(v_in_range[0], v_in_range[1], v_in_resolution):
-        for v_out in np.arange(v_out_range[0], v_out_range[1], v_out_resolution):
-            i_in = model_nonideal_cell(1000, 298.15, 0, 100, v_in / num_cells)
-            p_in = v_in * i_in
-            p_loss = p_in * (1 - eff)
-            duty = 1 - v_in / v_out
-
-            f_max = ((p_loss / p_in) ** 2 * (v_out / v_in) ** 2) / (
-                8 * (1 / 3 * r_l**2 + 1) * tau
-            )
-
-            f_max_soft = ((p_loss / p_in) ** 2 * (v_out / v_in) ** 2) / (
-                4 * (1 / 3 * r_l**2 + 1) * tau
-            )
-
-            sw1_a = (2 * i_in * r_l * f_max) / duty
-            sw1_b = i_in * (1 - r_l)
-
-            sw2_a = -(2 * i_in * r_l * f_max) / (1 - duty)
-            sw2_b = i_in * (1 + (2 / (1 - duty) * r_l) - r_l)
-
-            i_sw1_rms = sqrt(
-                (sw1_a**2 * duty**3) / (3 * f_max**2)
-                + (sw1_a * sw1_b * duty**2) / f_max
-                + sw1_b**2 * duty
-            )
-            i_sw2_rms = sqrt(
-                (sw2_a**2 * (1 - duty) ** 3) / (3 * f_max**2)
-                + (sw2_a * sw2_b * (1 - duty) ** 2) / f_max
-                + sw2_b**2 * (1 - duty)
-            )
-
-            conduction_loss = (i_sw1_rms**2 + i_sw2_rms**2) * r_ds_on
-            switching_loss = (2 * v_out**2 * f_max * tau) / r_ds_on
-            switching_loss_soft = switching_loss / 2
-
-            z_conduction.append(conduction_loss)
-            z_switching.append(switching_loss)
-            z_soft_switching.append(switching_loss_soft)
-            z_total.append(conduction_loss + switching_loss)
-            z_soft_total.append(conduction_loss + switching_loss_soft)
-
     ax11 = fig.add_subplot(3, 4, 11, projection="3d")
     ax11.scatter(x_v_in, y_v_out, z_conduction, c=z_conduction)
     ax11.scatter(x_v_in, y_v_out, z_switching, c=z_switching)
@@ -287,3 +291,6 @@ if __name__ == "__main__":
 
     plt.tight_layout()
     plt.show()
+
+
+
