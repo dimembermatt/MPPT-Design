@@ -95,9 +95,9 @@ if __name__ == "__main__":
     i_mpp = 5.84
     # Note that we get divide by 0 errors should the lower bounds be 0% or 100%
     # of the array voltage. DON'T DO IT!
-    v_in_range = [num_cells * v_oc * 0.05, num_cells * v_oc * 0.95]  # V
+    v_in_range = [num_cells * v_oc * 0.25, num_cells * v_oc * 0.95]  # V
     v_in_opt = num_cells * v_mpp  # V
-    v_out_range = [80, 134.4]  # V
+    v_out_range = [80, 134.4*0.93]  # V
     i_in_range = [0, i_sc]  # A
 
     # And a specified efficiency and ripple
