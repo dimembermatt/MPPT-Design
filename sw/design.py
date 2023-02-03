@@ -95,19 +95,19 @@ if __name__ == "__main__":
     i_mpp = 5.84
     # Note that we get divide by 0 errors should the lower bounds be 0% or 100%
     # of the array voltage. DON'T DO IT!
-    v_in_range = [num_cells * v_oc * 0.25, num_cells * v_oc * 0.95]  # V
+    v_in_range = [num_cells * v_oc * 0.05, num_cells * v_oc * 0.95]  # V
     v_in_opt = num_cells * v_mpp  # V
-    v_out_range = [80, 134.4*0.93]  # V
+    v_out_range = [80, 134.4 * 0.96]  # V
     i_in_range = [0, i_sc]  # A
 
     # And a specified efficiency and ripple
-    eff = 0.975
-    r_ci_v = 0.1  # V
+    eff = 0.99
+    r_ci_v = 1  # V
     r_co_v = 0.1  # V
-    r_l_a = 0.05  # A
-    r_ci = r_ci_v / v_in_range[1]
-    r_co = r_co_v / v_out_range[1]
-    r_l = r_l_a / i_in_range[1]
+    r_l_a = 1  # A
+    r_ci = r_ci_v / v_in_range[1] / 2
+    r_co = r_co_v / v_out_range[1] / 2
+    r_l = r_l_a / i_in_range[1] / 2
 
     # Safety Factor. The higher the safety factor, the less likely things break.
     sf = 1.5
@@ -181,11 +181,17 @@ if __name__ == "__main__":
     # power of the array and the converter efficiency.
     print(f"Switch minimum power dissipation: {v_in_opt * i_mpp * (1 - eff) * sf} W")
 
+    # Research switches and provide the best 80% median FOM, which we'll use to
+    # find the best tradeoff.
+    print(f"\nFind switches and report back with top 80% median FOM/tau.")
+    tau = float(input("FOM/TAU (ps): ")) * 10**-12
+
+    # TODO: x: plot frequency vs y: r_ds_on vs z: power loss
+
     # Select the switch and provide the switching characteristics.
-    print(f"\nChoose switch and report back with worst case C_OSS, R_DS_ON.")
+    print(f"\nChoose switch and report back with C_OSS, R_DS_ON.")
     c_oss = float(input("C_OSS (pF): ")) * 10**-12
     r_ds_on = float(input("R_DS_ON (mOhm): ")) * 10**-3
-
 
     # Step 2. After selecting the switch, calculate the FOM. We then determine
     # the maximum switching frequency across the input/output map that meets our
