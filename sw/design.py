@@ -96,22 +96,22 @@ if __name__ == "__main__":
     i_mpp = 5.84
     # Note that we get divide by 0 errors should the lower bounds be 0% or 100%
     # of the array voltage. DON'T DO IT!
-    v_in_range = [num_cells * v_oc * 0.25, num_cells * v_oc * 0.95]  # V
+    v_in_range = [num_cells * v_oc * 0.25, num_cells * v_oc * 0.9]  # V
     v_in_opt = num_cells * v_mpp  # V
-    v_out_range = [80, 134.4 * 0.96]  # V
+    v_out_range = [80, 130]  # V
     i_in_range = [0, i_sc]  # A
 
     # And a specified efficiency and ripple
     eff = 0.99
-    r_ci_v = 1  # V
-    r_co_v = 0.1  # V
-    r_l_a = 1.5  # A
+    r_ci_v = 0.1  # V
+    r_co_v = 1  # V
+    r_l_a = 2  # A
     r_ci = r_ci_v / v_in_range[1] / 2
     r_co = r_co_v / v_out_range[1] / 2
     r_l = r_l_a / i_in_range[1] / 2
 
     # Safety Factor. The higher the safety factor, the less likely things break.
-    sf = 1.5
+    sf = 1.33
 
     # Step 0. Print out the specified design parameters.
     print(f"----------------------------------------")
@@ -341,7 +341,7 @@ if __name__ == "__main__":
                 )
                 if loss_tot >= v_in_opt * i_mpp * (1 - eff):
                     break
-                f_s *= 1.025
+                f_s *= 1.01
 
             x_v_in.append(v_in)
             y_v_out.append(v_out)
@@ -396,7 +396,11 @@ if __name__ == "__main__":
     print(f"Minimum C_OUT: {np.max(co_min) * 10**6 :.3f} uF")
     print(f"Minimum L: {np.max(l_min) * 10**6 :.3f} uH")
     print(
-        f"Capacitors and inductors should be rated for {v_out_range[1] * sf :.3f} V and {i_mpp * sf :.3f} A."
+        f"Input capacitor should be rated for {(v_in_range[1] + r_ci_v) * sf :.3f} V."
     )
+    print(
+        f"Output capacitor should be rated for {(v_out_range[1] + r_co_v) * sf :.3f} V."
+    )
+    print(f"Inductor should be rated for {(i_mpp + r_l_a) * sf :.3f} A.")
 
     input("Press any key to end.")
