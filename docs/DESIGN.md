@@ -283,7 +283,6 @@ final design.
     - $C_{O} = 18 \, uF$
     - $ESR = 90 \, m\Omega \, @ \, 100 \, kHz$
       - We predict ESR to be slightly higher, at $120 \, m\Omega$, at $47 \, kHz$.
-    - $DF = 1 \, \%$
     - $I_{RMS} = 1.944 \, A$
     - $10 \, mm \times 12 \, mm$ (D/H)
 
@@ -306,4 +305,4 @@ final design.
     magnitude of losses is in line with Ehlan et al. (Evaluation of Power Losses
     in a DC-DC Boost Converter).
 
-13.
+14. The next step is to determine inductor requirements.

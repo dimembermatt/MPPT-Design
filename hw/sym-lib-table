@@ -2,4 +2,5 @@
   (version 7)
   (lib (name "1935776")(type "KiCad")(uri "${KIPRJMOD}/symbols/1935776.kicad_sym")(options "")(descr ""))
   (lib (name "MPPT")(type "KiCad")(uri "${KIPRJMOD}/symbols/MPPT.kicad_sym")(options "")(descr ""))
+  (lib (name "LMG1210RVRT")(type "KiCad")(uri "${KIPRJMOD}/symbols/LMG1210RVRT.kicad_sym")(options "")(descr ""))
 )

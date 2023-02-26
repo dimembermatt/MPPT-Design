@@ -426,8 +426,8 @@ if __name__ == "__main__":
     ci_min = np.max(ci_min)
     co_min = np.max(co_min)
     l_min = np.max(l_min)
-    ci_vdc_min = (v_in_range[1] + r_ci_v) * sf
-    co_vdc_min = (v_out_range[1] + r_co_v) * sf
+    ci_vdc_min = (v_in_range[1] + r_ci_v / 2) * sf
+    co_vdc_min = (v_out_range[1] + r_co_v / 2) * sf
 
     print(f"Minimum C_IN: {ci_min * 10**6 :.3f} uF")
     print(f"Minimum C_OUT: {co_min * 10**6 :.3f} uF")
@@ -443,9 +443,18 @@ if __name__ == "__main__":
     print(f"STEP 6")
     print(f"Deriving inductor requirements:\n")
 
-    print(f"Inductor should be rated for {(i_mpp + r_l_a) * sf :.3f} A.")
-    print(f"KG method.")
-    print(f"")
+    i_pk_min = (i_mpp + r_l_a / 2) * sf
+    print(f"Inductor should be rated for {i_pk_min :.3f} A.")
+    print(f"KG method. Assume ")
+    print(f"Given inductor power budget of {p_ind} W and max ripple current {r_l_a}:")
+
+    # r_max = p_ind / r_l_a ** 2
+    # i_pk = i_pk_min
+    # n_loops = l_min * i_pk / ()
+
+    # print(f"Max resistance: {r_max} ohms")
+
+    B = L
 
 
     input("Press any key to end.")
