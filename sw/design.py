@@ -142,7 +142,7 @@ if __name__ == "__main__":
     eff = 0.985
     r_ci_v = 0.725  # V
     r_co_v = 1.000  # V
-    r_l_a = 1.23  # A
+    r_l_a = 1.5  # A
     r_ci = r_ci_v / v_in_range[1] / 2
     r_co = r_co_v / v_out_range[1] / 2
     r_l = r_l_a / i_in_range[1] / 2
@@ -443,7 +443,8 @@ if __name__ == "__main__":
     print(f"STEP 6")
     print(f"Deriving inductor requirements:\n")
 
-    i_pk_min = (i_mpp + r_l_a / 2) * sf
+    # NOTE: NO SAFETY FACTOR
+    i_pk_min = (i_mpp + r_l_a / 2)
     print(f"Inductor should be rated for {i_pk_min :.3f} A.")
     print(f"KG method. Assume ")
     print(f"Given inductor power budget of {p_ind} W and max ripple current {r_l_a}:")
@@ -454,7 +455,7 @@ if __name__ == "__main__":
 
     # print(f"Max resistance: {r_max} ohms")
 
-    B = L
+    # B = L
 
 
     input("Press any key to end.")
