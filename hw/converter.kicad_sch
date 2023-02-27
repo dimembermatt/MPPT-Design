@@ -3892,13 +3892,17 @@
     (uuid fe91e324-b9e9-4b4c-b360-05a1e2650a43)
   )
 
-  (label "V_SW" (at 151.13 68.58 0) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid 171c15e5-f0fc-4af2-8f5f-a6379cb9ba49)
-  )
   (label "V_SW" (at 58.42 148.59 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right bottom))
     (uuid 85e934d4-4f49-4851-90c7-ccc81a00b14f)
+  )
+
+  (global_label "V_SW" (shape input) (at 145.415 68.58 90) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid 22afe81f-43ed-4c51-bfb0-ab6723c7205e)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 145.415 60.9571 90)
+      (effects (font (size 1.27 1.27)) (justify left) hide)
+    )
   )
 
   (hierarchical_label "V_ARR+" (shape input) (at 52.07 68.58 180) (fields_autoplaced)
