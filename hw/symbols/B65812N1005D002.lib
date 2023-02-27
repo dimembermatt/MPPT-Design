@@ -1,0 +1,28 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#SamacSys ECAD Model B65812N1005D002
+#/12094797/267240/2.49/7/2/Inductor
+DEF B65812N1005D002 L 0 30 Y Y 1 F N
+F0 "L" 1050 300 50 H V L CNN
+F1 "B65812N1005D002" 1050 200 50 H V L CNN
+F2 "B65812N1005D002" 1050 100 50 H I L CNN
+F3 "https://product.tdk.com/system/files/dam/doc/product/ferrite/ferrite/ferrite-acc/data_sheet/80/db/fer/rm_8.pdf" 1050 0 50 H I L CNN
+F4 "Ferrite Accessories, RM Cores Accessories, Coil former (RM 8)" 1050 -100 50 H I L CNN "Description"
+F5 "11.55" 1050 -200 50 H I L CNN "Height"
+F6 "871-B65812N1005D002" 1050 -300 50 H I L CNN "Mouser Part Number"
+F7 "https://www.mouser.co.uk/ProductDetail/EPCOS-TDK/B65812N1005D002?qs=%2FsLciWRBLmDXyybUFxMrcQ%3D%3D" 1050 -400 50 H I L CNN "Mouser Price/Stock"
+F8 "TDK" 1050 -500 50 H I L CNN "Manufacturer_Name"
+F9 "B65812N1005D002" 1050 -600 50 H I L CNN "Manufacturer_Part_Number"
+DRAW
+X 1 1 0 0 200 R 50 50 0 0 P
+X 2 2 0 -100 200 R 50 50 0 0 P
+X 5 5 0 -200 200 R 50 50 0 0 P
+X 8 8 0 -300 200 R 50 50 0 0 P
+X 11 11 1200 0 200 L 50 50 0 0 P
+X GROUND_1 G1 1200 -100 200 L 50 50 0 0 P
+X GROUND_2 G2 1200 -200 200 L 50 50 0 0 P
+P 5 0 1 6 200 100 1000 100 1000 -400 200 -400 200 100 N
+ENDDRAW
+ENDDEF
+#
+#End Library
