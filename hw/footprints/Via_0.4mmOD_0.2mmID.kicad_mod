@@ -1,0 +1,25 @@
+(footprint "Via_0.4mmOD_0.2mmID" (version 20221018) (generator pcbnew)
+  (layer "F.Cu")
+  (attr through_hole)
+  (fp_text reference "REF**" (at 0 2.49 unlocked) (layer "F.SilkS") hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    (tstamp 215b6f03-265c-449b-adf1-24f52a98d8f0)
+  )
+  (fp_text value "Via_0.4mmOD_0.2mmID" (at 0 1 unlocked) (layer "F.Fab") hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    (tstamp c43ed215-5c88-4cef-ac84-9df8ea9a5c13)
+  )
+  (fp_text user "${REFERENCE}" (at 0 2.5 unlocked) (layer "F.Fab") hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    (tstamp 16d2f3fe-34f5-4819-b47a-5a40ab5952a8)
+  )
+  (fp_circle (center 0 0) (end 0.354 0)
+    (stroke (width 0.01) (type default)) (fill none) (layer "Dwgs.User") (tstamp 2be3d3dc-ca88-4c48-b780-a8cad49fcb81))
+  (pad "1" thru_hole circle (at 0 0) (size 0.4 0.4) (drill 0.2) (layers "*.Cu" "*.Mask") (tstamp c8bd558b-ece5-4c7c-a1c2-f35572aad4ff))
+  (group "" (id e538593e-efae-4c59-a7af-059aed846974)
+    (members
+      2be3d3dc-ca88-4c48-b780-a8cad49fcb81
+      c8bd558b-ece5-4c7c-a1c2-f35572aad4ff
+    )
+  )
+)
