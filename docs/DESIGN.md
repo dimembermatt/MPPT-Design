@@ -1,5 +1,12 @@
 # DESIGN.MD
 
+## PREFACE
+
+This document is meant to show the design process and work and may not be
+representative of the HW. Sorry :( I just want to die
+
+## Introduction
+
 We want to design a highly efficient, compact, and useful Maximum Power Point
 Tracker (MPPT). This MPPT consists of three main components:
 
@@ -224,9 +231,11 @@ final design.
 
    ![$F_{SW,MAX}$ mapping](images/frequency_operation_map.png)
 
-8. At the same time as selecting the $F_{SW}$, we perform an initial
+8. At the same time as selecting the $F_{SW}$, we perform an initial thermal calculation.
 
-9. After determining the switching frequency $F_{SW}$, we can determine the
+    **TODO: put in thermal sizing notes and work.**
+
+9.  After determining the switching frequency $F_{SW}$, we can determine the
    capacitor requirements. This is:
    - $C_{I,MIN}$
    - $V_{DC,I,MIN}$
@@ -306,3 +315,5 @@ final design.
     in a DC-DC Boost Converter).
 
 14. The next step is to determine inductor requirements.
+
+    **TODO: put in inductor sizing notes and work.**
