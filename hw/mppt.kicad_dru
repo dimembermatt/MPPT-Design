@@ -1,0 +1,25 @@
+(version 7.0)
+
+(rule "Distance between Vias of Different Nets"
+    (constraint hole_to_hole (min 0.5mm))
+    (condition "A.Type == 'Via' && B.Type == 'Via' && A.Net != B.Net")
+	(severity error)
+)
+
+(rule "Distance between Vias of Same Net"
+    (constraint hole_to_hole (min 0.254mm))
+    (condition "A.Type == 'Via' && B.Type == 'Via' && A.Net == B.Net")
+	(severity error)
+)
+
+(rule "Via Hole to Track Clearance"
+    (constraint hole_clearance (min 0.254mm))
+    (condition "A.Type == 'Via' && B.Type == 'Track'")
+	(severity error)
+)
+
+(rule "Via Hole to Zone Clearance"
+    (constraint hole_clearance (min 0.254mm))
+    (condition "A.Type == 'Via' && B.Type == 'Zone'")
+	(severity error)
+)
