@@ -268,16 +268,16 @@
       )
     )
     (symbol "MPPT:MCU_Nucleo_L432KC" (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
-      (property "Reference" "U201" (at 0 24.13 0)
+      (property "Reference" "U" (at 0 -21.59 0)
         (effects (font (size 1.524 1.524)))
       )
       (property "Value" "MCU_Nucleo_L432KC" (at 0 21.59 0)
         (effects (font (size 1.524 1.524)))
       )
-      (property "Footprint" "mppt:MODULE_NUCLEO-L432KC" (at 0 -7.62 0)
+      (property "Footprint" "" (at 0 -7.62 0)
         (effects (font (size 1.524 1.524)) hide)
       )
-      (property "Datasheet" "https://www.mouser.com/datasheet/2/389/nucleo-f031k6-1484037.pdf" (at 0 -7.62 0)
+      (property "Datasheet" "" (at 0 -7.62 0)
         (effects (font (size 1.524 1.524)) hide)
       )
       (symbol "MCU_Nucleo_L432KC_0_0"
@@ -373,7 +373,7 @@
           (name "A7" (effects (font (size 1.27 1.27))))
           (number "26" (effects (font (size 1.27 1.27))))
         )
-        (pin power_out line (at 12.7 10.16 180) (length 5.08)
+        (pin power_in line (at 12.7 10.16 180) (length 5.08)
           (name "+5V" (effects (font (size 1.27 1.27))))
           (number "27" (effects (font (size 1.27 1.27))))
         )
@@ -845,6 +845,9 @@
   (junction (at 175.26 72.39) (diameter 0) (color 0 0 0 0)
     (uuid 2aa8f7bb-fff2-4907-8c93-8d26a4742637)
   )
+  (junction (at 170.18 80.01) (diameter 0) (color 0 0 0 0)
+    (uuid 7b7ae9e2-242b-4528-abda-47427d25273c)
+  )
   (junction (at 177.8 105.41) (diameter 0) (color 0 0 0 0)
     (uuid 7e4aa855-95e5-40fa-bc71-2d0edf3ec614)
   )
@@ -865,7 +868,6 @@
   )
 
   (no_connect (at 140.97 90.17) (uuid 0aa18cf5-ab4b-410e-b4ea-e362a3f59624))
-  (no_connect (at 166.37 95.25) (uuid 0ef1210e-e5be-4280-bc6b-22101def9541))
   (no_connect (at 140.97 92.71) (uuid 1ce7c4a0-62e7-4381-a554-ed71f8a64cd6))
   (no_connect (at 140.97 105.41) (uuid 21feda39-0579-411d-8e83-8233a5d6c950))
   (no_connect (at 140.97 95.25) (uuid 54f54c73-a595-4ac3-a756-f9ccd4b85cc3))
@@ -877,6 +879,7 @@
   (no_connect (at 140.97 107.95) (uuid c1c1e4fd-d5b7-4b7f-853b-a7300f53cd3d))
   (no_connect (at 140.97 85.09) (uuid d57792c6-f7be-4208-9621-f7c6dfbd2e08))
   (no_connect (at 140.97 87.63) (uuid e0e386b2-62c0-48b5-b4b3-354c27106aa8))
+  (no_connect (at 166.37 100.33) (uuid f46455e9-a9d4-488c-9508-8f4ea217bf8f))
   (no_connect (at 166.37 102.87) (uuid f603ca5c-3ffe-402b-9cc4-c0994667a032))
 
   (wire (pts (xy 93.98 83.82) (xy 93.98 85.09))
@@ -886,6 +889,10 @@
   (wire (pts (xy 130.81 74.93) (xy 140.97 74.93))
     (stroke (width 0) (type default))
     (uuid 0ac4e708-beaa-4266-911c-77b03b5f3e00)
+  )
+  (wire (pts (xy 170.18 80.01) (xy 175.26 80.01))
+    (stroke (width 0) (type default))
+    (uuid 0e4e4739-9d1b-466c-930d-ec2af3ee6c1e)
   )
   (wire (pts (xy 179.07 77.47) (xy 184.15 77.47))
     (stroke (width 0) (type default))
@@ -959,7 +966,7 @@
     (stroke (width 0) (type default))
     (uuid da538cd2-b468-483d-9fa1-1f63a6a22103)
   )
-  (wire (pts (xy 166.37 80.01) (xy 175.26 80.01))
+  (wire (pts (xy 166.37 80.01) (xy 170.18 80.01))
     (stroke (width 0) (type default))
     (uuid dbea8b38-b26d-489c-9791-b74e76a6aff5)
   )
@@ -1017,6 +1024,10 @@
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid 068cb848-50c1-4b0f-b3e3-f86799f3fa42)
   )
+  (hierarchical_label "PWM_EN" (shape input) (at 166.37 95.25 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid 29ee7aaf-b91e-42fe-847b-8245e33812fc)
+  )
   (hierarchical_label "BATT_CURRENT" (shape input) (at 166.37 87.63 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid 2e706c44-50b3-40d2-80f4-309860ea6145)
@@ -1024,10 +1035,6 @@
   (hierarchical_label "PWM" (shape input) (at 166.37 97.79 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid 34dbc4d1-8bdd-4aa8-80e6-850c605b0590)
-  )
-  (hierarchical_label "PWM_EN" (shape input) (at 166.37 100.33 0) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify left))
-    (uuid 828f55b8-4a90-4ecb-aae2-392359426804)
   )
   (hierarchical_label "ARR_CURRENT" (shape input) (at 166.37 90.17 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
@@ -1063,10 +1070,35 @@
     )
   )
 
+  (symbol (lib_id "power:PWR_FLAG") (at 170.18 80.01 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 04cb1c6d-a11f-467e-988d-bef428b2628f)
+    (property "Reference" "#FLG0203" (at 170.18 78.105 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "PWR_FLAG" (at 172.72 81.28 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 170.18 80.01 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 170.18 80.01 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 83978020-4a92-44fe-b862-51df0dc421d0))
+    (instances
+      (project "mppt"
+        (path "/06fd3a42-664d-41bc-bf0f-b5ee0ddcc902/90f57858-b3ac-468b-8edb-acb0ab266950"
+          (reference "#FLG0203") (unit 1)
+        )
+      )
+    )
+  )
+
   (symbol (lib_id "Connector:TestPoint") (at 182.88 105.41 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 08a1230f-7358-4b2e-8122-73be9e3d28b6)
-    (property "Reference" "TP201" (at 185.42 101.473 0)
+    (property "Reference" "TP202" (at 185.42 101.473 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "3.3V TP" (at 185.42 104.013 0)
@@ -1082,7 +1114,7 @@
     (instances
       (project "mppt"
         (path "/06fd3a42-664d-41bc-bf0f-b5ee0ddcc902/90f57858-b3ac-468b-8edb-acb0ab266950"
-          (reference "TP201") (unit 1)
+          (reference "TP202") (unit 1)
         )
       )
     )
@@ -1281,7 +1313,7 @@
   (symbol (lib_id "Device:LED") (at 93.98 96.52 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 2149787d-33fb-44fb-9b5d-9c2030ed23d0)
-    (property "Reference" "D203" (at 97.79 97.4725 90)
+    (property "Reference" "D202" (at 97.79 97.4725 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "YELLOW" (at 97.79 100.0125 90)
@@ -1307,7 +1339,7 @@
     (instances
       (project "mppt"
         (path "/06fd3a42-664d-41bc-bf0f-b5ee0ddcc902/90f57858-b3ac-468b-8edb-acb0ab266950"
-          (reference "D203") (unit 1)
+          (reference "D202") (unit 1)
         )
       )
     )
@@ -1341,7 +1373,7 @@
   (symbol (lib_id "Connector:TestPoint") (at 175.26 80.01 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 26658f1a-74ef-4515-85c0-dc6cfde836e9)
-    (property "Reference" "TP203" (at 180.34 79.375 90)
+    (property "Reference" "TP201" (at 180.34 79.375 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "5V TP" (at 180.34 81.915 90)
@@ -1357,7 +1389,7 @@
     (instances
       (project "mppt"
         (path "/06fd3a42-664d-41bc-bf0f-b5ee0ddcc902/90f57858-b3ac-468b-8edb-acb0ab266950"
-          (reference "TP203") (unit 1)
+          (reference "TP201") (unit 1)
         )
       )
     )
@@ -1442,7 +1474,7 @@
   (symbol (lib_id "Device:LED") (at 82.55 96.52 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 4dfba63d-73ee-4fc9-a2d6-2a5ede1c5da4)
-    (property "Reference" "D204" (at 86.36 97.4725 90)
+    (property "Reference" "D201" (at 86.36 97.4725 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "RED" (at 86.36 100.0125 90)
@@ -1468,7 +1500,7 @@
     (instances
       (project "mppt"
         (path "/06fd3a42-664d-41bc-bf0f-b5ee0ddcc902/90f57858-b3ac-468b-8edb-acb0ab266950"
-          (reference "D204") (unit 1)
+          (reference "D201") (unit 1)
         )
       )
     )
@@ -1778,7 +1810,7 @@
   (symbol (lib_id "Device:LED") (at 105.41 96.52 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid ddf185a4-4c28-4f50-a371-57e2befaba1a)
-    (property "Reference" "D202" (at 109.22 97.4725 90)
+    (property "Reference" "D203" (at 109.22 97.4725 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "BLUE" (at 109.22 100.0125 90)
@@ -1804,7 +1836,7 @@
     (instances
       (project "mppt"
         (path "/06fd3a42-664d-41bc-bf0f-b5ee0ddcc902/90f57858-b3ac-468b-8edb-acb0ab266950"
-          (reference "D202") (unit 1)
+          (reference "D203") (unit 1)
         )
       )
     )
@@ -1813,7 +1845,7 @@
   (symbol (lib_id "Connector:TestPoint") (at 190.5 72.39 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid f6cca10c-69e1-4c33-8953-36ec1afe02df)
-    (property "Reference" "TP202" (at 193.04 68.453 0)
+    (property "Reference" "TP203" (at 193.04 68.453 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "12V TP" (at 193.04 70.993 0)
@@ -1829,7 +1861,7 @@
     (instances
       (project "mppt"
         (path "/06fd3a42-664d-41bc-bf0f-b5ee0ddcc902/90f57858-b3ac-468b-8edb-acb0ab266950"
-          (reference "TP202") (unit 1)
+          (reference "TP203") (unit 1)
         )
       )
     )

@@ -27,83 +27,21 @@
             We can derive that the second optimization target is subservient to the
             first; we MUST derive the switch sizing first.
 
-@version    0.0.0
-@date       2023-02-02
+@version    0.1.0
+@date       2023-03-02
 """
 
 import argparse
-import math as m
-import os
 import sys
-from itertools import combinations
 
 import matplotlib.pyplot as plt
-import matplotlib.ticker as mticker
-import numpy as np
-from matplotlib import cm
-from nonideal_model import model_nonideal_cell
-
-fig = plt.figure()
-
-
-def get_losses(v_in, i_in, v_out, f_s, r_ds_on, c_oss, r_l):
-    duty = 1 - v_in / v_out
-    tau = c_oss * r_ds_on
-
-    sw1_a = (2 * i_in * r_l * f_s) / duty
-    sw1_b = i_in * (1 - r_l)
-
-    sw2_a = -(2 * i_in * r_l * f_s) / (1 - duty)
-    sw2_b = i_in * (1 + (2 / (1 - duty) * r_l) - r_l)
-
-    i_sw1_rms = m.sqrt(
-        (sw1_a**2 * duty**3) / (3 * f_s**2)
-        + (sw1_a * sw1_b * duty**2) / f_s
-        + sw1_b**2 * duty
-    )
-    i_sw2_rms = m.sqrt(
-        (sw2_a**2 * (1 - duty) ** 3) / (3 * f_s**2)
-        + (sw2_a * sw2_b * (1 - duty) ** 2) / f_s
-        + sw2_b**2 * (1 - duty)
-    )
-
-    loss_con = (i_sw1_rms**2 + i_sw2_rms**2) * r_ds_on
-    loss_swi = (2 * v_out**2 * f_s * tau) / r_ds_on
-    loss_tot = loss_con + loss_swi
-
-    return loss_con, loss_swi, loss_tot
-
-
-def maximize_f_sw(v_in, i_in, v_out, c_oss, r_ds_on, p_max, r_l):
-    best_f_sw = 1
-    while True:
-        new_f_sw = best_f_sw * 1.01
-        p_conduction, p_switching, p_total = get_losses(
-            v_in, i_in, v_out, new_f_sw, r_ds_on, c_oss, r_l
-        )
-        if p_total > p_max:
-            break
-        else:
-            best_f_sw = new_f_sw
-    return best_f_sw, p_conduction, p_switching, p_total
-
-
-def maximize_f_sw_tau(v_in, i_in, v_out, tau, p_max, r_l):
-    f_sw_candidates = []
-    r_ds_on_candidates = []
-    for r_ds_on in list(np.linspace(1e-3, 5e-1, 1500)):  # 1mOhm to 500mOhm
-        c_oss = tau / r_ds_on
-        best_f_sw, _, _, _ = maximize_f_sw(
-            v_in, i_in, v_out, c_oss, r_ds_on, p_max, r_l
-        )
-        if best_f_sw == 1:
-            break
-        else:
-            r_ds_on_candidates.append(r_ds_on)
-            f_sw_candidates.append(best_f_sw)
-
-    return r_ds_on_candidates, f_sw_candidates
-
+from design_procedures.nonideal_model import model_nonideal_cell
+from design_procedures.passives_design import get_passive_sizing
+from design_procedures.switch_design import (get_switch_duty_cycle_map,
+                                             get_switch_op_fs,
+                                             get_switch_op_fs_map,
+                                             get_switch_requirements)
+from design_procedures.thermal_design import get_switch_thermals
 
 if __name__ == "__main__":
     if sys.version_info[0] < 3:
@@ -118,104 +56,114 @@ if __name__ == "__main__":
 
     plt.ion()
 
-    # Given a set of inputs
-    num_cells = 111
+    # Cell characteristics
     v_oc = 0.721
     i_sc = 6.15
     v_mpp = 0.621
     i_mpp = 5.84
+
+    # Array characteristics
+    num_cells = 111
     # Note that we get divide by 0 errors should the lower bounds be 0% or 100%
     # of the array voltage. DON'T DO IT!
-    # only run input at top 75% of VIN candidates less than VMPP, and top 25% of VIN candidates greater than VMPP
-    lower_end_top_percentile = 0.75
-    upper_end_top_percentile = 0.25
+    # only run input at top 75% of VIN candidates less than VMPP, and top 25% of
+    # VIN candidates greater than VMPP
+    le_top_pct = 0.75
+    ue_top_pct = 0.25
     v_in_range = [
-        (v_mpp * num_cells) * (1 - lower_end_top_percentile),
-        ((v_oc - v_mpp) * upper_end_top_percentile * num_cells) + (v_mpp * num_cells),
+        num_cells * v_mpp * (1 - le_top_pct),  # V_IN_LOW
+        num_cells * v_mpp,  # V_IN_MPP
+        num_cells * v_mpp + ((v_oc - v_mpp) * ue_top_pct * num_cells),  # V_IN_HIGH
     ]
-
-    v_in_opt = num_cells * v_mpp  # V
-    v_out_range = [80, 130]  # V
-    i_in_range = [0, i_sc]  # A
-
-    # And a specified efficiency and ripple
-    eff = 0.985
+    i_in_range = [0, i_mpp, i_sc]  # I_IN_LOW  # I_IN_MPP  # I_IN_HIGH
     r_ci_v = 0.725  # V
+    r_ci = r_ci_v / v_in_range[2] / 2
+
+    # Battery characteristics
+    v_out_range = [80, 105, 130]  # V_OUT_LOW  # V_OUT_MID  # V_OUT_HIGH
     r_co_v = 1.000  # V
+    r_co = r_co_v / v_out_range[2] / 2
+
+    # Converter characteristics
     r_l_a = 1.5  # A
-    r_ci = r_ci_v / v_in_range[1] / 2
-    r_co = r_co_v / v_out_range[1] / 2
-    r_l = r_l_a / i_in_range[1] / 2
+    r_l = r_l_a / i_in_range[2] / 2
+    sf = 1.15
 
-    # Power dissipation distribution
-    sw_pd = 0.3
-    c_pd = 0.02
-    l_pd = 1 - (sw_pd * 2) - (c_pd * 2)
-
-    p_transfer = v_in_opt * i_mpp
-    p_max_diss = p_transfer * (1 - eff)
-    p_sw = p_max_diss * sw_pd
-    p_cap = p_max_diss * c_pd
-    p_ind = p_max_diss * l_pd
-
-    # Safety Factor. The higher the safety factor, the less likely things break.
-    sf = 1.25
+    # Efficiency and distribution of losses
+    eff = 0.975
+    p_transfer = v_in_range[1] * i_in_range[1]
+    p_loss = p_transfer * (1 - eff)
+    sw_1_p_dist = 0.25
+    sw_2_p_dist = sw_1_p_dist
+    ci_p_dist = 0.01
+    co_p_dist = 0.04
+    l_p_dist = 0.45
 
     # Step 0. Print out the specified design parameters.
     print(f"----------------------------------------")
     print(f"STEP 0")
     print(f"Displaying user design criteria:\n")
 
-    print(f"Input load:")
-    print(f"    {v_in_range[0] :.3f} - {v_in_range[1] :.3f} V")
-    print(f"    {i_in_range[0] :.3f} - {i_in_range[1] :.3f} A")
-    print(f"Output load:")
-    print(f"    {v_out_range[0] :.3f} - {v_out_range[1] :.3f} V")
-    print(f"Device Target Efficiency: {eff :.3f}")
-    print(f"    Target Max Power Loss {p_max_diss :.3f} W")
-    print(f"Power Loss Allocation:")
-    print(f"    SW1, SW2 - {sw_pd :.3f} ({p_sw :.3f} W) ea.")
-    print(f"    C_I, C_O - {c_pd :.3f} ({p_cap :.3f} W) ea.")
-    print(f"    L - {l_pd :.3f} ({p_ind :.3f} W)")
-    print(f"Maximum allowable ripple:")
+    print(f"Input Array:")
+    print(f"    [{v_in_range[0] :.3f}, {v_in_range[1] :.3f}, {v_in_range[2] :.3f}] V")
+    print(f"    [{i_in_range[0] :.3f}, {i_in_range[1] :.3f}, {i_in_range[2] :.3f}] A")
+    print(f"Output Battery:")
+    print(
+        f"    [{v_out_range[0] :.3f}, {v_out_range[1] :.3f}, {v_out_range[2] :.3f}] V"
+    )
+
+    print(f"Target Ripple:")
     print(f"    R_CI - {r_ci_v :.3f} V [{r_ci*100 :.3f} %]")
     print(f"    R_CO - {r_co_v :.3f} V [{r_co*100 :.3f} %]")
     print(f"    R_L - {r_l_a :.3f} A [{r_l*100 :.3f} %]")
     print(f"Safety Factor: {sf :.3f}")
 
+    print(f"Target Converter Efficiency: {eff :.3f}")
+    print(f"    Target Power Loss Budget {p_loss :.3f} W")
+    print(f"Power Loss Allocation:")
+    print(f"    SW1 - {sw_1_p_dist :.3f} ({p_loss * sw_1_p_dist :.3f} W)")
+    print(f"    SW1 - {sw_2_p_dist :.3f} ({p_loss * sw_2_p_dist :.3f} W)")
+    print(f"    C_I - {ci_p_dist :.3f} ({p_loss * ci_p_dist :.3f} W)")
+    print(f"    C_O - {co_p_dist :.3f} ({p_loss * co_p_dist :.3f} W)")
+    print(f"    L   - {l_p_dist :.3f} ({p_loss * l_p_dist :.3f} W)")
+
     # Step 1. Derive the initial switch requirements.
     # Minimize the FOM, which is beyond the scope of this script.
-    input("Press any key to continue.\n")
     print(f"----------------------------------------")
     print(f"STEP 1")
     print(f"Deriving switch requirements.\n")
 
-    v_ds_min = v_out_range[1] * sf
-    i_ds_min = i_in_range[1] * sf
-    p_sw_min = v_in_opt * i_mpp * (1 - eff) * sf * sw_pd
+    (v_ds_min, i_ds_min, p_sw_min, p_sw_bud) = get_switch_requirements(
+        v_out_range[2],
+        i_in_range[2],
+        p_transfer,
+        sf=sf,
+        eff_dist=sw_1_p_dist * (1 - eff),
+    )
 
     # Our max steady state voltage applied across any one gate is v_batt when
     # there is no array hooked to the input.
-    print(f"Switch lower bound V_DS maximum rating: {v_ds_min :.3f} V")
-
+    #
     # Our max steady state current is i_sc when the array is shorted to ground.
-    print(f"Switch lower bound I_DS maximum rating: {i_ds_min :.3f} A")
-
+    #
     # The maximum designed power dissipation is based off of the maximum input
     # power of the array and the converter efficiency.
-    print(f"Switch minimum power dissipation: {p_sw_min :.3f} W")
+    print(
+        f"Expected requirements for switch:"
+        f"\n\tV_DS\t>= {v_ds_min :.3f} V"
+        f"\n\tI_D\t>= {i_ds_min :.3f} A"
+        f"\n\tP_D\t> {p_sw_min :.3f} W"
+        f"\n\tP_B\t<= {p_sw_bud :.3f} W"
+    )
 
     # Research switches and provide the best 25% median FOM, which we'll use to
     # find the best tradeoff.
     print(f"\nFind switches and report back with top 25% median FOM/tau.")
     tau = float(input("FOM/TAU (ps): ")) * 10**-12
 
-    # Given Tau, plot r_ds_on vs max_freq for potential operating points.
-    print(f"Switch power budget: {p_sw :.3f} W")
-
-    # Step 2. Use the expected FOM to derive a plot mapping frequency at various
+    # Step 2. Frequency mapping at various operating points.
+    # Determine the minimum required switching frequency to hit all our
     # operating points.
-    input("Press any key to continue.\n")
     print(f"----------------------------------------")
     print(f"STEP 2")
     print(f"Displaying f_sw_max for various operating points.\n")
@@ -224,9 +172,9 @@ if __name__ == "__main__":
     operating_points = [
         [
             "MPP, VO_AVG",
-            v_in_opt,
-            model_nonideal_cell(1000, 298.15, 0, 100, v_in_opt / num_cells),
-            (v_out_range[0] + v_out_range[1]) / 2,
+            v_in_range[1],
+            model_nonideal_cell(1000, 298.15, 0, 100, v_in_range[1] / num_cells),
+            v_out_range[1],
         ],
         [
             "VI_MIN, VO_MIN",
@@ -238,224 +186,116 @@ if __name__ == "__main__":
             "VI_MIN, VO_MAX",
             v_in_range[0],
             model_nonideal_cell(1000, 298.15, 0, 100, v_in_range[0] / num_cells),
-            v_out_range[1],
+            v_out_range[2],
         ],
         [
             "VI_MAX, VO_MIN",
-            v_in_range[1],
-            model_nonideal_cell(1000, 298.15, 0, 100, v_in_range[1] / num_cells),
+            v_in_range[2],
+            model_nonideal_cell(1000, 298.15, 0, 100, v_in_range[2] / num_cells),
             v_out_range[0],
         ],
         [
             "VI_MAX, VO_MAX",
-            v_in_range[1],
-            model_nonideal_cell(1000, 298.15, 0, 100, v_in_range[1] / num_cells),
-            v_out_range[1],
+            v_in_range[2],
+            model_nonideal_cell(1000, 298.15, 0, 100, v_in_range[2] / num_cells),
+            v_out_range[2],
         ],
     ]
 
-    plt.clf()
-    ax_tau_mpp = fig.add_subplot()
+    get_switch_op_fs(tau, operating_points, p_sw_bud, r_l)
 
-    worst_max_fs = 1_000_000
-    worst_op = None
-    for name, v_in, i_in, v_out in operating_points:
-        print(
-            f"{name}: {v_in :.3f} V, {i_in :.3f} A -> {v_out :.3f} V ({v_in * i_in :.3f} W)"
-        )
-        r_ds_on_candidates, f_sw_candidates = maximize_f_sw_tau(
-            v_in, i_in, v_out, tau, p_sw, r_l
-        )
-        max_fs = max(f_sw_candidates)
-        if worst_max_fs > max_fs:
-            worst_max_fs = max_fs
-            worst_op = name
-
-        ax_tau_mpp.plot(r_ds_on_candidates, f_sw_candidates, label=name)
-
-    ax_tau_mpp.legend()
-    ax_tau_mpp.set_title(f"Max Freq vs R_DS_ON for tau={tau * 10**12 :.3f} ps")
-    ax_tau_mpp.set_xlabel("R_DS_ON (Ohm)")
-    ax_tau_mpp.set_ylabel("Switching Frequency (Hz)")
-    ax_tau_mpp.grid()
-
-    plt.tight_layout()
-    plt.savefig("r_ds_on_and_f_sw_mapping.png")
-    plt.show()
-
-    print(
-        f"With these operating points, it looks like at {worst_op} limits the "
-        f"system. At the optimal R_DS_ON, it cannot run higher than "
-        f"{int(worst_max_fs)} Hz without failing the allotted power budget."
-    )
-
-    print(
-        "If satisfied with this, move to the next step. Otherwise, restart "
-        "w/ any of the following changes: "
-        "\n - different FOM"
-        "\n - different I/O bounds"
-        "\n - different power loss budget"
-    )
-
-    # Step 3. After selecting the switch, calculate the FOM. We then determine
-    # the maximum switching frequency across the input/output map that meets our
-    # efficiency metric.
-    input("Press any key to continue.\n")
-    print(f"----------------------------------------")
-    print(f"STEP 3")
-    print(f"Displaying f_sw_max for all operating points.\n")
-
-    # Select the switch and provide the switching characteristics.
-    print(f"Choose switch and report back with C_OSS, R_DS_ON.")
-    c_oss = float(input("C_OSS (pF): ")) * 10**-12
+    # Select a switch or reset parameters.
+    print(f"\nSelect a switch or modify design parameters.")
     r_ds_on = float(input("R_DS_ON (mOhm): ")) * 10**-3
-
+    c_oss = float(input("C_OSS (pF): ")) * 10**-12
     tau = c_oss * r_ds_on
     print(f"FOM for this switch: {tau * 10**12 :.3f} (ps).")
-    print(f"Generating f_s_max surface map.")
 
-    x_v_in = []
-    y_v_out = []
-    z_f_s = []
+    # Step 3a. After selecting a switch, generate a mapping of maximum switching
+    # frequency for each input/output voltage.
+    print(f"----------------------------------------")
+    print(f"STEP 3A")
+    print(f"Displaying f_sw_max for all operating points.\n")
 
-    v_in_combos = np.linspace(v_in_range[0], v_in_range[1], num=30, endpoint=True)
-    v_out_combos = np.linspace(v_out_range[0], v_out_range[1], num=30, endpoint=True)
-    for v_in in v_in_combos:
-        i_in = model_nonideal_cell(1000, 298.15, 0, 100, v_in / num_cells)
-        for v_out in v_out_combos:
-            f_sw, _, _, _ = maximize_f_sw(v_in, i_in, v_out, c_oss, r_ds_on, p_sw, r_l)
-            x_v_in.append(v_in)
-            y_v_out.append(v_out)
-            z_f_s.append(f_sw * 10**-3)
-
-    plt.clf()
-
-    # Plot out switching frequency map.
-    ax_freq = fig.add_subplot(projection="3d")
-    ax_freq.scatter(x_v_in, y_v_out, z_f_s, c=z_f_s)
-    ax_freq.set_title("Max Frequency within Power Budget Across I/O Mapping")
-    ax_freq.set_xlabel("V_IN (V)")
-    ax_freq.set_ylabel("V_OUT (V)")
-    ax_freq.set_zlabel("F_S_MAX (kHz)")
-
-    plt.savefig("frequency_operation_map.png")
-    plt.show()
-
-    # Determine minimum frequency allowed across the map.
+    f_sw = get_switch_op_fs_map(
+        v_in_range,
+        v_out_range,
+        r_ds_on,
+        c_oss,
+        p_sw_bud,
+        r_l,
+        model_nonideal_cell,
+        num_cells,
+    )
     print(
-        f"Maximum frequency for the converter: {m.floor(min(z_f_s)) :.3f} kHz "
-        "(choosing lower is acceptable but will result in larger ripple.)"
+        f"Maximum frequency for the converter: {f_sw :.3f} kHz "
+        "(choosing lower f_sw will violate ripple constraints.)"
     )
 
     # Select the switching frequency.
-    print(f"Choose the switching frequency.")
+    print(f"\nChoose the switching frequency.")
     f_sw = int(input("f_s (kHz): ")) * 10**3
 
+    # Step 3b. After selecting a switch, determine the amount of cooling
+    # required to keep the switch happy.
+    print(f"----------------------------------------")
+    print(f"STEP 3B")
+    print(f"Displaying thermal area budget.\n")
 
+    t_amb = 60
+    t_max = 100
+    r_jb = float(input("R_JB (C/W): "))
+    r_jc = float(input("R_JC (C/W): "))
+    area_hs = float(input("Area of heatsink (mm^2): ")) * 1e-6
+    r_sa = float(input("R_SA (C/W): "))
+    print(area_hs)
+    therm_area = get_switch_thermals(
+        t_amb, t_max, p_sw_bud, r_jb, r_jc, r_sa, area_hs, 250
+    )  # Assume at least 250 vias
 
-    # Step 4. Plot duty cycle ratio for input/output combos.
-    input("Press any key to continue.\n")
+    print(
+        f"Minimum required thermal area per switch to dissipate heat from {t_amb} C to "
+        f"{t_max} C: {therm_area * 10000 :.3f} cm^2 ({therm_area * 1000000 :.3f} mm^2)."
+    )
+
+    # Step 4. Generate a duty cycle map.
     print(f"----------------------------------------")
     print(f"STEP 4")
-    print(f"Generating duty cycle surface map.\n")
+    print(f"Displaying duty cycle map.\n")
 
-    x_v_in = []
-    y_v_out = []
-    z_duty = []
-    for v_in in np.linspace(v_in_range[0], v_in_range[1], num=50, endpoint=True):
-        for v_out in np.linspace(v_out_range[0], v_out_range[1], num=50, endpoint=True):
-            duty = 1 - v_in / v_out
-            x_v_in.append(v_in)
-            y_v_out.append(v_out)
-            z_duty.append(duty)
+    (min_duty, max_duty) = get_switch_duty_cycle_map(v_in_range, v_out_range, eff)
+    print(
+        f"Minimum and maximum duty cycle to run the converter: [{min_duty :.3f}, {max_duty :.3f}]."
+    )
 
-    # Plot out switching frequency map.
-    plt.clf()
-    ax_duty = fig.add_subplot(projection="3d")
-    ax_duty.scatter(x_v_in, y_v_out, z_duty, c=z_duty)
-    ax_duty.set_title("Minimum Duty Cycle Across I/O Mapping")
-    ax_duty.set_xlabel("V_IN (V)")
-    ax_duty.set_ylabel("V_OUT (V)")
-    ax_duty.set_zlabel("Duty Cycle")
-
-    min_duty = np.min(z_duty)
-    max_duty = np.max(z_duty)
-
-    print(f"Min duty cycle {min_duty * 100 :.3f} %")
-    print(f"Max duty cycle {max_duty * 100 :.3f} %")
-
-    # print(
-    #     "Note that if the next step fails, R_DS_ON is probably too high. "
-    #     "The following actions can be performed:"
-    #     "\n    - tradeoff r_ds_on for higher c_oss (you'll probably find yourself here)"
-    #     "\n    - increase min v_in relative to v_out to reduce max duty (a reasonable option)"
-    #     "\n    - decrease max v_out relative to v_in to reduce max duty (a less reasonable option)"
-    #     "\n    - decrease design efficiency (undesirable for MPPT, last resort)"
-    # )
-
-    plt.tight_layout()
-    plt.savefig("duty_surface_map.png")
-    plt.show()
-
-
-
-    # Step 5. Derive capacitor requirements.
-    input("Press any key to continue.\n")
+    # Step 5. Determine capacitor requirements.
     print(f"----------------------------------------")
     print(f"STEP 5")
     print(f"Deriving capacitor requirements:\n")
 
-    # Given that the PV is a nonlinear current source, it's not directly
-    # straightforward to determine when ci, co, l are minimized. We do know,
-    # however, that the minimum feasible passive value is bounded by the worst
-    # input/output combo.
-    ci_min = []
-    co_min = []
-    l_min = []
+    (ci_min, co_min, l_min, ci_vdc_min, co_vdc_min, l_a_min) = get_passive_sizing(
+        v_in_range,
+        v_out_range,
+        f_sw,
+        r_ci_v,
+        r_co_v,
+        r_l_a,
+        eff,
+        model_nonideal_cell,
+        num_cells,
+        sf,
+    )
 
-    v_in_combos = np.linspace(v_in_range[0], v_in_range[1], num=50, endpoint=True)
-    v_out_combos = np.linspace(v_out_range[0], v_out_range[1], num=50, endpoint=True)
-    for v_in in v_in_combos:
-        i_in = model_nonideal_cell(1000, 298.15, 0, 100, v_in / num_cells)
-        p_in = v_in * i_in
-        for v_out in v_out_combos:
-            ci_min.append((r_l * i_in) / (8 * r_ci * v_out * f_sw))
-            co_min.append((v_out - v_in) * p_in / (2 * r_co * v_out**3 * f_sw))
-            l_min.append((v_in - v_in**2 / v_out) / (2 * i_in * f_sw * r_l))
-
-    ci_min = np.max(ci_min)
-    co_min = np.max(co_min)
-    l_min = np.max(l_min)
-    ci_vdc_min = (v_in_range[1] + r_ci_v / 2) * sf
-    co_vdc_min = (v_out_range[1] + r_co_v / 2) * sf
-
-    print(f"Minimum C_IN: {ci_min * 10**6 :.3f} uF")
-    print(f"Minimum C_OUT: {co_min * 10**6 :.3f} uF")
-    print(f"Minimum L: {l_min * 10**6 :.3f} uH")
-    print(f"Input capacitor should be rated for: {ci_vdc_min :.3f} V.")
-    print(f"Output capacitor should be rated for: {co_vdc_min :.3f} V.")
-
-
-
-    # Step 6. Derive inductor requirements.
-    input("Press any key to continue.\n")
-    print(f"----------------------------------------")
-    print(f"STEP 6")
-    print(f"Deriving inductor requirements:\n")
-
-    # NOTE: NO SAFETY FACTOR
-    i_pk_min = (i_mpp + r_l_a / 2)
-    print(f"Inductor should be rated for {i_pk_min :.3f} A.")
-    print(f"KG method. Assume ")
-    print(f"Given inductor power budget of {p_ind} W and max ripple current {r_l_a}:")
-
-    # r_max = p_ind / r_l_a ** 2
-    # i_pk = i_pk_min
-    # n_loops = l_min * i_pk / ()
-
-    # print(f"Max resistance: {r_max} ohms")
-
-    # B = L
-
+    print(
+        f"\nExpected requirements for input capacitor:"
+        f"\n\tC\t>= {ci_min * 1E6:.3f} uF"
+        f"\n\tV\t>= {ci_vdc_min :.3f} V"
+        f"\nExpected requirements for output capacitor:"
+        f"\n\tC\t>= {co_min * 1E6:.3f} uF"
+        f"\n\tV\t>= {co_vdc_min :.3f} V"
+        f"\nExpected requirements for inductor:"
+        f"\n\tC\t>= {l_min * 1E6:.3f} uH"
+        f"\n\tI\t>= {l_a_min :.3f} A"
+    )
 
     input("Press any key to end.")

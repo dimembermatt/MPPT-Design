@@ -7,6 +7,7 @@ lim = 22.2
 
 fig = plt.figure()
 
+
 def get_r_ja(a_fcu, a_bcu, N):
     a = 0.081 / a_fcu
     b = 0.081 / a_bcu
@@ -21,11 +22,12 @@ def get_r_ja(a_fcu, a_bcu, N):
     r_ja = 2.8 + num / denom
     return r_ja
 
+
 x = []
 y = []
 z = []
-for i in np.linspace(1E-5, 0.005, 100):
-    for j in np.linspace(1E-5, 0.005, 100):
+for i in np.linspace(1e-5, 0.005, 100):
+    for j in np.linspace(1e-5, 0.005, 100):
         r_ja = get_r_ja(i, j, n)
 
         if r_ja <= lim * 1.5:
@@ -33,7 +35,7 @@ for i in np.linspace(1E-5, 0.005, 100):
             y.append(j)
             z.append(r_ja)
 
-ax = fig.add_subplot(projection='3d')
+ax = fig.add_subplot(projection="3d")
 ax.scatter(np.multiply(x, 1000000), np.multiply(y, 1000000), z, c=z)
 ax.set_title("R_JA as a function of TCU area and BCU area")
 ax.set_xlabel("FCU (mm^2)")
@@ -44,5 +46,5 @@ ax.set_zlim(0, lim)
 plt.show()
 
 
-r_ja = get_r_ja(2000 * 1E-6, 2000 * 1E-6, 200)
+r_ja = get_r_ja(2000 * 1e-6, 2000 * 1e-6, 200)
 print(r_ja)
