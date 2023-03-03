@@ -1,0 +1,80 @@
+----------------------------------------
+STEP 0
+User design criteria:
+Input Array:
+    [20.335, 68.931, 74.481] V
+    [125.007, 414.792, 392.142] W
+    [0.000, 5.840, 6.150] A
+Output Battery:
+    [85.000, 105.000, 125.000] V
+Target Ripple:
+    R_CI - 0.725 V [0.487 %]
+    R_CO - 1.000 V [0.400 %]
+    R_L - 2.750 A [22.358 %]
+Safety Factor: 1.250
+Target Converter Efficiency: 0.970
+    Target Power Loss Budget 12.077 W
+Power Loss Allocation:
+    SW1 - 0.290 (3.502 W)
+    SW1 - 0.290 (3.502 W)
+    C_I - 0.005 (0.060 W)
+    C_O - 0.030 (0.362 W)
+    L   - 0.385 (4.650 W)
+----------------------------------------
+STEP 1
+Deriving switch requirements.
+Expected requirements for switch:
+	V_DS	>= 156.250 V
+	I_D	>= 7.688 A
+	P_D	> 4.378 W
+	P_B	<= 3.502 W
+----------------------------------------
+STEP 3A
+Select a switch or modify design parameters.
+R_DS_ON (mOhm): 10.25
+C_OSS (pF): 762.5
+
+FOM for this switch: 7.816 (ps).
+Displaying f_sw_max for all operating points.
+Maximum frequency for the converter: 104.000 kHz (choosing lower f_sw will violate ripple constraints.)
+
+Choose the switching frequency.
+f_s (kHz): 104
+----------------------------------------
+STEP 4
+Displaying duty cycle map.
+Minimum and maximum duty cycle to run the converter: [0.150, 0.842].
+----------------------------------------
+STEP 5
+Deriving capacitor requirements:
+
+Expected requirements for input capacitor:
+	C	>= 5.527 uF
+	V	>= 94.007 V
+Expected requirements for output capacitor:
+	C	>= 15.234 uF
+	V	>= 157.493 V
+Expected requirements for inductor:
+	L	>= 109.265 uH
+	I	>= 9.593 A
+
+Choose the target inductance.
+l (uH): 110
+
+Using TDK N97 material datasheet, choose a B_SAT.
+b_sat (mT): 375
+
+K_G Comparison: 0.125 (Max) >= 0.096 (Actual)
+B_AC: 51.391 mT
+Number of turns: 35
+Wire area: 0.403 mm^2
+Wire length: 196.000 cm
+Conduction loss: 4.478 W
+
+Using TDK N97 material datasheet, choose a P_V given F_SW, B_AC.
+P_V (kW/m^3): 30
+
+Core loss: 0.196 W
+
+Your allocated budget was 4.650 W (vs 4.674 W)
+Press any key to end.

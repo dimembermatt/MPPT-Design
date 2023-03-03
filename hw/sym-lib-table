@@ -3,5 +3,5 @@
   (lib (name "1935776")(type "KiCad")(uri "${KIPRJMOD}/symbols/1935776.kicad_sym")(options "")(descr ""))
   (lib (name "MPPT")(type "KiCad")(uri "${KIPRJMOD}/symbols/MPPT.kicad_sym")(options "")(descr ""))
   (lib (name "LMG1210RVRT")(type "KiCad")(uri "${KIPRJMOD}/symbols/LMG1210RVRT.kicad_sym")(options "")(descr ""))
-  (lib (name "B65812N1005D002")(type "KiCad")(uri "${KIPRJMOD}/symbols/B65812N1005D002.kicad_sym")(options "")(descr ""))
+  (lib (name "B65878E1012D001")(type "KiCad")(uri "${KIPRJMOD}/symbols/B65878E1012D001.kicad_sym")(options "")(descr ""))
 )

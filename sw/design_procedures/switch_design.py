@@ -204,8 +204,8 @@ def get_switch_op_fs_map(
     y_v_out = []
     z_f_s = []
 
-    v_in_combos = np.linspace(v_in_range[0], v_in_range[2], num=25, endpoint=True)
-    v_out_combos = np.linspace(v_out_range[0], v_out_range[2], num=25, endpoint=True)
+    v_in_combos = np.linspace(v_in_range[0], v_in_range[2], num=35, endpoint=True)
+    v_out_combos = np.linspace(v_out_range[0], v_out_range[2], num=35, endpoint=True)
     for v_in in v_in_combos:
         i_in = model(1000, 298.15, 0, 100, v_in / num_cells)
         for v_out in v_out_combos:
@@ -217,7 +217,6 @@ def get_switch_op_fs_map(
             z_f_s.append(f_sw * 10**-3)
 
     fig = plt.figure()
-    ax = fig.add_subplot()
 
     # Plot out switching frequency map.
     ax = fig.add_subplot(projection="3d")
