@@ -4,4 +4,5 @@
   (lib (name "MPPT")(type "KiCad")(uri "${KIPRJMOD}/symbols/MPPT.kicad_sym")(options "")(descr ""))
   (lib (name "LMG1210RVRT")(type "KiCad")(uri "${KIPRJMOD}/symbols/LMG1210RVRT.kicad_sym")(options "")(descr ""))
   (lib (name "B65878E1012D001")(type "KiCad")(uri "${KIPRJMOD}/symbols/B65878E1012D001.kicad_sym")(options "")(descr ""))
+  (lib (name "CONBNC002")(type "Legacy")(uri "${KIPRJMOD}/symbols/CONBNC002.lib")(options "")(descr ""))
 )

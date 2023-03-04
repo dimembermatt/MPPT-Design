@@ -1,0 +1,25 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#SamacSys ECAD Model CONBNC002
+#/15991444/995068/2.49/4/4/Connector
+DEF CONBNC002 J 0 30 Y Y 1 F N
+F0 "J" 750 300 50 H V L CNN
+F1 "CONBNC002" 750 200 50 H V L CNN
+F2 "CONBNC002" 750 100 50 H I L CNN
+F3 "https://linxtechnologies.com/wp/wp-content/uploads/conbnc002-ds.pdf" 750 0 50 H I L CNN
+F4 "RF Connectors / Coaxial Connectors BNC Connector Right Angle Jack, Female Socket 50 Ohm, Through Hole" 750 -100 50 H I L CNN "Description"
+F5 "13.1" 750 -200 50 H I L CNN "Height"
+F6 "712-CONBNC002" 750 -300 50 H I L CNN "Mouser Part Number"
+F7 "https://www.mouser.co.uk/ProductDetail/Linx-Technologies/CONBNC002?qs=doiCPypUmgFbIbY%252BDq4BiQ%3D%3D" 750 -400 50 H I L CNN "Mouser Price/Stock"
+F8 "Linx Technologies" 750 -500 50 H I L CNN "Manufacturer_Name"
+F9 "CONBNC002" 750 -600 50 H I L CNN "Manufacturer_Part_Number"
+DRAW
+X 1 1 0 0 200 R 50 50 0 0 P
+X 2 2 0 -100 200 R 50 50 0 0 P
+X MH1 MH1 900 0 200 L 50 50 0 0 P
+X MH2 MH2 900 -100 200 L 50 50 0 0 P
+P 5 0 1 6 200 100 700 100 700 -200 200 -200 200 100 N
+ENDDRAW
+ENDDEF
+#
+#End Library
