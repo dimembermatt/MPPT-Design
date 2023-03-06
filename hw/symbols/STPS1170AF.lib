@@ -1,0 +1,23 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#SamacSys ECAD Model STPS1170AF
+#/1963414/267240/2.49/2/2/Integrated Circuit
+DEF STPS1170AF IC 0 30 Y Y 1 F N
+F0 "IC" 650 300 50 H V L CNN
+F1 "STPS1170AF" 650 200 50 H V L CNN
+F2 "SODFL5226X110N" 650 100 50 H I L CNN
+F3 "https://www.st.com/resource/en/datasheet/stps1170.pdf" 650 0 50 H I L CNN
+F4 "170 V, 1 A Power Schottky rectifier" 650 -100 50 H I L CNN "Description"
+F5 "1.1" 650 -200 50 H I L CNN "Height"
+F6 "511-STPS1170AF" 650 -300 50 H I L CNN "Mouser Part Number"
+F7 "https://www.mouser.co.uk/ProductDetail/STMicroelectronics/STPS1170AF?qs=Ok1pvOkw6%2Fp4Ir1LRBR3Pg%3D%3D" 650 -400 50 H I L CNN "Mouser Price/Stock"
+F8 "STMicroelectronics" 650 -500 50 H I L CNN "Manufacturer_Name"
+F9 "STPS1170AF" 650 -600 50 H I L CNN "Manufacturer_Part_Number"
+DRAW
+X K 1 0 0 200 R 50 50 0 0 P
+X A 2 0 -100 200 R 50 50 0 0 P
+P 5 0 1 6 200 100 600 100 600 -200 200 -200 200 100 N
+ENDDRAW
+ENDDEF
+#
+#End Library

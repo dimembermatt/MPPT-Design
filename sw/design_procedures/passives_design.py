@@ -229,6 +229,21 @@ def get_inductor_core_loss(p_v):
 def get_capacitor_loss():
     pass
 
+def get_capacitor_esr(c, f_sw, df):
+    ESR = df / (2 * m.pi * f_sw * c)
+    return ESR
+
+def get_capacitor_impedance(c, f_sw):
+    return 1 / (2 * m.pi * f_sw * c)
+
+def get_capacitor_v_rms(v_max):
+    return v_max / (2 * m.sqrt(2))
+
+def get_capacitor_i_rms(v_rms, z):
+    return v_rms / z
+
+def get_capacitor_pow_diss(i_rms, esr):
+    return i_rms ** 2 * esr
 
 if __name__ == "__main__":
     if sys.version_info[0] < 3:
@@ -241,24 +256,24 @@ if __name__ == "__main__":
     except ImportError:
         pass  # no need to fail because of missing dev dependency
 
-    i_mpp = 7
-    r_l_a = 2.5  # A
-    r_l = r_l_a / i_mpp / 2
-    i_max = (i_mpp + r_l_a)  # A
+    # i_mpp = 7
+    # r_l_a = 2.5  # A
+    # r_l = r_l_a / i_mpp / 2
+    # i_max = (i_mpp + r_l_a)  # A
 
-    l = 100 * 1e-6  # uH
-    b_sat = 375 * 1e-3  # T
+    # l = 100 * 1e-6  # uH
+    # b_sat = 375 * 1e-3  # T
 
 
-    (k_g_target, k_g, b_ac, N, A_w, l_w, r, p_cond) = get_inductor_sizing(
-        l, i_max, b_sat, r_l
-    )
+    # (k_g_target, k_g, b_ac, N, A_w, l_w, r, p_cond) = get_inductor_sizing(
+    #     l, i_max, b_sat, r_l
+    # )
 
-    print(r_l, i_max, N, p_cond)
+    # print(r_l, i_max, N, p_cond)
 
-    p_v = 15  # kW/m^3
-    p_core = get_inductor_core_loss(p_v)
-    print(p_core)
+    # p_v = 15  # kW/m^3
+    # p_core = get_inductor_core_loss(p_v)
+    # print(p_core)
 
     # 1.25 A (10%), 300 uH -> i_max=7.77, N=82, PCOND=16
     # 1.75 A (14.2%), 300 uH -> i_max=8.3, N=88, PCOND=21
@@ -268,3 +283,37 @@ if __name__ == "__main__":
     # 2.25 A (18.3%), 125 uH -> i_max=8.82, N=39, PCOND=4.7
     # 2.5 A (20.3%), 100 uH -> i_max=9.01, N=32, PCOND=3.35
 
+
+    # Cap test
+    # c = 1.034 * 1E-6 # uF
+    # df = 2.5 / 100 # %
+    # f_sw = 104 * 1E3 # kHz
+    # v_max = 250
+
+    # esr = get_capacitor_esr(c, f_sw, df) # ohms
+    # esr = 5.4 * 1E-3 # mO
+    # print(f"{esr * 1E3} mO")
+
+    # z = get_capacitor_impedance(c, f_sw)
+    # v_rms = get_capacitor_v_rms(v_max)
+    # i_rms = get_capacitor_i_rms(v_rms, z)
+    # i_rms = 2.75 # A
+
+    # print(f"Imp: {z}")
+    # print(f"V_RMS: {v_rms} V, I_RMS: {i_rms} A")
+
+    # @ 125 V bias, 125 C, 109 kHz
+    c = 1.034 * 1E-6 # uF
+    esr = 5.4 * 1E-3 # mO
+    i_rms = 2.75 # A
+
+    p_dis = get_capacitor_pow_diss(i_rms, esr)
+    print(f"P_DIS: {p_dis} W")
+
+    # @ 125 V bias, 125 C, 102 kHz
+    c = 4.344 * 1E-6 # uF
+    esr = 5.126 * 1E-3 # mO
+    i_rms = (6.15 + 2.75/2) / m.sqrt(2) # A
+
+    p_dis = get_capacitor_pow_diss(i_rms, esr)
+    print(f"P_DIS: {p_dis} W")
