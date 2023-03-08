@@ -245,6 +245,16 @@ def get_capacitor_i_rms(v_rms, z):
 def get_capacitor_pow_diss(i_rms, esr):
     return i_rms ** 2 * esr
 
+def get_two_caps_parallel(f_sw, z1, z2):
+    c1, r1 = z1
+    c2, r2 = z2
+
+    num = (r1 + 1 / (1j * f_sw * c1)) * (r2 + 1 / (1j * f_sw * c2))
+    denom = (r1 + 1 / (1j * f_sw * c1)) + (r2 + 1 / (1j * f_sw * c2))
+    print(z1, z2)
+    print(num, denom)
+    return (num / denom).imag, (num / denom).real
+
 if __name__ == "__main__":
     if sys.version_info[0] < 3:
         raise Exception("This program only supports Python 3.")
@@ -302,18 +312,27 @@ if __name__ == "__main__":
     # print(f"Imp: {z}")
     # print(f"V_RMS: {v_rms} V, I_RMS: {i_rms} A")
 
-    # @ 125 V bias, 125 C, 109 kHz
-    c = 1.034 * 1E-6 # uF
-    esr = 5.4 * 1E-3 # mO
-    i_rms = 2.75 # A
+    inductor_current_pk_pk = 2.75 # A
+    i_rms = inductor_current_pk_pk / (2 * m.sqrt(2))
+    print(f"I_RMS: {i_rms} A")
 
+    # Input cap
+    # 80-A759KS156M2AAAE52
+    c = 15 * 1E-6 # uF
+    esr = 52 * 1E-3 # mO
     p_dis = get_capacitor_pow_diss(i_rms, esr)
     print(f"P_DIS: {p_dis} W")
 
-    # @ 125 V bias, 125 C, 102 kHz
-    c = 4.344 * 1E-6 # uF
-    esr = 5.126 * 1E-3 # mO
-    i_rms = (6.15 + 2.75/2) / m.sqrt(2) # A
+    # Output cap
+    # 810-CGA9P3X7T2E225MA
+    # @ 125 V bias, 125 C, 109 kHz
+    c = 1.034 * 1E-6 # uF
+    esr = 5.4 * 1E-3 # mO
+    p_dis = get_capacitor_pow_diss(i_rms, esr)
+    print(f"P_DIS: {p_dis} W")
 
+    # 80-A759MS186M2CAAE90 * 2
+    c = 36 * 1E-6 # uF
+    esr = 45 * 1E-3 # mO
     p_dis = get_capacitor_pow_diss(i_rms, esr)
     print(f"P_DIS: {p_dis} W")
