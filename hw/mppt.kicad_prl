@@ -21,7 +21,6 @@
       "+5V",
       "/controller/PWM_EN",
       "/controller/PWM",
-      "Net-(C503-Pad1)",
       "/controller/ARR_I",
       "/gate_driver/DLH",
       "/gate_driver/DHL",
@@ -30,11 +29,10 @@
       "/controller/ARR_V",
       "/controller/BATT_I",
       "/controller/BATT_V",
-      "Net-(U201-A0)",
       "Net-(U401-IN+)",
       "Net-(U403-IN+)",
-      "Net-(U501-LO)",
-      "Net-(U501-HO)",
+      "/gate_driver/LO",
+      "/gate_driver/HO",
       "/converter/Vsnub"
     ],
     "high_contrast_mode": 0,
@@ -96,7 +94,7 @@
       39,
       40
     ],
-    "visible_layers": "ffc3cff_ffffffff",
+    "visible_layers": "ffc3cfd_ffffffff",
     "zone_display_mode": 0
   },
   "meta": {
