@@ -1,0 +1,40 @@
+{
+    "NAME": "Broad range MPPT",
+    "AUTHORS": [
+        "Matthew Yu",
+        "Jacob Pustilnik"
+    ],
+    "DESCRIPTION": "",
+    "DATE_GENERATED": [
+        3,
+        9,
+        2023
+    ],
+    "design": {
+        "input_source": {
+            "lower_bound_voltage": 0.0
+        },
+        "input_capacitor": {
+            "voltage_ripple": 0.725,
+            "voltage_ripple_ratio": 0.004833333333333334
+        },
+        "output_capacitor": {
+            "voltage_ripple": 1.0,
+            "voltage_ripple_ratio": 0.004
+        },
+        "inductor": {
+            "current_ripple": 2.75,
+            "current_ripple_ratio": 0.23544520547945205
+        },
+        "efficiency": {
+            "target_efficiency": 0.97,
+            "power_distribution": {
+                "sw1": 0.29,
+                "sw2": 0.29,
+                "ci": 0.005,
+                "co": 0.03,
+                "l": 0.385
+            }
+        }
+    }
+}
