@@ -387,8 +387,8 @@
     (effects (font (size 3 3)) (justify left bottom))
     (uuid c921b07a-d5de-48ca-bc6f-47478e8dfcdd)
   )
-  (text "v0.1.1rc\n- Fix for BNC footprint swapping signal and ground.\n- Fix for OPA990 footprint, rotating three pins.\n- Fix for mislabeling 1uF 2220 switching cap. This should be 2.2uF.\n- Fix for bad ground isolation for current sensors.\n- Fix for ERROR LED being hooked up to USB_DP and CAN1_TD pin.\n\nv0.2.0 (proposed)\n- Remove BNC as no longer necessary.\n- Proposed PQ core resize from PQ26/25 to PQ20/16.\n- Adjust noted inductance and input/output capacitance based on empirical data.\n- Add input and output power fuse.\n- Hit broad range efficiency target of >90%, with a MPP efficiency target of >97.5%.\n\nv0.3.0 (proposed)\n- Convert STM32 Nucleo to bare chip.\n- Add CAN driver, USB port (data only).\n- Add port for I2C (Blackbody boards).\n- Hit broad range efficiency target of >95%, with a MPP efficiency target of >99%.\n- Hit board size, cost target of 75x45 mm^2, <50$/board."
-    (at 176.53 86.36 0)
+  (text "v0.1.1rc\n- Fix for BNC footprint swapping signal and ground.\n- Fix for OPA990 footprint, rotating three pins.\n- Fix for mislabeling 1uF 2220 switching cap. This should be 2.2uF.\n- Fix for bad ground isolation for current sensors.\n- Fix for ERROR LED being hooked up to USB_DP and CAN1_TD pin.\n- Connect indicator LEDs to PWM pins for dimming.\n\nv0.2.0 (proposed)\n- Remove BNC as no longer necessary.\n- Proposed PQ core resize from PQ26/25 to PQ20/16.\n- Adjust noted inductance and input/output capacitance based on empirical data.\n- Add input and output power fuse.\n- Hit broad range efficiency target of >90%, with a MPP efficiency target of >97.5%.\n\nv0.3.0 (proposed)\n- Convert STM32 Nucleo to bare chip.\n- Add CAN driver, USB port (data only).\n- Add port for I2C (Blackbody boards).\n- Hit broad range efficiency target of >95%, with a MPP efficiency target of >99%.\n- Hit board size, cost target of 75x45 mm^2, <50$/board."
+    (at 176.53 88.9 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid e415993e-c3fd-4eff-86ca-903f1f42d8bd)
   )
