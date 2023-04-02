@@ -5,10 +5,11 @@
   (paper "A4")
 
   (title_block
-    (title "MPPT")
-    (date "2023-01-30")
-    (rev "v0.0.0")
-    (comment 1 "Nishant Gupta")
+    (title "Sunscatter MPPT")
+    (date "2023-03-26")
+    (rev "v0.1.1")
+    (company "UT LHR Solar")
+    (comment 1 "Matthew Yu")
     (comment 2 "Jacob Pustilnik")
   )
 
