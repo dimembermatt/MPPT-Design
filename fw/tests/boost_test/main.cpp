@@ -36,8 +36,8 @@ ErrorCode status = OK;
 
 DigitalOut led_heartbeat(PA_9);
 DigitalOut led_tracking(PA_10);
-FastPWM pwm_out(PA_1);
 DigitalOut pwm_enable(PA_3);
+FastPWM pwm_out(PA_1);
 UnlockedAnalogIn arr_voltage_sensor(PA_4);
 UnlockedAnalogIn batt_voltage_sensor(PA_7);
 SmaFilter arr_voltage_filter(5);
@@ -84,10 +84,10 @@ void check_redlines(void) {
 
     // Our input must be in the range (1.0, 80.0).
     _assert(arr_v_filtered > 1.0, INP_UVL);
-    _assert(arr_v_filtered < 80.0, INP_OVL);
+    _assert(arr_v_filtered < 70.0, INP_OVL);
 
     // Our output must be between (80.0, 130.0).
-    _assert(batt_v_filtered > 80.0, OUT_UVL);
+    _assert(batt_v_filtered > 70.0, OUT_UVL);
     _assert(batt_v_filtered < 130.0, OUT_OVL);
 
     // Our output must always be greater than our input.
@@ -102,7 +102,6 @@ int main() {
 
     ticker_toggle_heartbeat.attach(&heartbeat, 1000ms);
     ticker_read_sensor.attach(&read_sensor, 10ms);
-    // ticker_check_redlines.attach(&check_redlines, 100ms);
 
     ThisThread::sleep_for(1000ms);
 
@@ -113,8 +112,11 @@ int main() {
     led_tracking = 1;
     pwm_enable = 1;
 
+    ThisThread::sleep_for(500ms);
+    ticker_check_redlines.attach(&check_redlines, 100ms);
+
     // Start pwm update.
-    // ticker_update_pwm.attach(&update_pwm, 50ms);
+    ticker_update_pwm.attach(&update_pwm, 50ms);
     while (true) {
         ThisThread::sleep_for(100ms);
         
