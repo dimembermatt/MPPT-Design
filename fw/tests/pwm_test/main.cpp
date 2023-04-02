@@ -5,12 +5,13 @@
  *        other uses manual control.
  * @version 0.1
  * @date 2023-03-26
- * @note For board revision v0.1.0.
+ * @note For board revision v0.1.0. To load FastPWM: import http://os.mbed.com/users/Sissors/code/FastPWM/
  * @copyright Copyright (c) 2023
  *
  */
 
 #include "mbed.h"
+#include "FastPWM.h"
 
 // Switching frequency is 104kHz.
 // Duty cycle is a function of pwm_control, which takes a value from 0 - 1 V.
@@ -23,7 +24,7 @@ DigitalOut led_heartbeat(PA_9);
 DigitalOut led_tracking(PA_10);
 DigitalOut pwm_enable(PA_3);
 AnalogIn pwm_control(PA_0);
-PwmOut pwm_out(PA_1);
+FastPWM pwm_out(PA_1);
 
 Ticker ticker_heartbeat;
 Ticker ticker_pwm_update;
@@ -38,7 +39,8 @@ void adjust_duty_cycle() {
 int main()
 {
     // Set the pwm frequency to 104 kHz.
-    pwm_out.period(1.0/10.0);
+    float f = 100000.0;
+    pwm_out.period_us(1.0E6 / f);
 
     // Indicate that pwm is running.
     led_tracking = 1;
@@ -60,41 +62,59 @@ int main()
 DigitalOut led_heartbeat(PA_9);
 DigitalOut led_tracking(PA_10);
 DigitalOut pwm_enable(PA_3);
-PwmOut pwm_out(PA_1);
+FastPWM pwm_out(PA_1);
 
 Ticker ticker_heartbeat;
 Ticker ticker_pwm_update;
 
 void heartbeat() { led_heartbeat = !led_heartbeat; }
 void adjust_duty_cycle() {
-    static int inp = 0.0;
+    // static int inp = 0.0;
     // static float n = 1;
-    inp = (inp + 1) % 101;
-    pwm_out.write((float) inp / 100.00);
+    // inp = (inp + 1) % 101;
+    // pwm_out.write((float) inp / 1000.00);
     // n *= 1.05;
     // if (n > 10000000) { n = 1; }
     // pwm_out.period(1.0/n);
+
 }
 
 int main()
 {
     // Set the pwm frequency to 104 kHz.
-    pwm_out.period(1.0/100000.0);
-    pwm_out.write(0.5);
+    printf("HELLO WORLD\n");
+    float f = 100000.0;
+    float d = 1-0.776;
+    pwm_out.period_us(1.0E6 / f);
+    pwm_out.write(d);
 
     // Indicate that pwm is running.
     led_tracking = 1;
 
     // Start heartbeat.
-    ticker_heartbeat.attach(&heartbeat, 1000ms);
+    ticker_heartbeat.attach(&heartbeat, 100ms);
 
     // Start PWM control.
     pwm_enable = 1;
-    // ticker_pwm_update.attach(&adjust_duty_cycle, 500ms);
+    ticker_pwm_update.attach(&adjust_duty_cycle, 00ms);
+
+    // V = IR
+    // I = V/R
+    // P = V^2 / R
+    // sqrt(P * R)
+    // 44.7V output, 1.12 A 50 W
+    // 10 V input, 5 A
+
+    7 A, 10V input
+    1.5 A, 41.95 V output
+    70 W inp, 63 W out
 
     while (true) {
-        ThisThread::sleep_for(1000ms);
-        printf("MODE 1.\n");
+        ThisThread::sleep_for(0ms);
+        // d += 0.01;
+        // if (d > 1.0) { d = 0.0;}
+        // // printf("FREQ: %i\tDUTY: %i.\n", ((int)(f*100)), ((int)(d*1000)));
+        // pwm_out.write(d);
     }
 }
 
