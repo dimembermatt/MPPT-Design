@@ -1,0 +1,14 @@
+root - WARNING - Start logging.
+root - INFO - OPTIMIZER ITERATION 1
+root - INFO - Switch requirements:
+	Switch V_DS_MIN: 155.95102040816326 V
+	Switch I_D_MIN: 7.377600000000465 A
+	Switch P_DISS_MIN: 4.365324857143083 W
+	Switch P_DISS_BUDGET: 3.6377707142859026 W
+root - INFO - Optimal switch:   PART_NAME  V_DS (V)  I_D (A)  R_DS_ON (mO)  ...  T_J_MAX (C)  P_D (W)  Cost ($)  F_SW_MIN (Hz)
+2   EPC2207       200     14.0          20.0  ...          150   80.357      3.23         190000
+
+[1 rows x 11 columns]
+root - INFO - Switch losses in best case: 0.066, 0.675, 0.741 W
+root - INFO - Switch losses in worst case: 1.892, 1.703, 3.596 W
+root - INFO - Minimum required thermal area per switch to dissipate 3.638W of heat from 60 C to 125.0 C: 39.776 cm^2 (3977.586 mm^2).

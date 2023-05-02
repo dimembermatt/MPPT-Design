@@ -1,9 +1,15 @@
 """_summary_
+@file       solar_cell_nonideal_model.py
+@author     Matthew Yu (matthewjkyu@gmail.com)
+@brief      Modeling an arbitrary solar cell.
+@version    0.0.0
+@date       2023-04-27
 """
 
 import math as m
 import sys
 
+import matplotlib.pyplot as plt
 import numpy as np
 from scipy import constants
 
@@ -16,11 +22,11 @@ T_ref = 298.15
 t_coeff_i_sc = 0.005
 t_coeff_v_oc = -0.0022
 n = 1.0
-i_resolution = 0.0025
-margin = 0.0005
+i_resolution = 0.001
+margin = 0.0001
 
 
-def model_nonideal_cell(g, t, r_s, r_sh, v, i=None):
+def model_nonideal_cell(g, t, r_s, r_sh, v):
     """_summary_
     Gets the current for a nonideal cell given input conditions using iterative
     solving.
@@ -31,7 +37,6 @@ def model_nonideal_cell(g, t, r_s, r_sh, v, i=None):
         r_s (double): Series resistance (Ohms).
         r_sh (double): Shunt resistance (Ohms).
         v (double): Load voltage (V).
-        i (double): Previous guess.
 
     Returns:
         double, [double] (OPT): Current (A) in either single or list form.
@@ -47,43 +52,17 @@ def model_nonideal_cell(g, t, r_s, r_sh, v, i=None):
     prediction = 0.0
     new_l1_loss = 0.0
     travel_speed = i_resolution
-    # 1. Generate initial seed/prediction.
-    #    Reuse the previous layer prediction to attempt to reduce number of
-    #    steps.
-    if i is not None:
-        prediction = i
 
-    # 2. Calculate the seed output.
+    # 1. Calculate the seed output.
     left = prediction
     term_2 = -i_0 * (m.exp((v + prediction * r_s) / v_t) - 1)
     term_3 = -(v + prediction * r_s) / r_sh
     right = term_1 + term_2 + term_3
 
-    # 3. Calculate the seed loss.
+    # 2. Calculate the seed loss.
     l1_loss = abs(right - left)
 
-    # 4. Determine initial direction by stepping one way.
-    if i is not None:
-        prediction += travel_speed
-        left = prediction
-        term_2 = -i_0 * (m.exp((v + prediction * r_s) / v_t) - 1)
-        term_3 = -(v + prediction * r_s) / r_sh
-        right = term_1 + term_2 + term_3
-
-        # 5. Calculate losses from first step.
-        new_l1_loss = abs(right - left)
-
-        # 6. Correct direction given first step losses.
-        if l1_loss < new_l1_loss:
-            # If we're going in the wrong direction, reverse the prediction and
-            # travel the other way.
-            prediction -= travel_speed
-            travel_speed = -travel_speed
-        else:
-            # If we're going in the right direction, keep the prediction.
-            l1_loss = new_l1_loss
-
-    # 7. Iteratively solve for prediction.
+    # 3. Iteratively solve for prediction.
     while True:
         # 8. Make a new prediction.
         prediction += travel_speed
@@ -94,21 +73,9 @@ def model_nonideal_cell(g, t, r_s, r_sh, v, i=None):
 
         # 9. Calculate new L1 loss and determine whether to continue.
         new_l1_loss = abs(right - left)
-        is_stable = True
-        if new_l1_loss + margin < l1_loss:
-            # If we're going in the right direction, keep going.
-            l1_loss = new_l1_loss
-            is_stable = False
-        elif new_l1_loss > l1_loss + margin:
-            # If we're going in the wrong direction, back up.
-            travel_speed = -travel_speed
-            is_stable = False
-        else:
-            # If we're stagnant, give up.
-            travel_speed = 0.0
-
-        if is_stable:
+        if new_l1_loss >= l1_loss:
             break
+        l1_loss = new_l1_loss
 
     return prediction
 
@@ -205,3 +172,30 @@ def model_nonideal_cell_many(v, g, t, r_s, r_sh, i=None):
             break
 
     return prediction
+
+
+def model(source):
+    num_cells = source["num_cells"]
+    r_s = source["r_s"]
+    r_sh = source["r_sh"]
+
+    v = [v for v in np.linspace(0.001, 0.721, 50)]
+    i = [model_nonideal_cell(G_ref, T_ref, r_s, r_sh, _v) for _v in v]
+    v = list(np.multiply(v, num_cells))
+    p = [v * i for v, i in zip(v, i)]
+
+    fig, (ax1, ax2) = plt.subplots(2, 1)
+    fig.suptitle("Array I-V/P-V Plot")
+    ax1.plot(v, i)
+    ax1.set_xlabel("Voltage (V)")
+    ax1.set_ylabel("Current (A)")
+    ax1.grid(True, "both", "both")
+    ax2.plot(v, p)
+    ax2.set_xlabel("Voltage (V)")
+    ax2.set_ylabel("Power (W)")
+    ax2.grid(True, "both", "both")
+    plt.tight_layout()
+    plt.savefig("./outputs/source_model.png")
+    plt.close()
+
+    return [v, i]

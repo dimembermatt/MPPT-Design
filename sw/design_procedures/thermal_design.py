@@ -32,7 +32,7 @@ def get_switch_thermals(t_a, t_j, p_sw_bud, r_jb, r_jc, r_sa, area_hs, num_vias)
         p_sw_bud (float): The maximum power dissipation per switch
         r_jb (float): Thermal resistance of the junction to board
         r_jc (float): Thermal resistance of the junction to case
-        r_sa (float): Thermal resistnace from sink to ambient
+        r_sa (float): Thermal resistance from sink to ambient
         area_hs (float): Area of the heatsink, in m^2
         num_vias (int): Number of vias
 
@@ -78,8 +78,8 @@ def get_switch_thermals(t_a, t_j, p_sw_bud, r_jb, r_jc, r_sa, area_hs, num_vias)
     y = []
     z = []
     a = []
-    for i in np.linspace(1e-5, 0.005, 100):
-        for j in np.linspace(1e-5, 0.005, 100):
+    for i in np.linspace(1e-5, 0.005, 30):
+        for j in np.linspace(1e-5, 0.005, 30):
             # I and J are in m^2 (AREA)
             expected_r_ja = get_r_ja(i, j, r_jb, r_jc, r_sa, area_hs, num_vias)
 
@@ -96,13 +96,14 @@ def get_switch_thermals(t_a, t_j, p_sw_bud, r_jb, r_jc, r_sa, area_hs, num_vias)
     ax = fig.add_subplot(projection="3d")
     ax.scatter(np.multiply(x, 1000000), np.multiply(y, 1000000), z, c=z)
     ax.set_title("R_JA as a function of TCU area and BCU area")
+    ax.view_init(30, 120)
     ax.set_xlabel("FCU (mm^2)")
     ax.set_ylabel("BCU (mm^2)")
     ax.set_zlabel("R_JA (*C/W)")
     ax.set_zlim(0, target_r_ja)
 
     plt.tight_layout()
-    plt.savefig("thermal_sizing_map.png")
-    plt.show()
+    plt.savefig("./outputs/thermal_sizing_map.png")
+    plt.close()
 
     return np.min(a)

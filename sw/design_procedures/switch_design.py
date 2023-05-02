@@ -2,17 +2,20 @@
 @file       switch_design.py
 @author     Matthew Yu (matthewjkyu@gmail.com)
 @brief      Calculate design parameters of switches for a DC-DC boost converter.
-@version    0.0.0
-@date       2023-03-02
+@version    0.1.0
+@date       2023-04-30
 """
 
+import logging
 import math as m
 
 import matplotlib.pyplot as plt
 import numpy as np
 
+import design_procedures.thermal_design as thermals
 
-def get_switch_requirements(max_v_out, max_i_in, max_p, sf=0.25, eff_dist=0.01):
+
+def get_requirements(max_v_out, max_i_in, max_p, sf=1.00, eff_dist=0.01):
     """_summary_
     Gets switch requirements.
 
@@ -39,7 +42,7 @@ def get_switch_requirements(max_v_out, max_i_in, max_p, sf=0.25, eff_dist=0.01):
     return (v_ds_min, i_ds_min, p_sw_min, p_sw_bud)
 
 
-def get_switch_losses(v_in, i_in, v_out, f_sw, r_ds_on, c_oss, r_l):
+def get_losses(v_in, i_in, v_out, f_sw, r_ds_on, c_oss, r_l):
     """_summary_
     Get switch losses (conduction, switching, total).
 
@@ -85,7 +88,7 @@ def get_switch_losses(v_in, i_in, v_out, f_sw, r_ds_on, c_oss, r_l):
     return (loss_con, loss_swi, loss_tot)
 
 
-def maximize_f_sw(v_in, i_in, v_out, r_ds_on, c_oss, p_sw_bud, r_l):
+def maximize_fsw(v_in, i_in, v_out, r_ds_on, c_oss, p_sw_bud, r_l):
     """_summary_
     Maximize possible switching frequency for a set of parameters.
 
@@ -105,21 +108,18 @@ def maximize_f_sw(v_in, i_in, v_out, r_ds_on, c_oss, p_sw_bud, r_l):
             Switching loss
             Total loss
     """
-
-    best_f_sw = 1
+    best_f_sw = 5000
     while True:
-        new_f_sw = best_f_sw * 1.01
-        p_conduction, p_switching, p_total = get_switch_losses(
-            v_in, i_in, v_out, new_f_sw, r_ds_on, c_oss, r_l
-        )
+        new_f_sw = best_f_sw + 5000
+        _, _, p_total = get_losses(v_in, i_in, v_out, new_f_sw, r_ds_on, c_oss, r_l)
         if p_total > p_sw_bud:
             break
         else:
             best_f_sw = new_f_sw
-    return (best_f_sw, p_conduction, p_switching, p_total)
+    return best_f_sw
 
 
-def get_switch_op_fs(tau, operating_points, p_sw_bud, r_l):
+def get_rdson_vs_fsw_map(tau, operating_points, p_sw_bud, r_l):
     """_summary_
     Generate a map across key operating points determining optimal R_DS_ON to
     maximize F_SW for a given power budget and inductor ripple.
@@ -136,52 +136,79 @@ def get_switch_op_fs(tau, operating_points, p_sw_bud, r_l):
             F_SW for that operating point.
     """
 
-    def maximize_f_sw_tau(v_in, i_in, v_out, tau, p_sw_bud, r_l):
-        f_sw_candidates = []
-        r_ds_on_candidates = []
-        for r_ds_on in list(np.linspace(1e-3, 5e-1, 1500)):  # 1mOhm to 500mOhm
+    def maximize_fsw_tau(v_in, i_in, v_out, tau, p_sw_bud, r_l):
+        candidates = []
+        for r_ds_on in list(np.linspace(1e-3, 5e-2, 150)):  # 1mOhm to 50mOhm
             c_oss = tau / r_ds_on
-            best_f_sw, _, _, _ = maximize_f_sw(
+            f_sw, _, _, p_tot = maximize_fsw(
                 v_in, i_in, v_out, r_ds_on, c_oss, p_sw_bud, r_l
             )
-            if best_f_sw == 1:
+            if f_sw == 1:
                 break
             else:
-                r_ds_on_candidates.append(r_ds_on)
-                f_sw_candidates.append(best_f_sw)
+                candidates.append([r_ds_on, f_sw, p_tot])
 
-        return (r_ds_on_candidates, f_sw_candidates)
+        return candidates
 
-    fig = plt.figure()
-    ax = fig.add_subplot()
+    fig, axs = plt.subplots(1, 1)
+    fig.suptitle(f"Max Freq vs R_DS_ON for tau={tau * 1E12 :.3f} ps")
+
     worst_max_fs = 1_000_000
+    worst_max_rds_on = None
     worst_op = None
     for name, v_in, i_in, v_out in operating_points:
-        r_ds_on_candidates, f_sw_candidates = maximize_f_sw_tau(
-            v_in, i_in, v_out, tau, p_sw_bud, r_l
-        )
-        max_fs = max(f_sw_candidates)
-        if worst_max_fs > max_fs:
-            worst_max_fs = max_fs
+        candidates = maximize_fsw_tau(v_in, i_in, v_out, tau, p_sw_bud, r_l)
+        if len(candidates) == 0:
+            return (worst_op, worst_max_fs)
+
+        candidates = np.transpose(candidates)
+        r_ds_on_candidates = candidates[0]
+        f_sw_candidates = candidates[1]
+
+        f_sw_max = max(f_sw_candidates)
+        r_ds_on_max = r_ds_on_candidates[list(f_sw_candidates).index(f_sw_max)]
+        if worst_max_fs > f_sw_max:
+            worst_max_fs = f_sw_max
+            worst_max_rds_on = r_ds_on_max
             worst_op = name
 
-        ax.plot(r_ds_on_candidates, f_sw_candidates, label=name)
+        axs.plot(
+            np.multiply(r_ds_on_candidates, 1e3),
+            np.divide(f_sw_candidates, 1e3),
+            label=name,
+        )
+        axs.legend()
+        axs.set_xlabel("R_DS_ON (mOhm)")
+        axs.set_ylabel("Switching Frequency (kHz)")
+        axs.grid()
 
-    ax.legend()
-    ax.set_title(f"Max Freq vs R_DS_ON for tau={tau * 10**12 :.3f} ps")
-    ax.set_xlabel("R_DS_ON (Ohm)")
-    ax.set_ylabel("Switching Frequency (Hz)")
-    ax.grid()
+        bbox_props = dict(boxstyle="square,pad=0.3", fc="w", ec="k", lw=0.72)
+        arrowprops = dict(
+            arrowstyle="->",
+        )
+        kw = dict(xycoords="data", arrowprops=arrowprops, bbox=bbox_props)
+        axs.annotate(
+            "{:.3f}, {:.3f}".format(r_ds_on_max * 1e3, f_sw_max / 1e3),
+            xy=(r_ds_on_max * 1e3, f_sw_max / 1e3),
+            xytext=(0, 20),
+            textcoords="offset points",
+            ha="center",
+            **kw,
+        )
 
     plt.tight_layout()
-    plt.savefig("fom_f_sw_map.png")
-    plt.show()
+    plt.savefig("./outputs/fom_f_sw_map.png")
+    plt.close()
 
-    return (worst_op, worst_max_fs)
+    return worst_op, worst_max_fs, worst_max_rds_on
 
 
 def get_switch_op_fs_map(
-    v_in_range, v_out_range, r_ds_on, c_oss, p_sw_bud, r_l, model, num_cells
+    operating_points,
+    r_ds_on,
+    c_oss,
+    p_sw_bud,
+    r_l,
 ):
     """_summary_
     Generate a map across all operating points determining upper bound F_SW for
@@ -200,82 +227,152 @@ def get_switch_op_fs_map(
     Returns:
         float: Worst case switching frequency.
     """
-    x_v_in = []
-    y_v_out = []
-    z_f_s = []
-
-    v_in_combos = np.linspace(v_in_range[0], v_in_range[2], num=35, endpoint=True)
-    v_out_combos = np.linspace(v_out_range[0], v_out_range[2], num=35, endpoint=True)
-    for v_in in v_in_combos:
-        i_in = model(1000, 298.15, 0, 100, v_in / num_cells)
-        for v_out in v_out_combos:
-            f_sw, _, _, _ = maximize_f_sw(
-                v_in, i_in, v_out, r_ds_on, c_oss, p_sw_bud, r_l
-            )
-            x_v_in.append(v_in)
-            y_v_out.append(v_out)
-            z_f_s.append(f_sw * 10**-3)
-
-    fig = plt.figure()
+    points = np.transpose(
+        [
+            [maximize_fsw(vi, ii, vo, r_ds_on, c_oss, p_sw_bud, r_l), vi, vo]
+            for (vi, ii, vo, _) in operating_points
+        ]
+    )
 
     # Plot out switching frequency map.
-    ax = fig.add_subplot(projection="3d")
-    ax.scatter(x_v_in, y_v_out, z_f_s, c=z_f_s)
-    ax.set_title("Max Frequency within Power Budget Across I/O Mapping")
+    fig, ax = plt.subplots(1, 1, subplot_kw={"projection": "3d"})
+    fig.suptitle(f"Max Freq. Within Power Budget Across I/O Mapping")
+    ax.scatter(
+        points[1], points[2], np.divide(points[0], 1e3), c=np.divide(points[0], 1e3)
+    )
     ax.set_xlabel("V_IN (V)")
     ax.set_ylabel("V_OUT (V)")
-    ax.set_zlabel("F_S_MAX (kHz)")
-
+    ax.set_zlabel("F_SW_MAX (kHz)")
+    ax.view_init(30, 120)
     plt.tight_layout()
-    plt.savefig("frequency_operation_map.png")
-    plt.show()
-
-    return m.floor(min(z_f_s))
+    plt.savefig("./outputs/f_sw_map.png")
+    plt.close()
 
 
-def get_switch_duty_cycle_map(v_in_range, v_out_range, eff):
-    """_summary_
-    Generate a map across all operating points determining duty cycle for
+def optimize_switches(design, switches, iteration=0):
+    source = design["input_source"]
+    sink = design["output_sink"]
+    sw = design["switches"]
+    ind = design["inductor"]
+    eff = design["efficiency"]
+    map = design["map"]
+    sf = design["safety_factor"]
 
+    # Determine switch requirements
+    (v_ds_min, i_d_min, p_sw_min, p_sw_bud) = get_requirements(
+        sink["upper_bound_voltage"],
+        source["upper_bound_current"],
+        map["pow"][1][4],
+        sf,
+        (1 - eff["target_eff"]) * eff["dist"]["sw1"],
+    )
 
-    Args:
-        v_in_range ([float]]): Input voltage range in format [min, best, max]
-        v_out_range ([float]): Output voltage range in format [min, avg, max]
-        eff (float): Efficiency of converter. According TI AN SLVA372D, The
-            efficiency is added to the duty cycle calculation, because the
-            converter has to deliver also the energy dissipated. This
-            calculation gives a more realistic duty cycle than just the equation
-            without the efficiency factor.
+    logging.info(
+        f"Switch requirements:"
+        f"\n\tSwitch V_DS_MIN: {v_ds_min} V"
+        f"\n\tSwitch I_D_MIN: {i_d_min} A"
+        f"\n\tSwitch P_DISS_MIN: {p_sw_min} W"
+        f"\n\tSwitch P_DISS_BUDGET: {p_sw_bud} W")
 
-    Returns:
-        (float, float): Minimum and maximum duty cycle required to run the
-            converter for all operating points.
-    """
+    # Switch parametric search and filter
+    switches_filt = switches[
+        (switches["V_DS (V)"] > v_ds_min)
+        & (switches["I_D (A)"] > i_d_min)
+        & (switches["P_D (W)"] > p_sw_min)
+    ]
 
-    x_v_in = []
-    y_v_out = []
-    z_duty = []
-    for v_in in np.linspace(v_in_range[0], v_in_range[2], num=50, endpoint=True):
-        for v_out in np.linspace(v_out_range[0], v_out_range[2], num=50, endpoint=True):
-            duty = 1 - v_in * eff / v_out
-            x_v_in.append(v_in)
-            y_v_out.append(v_out)
-            z_duty.append(duty)
+    # For each switch, determine the optimal F_SW_MIN. The worst case FOM is at
+    # input min -> output max.
+    worst_case = map["duty"][1]
 
-    # Plot out switching frequency map.
-    fig = plt.figure()
-    ax_duty = fig.add_subplot(projection="3d")
-    ax_duty.scatter(x_v_in, y_v_out, z_duty, c=z_duty)
-    ax_duty.set_title("Minimum Duty Cycle Across I/O Mapping")
-    ax_duty.set_xlabel("V_IN (V)")
-    ax_duty.set_ylabel("V_OUT (V)")
-    ax_duty.set_zlabel("Duty Cycle")
+    def get_f_sw_min(switch):
+        r_ds_on = switch["R_DS_ON (mO)"] / 1e3
+        c_oss = switch["C_OSS (pF)"] / 1e12
+        best_f_sw = maximize_fsw(
+            worst_case[0],
+            worst_case[1],
+            worst_case[2],
+            r_ds_on,
+            c_oss,
+            p_sw_bud,
+            ind["r_l"],
+        )
+        return best_f_sw
 
-    plt.tight_layout()
-    plt.savefig("duty_cycle_operation_map.png")
-    plt.show()
+    switches_filt = switches_filt.copy()
+    switches_filt["F_SW_MIN (Hz)"] = switches_filt.apply(
+        lambda switch: get_f_sw_min(switch), axis=1
+    )
 
-    min_duty = np.min(z_duty)
-    max_duty = np.max(z_duty)
+    # Pick the best switch.
+    optimal_sw = switches_filt.nlargest(1, "F_SW_MIN (Hz)")
+    logging.info(f"Optimal switch: {optimal_sw}")
 
-    return (min_duty, max_duty)
+    # Limit max switching frequency.
+    if optimal_sw.iloc[0]["F_SW_MIN (Hz)"] > sw["max_f_sw"]:
+        optimal_sw.iloc[0]["F_SW_MIN (Hz)"] = sw["max_f_sw"]
+    sw["f_sw"] = optimal_sw.iloc[0]["F_SW_MIN (Hz)"]
+
+    # Plot F_SW_MIN vs IO map.
+    get_switch_op_fs_map(
+        map["points"],
+        optimal_sw.iloc[0]["R_DS_ON (mO)"] * 1e-3,
+        optimal_sw.iloc[0]["C_OSS (pF)"] * 1e-12,
+        p_sw_bud,
+        ind["r_l"],
+    )
+
+    # Determine switch losses at best case.
+    best_case = map["duty"][0]
+    p_cond, p_sw, p_tot = get_losses(
+        best_case[0],
+        best_case[1],
+        best_case[2],
+        optimal_sw.iloc[0]["F_SW_MIN (Hz)"],
+        optimal_sw.iloc[0]["R_DS_ON (mO)"] * 1e-3,
+        optimal_sw.iloc[0]["C_OSS (pF)"] * 1e-12,
+        ind["r_l"],
+    )
+
+    logging.info(
+        f"Switch losses in best case: {p_cond :.3f}, {p_sw :.3f}, {p_tot :.3f} W"
+    )
+
+    # Determine switch losses at worst case.
+    worst_case = map["duty"][1]
+    p_cond, p_sw, p_tot = get_losses(
+        worst_case[0],
+        worst_case[1],
+        worst_case[2],
+        optimal_sw.iloc[0]["F_SW_MIN (Hz)"],
+        optimal_sw.iloc[0]["R_DS_ON (mO)"] * 1e-3,
+        optimal_sw.iloc[0]["C_OSS (pF)"] * 1e-12,
+        ind["r_l"],
+    )
+
+    logging.info(
+        f"Switch losses in worst case: {p_cond :.3f}, {p_sw :.3f}, {p_tot :.3f} W"
+    )
+
+    # Determine switch thermals.
+    t_amb = 60
+    t_max = list(optimal_sw["T_J_MAX (C)"])[0] * (1 / sf)
+    therm_area = thermals.get_switch_thermals(
+        t_amb,  # STC
+        t_max,
+        p_sw_bud,
+        list(optimal_sw["R_JB (C/W)"])[0],
+        list(optimal_sw["R_JC (C/W)"])[0],
+        0.0,
+        0.1 * 1e-6,  # small
+        # design["exposed_thermal_area (mm^2)"] * 1e-6,
+        100,  # Assume at least 100 vias
+    )
+
+    logging.info(
+        f"Minimum required thermal area per switch to dissipate {p_sw_bud :.3f}W of heat from {t_amb} C to "
+        f"{t_max} C: {therm_area * 10000 :.3f} cm^2 ({therm_area * 1000000 :.3f} mm^2)."
+    )
+
+    # Losses in worst case.
+    return p_tot

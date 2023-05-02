@@ -9,6 +9,7 @@
 @date       2023-03-02
 """
 
+import logging
 import math as m
 import sys
 
@@ -16,9 +17,145 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 
-def get_passive_sizing(
-    v_in_range, v_out_range, f_sw, r_ci_v, r_co_v, r_l_a, eff, model, num_cells, sf=0.25
-):
+def get_requirements(operating_points, f_sw, r_ci_v, r_co_v, r_l, sf=1.00):
+    def get_capacitance_and_inductance(vi, ii, vo, io):
+        pi = vi * ii
+        io = pi / vo
+        d = 1 - vi / vo
+
+        # These three are dependent on ripple ratio
+        # r_l = r_l_a / (2 * ii)
+        # r_ci = r_ci_v / (2 * vi)
+        # r_co = r_co_v / (2 * vo)
+
+        # l = vi**2 * (vo - vi) / (2 * f_sw * r_l * pi * vo)
+        # ci = r_l * pi / (8 * f_sw * r_ci * vi**2)
+        # co = pi * (vo - vi) / (2 * f_sw * r_co * vo**3)
+
+        # These three are dependent on absolute ripple/
+        # ci = ii * d * (1 - d) / (r_ci_v * f_sw)
+        # co = io * d / (r_co_v * f_sw)
+        # l = vi * d / (r_l_a * f_sw)
+
+        # ci = r_l_a / (8 * vi * f_sw)
+        # co = io * d / (f_sw * r_co_v)
+        # l = vi * (vo - vi) / (f_sw * vo * r_l_a)
+
+        r_l_a = r_l * 2 * ii
+        ci = r_l_a / (8 * f_sw * r_ci_v)
+        co = d * pi / (f_sw * vo * r_co_v)
+        l = d * vi / (f_sw * r_l_a)
+        return [vi, ii, vo, io, ci, co, l]
+
+    operating_points = [
+        get_capacitance_and_inductance(vi, ii, vo, io)
+        for (vi, ii, vo, io) in operating_points
+    ]
+    operating_points_tp = np.transpose(operating_points)
+    ci_min = np.max(operating_points_tp[4])
+    co_min = np.max(operating_points_tp[5])
+    l_min = np.max(operating_points_tp[6])
+
+    def get_ripple(vi, ii, vo, io, ci, co, l):
+        pi = vi * ii
+        d = 1 - vi / vo
+
+        r_l_a = d * vi / (f_sw * l_min)
+        r_ci_v = r_l_a / (8 * f_sw * ci_min)
+        r_co_v = d * pi / (f_sw * vo * co_min)
+        return [vi, vo, ci, r_ci_v, vi + r_ci_v, co, r_co_v, vo + r_co_v, l, r_l_a, ii + r_l_a]
+
+    operating_points = [
+        get_ripple(vi, ii, vo, io, ci, co, l)
+        for (vi, ii, vo, io, ci, co, l) in operating_points
+    ]
+    operating_points_tp = np.transpose(operating_points)
+
+    def plot(points):
+        # Plot out passive characteristics map.
+        fig, axs = plt.subplots(3, 3, subplot_kw=dict(projection="3d"))
+        axs[0, 0].scatter(
+            points[0], points[1], np.multiply(points[2], 1e6), c=points[2]
+        )
+        axs[0, 0].set_title("Min. $C_{I}$ Across I/O Mapping")
+        axs[0, 0].set_xlabel("$V_{IN}$ (V)")
+        axs[0, 0].set_ylabel("$V_{OUT}$ (V)")
+        axs[0, 0].set_zlabel("Capacitance (uF)")
+
+        axs[1, 0].scatter(points[0], points[1], points[3], c=points[3])
+        axs[1, 0].set_title("Max. $V_{CI,PKPK}$ Across I/O Mapping")
+        axs[1, 0].set_xlabel("$V_{IN}$ (V)")
+        axs[1, 0].set_ylabel("$V_{OUT}$ (V)")
+        axs[1, 0].set_zlabel("$V_{PKPK}$ (V)")
+
+        axs[2, 0].scatter(points[0], points[1], points[4], c=points[4])
+        axs[2, 0].set_title("Max. $V_{CI}$ Across I/O Mapping")
+        axs[2, 0].set_xlabel("$V_{IN}$ (V)")
+        axs[2, 0].set_ylabel("$V_{OUT}$ (V)")
+        axs[2, 0].set_zlabel("$V_{MAX}$ (V)")
+
+        axs[0, 1].scatter(
+            points[0], points[1], np.multiply(points[5], 1e6), c=points[5]
+        )
+        axs[0, 1].set_title("Min. $C_{O}$ Across I/O Mapping")
+        axs[0, 1].set_xlabel("$V_{IN}$ (V)")
+        axs[0, 1].set_ylabel("$V_{OUT}$ (V)")
+        axs[0, 1].set_zlabel("Capacitance (uF)")
+
+        axs[1, 1].scatter(points[0], points[1], points[6], c=points[6])
+        axs[1, 1].set_title("Max. $V_{CO,PKPK}$ Across I/O Mapping")
+        axs[1, 1].set_xlabel("$V_{IN}$ (V)")
+        axs[1, 1].set_ylabel("$V_{OUT}$ (V)")
+        axs[1, 1].set_zlabel("$V_{PKPK}$ (V)")
+
+        axs[2, 1].scatter(points[0], points[1], points[7], c=points[7])
+        axs[2, 1].set_title("Max. $V_{CO}$ Across I/O Mapping")
+        axs[2, 1].set_xlabel("$V_{IN}$ (V)")
+        axs[2, 1].set_ylabel("$V_{OUT}$ (V)")
+        axs[2, 1].set_zlabel("$V_{MAX}$ (V)")
+
+        axs[0, 2].scatter(
+            points[0], points[1], np.multiply(points[8], 1e6), c=points[8]
+        )
+        axs[0, 2].set_title("Min. L Across I/O Mapping")
+        axs[0, 2].set_xlabel("$V_{IN}$ (V)")
+        axs[0, 2].set_ylabel("$V_{OUT}$ (V)")
+        axs[0, 2].set_zlabel("Inductance (uH)")
+
+        axs[1, 2].scatter(points[0], points[1], points[9], c=points[9])
+        axs[1, 2].set_title("Max. $I_{L,PKPK}$ Across I/O Mapping")
+        axs[1, 2].set_xlabel("$V_{IN}$ (V)")
+        axs[1, 2].set_ylabel("$V_{OUT}$ (V)")
+        axs[1, 2].set_zlabel("$I_{PKPK}$ (A)")
+
+        axs[2, 2].scatter(points[0], points[1], points[10], c=points[10])
+        axs[2, 2].set_title("Max. $I_{L}$ Across I/O Mapping")
+        axs[2, 2].set_xlabel("$V_{IN}$ (V)")
+        axs[2, 2].set_ylabel("$V_{OUT}$ (V)")
+        axs[2, 2].set_zlabel("$I_{MAX}$ (A)")
+
+
+        fig.set_size_inches(11, 10)
+        plt.tight_layout()
+        plt.savefig("./outputs/passive_sizing_map.png")
+        plt.close()
+
+    plot(operating_points_tp)
+
+    return (
+        np.max(operating_points_tp[2]),
+        np.max(operating_points_tp[3]),
+        np.max(operating_points_tp[4] * sf),
+        np.max(operating_points_tp[5]),
+        np.max(operating_points_tp[6]),
+        np.max(operating_points_tp[7] * sf),
+        np.max(operating_points_tp[8]),
+        np.max(operating_points_tp[9]),
+        np.max(operating_points_tp[10] * sf),
+    )
+
+
+def get_passive_sizing(operating_points, f_sw, r_ci_v, r_co_v, r_l_a, eff, sf=0.25):
     """_summary_
     Generat map of passive requirements for operation at various operating points.
 
@@ -57,46 +194,43 @@ def get_passive_sizing(
 
     x_v_in = []
     y_v_out = []
-    v_in_combos = np.linspace(v_in_range[0], v_in_range[2], num=50, endpoint=True)
-    v_out_combos = np.linspace(v_out_range[0], v_out_range[2], num=50, endpoint=True)
-    for v_in in v_in_combos:
-        i_in = model(1000, 298.15, 0, 100, v_in / num_cells)
+
+    for (v_in, i_in, v_out, i_out) in operating_points:
         p_in = v_in * i_in
-        for v_out in v_out_combos:
-            x_v_in.append(v_in)
-            y_v_out.append(v_out)
+        x_v_in.append(v_in)
+        y_v_out.append(v_out)
 
-            # ci = (r_l * i_in) / (8 * r_ci * v_out * f_sw)
-            # co = (v_out - v_in) * p_in / (2 * r_co * v_out**3 * f_sw)
+        # ci = (r_l * i_in) / (8 * r_ci * v_out * f_sw)
+        # co = (v_out - v_in) * p_in / (2 * r_co * v_out**3 * f_sw)
 
-            i_out = p_in / v_out
+        i_out = p_in / v_out
 
-            duty = 1 - v_in * eff / v_out
-            l = v_in * (v_out - v_in) / (r_l_a * f_sw * v_out)
-            r_l_a_op = v_in * duty / (f_sw * l)
+        duty = 1 - v_in * eff / v_out
+        l = v_in * (v_out - v_in) / (r_l_a * f_sw * v_out)
+        r_l_a_op = v_in * duty / (f_sw * l)
 
-            ci = r_l_a_op / (8 * f_sw * r_ci_v)
+        ci = r_l_a_op / (8 * f_sw * r_ci_v)
 
-            co = (p_in / v_out * duty) / (f_sw * r_co_v)
-            r_co_v_op = (v_out - v_in) * i_out / (v_out * f_sw * co)
+        co = (p_in / v_out * duty) / (f_sw * r_co_v)
+        r_co_v_op = (v_out - v_in) * i_out / (v_out * f_sw * co)
 
-            # print(f"\nI/O: {v_in :.3f}[{i_in :.3f}]/{v_out :.3f}[{i_out :.3f}]")
-            # print(f"Duty: {duty :.3f}")
-            # print(f"Min inductance: {l * 1E6 :.3f} uH")
-            # print(f"Inductor ripple current: {r_l_a_op :.3f} A")
+        # print(f"\nI/O: {v_in :.3f}[{i_in :.3f}]/{v_out :.3f}[{i_out :.3f}]")
+        # print(f"Duty: {duty :.3f}")
+        # print(f"Min inductance: {l * 1E6 :.3f} uH")
+        # print(f"Inductor ripple current: {r_l_a_op :.3f} A")
 
-            # print(f"Min inp. cap.: {ci * 1E6 :.3f} uF")
-            # print(f"Inp. cap. ripple voltage: {r_ci_v :.3f} V")
+        # print(f"Min inp. cap.: {ci * 1E6 :.3f} uF")
+        # print(f"Inp. cap. ripple voltage: {r_ci_v :.3f} V")
 
-            # print(f"Min out. cap.: {co * 1E6 :.3f} uF")
-            # print(f"Out. cap. ripple voltage: {r_co_v_op :.3f} V")
+        # print(f"Min out. cap.: {co * 1E6 :.3f} uF")
+        # print(f"Out. cap. ripple voltage: {r_co_v_op :.3f} V")
 
-            ci_min.append(ci)
-            co_min.append(co)
-            l_min.append(l)
-            i_l_max.append(i_in + r_l_a_op)
-            v_ci_max.append(v_in + r_ci_v)
-            v_co_max.append(v_out + r_co_v_op)
+        ci_min.append(ci)
+        co_min.append(co)
+        l_min.append(l)
+        i_l_max.append(r_l_a_op)
+        v_ci_max.append(r_ci_v)
+        v_co_max.append(r_co_v_op)
 
     def plot():
         # Plot out switching frequency map.
@@ -150,7 +284,7 @@ def get_passive_sizing(
 
     ci_vdc_min = np.max(v_ci_max) * sf
     co_vdc_min = np.max(v_co_max) * sf
-    l_a_min = np.max(i_l_max) * 1.05 # override * sf
+    l_a_min = np.max(i_l_max) * 1.05  # override * sf
 
     return (ci_min, co_min, l_min, ci_vdc_min, co_vdc_min, l_a_min)
 
@@ -226,24 +360,31 @@ def get_inductor_core_loss(p_v):
     vol = 6.54e-6  # m^3
     return p_v * vol * 1e3
 
+
 def get_capacitor_loss():
     pass
+
 
 def get_capacitor_esr(c, f_sw, df):
     ESR = df / (2 * m.pi * f_sw * c)
     return ESR
 
+
 def get_capacitor_impedance(c, f_sw):
     return 1 / (2 * m.pi * f_sw * c)
+
 
 def get_capacitor_v_rms(v_max):
     return v_max / (2 * m.sqrt(2))
 
+
 def get_capacitor_i_rms(v_rms, z):
     return v_rms / z
 
+
 def get_capacitor_pow_diss(i_rms, esr):
-    return i_rms ** 2 * esr
+    return i_rms**2 * esr
+
 
 def get_two_caps_parallel(f_sw, z1, z2):
     c1, r1 = z1
@@ -254,6 +395,43 @@ def get_two_caps_parallel(f_sw, z1, z2):
     print(z1, z2)
     print(num, denom)
     return (num / denom).imag, (num / denom).real
+
+
+def optimize_passives(design, capacitors, inductors, iteration=0):
+    source = design["input_source"]
+    sink = design["output_sink"]
+    sw = design["switches"]
+    ci = design["input_cap"]
+    co = design["output_cap"]
+    ind = design["inductor"]
+    eff = design["efficiency"]
+    map = design["map"]
+    sf = design["safety_factor"]
+
+    # Determine capacitor and inductor requirements
+    (ci_min, ci_v_pkpk, ci_v_min, co_min, co_v_pkpk, co_v_min, l_min, l_i_pkpk, l_i_min) = get_requirements(
+        map["points"],
+        sw["f_sw"],
+        ci["v_pk_pk"],
+        co["v_pk_pk"],
+        ind["r_l"],
+        sf=sf,
+    )
+
+    logging.info(
+        f"Capacitor requirements:"
+        f"\n\tInput Capacitor C_MIN: {ci_min * 1e6 :.3f} uF"
+        f"\n\tInput Capacitor V_D_MIN: {ci_v_min} V"
+        f"\n\tOutput Capacitor C_MIN: {co_min * 1e6 :.3f} uF"
+        f"\n\tOutput Capacitor V_D_MIN: {co_v_min} V"
+        f"\nInductor requirements:"
+        f"\n\tInductor L_MIN: {l_min * 1e6 :.3f} uH"
+        f"\n\tInductor I_L_MIN: {l_i_min} A")
+
+    # Capacitor parametric search and filter
+
+    # Inductor parametric search and filter
+
 
 if __name__ == "__main__":
     if sys.version_info[0] < 3:
@@ -274,7 +452,6 @@ if __name__ == "__main__":
     # l = 100 * 1e-6  # uH
     # b_sat = 375 * 1e-3  # T
 
-
     # (k_g_target, k_g, b_ac, N, A_w, l_w, r, p_cond) = get_inductor_sizing(
     #     l, i_max, b_sat, r_l
     # )
@@ -292,7 +469,6 @@ if __name__ == "__main__":
     # 2 A (16.2%), 150 uH -> i_max=8.56, N=45, PCOND=5.9
     # 2.25 A (18.3%), 125 uH -> i_max=8.82, N=39, PCOND=4.7
     # 2.5 A (20.3%), 100 uH -> i_max=9.01, N=32, PCOND=3.35
-
 
     # Cap test
     # c = 1.034 * 1E-6 # uF
@@ -312,27 +488,27 @@ if __name__ == "__main__":
     # print(f"Imp: {z}")
     # print(f"V_RMS: {v_rms} V, I_RMS: {i_rms} A")
 
-    inductor_current_pk_pk = 2.75 # A
+    inductor_current_pk_pk = 2.75  # A
     i_rms = inductor_current_pk_pk / (2 * m.sqrt(2))
     print(f"I_RMS: {i_rms} A")
 
     # Input cap
     # 80-A759KS156M2AAAE52
-    c = 15 * 1E-6 # uF
-    esr = 52 * 1E-3 # mO
+    c = 15 * 1e-6  # uF
+    esr = 52 * 1e-3  # mO
     p_dis = get_capacitor_pow_diss(i_rms, esr)
     print(f"P_DIS: {p_dis} W")
 
     # Output cap
     # 810-CGA9P3X7T2E225MA
     # @ 125 V bias, 125 C, 109 kHz
-    c = 1.034 * 1E-6 # uF
-    esr = 5.4 * 1E-3 # mO
+    c = 1.034 * 1e-6  # uF
+    esr = 5.4 * 1e-3  # mO
     p_dis = get_capacitor_pow_diss(i_rms, esr)
     print(f"P_DIS: {p_dis} W")
 
     # 80-A759MS186M2CAAE90 * 2
-    c = 36 * 1E-6 # uF
-    esr = 45 * 1E-3 # mO
+    c = 36 * 1e-6  # uF
+    esr = 45 * 1e-3  # mO
     p_dis = get_capacitor_pow_diss(i_rms, esr)
     print(f"P_DIS: {p_dis} W")
