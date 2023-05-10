@@ -16,7 +16,7 @@
 
 DigitalOut led_heartbeat(PA_9);
 DigitalOut led_tracking(PA_10);
-DigitalOut led_error(PA_12);
+DigitalOut led_error(PB_0);
 
 Ticker ticker_heartbeat;
 

@@ -2,8 +2,8 @@
 @file       loader.py
 @author     Matthew Yu (matthewjkyu@gmail.com)
 @brief      Load in models for sources and sinks.
-@version    0.0.0
-@date       2023-04-27
+@version    1.0.0
+@date       2023-05-06
 """
 
 import design_procedures.battery_model as battery_model
@@ -20,7 +20,6 @@ def load_source_model(source):
 
     return model.model(source)
 
-
 def load_sink_model(sink):
     model = None
     match sink["sink_model_type"]:
@@ -30,3 +29,23 @@ def load_sink_model(sink):
             model = None
 
     return model.model(sink)
+
+def map_source_model(source, output_path):
+    model = None
+    match source["source_model_type"]:
+        case "solar_cell":
+            model = solar_cell_nonideal_model
+        case _:
+            model = None
+
+    model.map(source, output_path)
+
+def map_sink_model(sink, output_path):
+    model = None
+    match sink["sink_model_type"]:
+        case "battery":
+            model = battery_model
+        case _:
+            model = None
+
+    model.map(sink, output_path)

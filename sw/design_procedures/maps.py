@@ -1,119 +1,212 @@
 """_summary_
 @file       maps.py
 @author     Matthew Yu (matthewjkyu@gmail.com)
-@brief      Generate maps on various converter aspects for inspection.
-@version    0.0.0
-@date       2023-04-27
+@brief      Calculate io map of the device
+@version    1.0.0
+@date       2023-05-06
+@file_overview
+    constrain_design
+        generate_points
+        filter points based on duty range
+        filter points based on output current range
+        filter_points based on power transfer range
+
+    map_design
+        map_duty_cycle
+        map_current
+        map_power
 """
 
 import itertools
-import sys
+import logging
 
 import matplotlib.pyplot as plt
-import numpy as np
+import pandas as pd
 
 
-def get_duty_cycle_map(points, lower_lim_duty=0.0, upper_lim_duty=1.0):
+def get_duty(vi, vo):
+    return 1 - vi / vo
+
+
+def get_output_current(vi, ii, vo):
+    return vi * ii / vo
+
+
+def get_power(vi, ii):
+    return vi * ii
+
+
+def initialize_design(source, sink, duty_range=[0.0, 1.0], min_pow=0.0):
+    # Generate points.
     points = [
-        [vi, ii, vo, io, 1 - vi / vo]
-        for (vi, ii, vo, io) in points
-        if (1 - vi / vo) > lower_lim_duty and (1 - vi / vo) < upper_lim_duty
+        [
+            vi,
+            ii,
+            vo,
+            get_output_current(vi, ii, vo),
+            get_power(vi, ii),
+            get_duty(vi, vo),
+        ]
+        for (vi, ii), (vo, io) in itertools.product(
+            zip(source["i-v"][0], source["i-v"][1]),
+            zip(sink["i-v"][0], sink["i-v"][1]),
+        )
     ]
-    (x, _, y, _, z) = np.transpose(points)
 
-    min_pt = min(points, key=lambda points: points[4])
-    max_pt = max(points, key=lambda points: points[4])
-    points = np.transpose(np.transpose(points)[:-1])
+    df = pd.DataFrame(
+        points, columns=["VI (V)", "II (A)", "VO (V)", "IO (A)", "P (W)", "DUTY (%)"]
+    )
 
-    # Plot out duty cycle map.
+    # Constrain points based on range.
+    df = df[(duty_range[0] <= df["DUTY (%)"]) & (df["DUTY (%)"] <= duty_range[1])]
+    df = df[min_pow <= df["P (W)"]]
+    return df
+
+
+def constrain_design(df, duty_range=[0.0, 1.0], min_pow=0.0):
+    # Constrain points based on range.
+    df = df[(duty_range[0] <= df["DUTY (%)"]) & (df["DUTY (%)"] <= duty_range[1])]
+    df = df[min_pow <= df["P (W)"]]
+    return df
+
+
+def map_duty(points, output_path):
     fig, ax = plt.subplots(1, 1, subplot_kw={"projection": "3d"})
-    fig.suptitle(f"Duty Cycle Across I/O Mapping [{min_pt[4] :.2f}, {max_pt[4] :.2f}]")
-    ax.scatter(x, y, z, c=z)
-    ax.set_xlabel("V_IN (V)")
-    ax.set_ylabel("V_OUT (V)")
+    fig.suptitle(f"Duty Cycle Across I/O Map")
+    ax.scatter(
+        points["VI (V)"], points["VO (V)"], points["DUTY (%)"], c=points["DUTY (%)"]
+    )
+    ax.set_xlabel("$V_{IN}$ (V)")
+    ax.set_ylabel("$V_{OUT}$ (V)")
     ax.set_zlabel("Duty Cycle (%)")
     plt.tight_layout()
-    plt.savefig("./outputs/duty_cycle_map.png")
+    plt.show()
+    fig.savefig(output_path + "/02_duty_cycle_map.png")
     plt.close()
 
-    return (min_pt, max_pt, points)
-
-
-def get_current_transfer_map(points, upper_lim_curr=100.0):
-    # ii is lower bound input current
-    # io is upper bound output current
-    # bound usable points based on io and arb. upper_lim_curr
-    points = [
-        [vi, ii, vo, io, ii, vi * ii / vo]
-        for (vi, ii, vo, io) in points
-        if vi * ii / vo <= min(io, upper_lim_curr)
-    ]
-    (x, _, y, _, z1, z2) = np.transpose(points)
-
-    # Plot out current transfer map.
-    fig, axs = plt.subplots(1, 2, subplot_kw={"projection": "3d"})
-    fig.suptitle("Input/Output Current Across I/O Mapping")
-    axs[0].scatter(x, y, z1, c=z1)
-    axs[0].set_xlabel("V_IN (V)")
-    axs[0].set_ylabel("V_OUT (V)")
-    axs[0].set_zlabel("I_IN (A)")
-    axs[1].scatter(x, y, z2, c=z2)
-    axs[1].set_xlabel("V_IN (V)")
-    axs[1].set_ylabel("V_OUT (V)")
-    axs[1].set_zlabel("I_OUT (A)")
-    plt.tight_layout()
-    plt.subplots_adjust(right=0.9, wspace=0.2)
-    plt.savefig("./outputs/current_map.png")
-    plt.close()
-
-    min_pt = min(points, key=lambda points: points[4])
-    max_pt = max(points, key=lambda points: points[4])
-    points = np.transpose(np.transpose(points)[:-2])
-    return (min_pt, max_pt, points)
-
-
-def get_power_transfer_map(points, upper_lim_pow=1000.0):
-    # bound usable points based on vo*io and arb. upper_lim_pow
-    points = [
-        [vi, ii, vo, io, vi * ii, vo * io]
-        for (vi, ii, vo, io) in points
-        if vi * ii <= min(vo * io, upper_lim_pow)
-    ]
-    (x, _, y, _, z1, z2) = np.transpose(points)
-
-    # Plot out power transfer map.
-    fig, axs = plt.subplots(1, 2, subplot_kw={"projection": "3d"})
-    fig.suptitle("Input/Output Power Across I/O Mapping")
-    axs[0].scatter(x, y, z1, c=z1)
-    axs[0].set_xlabel("V_IN (V)")
-    axs[0].set_ylabel("V_OUT (V)")
-    axs[0].set_zlabel("P_IN (W)")
-    axs[1].scatter(x, y, z2, c=z2)
-    axs[1].set_xlabel("V_IN (V)")
-    axs[1].set_ylabel("V_OUT (V)")
-    axs[1].set_zlabel("P_OUT (W)")
-    plt.tight_layout()
-    plt.subplots_adjust(right=0.9, wspace=0.2)
-    plt.savefig("./outputs/power_map.png")
-    plt.close()
-
-    min_pt = min(points, key=lambda points: points[4])
-    max_pt = max(points, key=lambda points: points[4])
-    points = np.transpose(np.transpose(points)[:-2])
-    return (min_pt, max_pt, points)
-
-
-def generate_maps(
-    points,
-    lower_lim_duty=0.0,
-    upper_lim_duty=1.0,
-    upper_lim_curr=100.0,
-    upper_lim_pow=1000.0,
-):
-    (min_duty, max_duty, points) = get_duty_cycle_map(
-        points, lower_lim_duty, upper_lim_duty
+    logging.info(
+        f"Highest duty cycle:\n{points[points['DUTY (%)'] == points['DUTY (%)'].max()]}"
     )
-    (min_curr, max_curr, points) = get_current_transfer_map(points, upper_lim_curr)
-    (min_pow, max_pow, points) = get_power_transfer_map(points, upper_lim_pow)
+    logging.info(
+        f"Lowest duty cycle:\n{points[points['DUTY (%)'] == points['DUTY (%)'].min()]}"
+    )
 
-    return (min_duty, max_duty), (min_curr, max_curr), (min_pow, max_pow), points
+
+def map_current(points, output_path):
+    fig, axs = plt.subplots(1, 2, subplot_kw={"projection": "3d"})
+    fig.suptitle(f"Inp/Out Current Across I/O Map")
+    axs[0].scatter(
+        points["VI (V)"], points["VO (V)"], points["II (A)"], c=points["II (A)"]
+    )
+    axs[0].set_xlabel("$V_{IN}$ (V)")
+    axs[0].set_ylabel("$V_{OUT}$ (V)")
+    axs[0].set_zlabel("$I_{IN}$ (A)")
+    axs[1].scatter(
+        points["VI (V)"], points["VO (V)"], points["IO (A)"], c=points["IO (A)"]
+    )
+    axs[1].set_xlabel("$V_{IN}$ (V)")
+    axs[1].set_ylabel("$V_{OUT}$ (V)")
+    axs[1].set_zlabel("$I_{OUT}$ (A)")
+
+    fig.set_size_inches(9, 5)
+    plt.tight_layout()
+    plt.subplots_adjust(right=0.9, wspace=0.1)
+    plt.show()
+    fig.savefig(output_path + "/03_current_map.png")
+    plt.close()
+
+    logging.info(
+        f"Highest input current:\n{points[points['II (A)'] == points['II (A)'].max()]}"
+    )
+    logging.info(
+        f"Lowest input current:\n{points[points['II (A)'] == points['II (A)'].min()]}"
+    )
+    logging.info(
+        f"Highest output current:\n{points[points['IO (A)'] == points['IO (A)'].max()]}"
+    )
+    logging.info(
+        f"Lowest output current:\n{points[points['IO (A)'] == points['IO (A)'].min()]}"
+    )
+
+
+def map_power(points, output_path):
+    fig, ax = plt.subplots(1, 2, subplot_kw={"projection": "3d"})
+    fig.suptitle(f"Power Transfer Across I/O Map")
+    ax[0].scatter(
+        points["VI (V)"], points["VO (V)"], points["P (W)"], c=points["P (W)"]
+    )
+    ax[0].set_xlabel("$V_{IN}$ (V)")
+    ax[0].set_ylabel("$V_{OUT}$ (V)")
+    ax[0].set_zlabel("$P_{TRANSFER}$ (W)")
+    ax[1].scatter(
+        points["VI (V)"], points["VO (V)"], points["P_LOSS (W)"], c=points["P_LOSS (W)"]
+    )
+    ax[1].set_xlabel("$V_{IN}$ (V)")
+    ax[1].set_ylabel("$V_{OUT}$ (V)")
+    ax[1].set_zlabel("$P_{LOSS}$ (W)")
+
+    fig.set_size_inches(9, 5)
+    plt.tight_layout()
+    plt.subplots_adjust(right=0.9, wspace=0.1)
+    plt.show()
+    fig.savefig(output_path + "/04_power_map.png")
+    plt.close()
+
+    logging.info(
+        f"Highest power transfer:\n{points[points['P (W)'] == points['P (W)'].max()]}"
+    )
+    logging.info(
+        f"Lowest power transfer:\n{points[points['P (W)'] == points['P (W)'].min()]}"
+    )
+
+    logging.info(
+        f"Highest power loss:\n{points[points['P_LOSS (W)'] == points['P_LOSS (W)'].max()]}"
+    )
+    logging.info(
+        f"Lowest power loss:\n{points[points['P_LOSS (W)'] == points['P_LOSS (W)'].min()]}"
+    )
+
+
+def map_efficiency(points, output_path):
+    def get_efficiency(point):
+        p_transfer = point["P (W)"]
+        p_loss = (
+            point["PSW_TOT (W)"] * 2
+            + point["PI_TOT (W)"]
+            + point["PO_TOT (W)"]
+            + point["PL_TOT (W)"]
+        )
+        return pd.Series([p_loss, (1 - p_loss / p_transfer) * 100])
+
+    points[["P_LOSS (W)", "EFF (%)"]] = points.apply(get_efficiency, axis=1)
+
+    fig, ax = plt.subplots(1, 1, subplot_kw={"projection": "3d"})
+    fig.suptitle(f"Device Efficiency Across I/O Map")
+    ax.scatter(
+        points["VI (V)"], points["VO (V)"], points["EFF (%)"], c=points["EFF (%)"]
+    )
+    ax.set_xlabel("$V_{IN}$ (V)")
+    ax.set_ylabel("$V_{OUT}$ (V)")
+    ax.set_zlabel("EFF (%)")
+    plt.tight_layout()
+    plt.show()
+    fig.savefig(output_path + "/10_efficiency_map.png")
+    plt.close()
+
+    logging.info(
+        f"Highest device efficiency:\n{points[points['EFF (%)'] == points['EFF (%)'].max()]}"
+    )
+    logging.info(
+        f"Lowest device efficiency:\n{points[points['EFF (%)'] == points['EFF (%)'].min()]}"
+    )
+
+    return points
+
+
+def map_design(points, output_path):
+    map_duty(points, output_path)
+    map_current(points, output_path)
+    points = map_efficiency(points, output_path)
+    map_power(points, output_path)
+
+    return points

@@ -20,7 +20,7 @@ DigitalOut led_heartbeat(PA_9);
 DigitalOut pwm_enable(PA_3);
 PwmOut pwm_out(PA_1);
 Ticker ticker_heartbeat;
-Ticker ticker_measure_adcs;
+Ticker ticker_measure_areaddcs;
 
 float calibrate_arr_v(float inp) {
     if (inp < 1.0) return inp * 114.0;

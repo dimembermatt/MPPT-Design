@@ -10,6 +10,7 @@
  *
  */
 
+#include <math.h>
 #include "mbed.h"
 #include "FastPWM.h"
 #include "./pid_controller/pid_controller.hpp"
@@ -36,7 +37,7 @@ typedef enum Error {
 } ErrorCode;
 ErrorCode status = OK;
 
-PIDConfig_t pidConfig = PIDControllerInit(0.9, -0.9, 5E-4, 1E-5, 0.0);
+PIDConfig_t pidConfig = PIDControllerInit(0.9, -0.9, 5E-4, 3E-6, 0.0);
 
 DigitalOut led_heartbeat(PA_9);
 DigitalOut led_tracking(PA_10);
@@ -47,15 +48,17 @@ UnlockedAnalogIn arr_voltage_sensor(PA_4);
 UnlockedAnalogIn arr_current_sensor(PA_5);
 UnlockedAnalogIn batt_voltage_sensor(PA_7);
 UnlockedAnalogIn batt_current_sensor(PA_6);
-SmaFilter arr_voltage_filter(5);
-SmaFilter batt_voltage_filter(5);
-SmaFilter arr_current_filter(5);
-SmaFilter batt_current_filter(5);
+SmaFilter arr_voltage_filter(1);
+SmaFilter batt_voltage_filter(1);
+SmaFilter arr_current_filter(1);
+SmaFilter batt_current_filter(1);
 
 Ticker ticker_toggle_heartbeat;
 Ticker ticker_read_sensor;
 Ticker ticker_update_pwm;
 Ticker ticker_check_redlines;
+
+static int x = 0;
 
 float calibrate_arr_v(float inp) {
     if (inp < 1.0) return inp * 114.0;
@@ -84,6 +87,11 @@ void read_sensor(void) {
     float arr_i = calibrate_arr_i(arr_current_sensor.read());
     float batt_v = calibrate_batt_v(batt_voltage_sensor.read());
     float batt_i = calibrate_batt_i(batt_current_sensor.read());
+
+    // INJECT NOISE :O
+    float amplitude = TARGET * 0.001;
+    float noise = sin(3.14/100 * (++x)) * amplitude;
+    batt_v += noise;
 
     arr_voltage_filter.addSample(arr_v);
     arr_current_filter.addSample(arr_i);
@@ -125,6 +133,7 @@ void check_redlines(void) {
     _assert(arr_v_filtered < batt_v_filtered, INP_OUT_INV);
 }
 
+#define CYCLE_PERIOD 5ms
 int main()
 {
     set_time(1680461674);
@@ -133,7 +142,7 @@ int main()
     
     // Start heartbeat.
     ticker_toggle_heartbeat.attach(&heartbeat, 1000ms);
-    ticker_read_sensor.attach(&read_sensor, 10ms);
+    ticker_read_sensor.attach(&read_sensor, CYCLE_PERIOD);
 
     // 5 seconds for user to get ready.
     ThisThread::sleep_for(5000ms);
@@ -147,21 +156,24 @@ int main()
     pwm_enable = 1;
 
     ThisThread::sleep_for(500ms);
-    ticker_check_redlines.attach(&check_redlines, 100ms);
+    ticker_check_redlines.attach(&check_redlines, 10ms);
 
     // Start pwm update.
-    ticker_update_pwm.attach(&run_pid_controller, 100ms);
+    ticker_update_pwm.attach(&run_pid_controller, CYCLE_PERIOD);
     while (true) {
-        ThisThread::sleep_for(100ms);
+        ThisThread::sleep_for(CYCLE_PERIOD);
         // CSV format for later analysis.
+        float amplitude = TARGET * 0.001;
+        float noise = sin(3.14/100 * (x)) * amplitude;
         printf(
-            "%u, %f, %f, %f, %f, %f\n", 
+            "%u, %f, %f, %f, %f, %f, %f\n", 
             time(NULL), 
             arr_voltage_filter.getResult(),
             arr_current_filter.getResult(),
             batt_voltage_filter.getResult(),
             batt_current_filter.getResult(),
-            pwm_out.read()
+            pwm_out.read(),
+            noise
         );
 
         if (status != OK) {

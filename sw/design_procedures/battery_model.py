@@ -2,8 +2,8 @@
 @file       battery_model.py
 @author     Matthew Yu (matthewjkyu@gmail.com)
 @brief      Modeling an arbitrary battery.
-@version    0.0.0
-@date       2023-04-27
+@version    1.0.0
+@date       2023-05-06
 """
 
 import matplotlib.pyplot as plt
@@ -17,9 +17,15 @@ def model_inf_cap_cell():
 def model(sink):
     num_cells = sink["num_cells"]
 
-    v = [v for v in np.linspace(2.5, 4.2, 50)]
+    v = [v for v in np.linspace(2.5, 4.2, 60)]
     i = [model_inf_cap_cell() for _ in v]
     v = list(np.multiply(v, num_cells))
+
+    return [v, i]
+
+def map(sink, output_path):
+    v = sink["i-v"][0]
+    i = sink["i-v"][1]
     p = [v * i for v, i in zip(v, i)]
 
     fig, (ax1, ax2) = plt.subplots(2, 1)
@@ -33,7 +39,5 @@ def model(sink):
     ax2.set_ylabel("Max Charge Power (W)")
     ax2.grid(True, "both", "both")
     plt.tight_layout()
-    plt.savefig("./outputs/sink_model.png")
+    plt.savefig(output_path + "/01_sink_model.png")
     plt.close()
-
-    return [v, i]

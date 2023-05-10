@@ -1,0 +1,25 @@
+{
+    "NAME": "Broad range MPPT",
+    "AUTHORS": ["Matthew Yu", "Jacob Pustilnik"],
+    "DESCRIPTION": "MPPT Boost Converter v0.1.0",
+    "DATE_DESIGNED": "05/07/23",
+    "DESIGN": {
+        "input_source": {
+            "source_model_type": "solar_cell",
+            "cell_type": "Maxeon Gen III Bin Le1",
+            "num_cells": 111,
+            "r_sh": 40,
+            "r_s": 0.0035,
+            "inp_ripple (V)": 0.725,
+            "user_v_range": [20.335, 74.481]
+        },
+        "output_sink": {
+            "sink_model_type": "battery",
+            "battery_type": "INR21700-M50LT",
+            "num_cells": 32,
+            "out_ripple (V)": 1.0,
+            "user_v_range": [80, 130]
+        },
+        "safety_factor": 1.25
+    }
+}
