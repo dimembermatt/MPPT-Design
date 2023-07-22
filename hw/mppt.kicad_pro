@@ -56,7 +56,13 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        "silk_edge_clearance|204950000|48300000|1b9c3617-ac4a-421c-9dec-cb03128b23db|3ff9b5cf-7aaf-48d2-81fe-9064428f76bd",
+        "silk_overlap|127180000|43348000|54ae1b32-3e71-4798-a04e-aad4aa85280c|f92e3fee-2ff4-4740-8998-746f46618a2b",
+        "silk_overlap|127180000|58752000|54ae1b32-3e71-4798-a04e-aad4aa85280c|fb160e99-e76b-4121-8e65-79e11aeabe15",
+        "silk_overlap|204950000|60535198|3ff9b5cf-7aaf-48d2-81fe-9064428f76bd|dbad76b7-834e-4217-b21f-002b69aebf2b",
+        "silk_overlap|90040857|60117069|b8e2d2de-75ce-4d81-ac34-0fca2d0d01f6|d8834e57-9ca5-4b84-ae8d-67842b02d94c"
+      ],
       "meta": {
         "version": 2
       },
@@ -81,7 +87,7 @@
         "item_on_disabled_layer": "error",
         "items_not_allowed": "error",
         "length_out_of_range": "error",
-        "lib_footprint_issues": "error",
+        "lib_footprint_issues": "ignore",
         "lib_footprint_mismatch": "ignore",
         "malformed_courtyard": "ignore",
         "microvia_drill_out_of_range": "error",
@@ -203,6 +209,10 @@
         {
           "diameter": 0.4,
           "drill": 0.3
+        },
+        {
+          "diameter": 0.45,
+          "drill": 0.2
         },
         {
           "diameter": 0.45,
@@ -479,7 +489,7 @@
       "idf": "",
       "netlist": "",
       "specctra_dsn": "",
-      "step": "production/mppt.step",
+      "step": "production/sunscatter.step",
       "vrml": ""
     },
     "page_layout_descr_file": ""
@@ -518,7 +528,7 @@
       "workbook_filename": ""
     },
     "page_layout_descr_file": "",
-    "plot_directory": "",
+    "plot_directory": "production/",
     "spice_adjust_passive_values": false,
     "spice_current_sheet_as_root": false,
     "spice_external_command": "spice \"%I\"",
@@ -548,6 +558,10 @@
     [
       "d2872b58-d342-47d2-86ca-67a04f8e2122",
       "gate_driver"
+    ],
+    [
+      "3521ffae-6721-4a9d-861c-ca3039bccb82",
+      "comm_can"
     ]
   ],
   "text_variables": {}

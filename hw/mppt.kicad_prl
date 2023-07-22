@@ -1,40 +1,10 @@
 {
   "board": {
-    "active_layer": 31,
+    "active_layer": 36,
     "active_layer_preset": "",
     "auto_track_width": false,
     "hidden_netclasses": [],
-    "hidden_nets": [
-      "+12V",
-      "GND",
-      "Net-(D202-A)",
-      "/V_BATT+",
-      "/converter/V_ARR-",
-      "/converter/V_BATT-",
-      "/converter/G1",
-      "/converter/G2",
-      "/controller/Error",
-      "/controller/Tracking",
-      "/controller/Heartbeat",
-      "/controller/Reset",
-      "+3.3V",
-      "+5V",
-      "/controller/PWM_EN",
-      "/controller/PWM",
-      "/controller/ARR_I",
-      "/gate_driver/DLH",
-      "/gate_driver/DHL",
-      "Net-(D201-A)",
-      "/V_ARR+",
-      "/controller/ARR_V",
-      "/controller/BATT_I",
-      "/controller/BATT_V",
-      "Net-(U401-IN+)",
-      "Net-(U403-IN+)",
-      "/gate_driver/LO",
-      "/gate_driver/HO",
-      "/converter/Vsnub"
-    ],
+    "hidden_nets": [],
     "high_contrast_mode": 0,
     "net_color_mode": 1,
     "opacity": {
@@ -94,8 +64,8 @@
       39,
       40
     ],
-    "visible_layers": "ffc7dcd_ffffffff",
-    "zone_display_mode": 0
+    "visible_layers": "ff8ffff_ffffffff",
+    "zone_display_mode": 1
   },
   "meta": {
     "filename": "mppt.kicad_prl",

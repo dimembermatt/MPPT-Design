@@ -2,27 +2,27 @@
 Start logging.
 
 Switch requirements:
-	V_DS >= 155.748 (V)
-	I_D >= 7.374 (A)
-	P_D >= 3.000 (W)
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 3.125 (W)
 
 Switch selected:
 	EPC2207
-	with an optimal switching frequency of 120000 Hz
+	with an optimal switching frequency of 115000 Hz
 
 Input capacitor requirements:
-	C >= 3.841 uF
-	V >= 69.769 V
-	Irms >= 287.82264170070454 mA
+	C >= 2.764 uF
+	V >= 73.553 V
+	Irms >= 539.7110031655037 mA
 
 Output capacitor requirements:
-	C >= 12.794 uF
-	V >= 130.279 V
-	Irms >= 287.82264170070454 mA
+	C >= 13.352 uF
+	V >= 130.286 V
+	Irms >= 539.7110031655037 mA
 
 Inductor requirements:
-	L >= 332.145 uH
-	I >= 6.523372815503882 A
+	L >= 184.829 uH
+	I >= 6.886531439488129 A
 
 Input capacitors selected:
 	Bulk caps: HZA336M080G24T-F
@@ -32,31 +32,31 @@ Output capacitors selected:
 
 Input inductor selected:
 	PQ26/25-3C96
-	with 61.0 turns of 22 gauge wire
-	and a core gap of 1.6 mm per side of the core.
+	with 36.0 turns of 19 gauge wire
+	and a core gap of 1.0 mm per side of the core.
 
 Switch requirements:
-	V_DS >= 155.748 (V)
-	I_D >= 7.374 (A)
-	P_D >= 3.000 (W)
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 3.125 (W)
 
 Switch selected:
 	EPC2207
-	with an optimal switching frequency of 120000 Hz
+	with an optimal switching frequency of 115000 Hz
 
 Input capacitor requirements:
-	C >= 3.841 uF
-	V >= 69.769 V
-	Irms >= 287.82264170070454 mA
+	C >= 2.764 uF
+	V >= 73.553 V
+	Irms >= 539.7110031655037 mA
 
 Output capacitor requirements:
-	C >= 12.794 uF
-	V >= 130.279 V
-	Irms >= 287.82264170070454 mA
+	C >= 13.352 uF
+	V >= 130.286 V
+	Irms >= 539.7110031655037 mA
 
 Inductor requirements:
-	L >= 332.145 uH
-	I >= 6.523372815503882 A
+	L >= 184.829 uH
+	I >= 6.886531439488129 A
 
 Input capacitors selected:
 	Bulk caps: HZA336M080G24T-F
@@ -66,31 +66,31 @@ Output capacitors selected:
 
 Input inductor selected:
 	PQ26/25-3C96
-	with 61.0 turns of 22 gauge wire
-	and a core gap of 1.6 mm per side of the core.
+	with 36.0 turns of 19 gauge wire
+	and a core gap of 1.0 mm per side of the core.
 
 Switch requirements:
-	V_DS >= 155.748 (V)
-	I_D >= 7.374 (A)
-	P_D >= 3.000 (W)
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 3.125 (W)
 
 Switch selected:
 	EPC2215
-	with an optimal switching frequency of 40000 Hz
+	with an optimal switching frequency of 35000 Hz
 
 Input capacitor requirements:
-	C >= 29.537 uF
-	V >= 69.769 V
-	Irms >= 737.8540665146032 mA
+	C >= 23.284 uF
+	V >= 73.553 V
+	Irms >= 1383.5880182159 mA
 
 Output capacitor requirements:
-	C >= 38.381 uF
-	V >= 130.279 V
-	Irms >= 737.8540665146032 mA
+	C >= 43.871 uF
+	V >= 130.286 V
+	Irms >= 1383.5880182159 mA
 
 Inductor requirements:
-	L >= 388.690 uH
-	I >= 7.138957692544149 A
+	L >= 236.895 uH
+	I >= 8.0702353324331 A
 
 Input capacitors selected:
 	Bulk caps: HZA336M080G24T-F
@@ -102,31 +102,31 @@ A759MS186M2CAAE090
 
 Input inductor selected:
 	PQ26/25-3C96
-	with 78.0 turns of 23 gauge wire
-	and a core gap of 2.2 mm per side of the core.
+	with 54.0 turns of 21 gauge wire
+	and a core gap of 1.7 mm per side of the core.
 
 Switch requirements:
-	V_DS >= 155.748 (V)
-	I_D >= 7.374 (A)
-	P_D >= 3.000 (W)
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 3.125 (W)
 
 Switch selected:
 	EPC2207
 	with an optimal switching frequency of 175000 Hz
 
 Input capacitor requirements:
-	C >= 0.682 uF
-	V >= 69.769 V
-	Irms >= 74.53762069363115 mA
+	C >= 0.470 uF
+	V >= 73.553 V
+	Irms >= 139.76931696694592 mA
 
 Output capacitor requirements:
-	C >= 8.773 uF
-	V >= 130.279 V
-	Irms >= 74.53762069363115 mA
+	C >= 8.774 uF
+	V >= 130.286 V
+	Irms >= 139.76931696694592 mA
 
 Inductor requirements:
-	L >= 879.469 uH
-	I >= 6.236019557443383 A
+	L >= 469.008 uH
+	I >= 6.32965348547837 A
 
 Input capacitors selected:
 	Bulk caps: HZA336M080G24T-F
@@ -136,134 +136,100 @@ Output capacitors selected:
 
 Input inductor selected:
 	PQ26/25-3C96
-	with 154.0 turns of 26 gauge wire
-	and a core gap of 3.8 mm per side of the core.
+	with 84.0 turns of 23 gauge wire
+	and a core gap of 2.1 mm per side of the core.
 
 Switch requirements:
-	V_DS >= 155.748 (V)
-	I_D >= 7.374 (A)
-	P_D >= 3.000 (W)
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 3.125 (W)
 
 Switch selected:
 	EPC2207
 	with an optimal switching frequency of 175000 Hz
 
 Input capacitor requirements:
-	C >= 0.723 uF
-	V >= 69.769 V
-	Irms >= 78.97817579718337 mA
+	C >= 0.498 uF
+	V >= 73.553 V
+	Irms >= 148.09602967929052 mA
 
 Output capacitor requirements:
-	C >= 8.773 uF
-	V >= 130.279 V
-	Irms >= 78.97817579718337 mA
+	C >= 8.774 uF
+	V >= 130.286 V
+	Irms >= 148.09602967929052 mA
 
 Inductor requirements:
-	L >= 830.021 uH
-	I >= 6.241918616161159 A
+	L >= 442.638 uH
+	I >= 6.34119033043341 A
 
 Input capacitors selected:
 	Bulk caps: HZA336M080G24T-F
 
 Output capacitors selected:
 	Bulk caps: A759MS186M2CAAE090
-
-Input inductor selected:
-	PQ26/25-3C96
-	with 146.0 turns of 25 gauge wire
-	and a core gap of 3.6 mm per side of the core.
-
-Switch requirements:
-	V_DS >= 155.748 (V)
-	I_D >= 7.374 (A)
-	P_D >= 3.000 (W)
-
-Switch selected:
-	EPC2307
-	with an optimal switching frequency of 60000 Hz
-
-Input capacitor requirements:
-	C >= 12.294 uF
-	V >= 69.769 V
-	Irms >= 460.6653300721679 mA
-
-Output capacitor requirements:
-	C >= 25.587 uF
-	V >= 130.279 V
-	Irms >= 460.6653300721679 mA
-
-Inductor requirements:
-	L >= 415.047 uH
-	I >= 6.758999769223622 A
-
-Input capacitors selected:
-	Bulk caps: HZA336M080G24T-F
-
-Output capacitors selected:
-	Bulk caps: A759MS186M2CAAE090
-A759MS186M2CAAE090
 
 Input inductor selected:
 	PQ26/25-3C96
 	with 79.0 turns of 23 gauge wire
-	and a core gap of 2.1 mm per side of the core.
+	and a core gap of 2.0 mm per side of the core.
 
 Switch requirements:
-	V_DS >= 155.748 (V)
-	I_D >= 7.374 (A)
-	P_D >= 3.000 (W)
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 3.125 (W)
 
 Switch selected:
-	EPC2207
-	with an optimal switching frequency of 110000 Hz
+	EPC2307
+	with an optimal switching frequency of 55000 Hz
 
 Input capacitor requirements:
-	C >= 4.686 uF
-	V >= 69.769 V
-	Irms >= 321.93624907561724 mA
+	C >= 9.251 uF
+	V >= 73.553 V
+	Irms >= 863.8171964085934 mA
 
 Output capacitor requirements:
-	C >= 13.957 uF
-	V >= 130.279 V
-	Irms >= 321.93624907561724 mA
+	C >= 27.918 uF
+	V >= 130.286 V
+	Irms >= 863.8171964085934 mA
 
 Inductor requirements:
-	L >= 323.945 uH
-	I >= 6.5698780247312865 A
+	L >= 241.460 uH
+	I >= 7.3402416979257445 A
 
 Input capacitors selected:
 	Bulk caps: HZA336M080G24T-F
 
 Output capacitors selected:
 	Bulk caps: A759MS186M2CAAE090
+A759MS186M2CAAE090
 
 Input inductor selected:
 	PQ26/25-3C96
-	with 60.0 turns of 22 gauge wire
-	and a core gap of 1.6 mm per side of the core.
+	with 50.0 turns of 21 gauge wire
+	and a core gap of 1.5 mm per side of the core.
 
 Switch requirements:
-	V_DS >= 155.748 (V)
-	I_D >= 7.374 (A)
-	P_D >= 3.000 (W)
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 3.125 (W)
 
 Switch selected:
 	EPC2207
 	with an optimal switching frequency of 120000 Hz
 
 Input capacitor requirements:
-	C >= 4.011 uF
-	V >= 69.769 V
-	Irms >= 300.5998466333277 mA
+	C >= 2.522 uF
+	V >= 73.553 V
+	Irms >= 513.7971009495766 mA
 
 Output capacitor requirements:
-	C >= 12.794 uF
-	V >= 130.279 V
-	Irms >= 300.5998466333277 mA
+	C >= 12.796 uF
+	V >= 130.286 V
+	Irms >= 513.7971009495766 mA
 
 Inductor requirements:
-	L >= 318.027 uH
-	I >= 6.540791277943303 A
+	L >= 186.062 uH
+	I >= 6.8502550476245 A
 
 Input capacitors selected:
 	Bulk caps: HZA336M080G24T-F
@@ -273,31 +239,65 @@ Output capacitors selected:
 
 Input inductor selected:
 	PQ26/25-3C96
-	with 59.0 turns of 22 gauge wire
-	and a core gap of 1.5 mm per side of the core.
+	with 36.0 turns of 19 gauge wire
+	and a core gap of 1.0 mm per side of the core.
 
 Switch requirements:
-	V_DS >= 155.748 (V)
-	I_D >= 7.374 (A)
-	P_D >= 3.000 (W)
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 3.125 (W)
+
+Switch selected:
+	EPC2207
+	with an optimal switching frequency of 125000 Hz
+
+Input capacitor requirements:
+	C >= 2.228 uF
+	V >= 73.553 V
+	Irms >= 472.7340395658939 mA
+
+Output capacitor requirements:
+	C >= 12.284 uF
+	V >= 130.286 V
+	Irms >= 472.7340395658939 mA
+
+Inductor requirements:
+	L >= 194.135 uH
+	I >= 6.792771628359331 A
+
+Input capacitors selected:
+	Bulk caps: HZA336M080G24T-F
+
+Output capacitors selected:
+	Bulk caps: A759MS186M2CAAE090
+
+Input inductor selected:
+	PQ26/25-3C96
+	with 38.0 turns of 20 gauge wire
+	and a core gap of 1.0 mm per side of the core.
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 3.125 (W)
 
 Switch selected:
 	EPC2207
 	with an optimal switching frequency of 150000 Hz
 
 Input capacitor requirements:
-	C >= 2.072 uF
-	V >= 69.769 V
-	Irms >= 194.06977644280184 mA
+	C >= 1.289 uF
+	V >= 73.553 V
+	Irms >= 328.2672199034486 mA
 
 Output capacitor requirements:
-	C >= 10.235 uF
-	V >= 130.279 V
-	Irms >= 194.06977644280184 mA
+	C >= 10.236 uF
+	V >= 130.286 V
+	Irms >= 328.2672199034486 mA
 
 Inductor requirements:
-	L >= 394.081 uH
-	I >= 6.396507939815651 A
+	L >= 232.976 uH
+	I >= 6.591380625643793 A
 
 Input capacitors selected:
 	Bulk caps: HZA336M080G24T-F
@@ -307,31 +307,31 @@ Output capacitors selected:
 
 Input inductor selected:
 	PQ26/25-3C96
-	with 71.0 turns of 22 gauge wire
-	and a core gap of 1.8 mm per side of the core.
+	with 44.0 turns of 20 gauge wire
+	and a core gap of 1.2 mm per side of the core.
 
 Switch requirements:
-	V_DS >= 155.748 (V)
-	I_D >= 7.374 (A)
-	P_D >= 3.000 (W)
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 3.125 (W)
 
 Switch selected:
 	EPC2207
 	with an optimal switching frequency of 135000 Hz
 
 Input capacitor requirements:
-	C >= 2.970 uF
-	V >= 69.769 V
-	Irms >= 250.3934923039235 mA
+	C >= 1.811 uF
+	V >= 73.553 V
+	Irms >= 415.0489350018116 mA
 
 Output capacitor requirements:
-	C >= 11.372 uF
-	V >= 130.279 V
-	Irms >= 250.3934923039235 mA
+	C >= 11.374 uF
+	V >= 130.286 V
+	Irms >= 415.0489350018116 mA
 
 Inductor requirements:
-	L >= 339.373 uH
-	I >= 6.472694056399349 A
+	L >= 204.737 uH
+	I >= 6.7122951511872575 A
 
 Input capacitors selected:
 	Bulk caps: HZA336M080G24T-F
@@ -341,31 +341,31 @@ Output capacitors selected:
 
 Input inductor selected:
 	PQ26/25-3C96
-	with 62.0 turns of 22 gauge wire
-	and a core gap of 1.6 mm per side of the core.
+	with 39.0 turns of 20 gauge wire
+	and a core gap of 1.0 mm per side of the core.
 
 Switch requirements:
-	V_DS >= 155.748 (V)
-	I_D >= 7.374 (A)
-	P_D >= 3.000 (W)
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 3.125 (W)
 
 Switch selected:
 	EPC2207
-	with an optimal switching frequency of 125000 Hz
+	with an optimal switching frequency of 135000 Hz
 
 Input capacitor requirements:
-	C >= 3.501 uF
-	V >= 69.769 V
-	Irms >= 273.31590133094466 mA
+	C >= 1.883 uF
+	V >= 73.553 V
+	Irms >= 431.6200251802072 mA
 
 Output capacitor requirements:
-	C >= 12.282 uF
-	V >= 130.279 V
-	Irms >= 273.31590133094466 mA
+	C >= 11.374 uF
+	V >= 130.286 V
+	Irms >= 431.6200251802072 mA
 
 Inductor requirements:
-	L >= 335.784 uH
-	I >= 6.50369998879944 A
+	L >= 196.877 uH
+	I >= 6.735383949379221 A
 
 Input capacitors selected:
 	Bulk caps: HZA336M080G24T-F
@@ -375,31 +375,31 @@ Output capacitors selected:
 
 Input inductor selected:
 	PQ26/25-3C96
-	with 62.0 turns of 22 gauge wire
-	and a core gap of 1.6 mm per side of the core.
+	with 38.0 turns of 20 gauge wire
+	and a core gap of 1.0 mm per side of the core.
 
 Switch requirements:
-	V_DS >= 155.748 (V)
-	I_D >= 7.374 (A)
-	P_D >= 3.000 (W)
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 3.125 (W)
 
 Switch selected:
 	EPC2207
-	with an optimal switching frequency of 125000 Hz
+	with an optimal switching frequency of 145000 Hz
 
 Input capacitor requirements:
-	C >= 3.616 uF
-	V >= 69.769 V
-	Irms >= 282.25241086751873 mA
+	C >= 1.547 uF
+	V >= 73.553 V
+	Irms >= 380.8894556164468 mA
 
 Output capacitor requirements:
-	C >= 12.282 uF
-	V >= 130.279 V
-	Irms >= 282.25241086751873 mA
+	C >= 10.589 uF
+	V >= 130.286 V
+	Irms >= 380.8894556164468 mA
 
 Inductor requirements:
-	L >= 325.152 uH
-	I >= 6.515787933406708 A
+	L >= 207.713 uH
+	I >= 6.664700133757473 A
 
 Input capacitors selected:
 	Bulk caps: HZA336M080G24T-F
@@ -409,31 +409,31 @@ Output capacitors selected:
 
 Input inductor selected:
 	PQ26/25-3C96
-	with 60.0 turns of 22 gauge wire
-	and a core gap of 1.6 mm per side of the core.
+	with 39.0 turns of 20 gauge wire
+	and a core gap of 1.0 mm per side of the core.
 
 Switch requirements:
-	V_DS >= 155.748 (V)
-	I_D >= 7.374 (A)
-	P_D >= 3.000 (W)
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 3.125 (W)
 
 Switch selected:
 	EPC2207
-	with an optimal switching frequency of 120000 Hz
+	with an optimal switching frequency of 140000 Hz
 
 Input capacitor requirements:
-	C >= 3.905 uF
-	V >= 69.769 V
-	Irms >= 292.6824933602264 mA
+	C >= 1.691 uF
+	V >= 73.553 V
+	Irms >= 401.86034729983027 mA
 
 Output capacitor requirements:
-	C >= 12.794 uF
-	V >= 130.279 V
-	Irms >= 292.6824933602264 mA
+	C >= 10.968 uF
+	V >= 130.286 V
+	Irms >= 401.86034729983027 mA
 
 Inductor requirements:
-	L >= 326.630 uH
-	I >= 6.5299979846264655 A
+	L >= 203.904 uH
+	I >= 6.693919254573945 A
 
 Input capacitors selected:
 	Bulk caps: HZA336M080G24T-F
@@ -443,31 +443,31 @@ Output capacitors selected:
 
 Input inductor selected:
 	PQ26/25-3C96
-	with 60.0 turns of 22 gauge wire
-	and a core gap of 1.6 mm per side of the core.
+	with 39.0 turns of 20 gauge wire
+	and a core gap of 1.0 mm per side of the core.
 
 Switch requirements:
-	V_DS >= 155.748 (V)
-	I_D >= 7.374 (A)
-	P_D >= 3.000 (W)
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 3.125 (W)
 
 Switch selected:
 	EPC2207
-	with an optimal switching frequency of 120000 Hz
+	with an optimal switching frequency of 135000 Hz
 
 Input capacitor requirements:
-	C >= 3.904 uF
-	V >= 69.769 V
-	Irms >= 292.60595493036624 mA
+	C >= 1.838 uF
+	V >= 73.553 V
+	Irms >= 421.3484259134996 mA
 
 Output capacitor requirements:
-	C >= 12.794 uF
-	V >= 130.279 V
-	Irms >= 292.60595493036624 mA
+	C >= 11.374 uF
+	V >= 130.286 V
+	Irms >= 421.3484259134996 mA
 
 Inductor requirements:
-	L >= 326.716 uH
-	I >= 6.529893643984462 A
+	L >= 201.676 uH
+	I >= 6.721072345252721 A
 
 Input capacitors selected:
 	Bulk caps: HZA336M080G24T-F
@@ -477,31 +477,31 @@ Output capacitors selected:
 
 Input inductor selected:
 	PQ26/25-3C96
-	with 60.0 turns of 22 gauge wire
-	and a core gap of 1.6 mm per side of the core.
+	with 39.0 turns of 20 gauge wire
+	and a core gap of 1.0 mm per side of the core.
 
 Switch requirements:
-	V_DS >= 155.748 (V)
-	I_D >= 7.374 (A)
-	P_D >= 3.000 (W)
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 3.125 (W)
 
 Switch selected:
 	EPC2207
-	with an optimal switching frequency of 120000 Hz
+	with an optimal switching frequency of 140000 Hz
 
 Input capacitor requirements:
-	C >= 3.873 uF
-	V >= 69.769 V
-	Irms >= 290.27531795946476 mA
+	C >= 1.725 uF
+	V >= 73.553 V
+	Irms >= 409.99118351105807 mA
 
 Output capacitor requirements:
-	C >= 12.794 uF
-	V >= 130.279 V
-	Irms >= 290.27531795946476 mA
+	C >= 10.968 uF
+	V >= 130.286 V
+	Irms >= 409.99118351105807 mA
 
 Inductor requirements:
-	L >= 329.339 uH
-	I >= 6.526716414476784 A
+	L >= 199.861 uH
+	I >= 6.7052480950058015 A
 
 Input capacitors selected:
 	Bulk caps: HZA336M080G24T-F
@@ -511,31 +511,31 @@ Output capacitors selected:
 
 Input inductor selected:
 	PQ26/25-3C96
-	with 61.0 turns of 22 gauge wire
-	and a core gap of 1.6 mm per side of the core.
+	with 38.0 turns of 20 gauge wire
+	and a core gap of 1.0 mm per side of the core.
 
 Switch requirements:
-	V_DS >= 155.748 (V)
-	I_D >= 7.374 (A)
-	P_D >= 3.000 (W)
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 3.125 (W)
 
 Switch selected:
 	EPC2207
-	with an optimal switching frequency of 120000 Hz
+	with an optimal switching frequency of 135000 Hz
 
 Input capacitor requirements:
-	C >= 3.893 uF
-	V >= 69.769 V
-	Irms >= 291.71503360664195 mA
+	C >= 1.821 uF
+	V >= 73.553 V
+	Irms >= 417.45069271243034 mA
 
 Output capacitor requirements:
-	C >= 12.794 uF
-	V >= 130.279 V
-	Irms >= 291.71503360664195 mA
+	C >= 11.374 uF
+	V >= 130.286 V
+	Irms >= 417.45069271243034 mA
 
 Inductor requirements:
-	L >= 327.713 uH
-	I >= 6.528679099825891 A
+	L >= 203.559 uH
+	I >= 6.715641563432286 A
 
 Input capacitors selected:
 	Bulk caps: HZA336M080G24T-F
@@ -545,31 +545,31 @@ Output capacitors selected:
 
 Input inductor selected:
 	PQ26/25-3C96
-	with 61.0 turns of 22 gauge wire
-	and a core gap of 1.6 mm per side of the core.
+	with 39.0 turns of 20 gauge wire
+	and a core gap of 1.0 mm per side of the core.
 
 Switch requirements:
-	V_DS >= 155.748 (V)
-	I_D >= 7.374 (A)
-	P_D >= 3.000 (W)
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 3.125 (W)
 
 Switch selected:
 	EPC2207
-	with an optimal switching frequency of 120000 Hz
+	with an optimal switching frequency of 135000 Hz
 
 Input capacitor requirements:
-	C >= 3.900 uF
-	V >= 69.769 V
-	Irms >= 292.26555189113293 mA
+	C >= 1.802 uF
+	V >= 73.553 V
+	Irms >= 413.11412642843266 mA
 
 Output capacitor requirements:
-	C >= 12.794 uF
-	V >= 130.279 V
-	Irms >= 292.26555189113293 mA
+	C >= 11.374 uF
+	V >= 130.286 V
+	Irms >= 413.11412642843266 mA
 
 Inductor requirements:
-	L >= 327.096 uH
-	I >= 6.529429591197923 A
+	L >= 205.696 uH
+	I >= 6.709599347579292 A
 
 Input capacitors selected:
 	Bulk caps: HZA336M080G24T-F
@@ -579,31 +579,31 @@ Output capacitors selected:
 
 Input inductor selected:
 	PQ26/25-3C96
-	with 60.0 turns of 22 gauge wire
-	and a core gap of 1.6 mm per side of the core.
+	with 39.0 turns of 20 gauge wire
+	and a core gap of 1.0 mm per side of the core.
 
 Switch requirements:
-	V_DS >= 155.748 (V)
-	I_D >= 7.374 (A)
-	P_D >= 3.000 (W)
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 3.125 (W)
 
 Switch selected:
 	EPC2207
-	with an optimal switching frequency of 120000 Hz
+	with an optimal switching frequency of 135000 Hz
 
 Input capacitor requirements:
-	C >= 3.897 uF
-	V >= 69.769 V
-	Irms >= 292.0552338624326 mA
+	C >= 1.797 uF
+	V >= 73.553 V
+	Irms >= 411.912873084719 mA
 
 Output capacitor requirements:
-	C >= 12.794 uF
-	V >= 130.279 V
-	Irms >= 292.0552338624326 mA
+	C >= 11.374 uF
+	V >= 130.286 V
+	Irms >= 411.912873084719 mA
 
 Inductor requirements:
-	L >= 327.332 uH
-	I >= 6.529142876168888 A
+	L >= 206.296 uH
+	I >= 6.707925619675343 A
 
 Input capacitors selected:
 	Bulk caps: HZA336M080G24T-F
@@ -613,31 +613,31 @@ Output capacitors selected:
 
 Input inductor selected:
 	PQ26/25-3C96
-	with 60.0 turns of 22 gauge wire
-	and a core gap of 1.6 mm per side of the core.
+	with 39.0 turns of 20 gauge wire
+	and a core gap of 1.0 mm per side of the core.
 
 Switch requirements:
-	V_DS >= 155.748 (V)
-	I_D >= 7.374 (A)
-	P_D >= 3.000 (W)
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 3.125 (W)
 
 Switch selected:
 	EPC2207
-	with an optimal switching frequency of 120000 Hz
+	with an optimal switching frequency of 135000 Hz
 
 Input capacitor requirements:
-	C >= 3.895 uF
-	V >= 69.769 V
-	Irms >= 291.92527411738604 mA
+	C >= 1.797 uF
+	V >= 73.553 V
+	Irms >= 411.912873084719 mA
 
 Output capacitor requirements:
-	C >= 12.794 uF
-	V >= 130.279 V
-	Irms >= 291.92527411738604 mA
+	C >= 11.374 uF
+	V >= 130.286 V
+	Irms >= 411.912873084719 mA
 
 Inductor requirements:
-	L >= 327.477 uH
-	I >= 6.52896570917895 A
+	L >= 206.296 uH
+	I >= 6.707925619675343 A
 
 Input capacitors selected:
 	Bulk caps: HZA336M080G24T-F
@@ -647,31 +647,31 @@ Output capacitors selected:
 
 Input inductor selected:
 	PQ26/25-3C96
-	with 60.0 turns of 22 gauge wire
-	and a core gap of 1.6 mm per side of the core.
+	with 39.0 turns of 20 gauge wire
+	and a core gap of 1.0 mm per side of the core.
 
 Switch requirements:
-	V_DS >= 155.748 (V)
-	I_D >= 7.374 (A)
-	P_D >= 3.000 (W)
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 9.053 (W)
 
 Switch selected:
 	EPC2207
-	with an optimal switching frequency of 120000 Hz
+	with an optimal switching frequency of 660000 Hz
 
 Input capacitor requirements:
-	C >= 3.894 uF
-	V >= 69.769 V
-	Irms >= 291.84496372995073 mA
+	C >= 0.368 uF
+	V >= 73.553 V
+	Irms >= 411.912873084719 mA
 
 Output capacitor requirements:
-	C >= 12.794 uF
-	V >= 130.279 V
-	Irms >= 291.84496372995073 mA
+	C >= 2.326 uF
+	V >= 130.286 V
+	Irms >= 411.912873084719 mA
 
 Inductor requirements:
-	L >= 327.568 uH
-	I >= 6.528856226434139 A
+	L >= 42.197 uH
+	I >= 6.707925619675343 A
 
 Input capacitors selected:
 	Bulk caps: HZA336M080G24T-F
@@ -680,180 +680,78 @@ Output capacitors selected:
 	Bulk caps: A759MS186M2CAAE090
 
 Input inductor selected:
-	PQ26/25-3C96
-	with 61.0 turns of 22 gauge wire
-	and a core gap of 1.6 mm per side of the core.
+	PQ20/20-3F36
+	with 16.0 turns of 17 gauge wire
+	and a core gap of 0.4 mm per side of the core.
 
 Switch requirements:
-	V_DS >= 155.748 (V)
-	I_D >= 7.374 (A)
-	P_D >= 3.000 (W)
-
-Switch selected:
-	EPC2207
-	with an optimal switching frequency of 120000 Hz
-
-Input capacitor requirements:
-	C >= 3.896 uF
-	V >= 69.769 V
-	Irms >= 291.9749121609567 mA
-
-Output capacitor requirements:
-	C >= 12.794 uF
-	V >= 130.279 V
-	Irms >= 291.9749121609567 mA
-
-Inductor requirements:
-	L >= 327.422 uH
-	I >= 6.529033378000266 A
-
-Input capacitors selected:
-	Bulk caps: HZA336M080G24T-F
-
-Output capacitors selected:
-	Bulk caps: A759MS186M2CAAE090
-
-Input inductor selected:
-	PQ26/25-3C96
-	with 60.0 turns of 22 gauge wire
-	and a core gap of 1.6 mm per side of the core.
-
-Switch requirements:
-	V_DS >= 155.748 (V)
-	I_D >= 7.374 (A)
-	P_D >= 3.000 (W)
-
-Switch selected:
-	EPC2207
-	with an optimal switching frequency of 120000 Hz
-
-Input capacitor requirements:
-	C >= 3.895 uF
-	V >= 69.769 V
-	Irms >= 291.92527411738604 mA
-
-Output capacitor requirements:
-	C >= 12.794 uF
-	V >= 130.279 V
-	Irms >= 291.92527411738604 mA
-
-Inductor requirements:
-	L >= 327.477 uH
-	I >= 6.52896570917895 A
-
-Input capacitors selected:
-	Bulk caps: HZA336M080G24T-F
-
-Output capacitors selected:
-	Bulk caps: A759MS186M2CAAE090
-
-Input inductor selected:
-	PQ26/25-3C96
-	with 60.0 turns of 22 gauge wire
-	and a core gap of 1.6 mm per side of the core.
-
-Switch requirements:
-	V_DS >= 155.748 (V)
-	I_D >= 7.374 (A)
-	P_D >= 8.691 (W)
-
-Switch selected:
-	EPC2207
-	with an optimal switching frequency of 640000 Hz
-
-Input capacitor requirements:
-	C >= 0.730 uF
-	V >= 69.769 V
-	Irms >= 291.92527411738604 mA
-
-Output capacitor requirements:
-	C >= 2.399 uF
-	V >= 130.279 V
-	Irms >= 291.92527411738604 mA
-
-Inductor requirements:
-	L >= 61.402 uH
-	I >= 6.52896570917895 A
-
-Input capacitors selected:
-	Bulk caps: HZA336M080G24T-F
-
-Output capacitors selected:
-	Bulk caps: A759MS186M2CAAE090
-
-Input inductor selected:
-	PQ26/25-3F36
-	with 12.0 turns of 15 gauge wire
-	and a core gap of 0.3 mm per side of the core.
-
-Switch requirements:
-	V_DS >= 155.748 (V)
-	I_D >= 7.374 (A)
-	P_D >= 1.119 (W)
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 1.166 (W)
 
 Switch selected:
 	EPC2215
-	with an optimal switching frequency of 10000 Hz
+	with an optimal switching frequency of 15000 Hz
 
 Input capacitor requirements:
-	C >= 46.744 uF
-	V >= 69.769 V
-	Irms >= 291.92527411738604 mA
+	C >= 16.175 uF
+	V >= 73.553 V
+	Irms >= 411.912873084719 mA
 
 Output capacitor requirements:
-	C >= 153.524 uF
-	V >= 130.279 V
-	Irms >= 291.92527411738604 mA
+	C >= 102.365 uF
+	V >= 130.286 V
+	Irms >= 411.912873084719 mA
 
 Inductor requirements:
-	L >= 3929.729 uH
-	I >= 6.52896570917895 A
+	L >= 1856.664 uH
+	I >= 6.707925619675343 A
 
 Switch requirements:
-	V_DS >= 155.748 (V)
-	I_D >= 7.374 (A)
-	P_D >= 0.616 (W)
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 0.642 (W)
 
 Switch selected:
 	EPC2019
 	with an optimal switching frequency of 5000 Hz
 
 Input capacitor requirements:
-	C >= 93.489 uF
-	V >= 69.769 V
-	Irms >= 291.92527411738604 mA
+	C >= 48.524 uF
+	V >= 73.553 V
+	Irms >= 411.912873084719 mA
 
 Output capacitor requirements:
-	C >= 307.048 uF
-	V >= 130.279 V
-	Irms >= 291.92527411738604 mA
+	C >= 307.094 uF
+	V >= 130.286 V
+	Irms >= 411.912873084719 mA
 
 Inductor requirements:
-	L >= 7859.457 uH
-	I >= 6.52896570917895 A
+	L >= 5569.992 uH
+	I >= 6.707925619675343 A
 
 Switch requirements:
-	V_DS >= 155.748 (V)
-	I_D >= 7.374 (A)
-	P_D >= 5.118 (W)
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 5.331 (W)
 
 Switch selected:
 	EPC2207
-	with an optimal switching frequency of 315000 Hz
+	with an optimal switching frequency of 330000 Hz
 
 Input capacitor requirements:
-	C >= 1.484 uF
-	V >= 69.769 V
-	Irms >= 291.92527411738604 mA
+	C >= 0.735 uF
+	V >= 73.553 V
+	Irms >= 411.912873084719 mA
 
 Output capacitor requirements:
-	C >= 4.874 uF
-	V >= 130.279 V
-	Irms >= 291.92527411738604 mA
+	C >= 4.653 uF
+	V >= 130.286 V
+	Irms >= 411.912873084719 mA
 
 Inductor requirements:
-	L >= 124.753 uH
-	I >= 6.52896570917895 A
+	L >= 84.394 uH
+	I >= 6.707925619675343 A
 
 Input capacitors selected:
 	Bulk caps: HZA336M080G24T-F
@@ -863,31 +761,101 @@ Output capacitors selected:
 
 Input inductor selected:
 	PQ26/25-3F36
-	with 24.0 turns of 18 gauge wire
-	and a core gap of 0.7 mm per side of the core.
+	with 17.0 turns of 16 gauge wire
+	and a core gap of 0.5 mm per side of the core.
 
 Switch requirements:
-	V_DS >= 155.748 (V)
-	I_D >= 7.374 (A)
-	P_D >= 4.022 (W)
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 4.190 (W)
 
 Switch selected:
 	EPC2207
-	with an optimal switching frequency of 215000 Hz
+	with an optimal switching frequency of 230000 Hz
 
 Input capacitor requirements:
-	C >= 2.174 uF
-	V >= 69.769 V
-	Irms >= 291.925274117386 mA
+	C >= 1.055 uF
+	V >= 73.553 V
+	Irms >= 411.912873084719 mA
 
 Output capacitor requirements:
-	C >= 7.141 uF
-	V >= 130.279 V
-	Irms >= 291.925274117386 mA
+	C >= 6.676 uF
+	V >= 130.286 V
+	Irms >= 411.912873084719 mA
 
 Inductor requirements:
-	L >= 182.778 uH
-	I >= 6.52896570917895 A
+	L >= 121.087 uH
+	I >= 6.707925619675343 A
+
+Input capacitors selected:
+	Bulk caps: HZA336M080G24T-F
+
+Output capacitors selected:
+	Bulk caps: A759MS186M2CAAE090
+
+Input inductor selected:
+	RM8/ILP-3C95
+	with 48.0 turns of 26 gauge wire
+	and a core gap of 1.4 mm per side of the core.
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 1.973 (W)
+
+Switch selected:
+	EPC2207
+	with an optimal switching frequency of 35000 Hz
+
+Input capacitor requirements:
+	C >= 6.932 uF
+	V >= 73.553 V
+	Irms >= 411.912873084719 mA
+
+Output capacitor requirements:
+	C >= 43.871 uF
+	V >= 130.286 V
+	Irms >= 411.912873084719 mA
+
+Inductor requirements:
+	L >= 795.713 uH
+	I >= 6.707925619675343 A
+
+Input capacitors selected:
+	Bulk caps: HZA336M080G24T-F
+
+Output capacitors selected:
+	Bulk caps: A759MS186M2CAAE090
+A759MS186M2CAAE090
+A759MS186M2CAAE090
+
+Input inductor selected:
+	PQ26/25-3C96
+	with 150.0 turns of 26 gauge wire
+	and a core gap of 4.0 mm per side of the core.
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.660 (W)
+
+Switch selected:
+	EPC2207
+	with an optimal switching frequency of 95000 Hz
+
+Input capacitor requirements:
+	C >= 2.554 uF
+	V >= 73.553 V
+	Irms >= 411.912873084719 mA
+
+Output capacitor requirements:
+	C >= 16.163 uF
+	V >= 130.286 V
+	Irms >= 411.912873084719 mA
+
+Inductor requirements:
+	L >= 293.157 uH
+	I >= 6.707925619675343 A
 
 Input capacitors selected:
 	Bulk caps: HZA336M080G24T-F
@@ -897,31 +865,31 @@ Output capacitors selected:
 
 Input inductor selected:
 	PQ26/25-3C96
-	with 34.0 turns of 19 gauge wire
-	and a core gap of 0.9 mm per side of the core.
+	with 56.0 turns of 21 gauge wire
+	and a core gap of 1.5 mm per side of the core.
 
 Switch requirements:
-	V_DS >= 155.748 (V)
-	I_D >= 7.374 (A)
-	P_D >= 2.361 (W)
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.501 (W)
 
 Switch selected:
 	EPC2207
-	with an optimal switching frequency of 60000 Hz
+	with an optimal switching frequency of 80000 Hz
 
 Input capacitor requirements:
-	C >= 7.791 uF
-	V >= 69.769 V
-	Irms >= 291.92527411738604 mA
+	C >= 3.033 uF
+	V >= 73.553 V
+	Irms >= 411.912873084719 mA
 
 Output capacitor requirements:
-	C >= 25.587 uF
-	V >= 130.279 V
-	Irms >= 291.92527411738604 mA
+	C >= 19.193 uF
+	V >= 130.286 V
+	Irms >= 411.912873084719 mA
 
 Inductor requirements:
-	L >= 654.955 uH
-	I >= 6.52896570917895 A
+	L >= 348.125 uH
+	I >= 6.707925619675343 A
 
 Input capacitors selected:
 	Bulk caps: HZA336M080G24T-F
@@ -932,31 +900,31 @@ A759MS186M2CAAE090
 
 Input inductor selected:
 	PQ26/25-3C96
-	with 120.0 turns of 25 gauge wire
-	and a core gap of 3.1 mm per side of the core.
+	with 66.0 turns of 22 gauge wire
+	and a core gap of 1.8 mm per side of the core.
 
 Switch requirements:
-	V_DS >= 155.748 (V)
-	I_D >= 7.374 (A)
-	P_D >= 3.259 (W)
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.754 (W)
 
 Switch selected:
 	EPC2207
-	with an optimal switching frequency of 145000 Hz
+	with an optimal switching frequency of 105000 Hz
 
 Input capacitor requirements:
-	C >= 3.224 uF
-	V >= 69.769 V
-	Irms >= 291.92527411738604 mA
+	C >= 2.311 uF
+	V >= 73.553 V
+	Irms >= 411.9128730847191 mA
 
 Output capacitor requirements:
-	C >= 10.588 uF
-	V >= 130.279 V
-	Irms >= 291.92527411738604 mA
+	C >= 14.624 uF
+	V >= 130.286 V
+	Irms >= 411.9128730847191 mA
 
 Inductor requirements:
-	L >= 271.016 uH
-	I >= 6.52896570917895 A
+	L >= 265.238 uH
+	I >= 6.707925619675343 A
 
 Input capacitors selected:
 	Bulk caps: HZA336M080G24T-F
@@ -970,1162 +938,27 @@ Input inductor selected:
 	and a core gap of 1.3 mm per side of the core.
 
 Switch requirements:
-	V_DS >= 155.748 (V)
-	I_D >= 7.374 (A)
-	P_D >= 2.711 (W)
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.697 (W)
 
 Switch selected:
 	EPC2207
-	with an optimal switching frequency of 95000 Hz
+	with an optimal switching frequency of 100000 Hz
 
 Input capacitor requirements:
-	C >= 4.920 uF
-	V >= 69.769 V
-	Irms >= 291.925274117386 mA
+	C >= 2.426 uF
+	V >= 73.553 V
+	Irms >= 411.912873084719 mA
 
 Output capacitor requirements:
-	C >= 16.160 uF
-	V >= 130.279 V
-	Irms >= 291.925274117386 mA
+	C >= 15.355 uF
+	V >= 130.286 V
+	Irms >= 411.912873084719 mA
 
 Inductor requirements:
-	L >= 413.656 uH
-	I >= 6.52896570917895 A
-
-Input capacitors selected:
-	Bulk caps: HZA336M080G24T-F
-
-Output capacitors selected:
-	Bulk caps: A759MS186M2CAAE090
-
-Input inductor selected:
-	PQ26/25-3C96
-	with 76.0 turns of 23 gauge wire
-	and a core gap of 2.0 mm per side of the core.
-
-Switch requirements:
-	V_DS >= 155.748 (V)
-	I_D >= 7.374 (A)
-	P_D >= 2.956 (W)
-
-Switch selected:
-	EPC2207
-	with an optimal switching frequency of 115000 Hz
-
-Input capacitor requirements:
-	C >= 4.065 uF
-	V >= 69.769 V
-	Irms >= 291.92527411738604 mA
-
-Output capacitor requirements:
-	C >= 13.350 uF
-	V >= 130.279 V
-	Irms >= 291.92527411738604 mA
-
-Inductor requirements:
-	L >= 341.716 uH
-	I >= 6.52896570917895 A
-
-Input capacitors selected:
-	Bulk caps: HZA336M080G24T-F
-
-Output capacitors selected:
-	Bulk caps: A759MS186M2CAAE090
-
-Input inductor selected:
-	PQ26/25-3C96
-	with 63.0 turns of 22 gauge wire
-	and a core gap of 1.6 mm per side of the core.
-
-Switch requirements:
-	V_DS >= 155.748 (V)
-	I_D >= 7.374 (A)
-	P_D >= 3.040 (W)
-
-Switch selected:
-	EPC2207
-	with an optimal switching frequency of 125000 Hz
-
-Input capacitor requirements:
-	C >= 3.740 uF
-	V >= 69.769 V
-	Irms >= 291.92527411738604 mA
-
-Output capacitor requirements:
-	C >= 12.282 uF
-	V >= 130.279 V
-	Irms >= 291.92527411738604 mA
-
-Inductor requirements:
-	L >= 314.378 uH
-	I >= 6.52896570917895 A
-
-Input capacitors selected:
-	Bulk caps: HZA336M080G24T-F
-
-Output capacitors selected:
-	Bulk caps: A759MS186M2CAAE090
-
-Input inductor selected:
-	PQ26/25-3C96
-	with 58.0 turns of 22 gauge wire
-	and a core gap of 1.5 mm per side of the core.
-
-Switch requirements:
-	V_DS >= 155.748 (V)
-	I_D >= 7.374 (A)
-	P_D >= 2.984 (W)
-
-Switch selected:
-	EPC2207
-	with an optimal switching frequency of 120000 Hz
-
-Input capacitor requirements:
-	C >= 3.895 uF
-	V >= 69.769 V
-	Irms >= 291.92527411738604 mA
-
-Output capacitor requirements:
-	C >= 12.794 uF
-	V >= 130.279 V
-	Irms >= 291.92527411738604 mA
-
-Inductor requirements:
-	L >= 327.477 uH
-	I >= 6.52896570917895 A
-
-Input capacitors selected:
-	Bulk caps: HZA336M080G24T-F
-
-Output capacitors selected:
-	Bulk caps: A759MS186M2CAAE090
-
-Input inductor selected:
-	PQ26/25-3C96
-	with 60.0 turns of 22 gauge wire
-	and a core gap of 1.6 mm per side of the core.
-
-Switch requirements:
-	V_DS >= 155.748 (V)
-	I_D >= 7.374 (A)
-	P_D >= 2.992 (W)
-
-Switch selected:
-	EPC2207
-	with an optimal switching frequency of 120000 Hz
-
-Input capacitor requirements:
-	C >= 3.895 uF
-	V >= 69.769 V
-	Irms >= 291.92527411738604 mA
-
-Output capacitor requirements:
-	C >= 12.794 uF
-	V >= 130.279 V
-	Irms >= 291.92527411738604 mA
-
-Inductor requirements:
-	L >= 327.477 uH
-	I >= 6.52896570917895 A
-
-Input capacitors selected:
-	Bulk caps: HZA336M080G24T-F
-
-Output capacitors selected:
-	Bulk caps: A759MS186M2CAAE090
-
-Input inductor selected:
-	PQ26/25-3C96
-	with 60.0 turns of 22 gauge wire
-	and a core gap of 1.6 mm per side of the core.
-
-Switch requirements:
-	V_DS >= 155.748 (V)
-	I_D >= 7.374 (A)
-	P_D >= 2.989 (W)
-
-Switch selected:
-	EPC2207
-	with an optimal switching frequency of 120000 Hz
-
-Input capacitor requirements:
-	C >= 3.895 uF
-	V >= 69.769 V
-	Irms >= 291.92527411738604 mA
-
-Output capacitor requirements:
-	C >= 12.794 uF
-	V >= 130.279 V
-	Irms >= 291.92527411738604 mA
-
-Inductor requirements:
-	L >= 327.477 uH
-	I >= 6.52896570917895 A
-
-Input capacitors selected:
-	Bulk caps: HZA336M080G24T-F
-
-Output capacitors selected:
-	Bulk caps: A759MS186M2CAAE090
-
-Input inductor selected:
-	PQ26/25-3C96
-	with 60.0 turns of 22 gauge wire
-	and a core gap of 1.6 mm per side of the core.
-
-Switch requirements:
-	V_DS >= 155.748 (V)
-	I_D >= 7.374 (A)
-	P_D >= 2.987 (W)
-
-Switch selected:
-	EPC2207
-	with an optimal switching frequency of 120000 Hz
-
-Input capacitor requirements:
-	C >= 3.895 uF
-	V >= 69.769 V
-	Irms >= 291.92527411738604 mA
-
-Output capacitor requirements:
-	C >= 12.794 uF
-	V >= 130.279 V
-	Irms >= 291.92527411738604 mA
-
-Inductor requirements:
-	L >= 327.477 uH
-	I >= 6.52896570917895 A
-
-Input capacitors selected:
-	Bulk caps: HZA336M080G24T-F
-
-Output capacitors selected:
-	Bulk caps: A759MS186M2CAAE090
-
-Input inductor selected:
-	PQ26/25-3C96
-	with 60.0 turns of 22 gauge wire
-	and a core gap of 1.6 mm per side of the core.
-
-Switch requirements:
-	V_DS >= 155.748 (V)
-	I_D >= 7.374 (A)
-	P_D >= 2.986 (W)
-
-Switch selected:
-	EPC2207
-	with an optimal switching frequency of 120000 Hz
-
-Input capacitor requirements:
-	C >= 3.895 uF
-	V >= 69.769 V
-	Irms >= 291.92527411738604 mA
-
-Output capacitor requirements:
-	C >= 12.794 uF
-	V >= 130.279 V
-	Irms >= 291.92527411738604 mA
-
-Inductor requirements:
-	L >= 327.477 uH
-	I >= 6.52896570917895 A
-
-Input capacitors selected:
-	Bulk caps: HZA336M080G24T-F
-
-Output capacitors selected:
-	Bulk caps: A759MS186M2CAAE090
-
-Input inductor selected:
-	PQ26/25-3C96
-	with 60.0 turns of 22 gauge wire
-	and a core gap of 1.6 mm per side of the core.
-
-Switch requirements:
-	V_DS >= 155.748 (V)
-	I_D >= 7.374 (A)
-	P_D >= 2.986 (W)
-
-Switch selected:
-	EPC2207
-	with an optimal switching frequency of 120000 Hz
-
-Input capacitor requirements:
-	C >= 3.895 uF
-	V >= 69.769 V
-	Irms >= 291.92527411738604 mA
-
-Output capacitor requirements:
-	C >= 12.794 uF
-	V >= 130.279 V
-	Irms >= 291.92527411738604 mA
-
-Inductor requirements:
-	L >= 327.477 uH
-	I >= 6.52896570917895 A
-
-Input capacitors selected:
-	Bulk caps: HZA336M080G24T-F
-
-Output capacitors selected:
-	Bulk caps: A759MS186M2CAAE090
-
-Input inductor selected:
-	PQ26/25-3C96
-	with 60.0 turns of 22 gauge wire
-	and a core gap of 1.6 mm per side of the core.
-
-Switch requirements:
-	V_DS >= 155.748 (V)
-	I_D >= 7.374 (A)
-	P_D >= 2.985 (W)
-
-Switch selected:
-	EPC2207
-	with an optimal switching frequency of 120000 Hz
-
-Input capacitor requirements:
-	C >= 3.895 uF
-	V >= 69.769 V
-	Irms >= 291.92527411738604 mA
-
-Output capacitor requirements:
-	C >= 12.794 uF
-	V >= 130.279 V
-	Irms >= 291.92527411738604 mA
-
-Inductor requirements:
-	L >= 327.477 uH
-	I >= 6.52896570917895 A
-
-Input capacitors selected:
-	Bulk caps: HZA336M080G24T-F
-
-Output capacitors selected:
-	Bulk caps: A759MS186M2CAAE090
-
-Input inductor selected:
-	PQ26/25-3C96
-	with 60.0 turns of 22 gauge wire
-	and a core gap of 1.6 mm per side of the core.
-
-Switch requirements:
-	V_DS >= 155.748 (V)
-	I_D >= 7.374 (A)
-	P_D >= 2.985 (W)
-
-Switch selected:
-	EPC2207
-	with an optimal switching frequency of 120000 Hz
-
-Input capacitor requirements:
-	C >= 3.895 uF
-	V >= 69.769 V
-	Irms >= 291.92527411738604 mA
-
-Output capacitor requirements:
-	C >= 12.794 uF
-	V >= 130.279 V
-	Irms >= 291.92527411738604 mA
-
-Inductor requirements:
-	L >= 327.477 uH
-	I >= 6.52896570917895 A
-
-Input capacitors selected:
-	Bulk caps: HZA336M080G24T-F
-
-Output capacitors selected:
-	Bulk caps: A759MS186M2CAAE090
-
-Input inductor selected:
-	PQ26/25-3C96
-	with 60.0 turns of 22 gauge wire
-	and a core gap of 1.6 mm per side of the core.
-
-Switch requirements:
-	V_DS >= 155.748 (V)
-	I_D >= 7.374 (A)
-	P_D >= 2.985 (W)
-
-Switch selected:
-	EPC2207
-	with an optimal switching frequency of 120000 Hz
-
-Input capacitor requirements:
-	C >= 3.895 uF
-	V >= 69.769 V
-	Irms >= 291.92527411738604 mA
-
-Output capacitor requirements:
-	C >= 12.794 uF
-	V >= 130.279 V
-	Irms >= 291.92527411738604 mA
-
-Inductor requirements:
-	L >= 327.477 uH
-	I >= 6.52896570917895 A
-
-Input capacitors selected:
-	Bulk caps: HZA336M080G24T-F
-
-Output capacitors selected:
-	Bulk caps: A759MS186M2CAAE090
-
-Input inductor selected:
-	PQ26/25-3C96
-	with 60.0 turns of 22 gauge wire
-	and a core gap of 1.6 mm per side of the core.
-
-Switch requirements:
-	V_DS >= 155.748 (V)
-	I_D >= 7.374 (A)
-	P_D >= 2.969 (W)
-
-Switch selected:
-	EPC2207
-	with an optimal switching frequency of 115000 Hz
-
-Input capacitor requirements:
-	C >= 4.122 uF
-	V >= 69.769 V
-	Irms >= 296.04623714823526 mA
-
-Output capacitor requirements:
-	C >= 13.350 uF
-	V >= 130.279 V
-	Irms >= 296.04623714823526 mA
-
-Inductor requirements:
-	L >= 336.959 uH
-	I >= 6.534583591974569 A
-
-Input capacitors selected:
-	Bulk caps: HZA336M080G24T-F
-
-Output capacitors selected:
-	Bulk caps: A759MS186M2CAAE090
-
-Input inductor selected:
-	PQ26/25-3C96
-	with 62.0 turns of 22 gauge wire
-	and a core gap of 1.6 mm per side of the core.
-
-Switch requirements:
-	V_DS >= 155.748 (V)
-	I_D >= 7.374 (A)
-	P_D >= 2.985 (W)
-
-Switch selected:
-	EPC2207
-	with an optimal switching frequency of 120000 Hz
-
-Input capacitor requirements:
-	C >= 3.895 uF
-	V >= 69.769 V
-	Irms >= 291.92527411738604 mA
-
-Output capacitor requirements:
-	C >= 12.794 uF
-	V >= 130.279 V
-	Irms >= 291.92527411738604 mA
-
-Inductor requirements:
-	L >= 327.477 uH
-	I >= 6.52896570917895 A
-
-Input capacitors selected:
-	Bulk caps: HZA336M080G24T-F
-
-Output capacitors selected:
-	Bulk caps: A759MS186M2CAAE090
-
-Input inductor selected:
-	PQ26/25-3C96
-	with 60.0 turns of 22 gauge wire
-	and a core gap of 1.6 mm per side of the core.
-
-Switch requirements:
-	V_DS >= 155.748 (V)
-	I_D >= 7.374 (A)
-	P_D >= 2.969 (W)
-
-Switch selected:
-	EPC2207
-	with an optimal switching frequency of 115000 Hz
-
-Input capacitor requirements:
-	C >= 4.122 uF
-	V >= 69.769 V
-	Irms >= 296.04623714823526 mA
-
-Output capacitor requirements:
-	C >= 13.350 uF
-	V >= 130.279 V
-	Irms >= 296.04623714823526 mA
-
-Inductor requirements:
-	L >= 336.959 uH
-	I >= 6.534583591974569 A
-
-Input capacitors selected:
-	Bulk caps: HZA336M080G24T-F
-
-Output capacitors selected:
-	Bulk caps: A759MS186M2CAAE090
-
-Input inductor selected:
-	PQ26/25-3C96
-	with 62.0 turns of 22 gauge wire
-	and a core gap of 1.6 mm per side of the core.
-
-Switch requirements:
-	V_DS >= 155.748 (V)
-	I_D >= 7.374 (A)
-	P_D >= 2.945 (W)
-
-Switch selected:
-	EPC2207
-	with an optimal switching frequency of 110000 Hz
-
-Input capacitor requirements:
-	C >= 4.407 uF
-	V >= 69.769 V
-	Irms >= 302.75194202627284 mA
-
-Output capacitor requirements:
-	C >= 13.957 uF
-	V >= 130.279 V
-	Irms >= 302.75194202627284 mA
-
-Inductor requirements:
-	L >= 344.473 uH
-	I >= 6.54372511151377 A
-
-Input capacitors selected:
-	Bulk caps: HZA336M080G24T-F
-
-Output capacitors selected:
-	Bulk caps: A759MS186M2CAAE090
-
-Input inductor selected:
-	PQ26/25-3C96
-	with 64.0 turns of 22 gauge wire
-	and a core gap of 1.7 mm per side of the core.
-
-Switch requirements:
-	V_DS >= 155.748 (V)
-	I_D >= 7.374 (A)
-	P_D >= 2.960 (W)
-
-Switch selected:
-	EPC2207
-	with an optimal switching frequency of 115000 Hz
-
-Input capacitor requirements:
-	C >= 4.158 uF
-	V >= 69.769 V
-	Irms >= 298.6021306889385 mA
-
-Output capacitor requirements:
-	C >= 13.350 uF
-	V >= 130.279 V
-	Irms >= 298.6021306889385 mA
-
-Inductor requirements:
-	L >= 334.075 uH
-	I >= 6.538067901404736 A
-
-Input capacitors selected:
-	Bulk caps: HZA336M080G24T-F
-
-Output capacitors selected:
-	Bulk caps: A759MS186M2CAAE090
-
-Input inductor selected:
-	PQ26/25-3C96
-	with 62.0 turns of 22 gauge wire
-	and a core gap of 1.6 mm per side of the core.
-
-Switch requirements:
-	V_DS >= 155.748 (V)
-	I_D >= 7.374 (A)
-	P_D >= 2.975 (W)
-
-Switch selected:
-	EPC2207
-	with an optimal switching frequency of 120000 Hz
-
-Input capacitor requirements:
-	C >= 3.929 uF
-	V >= 69.769 V
-	Irms >= 294.47003007537216 mA
-
-Output capacitor requirements:
-	C >= 12.794 uF
-	V >= 130.279 V
-	Irms >= 294.47003007537216 mA
-
-Inductor requirements:
-	L >= 324.647 uH
-	I >= 6.532434835353682 A
-
-Input capacitors selected:
-	Bulk caps: HZA336M080G24T-F
-
-Output capacitors selected:
-	Bulk caps: A759MS186M2CAAE090
-
-Input inductor selected:
-	PQ26/25-3C96
-	with 60.0 turns of 22 gauge wire
-	and a core gap of 1.6 mm per side of the core.
-
-Switch requirements:
-	V_DS >= 155.748 (V)
-	I_D >= 7.374 (A)
-	P_D >= 2.968 (W)
-
-Switch selected:
-	EPC2207
-	with an optimal switching frequency of 115000 Hz
-
-Input capacitor requirements:
-	C >= 4.129 uF
-	V >= 69.769 V
-	Irms >= 296.5299224454561 mA
-
-Output capacitor requirements:
-	C >= 13.350 uF
-	V >= 130.279 V
-	Irms >= 296.5299224454561 mA
-
-Inductor requirements:
-	L >= 336.409 uH
-	I >= 6.5352429736019735 A
-
-Input capacitors selected:
-	Bulk caps: HZA336M080G24T-F
-
-Output capacitors selected:
-	Bulk caps: A759MS186M2CAAE090
-
-Input inductor selected:
-	PQ26/25-3C96
-	with 62.0 turns of 22 gauge wire
-	and a core gap of 1.6 mm per side of the core.
-
-Switch requirements:
-	V_DS >= 155.748 (V)
-	I_D >= 7.374 (A)
-	P_D >= 2.970 (W)
-
-Switch selected:
-	EPC2207
-	with an optimal switching frequency of 115000 Hz
-
-Input capacitor requirements:
-	C >= 4.120 uF
-	V >= 69.769 V
-	Irms >= 295.89345588403495 mA
-
-Output capacitor requirements:
-	C >= 13.350 uF
-	V >= 130.279 V
-	Irms >= 295.89345588403495 mA
-
-Inductor requirements:
-	L >= 337.133 uH
-	I >= 6.534375313659715 A
-
-Input capacitors selected:
-	Bulk caps: HZA336M080G24T-F
-
-Output capacitors selected:
-	Bulk caps: A759MS186M2CAAE090
-
-Input inductor selected:
-	PQ26/25-3C96
-	with 62.0 turns of 22 gauge wire
-	and a core gap of 1.6 mm per side of the core.
-
-Switch requirements:
-	V_DS >= 155.748 (V)
-	I_D >= 7.374 (A)
-	P_D >= 2.972 (W)
-
-Switch selected:
-	EPC2207
-	with an optimal switching frequency of 115000 Hz
-
-Input capacitor requirements:
-	C >= 4.112 uF
-	V >= 69.769 V
-	Irms >= 295.3495024587056 mA
-
-Output capacitor requirements:
-	C >= 13.350 uF
-	V >= 130.279 V
-	Irms >= 295.3495024587056 mA
-
-Inductor requirements:
-	L >= 337.754 uH
-	I >= 6.533633771799985 A
-
-Input capacitors selected:
-	Bulk caps: HZA336M080G24T-F
-
-Output capacitors selected:
-	Bulk caps: A759MS186M2CAAE090
-
-Input inductor selected:
-	PQ26/25-3C96
-	with 62.0 turns of 22 gauge wire
-	and a core gap of 1.6 mm per side of the core.
-
-Switch requirements:
-	V_DS >= 155.748 (V)
-	I_D >= 7.374 (A)
-	P_D >= 2.973 (W)
-
-Switch selected:
-	EPC2207
-	with an optimal switching frequency of 115000 Hz
-
-Input capacitor requirements:
-	C >= 4.108 uF
-	V >= 69.769 V
-	Irms >= 295.0134770645866 mA
-
-Output capacitor requirements:
-	C >= 13.350 uF
-	V >= 130.279 V
-	Irms >= 295.0134770645866 mA
-
-Inductor requirements:
-	L >= 338.138 uH
-	I >= 6.533175686816843 A
-
-Input capacitors selected:
-	Bulk caps: HZA336M080G24T-F
-
-Output capacitors selected:
-	Bulk caps: A759MS186M2CAAE090
-
-Input inductor selected:
-	PQ26/25-3C96
-	with 62.0 turns of 22 gauge wire
-	and a core gap of 1.6 mm per side of the core.
-
-Switch requirements:
-	V_DS >= 155.748 (V)
-	I_D >= 7.374 (A)
-	P_D >= 2.974 (W)
-
-Switch selected:
-	EPC2207
-	with an optimal switching frequency of 120000 Hz
-
-Input capacitor requirements:
-	C >= 3.934 uF
-	V >= 69.769 V
-	Irms >= 294.8058617656348 mA
-
-Output capacitor requirements:
-	C >= 12.794 uF
-	V >= 130.279 V
-	Irms >= 294.8058617656348 mA
-
-Inductor requirements:
-	L >= 324.278 uH
-	I >= 6.532892656270984 A
-
-Input capacitors selected:
-	Bulk caps: HZA336M080G24T-F
-
-Output capacitors selected:
-	Bulk caps: A759MS186M2CAAE090
-
-Input inductor selected:
-	PQ26/25-3C96
-	with 60.0 turns of 22 gauge wire
-	and a core gap of 1.6 mm per side of the core.
-
-Switch requirements:
-	V_DS >= 155.748 (V)
-	I_D >= 7.374 (A)
-	P_D >= 2.973 (W)
-
-Switch selected:
-	EPC2207
-	with an optimal switching frequency of 115000 Hz
-
-Input capacitor requirements:
-	C >= 4.110 uF
-	V >= 69.769 V
-	Irms >= 295.14181322695623 mA
-
-Output capacitor requirements:
-	C >= 13.350 uF
-	V >= 130.279 V
-	Irms >= 295.14181322695623 mA
-
-Inductor requirements:
-	L >= 337.991 uH
-	I >= 6.533350640465598 A
-
-Input capacitors selected:
-	Bulk caps: HZA336M080G24T-F
-
-Output capacitors selected:
-	Bulk caps: A759MS186M2CAAE090
-
-Input inductor selected:
-	PQ26/25-3C96
-	with 62.0 turns of 22 gauge wire
-	and a core gap of 1.6 mm per side of the core.
-
-Switch requirements:
-	V_DS >= 155.748 (V)
-	I_D >= 7.374 (A)
-	P_D >= 2.974 (W)
-
-Switch selected:
-	EPC2207
-	with an optimal switching frequency of 115000 Hz
-
-Input capacitor requirements:
-	C >= 4.107 uF
-	V >= 69.769 V
-	Irms >= 294.9341696815443 mA
-
-Output capacitor requirements:
-	C >= 13.350 uF
-	V >= 130.279 V
-	Irms >= 294.9341696815443 mA
-
-Inductor requirements:
-	L >= 338.229 uH
-	I >= 6.533067571412889 A
-
-Input capacitors selected:
-	Bulk caps: HZA336M080G24T-F
-
-Output capacitors selected:
-	Bulk caps: A759MS186M2CAAE090
-
-Input inductor selected:
-	PQ26/25-3C96
-	with 62.0 turns of 22 gauge wire
-	and a core gap of 1.6 mm per side of the core.
-
-Switch requirements:
-	V_DS >= 155.748 (V)
-	I_D >= 7.374 (A)
-	P_D >= 2.974 (W)
-
-Switch selected:
-	EPC2207
-	with an optimal switching frequency of 120000 Hz
-
-Input capacitor requirements:
-	C >= 3.935 uF
-	V >= 69.769 V
-	Irms >= 294.88515835792026 mA
-
-Output capacitor requirements:
-	C >= 12.794 uF
-	V >= 130.279 V
-	Irms >= 294.88515835792026 mA
-
-Inductor requirements:
-	L >= 324.190 uH
-	I >= 6.533000756964491 A
-
-Input capacitors selected:
-	Bulk caps: HZA336M080G24T-F
-
-Output capacitors selected:
-	Bulk caps: A759MS186M2CAAE090
-
-Input inductor selected:
-	PQ26/25-3C96
-	with 60.0 turns of 22 gauge wire
-	and a core gap of 1.6 mm per side of the core.
-
-Switch requirements:
-	V_DS >= 155.748 (V)
-	I_D >= 7.374 (A)
-	P_D >= 2.973 (W)
-
-Switch selected:
-	EPC2207
-	with an optimal switching frequency of 115000 Hz
-
-Input capacitor requirements:
-	C >= 4.107 uF
-	V >= 69.769 V
-	Irms >= 294.96446161810655 mA
-
-Output capacitor requirements:
-	C >= 13.350 uF
-	V >= 130.279 V
-	Irms >= 294.96446161810655 mA
-
-Inductor requirements:
-	L >= 338.195 uH
-	I >= 6.533108866747981 A
-
-Input capacitors selected:
-	Bulk caps: HZA336M080G24T-F
-
-Output capacitors selected:
-	Bulk caps: A759MS186M2CAAE090
-
-Input inductor selected:
-	PQ26/25-3C96
-	with 62.0 turns of 22 gauge wire
-	and a core gap of 1.6 mm per side of the core.
-
-Switch requirements:
-	V_DS >= 155.748 (V)
-	I_D >= 7.374 (A)
-	P_D >= 2.974 (W)
-
-Switch selected:
-	EPC2207
-	with an optimal switching frequency of 115000 Hz
-
-Input capacitor requirements:
-	C >= 4.107 uF
-	V >= 69.769 V
-	Irms >= 294.9341696815443 mA
-
-Output capacitor requirements:
-	C >= 13.350 uF
-	V >= 130.279 V
-	Irms >= 294.9341696815443 mA
-
-Inductor requirements:
-	L >= 338.229 uH
-	I >= 6.533067571412889 A
-
-Input capacitors selected:
-	Bulk caps: HZA336M080G24T-F
-
-Output capacitors selected:
-	Bulk caps: A759MS186M2CAAE090
-
-Input inductor selected:
-	PQ26/25-3C96
-	with 62.0 turns of 22 gauge wire
-	and a core gap of 1.6 mm per side of the core.
-
-Switch requirements:
-	V_DS >= 155.748 (V)
-	I_D >= 7.374 (A)
-	P_D >= 8.663 (W)
-
-Switch selected:
-	EPC2207
-	with an optimal switching frequency of 640000 Hz
-
-Input capacitor requirements:
-	C >= 0.738 uF
-	V >= 69.769 V
-	Irms >= 294.9341696815443 mA
-
-Output capacitor requirements:
-	C >= 2.399 uF
-	V >= 130.279 V
-	Irms >= 294.9341696815443 mA
-
-Inductor requirements:
-	L >= 60.776 uH
-	I >= 6.533067571412889 A
-
-Input capacitors selected:
-	Bulk caps: HZA336M080G24T-F
-
-Output capacitors selected:
-	Bulk caps: A759MS186M2CAAE090
-
-Input inductor selected:
-	PQ26/25-3F36
-	with 12.0 turns of 15 gauge wire
-	and a core gap of 0.3 mm per side of the core.
-
-Switch requirements:
-	V_DS >= 155.748 (V)
-	I_D >= 7.374 (A)
-	P_D >= 1.136 (W)
-
-Switch selected:
-	EPC2215
-	with an optimal switching frequency of 10000 Hz
-
-Input capacitor requirements:
-	C >= 47.226 uF
-	V >= 69.769 V
-	Irms >= 294.9341696815443 mA
-
-Output capacitor requirements:
-	C >= 153.524 uF
-	V >= 130.279 V
-	Irms >= 294.9341696815443 mA
-
-Inductor requirements:
-	L >= 3889.638 uH
-	I >= 6.533067571412889 A
-
-Switch requirements:
-	V_DS >= 155.748 (V)
-	I_D >= 7.374 (A)
-	P_D >= 0.604 (W)
-
-Switch selected:
-	EPC2019
-	with an optimal switching frequency of 5000 Hz
-
-Input capacitor requirements:
-	C >= 94.452 uF
-	V >= 69.769 V
-	Irms >= 294.9341696815443 mA
-
-Output capacitor requirements:
-	C >= 307.048 uF
-	V >= 130.279 V
-	Irms >= 294.9341696815443 mA
-
-Inductor requirements:
-	L >= 7779.276 uH
-	I >= 6.533067571412889 A
-
-Switch requirements:
-	V_DS >= 155.748 (V)
-	I_D >= 7.374 (A)
-	P_D >= 5.088 (W)
-
-Switch selected:
-	EPC2207
-	with an optimal switching frequency of 310000 Hz
-
-Input capacitor requirements:
-	C >= 1.523 uF
-	V >= 69.769 V
-	Irms >= 294.9341696815443 mA
-
-Output capacitor requirements:
-	C >= 4.952 uF
-	V >= 130.279 V
-	Irms >= 294.9341696815443 mA
-
-Inductor requirements:
-	L >= 125.472 uH
-	I >= 6.533067571412889 A
-
-Input capacitors selected:
-	Bulk caps: HZA336M080G24T-F
-
-Output capacitors selected:
-	Bulk caps: A759MS186M2CAAE090
-
-Input inductor selected:
-	RM8/ILP-3C95
-	with 49.0 turns of 26 gauge wire
-	and a core gap of 1.4 mm per side of the core.
-
-Switch requirements:
-	V_DS >= 155.748 (V)
-	I_D >= 7.374 (A)
-	P_D >= 3.993 (W)
-
-Switch selected:
-	EPC2207
-	with an optimal switching frequency of 210000 Hz
-
-Input capacitor requirements:
-	C >= 2.249 uF
-	V >= 69.769 V
-	Irms >= 294.9341696815443 mA
-
-Output capacitor requirements:
-	C >= 7.311 uF
-	V >= 130.279 V
-	Irms >= 294.9341696815443 mA
-
-Inductor requirements:
-	L >= 185.221 uH
-	I >= 6.533067571412889 A
-
-Input capacitors selected:
-	Bulk caps: HZA336M080G24T-F
-
-Output capacitors selected:
-	Bulk caps: A759MS186M2CAAE090
-
-Input inductor selected:
-	PQ26/25-3C96
-	with 34.0 turns of 19 gauge wire
-	and a core gap of 0.9 mm per side of the core.
-
-Switch requirements:
-	V_DS >= 155.748 (V)
-	I_D >= 7.374 (A)
-	P_D >= 2.465 (W)
-
-Switch selected:
-	EPC2207
-	with an optimal switching frequency of 70000 Hz
-
-Input capacitor requirements:
-	C >= 6.747 uF
-	V >= 69.769 V
-	Irms >= 294.93416968154435 mA
-
-Output capacitor requirements:
-	C >= 21.932 uF
-	V >= 130.279 V
-	Irms >= 294.93416968154435 mA
-
-Inductor requirements:
-	L >= 555.663 uH
-	I >= 6.533067571412889 A
-
-Input capacitors selected:
-	Bulk caps: HZA336M080G24T-F
-
-Output capacitors selected:
-	Bulk caps: A759MS186M2CAAE090
-A759MS186M2CAAE090
-
-Input inductor selected:
-	PQ26/25-3C96
-	with 102.0 turns of 24 gauge wire
-	and a core gap of 2.7 mm per side of the core.
-
-Switch requirements:
-	V_DS >= 155.748 (V)
-	I_D >= 7.374 (A)
-	P_D >= 3.187 (W)
-
-Switch selected:
-	EPC2207
-	with an optimal switching frequency of 135000 Hz
-
-Input capacitor requirements:
-	C >= 3.498 uF
-	V >= 69.769 V
-	Irms >= 294.9341696815443 mA
-
-Output capacitor requirements:
-	C >= 11.372 uF
-	V >= 130.279 V
-	Irms >= 294.9341696815443 mA
-
-Inductor requirements:
-	L >= 288.121 uH
-	I >= 6.533067571412889 A
+	L >= 278.500 uH
+	I >= 6.707925619675343 A
 
 Input capacitors selected:
 	Bulk caps: HZA336M080G24T-F
@@ -2139,27 +972,27 @@ Input inductor selected:
 	and a core gap of 1.4 mm per side of the core.
 
 Switch requirements:
-	V_DS >= 155.748 (V)
-	I_D >= 7.374 (A)
-	P_D >= 3.012 (W)
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.666 (W)
 
 Switch selected:
 	EPC2207
-	with an optimal switching frequency of 120000 Hz
+	with an optimal switching frequency of 95000 Hz
 
 Input capacitor requirements:
-	C >= 3.936 uF
-	V >= 69.769 V
-	Irms >= 294.9341696815443 mA
+	C >= 2.554 uF
+	V >= 73.553 V
+	Irms >= 411.912873084719 mA
 
 Output capacitor requirements:
-	C >= 12.794 uF
-	V >= 130.279 V
-	Irms >= 294.9341696815443 mA
+	C >= 16.163 uF
+	V >= 130.286 V
+	Irms >= 411.912873084719 mA
 
 Inductor requirements:
-	L >= 324.136 uH
-	I >= 6.533067571412889 A
+	L >= 293.157 uH
+	I >= 6.707925619675343 A
 
 Input capacitors selected:
 	Bulk caps: HZA336M080G24T-F
@@ -2169,31 +1002,65 @@ Output capacitors selected:
 
 Input inductor selected:
 	PQ26/25-3C96
-	with 60.0 turns of 22 gauge wire
-	and a core gap of 1.6 mm per side of the core.
+	with 56.0 turns of 21 gauge wire
+	and a core gap of 1.5 mm per side of the core.
 
 Switch requirements:
-	V_DS >= 155.748 (V)
-	I_D >= 7.374 (A)
-	P_D >= 2.775 (W)
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.670 (W)
+
+Switch selected:
+	EPC2207
+	with an optimal switching frequency of 95000 Hz
+
+Input capacitor requirements:
+	C >= 2.554 uF
+	V >= 73.553 V
+	Irms >= 411.912873084719 mA
+
+Output capacitor requirements:
+	C >= 16.163 uF
+	V >= 130.286 V
+	Irms >= 411.912873084719 mA
+
+Inductor requirements:
+	L >= 293.157 uH
+	I >= 6.707925619675343 A
+
+Input capacitors selected:
+	Bulk caps: HZA336M080G24T-F
+
+Output capacitors selected:
+	Bulk caps: A759MS186M2CAAE090
+
+Input inductor selected:
+	PQ26/25-3C96
+	with 56.0 turns of 21 gauge wire
+	and a core gap of 1.5 mm per side of the core.
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.681 (W)
 
 Switch selected:
 	EPC2207
 	with an optimal switching frequency of 100000 Hz
 
 Input capacitor requirements:
-	C >= 4.723 uF
-	V >= 69.769 V
-	Irms >= 294.9341696815443 mA
+	C >= 2.426 uF
+	V >= 73.553 V
+	Irms >= 411.912873084719 mA
 
 Output capacitor requirements:
-	C >= 15.352 uF
-	V >= 130.279 V
-	Irms >= 294.9341696815443 mA
+	C >= 15.355 uF
+	V >= 130.286 V
+	Irms >= 411.912873084719 mA
 
 Inductor requirements:
-	L >= 388.964 uH
-	I >= 6.533067571412889 A
+	L >= 278.500 uH
+	I >= 6.707925619675343 A
 
 Input capacitors selected:
 	Bulk caps: HZA336M080G24T-F
@@ -2203,31 +1070,309 @@ Output capacitors selected:
 
 Input inductor selected:
 	PQ26/25-3C96
-	with 72.0 turns of 22 gauge wire
+	with 53.0 turns of 21 gauge wire
+	and a core gap of 1.4 mm per side of the core.
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.675 (W)
+
+Switch selected:
+	EPC2207
+	with an optimal switching frequency of 100000 Hz
+
+Input capacitor requirements:
+	C >= 2.426 uF
+	V >= 73.553 V
+	Irms >= 411.912873084719 mA
+
+Output capacitor requirements:
+	C >= 15.355 uF
+	V >= 130.286 V
+	Irms >= 411.912873084719 mA
+
+Inductor requirements:
+	L >= 278.500 uH
+	I >= 6.707925619675343 A
+
+Input capacitors selected:
+	Bulk caps: HZA336M080G24T-F
+
+Output capacitors selected:
+	Bulk caps: A759MS186M2CAAE090
+
+Input inductor selected:
+	PQ26/25-3C96
+	with 53.0 turns of 21 gauge wire
+	and a core gap of 1.4 mm per side of the core.
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.244 (W)
+
+Switch selected:
+	EPC2207
+	with an optimal switching frequency of 80000 Hz
+
+Input capacitor requirements:
+	C >= 2.197 uF
+	V >= 73.553 V
+	Irms >= 298.33688825906427 mA
+
+Output capacitor requirements:
+	C >= 19.193 uF
+	V >= 130.286 V
+	Irms >= 298.33688825906427 mA
+
+Inductor requirements:
+	L >= 480.654 uH
+	I >= 6.549678155877699 A
+
+Input capacitors selected:
+	Bulk caps: HZA336M080G24T-F
+
+Output capacitors selected:
+	Bulk caps: A759MS186M2CAAE090
+A759MS186M2CAAE090
+
+Input inductor selected:
+	PQ26/25-3C96
+	with 89.0 turns of 23 gauge wire
+	and a core gap of 2.3 mm per side of the core.
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.670 (W)
+
+Switch selected:
+	EPC2207
+	with an optimal switching frequency of 95000 Hz
+
+Input capacitor requirements:
+	C >= 2.554 uF
+	V >= 73.553 V
+	Irms >= 411.912873084719 mA
+
+Output capacitor requirements:
+	C >= 16.163 uF
+	V >= 130.286 V
+	Irms >= 411.912873084719 mA
+
+Inductor requirements:
+	L >= 293.157 uH
+	I >= 6.707925619675343 A
+
+Input capacitors selected:
+	Bulk caps: HZA336M080G24T-F
+
+Output capacitors selected:
+	Bulk caps: A759MS186M2CAAE090
+
+Input inductor selected:
+	PQ26/25-3C96
+	with 56.0 turns of 21 gauge wire
+	and a core gap of 1.5 mm per side of the core.
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.670 (W)
+
+Switch selected:
+	EPC2215
+	with an optimal switching frequency of 25000 Hz
+
+Input capacitor requirements:
+	C >= 29.497 uF
+	V >= 73.553 V
+	Irms >= 1251.9812902500123 mA
+
+Output capacitor requirements:
+	C >= 61.419 uF
+	V >= 130.286 V
+	Irms >= 1251.9812902500123 mA
+
+Inductor requirements:
+	L >= 366.515 uH
+	I >= 7.8852998985262035 A
+
+Input capacitors selected:
+	Bulk caps: HZA336M080G24T-F
+
+Output capacitors selected:
+	Bulk caps: A759MS186M2CAAE090
+A759MS186M2CAAE090
+A759MS186M2CAAE090
+A759MS186M2CAAE090
+
+Input inductor selected:
+	PQ26/25-3C96
+	with 82.0 turns of 23 gauge wire
+	and a core gap of 2.6 mm per side of the core.
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.670 (W)
+
+Switch selected:
+	EPC2207
+	with an optimal switching frequency of 125000 Hz
+
+Input capacitor requirements:
+	C >= 1.037 uF
+	V >= 73.553 V
+	Irms >= 220.06358566938155 mA
+
+Output capacitor requirements:
+	C >= 12.284 uF
+	V >= 130.286 V
+	Irms >= 220.06358566938155 mA
+
+Inductor requirements:
+	L >= 417.034 uH
+	I >= 6.44090297381786 A
+
+Input capacitors selected:
+	Bulk caps: HZA336M080G24T-F
+
+Output capacitors selected:
+	Bulk caps: A759MS186M2CAAE090
+
+Input inductor selected:
+	PQ26/25-3C96
+	with 76.0 turns of 23 gauge wire
+	and a core gap of 2.0 mm per side of the core.
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.670 (W)
+
+Switch selected:
+	EPC2207
+	with an optimal switching frequency of 140000 Hz
+
+Input capacitor requirements:
+	C >= 0.366 uF
+	V >= 73.553 V
+	Irms >= 87.01469778553121 mA
+
+Output capacitor requirements:
+	C >= 10.968 uF
+	V >= 130.286 V
+	Irms >= 87.01469778553121 mA
+
+Inductor requirements:
+	L >= 941.693 uH
+	I >= 6.256882386829825 A
+
+Input capacitors selected:
+	Bulk caps: HZA336M080G24T-F
+
+Output capacitors selected:
+	Bulk caps: A759MS186M2CAAE090
+
+Input inductor selected:
+	PQ26/25-3C96
+	with 166.0 turns of 26 gauge wire
+	and a core gap of 4.2 mm per side of the core.
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.670 (W)
+
+Switch selected:
+	EPC2215
+	with an optimal switching frequency of 50000 Hz
+
+Input capacitor requirements:
+	C >= 8.453 uF
+	V >= 73.553 V
+	Irms >= 717.5181624308115 mA
+
+Output capacitor requirements:
+	C >= 30.709 uF
+	V >= 130.286 V
+	Irms >= 717.5181624308115 mA
+
+Inductor requirements:
+	L >= 319.762 uH
+	I >= 7.1354403892835245 A
+
+Input capacitors selected:
+	Bulk caps: HZA336M080G24T-F
+
+Output capacitors selected:
+	Bulk caps: A759MS186M2CAAE090
+A759MS186M2CAAE090
+
+Input inductor selected:
+	PQ26/25-3C96
+	with 65.0 turns of 22 gauge wire
 	and a core gap of 1.9 mm per side of the core.
 
 Switch requirements:
-	V_DS >= 155.748 (V)
-	I_D >= 7.374 (A)
-	P_D >= 2.917 (W)
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.670 (W)
+
+Switch selected:
+	EPC2207
+	with an optimal switching frequency of 80000 Hz
+
+Input capacitor requirements:
+	C >= 3.786 uF
+	V >= 73.553 V
+	Irms >= 514.1586723085115 mA
+
+Output capacitor requirements:
+	C >= 19.193 uF
+	V >= 130.286 V
+	Irms >= 514.1586723085115 mA
+
+Inductor requirements:
+	L >= 278.896 uH
+	I >= 6.8507612046746456 A
+
+Input capacitors selected:
+	Bulk caps: HZA336M080G24T-F
+
+Output capacitors selected:
+	Bulk caps: A759MS186M2CAAE090
+A759MS186M2CAAE090
+
+Input inductor selected:
+	PQ26/25-3C96
+	with 54.0 turns of 21 gauge wire
+	and a core gap of 1.5 mm per side of the core.
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.670 (W)
 
 Switch selected:
 	EPC2207
 	with an optimal switching frequency of 110000 Hz
 
 Input capacitor requirements:
-	C >= 4.293 uF
-	V >= 69.769 V
-	Irms >= 294.9341696815443 mA
+	C >= 1.797 uF
+	V >= 73.553 V
+	Irms >= 335.6125074573288 mA
 
 Output capacitor requirements:
-	C >= 13.957 uF
-	V >= 130.279 V
-	Irms >= 294.9341696815443 mA
+	C >= 13.959 uF
+	V >= 130.286 V
+	Irms >= 335.6125074573288 mA
 
 Inductor requirements:
-	L >= 353.603 uH
-	I >= 6.533067571412889 A
+	L >= 310.741 uH
+	I >= 6.601614946993067 A
 
 Input capacitors selected:
 	Bulk caps: HZA336M080G24T-F
@@ -2237,31 +1382,742 @@ Output capacitors selected:
 
 Input inductor selected:
 	PQ26/25-3C96
-	with 65.0 turns of 22 gauge wire
+	with 58.0 turns of 22 gauge wire
+	and a core gap of 1.5 mm per side of the core.
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.670 (W)
+
+Switch selected:
+	EPC2207
+	with an optimal switching frequency of 100000 Hz
+
+Input capacitor requirements:
+	C >= 2.382 uF
+	V >= 73.553 V
+	Irms >= 404.43186803522525 mA
+
+Output capacitor requirements:
+	C >= 15.355 uF
+	V >= 130.286 V
+	Irms >= 404.43186803522525 mA
+
+Inductor requirements:
+	L >= 283.651 uH
+	I >= 6.697502200696789 A
+
+Input capacitors selected:
+	Bulk caps: HZA336M080G24T-F
+
+Output capacitors selected:
+	Bulk caps: A759MS186M2CAAE090
+
+Input inductor selected:
+	PQ26/25-3C96
+	with 54.0 turns of 21 gauge wire
+	and a core gap of 1.4 mm per side of the core.
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.670 (W)
+
+Switch selected:
+	EPC2207
+	with an optimal switching frequency of 90000 Hz
+
+Input capacitor requirements:
+	C >= 2.904 uF
+	V >= 73.553 V
+	Irms >= 443.7371994910635 mA
+
+Output capacitor requirements:
+	C >= 17.061 uF
+	V >= 130.286 V
+	Irms >= 443.7371994910635 mA
+
+Inductor requirements:
+	L >= 287.251 uH
+	I >= 6.752267026431386 A
+
+Input capacitors selected:
+	Bulk caps: HZA336M080G24T-F
+
+Output capacitors selected:
+	Bulk caps: A759MS186M2CAAE090
+
+Input inductor selected:
+	PQ26/25-3C96
+	with 55.0 turns of 21 gauge wire
+	and a core gap of 1.5 mm per side of the core.
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.670 (W)
+
+Switch selected:
+	EPC2207
+	with an optimal switching frequency of 85000 Hz
+
+Input capacitor requirements:
+	C >= 3.258 uF
+	V >= 73.553 V
+	Irms >= 470.1930185401951 mA
+
+Output capacitor requirements:
+	C >= 18.064 uF
+	V >= 130.286 V
+	Irms >= 470.1930185401951 mA
+
+Inductor requirements:
+	L >= 287.035 uH
+	I >= 6.7892145000776125 A
+
+Input capacitors selected:
+	Bulk caps: HZA336M080G24T-F
+
+Output capacitors selected:
+	Bulk caps: A759MS186M2CAAE090
+A759MS186M2CAAE090
+
+Input inductor selected:
+	PQ26/25-3C96
+	with 55.0 turns of 21 gauge wire
+	and a core gap of 1.5 mm per side of the core.
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.670 (W)
+
+Switch selected:
+	EPC2207
+	with an optimal switching frequency of 95000 Hz
+
+Input capacitor requirements:
+	C >= 2.686 uF
+	V >= 73.553 V
+	Irms >= 433.15252655576955 mA
+
+Output capacitor requirements:
+	C >= 16.163 uF
+	V >= 130.286 V
+	Irms >= 433.15252655576955 mA
+
+Inductor requirements:
+	L >= 278.782 uH
+	I >= 6.737519211127745 A
+
+Input capacitors selected:
+	Bulk caps: HZA336M080G24T-F
+
+Output capacitors selected:
+	Bulk caps: A759MS186M2CAAE090
+
+Input inductor selected:
+	PQ26/25-3C96
+	with 53.0 turns of 21 gauge wire
+	and a core gap of 1.4 mm per side of the core.
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.670 (W)
+
+Switch selected:
+	EPC2207
+	with an optimal switching frequency of 95000 Hz
+
+Input capacitor requirements:
+	C >= 2.658 uF
+	V >= 73.553 V
+	Irms >= 428.7007965391742 mA
+
+Output capacitor requirements:
+	C >= 16.163 uF
+	V >= 130.286 V
+	Irms >= 428.7007965391742 mA
+
+Inductor requirements:
+	L >= 281.677 uH
+	I >= 6.731316535573407 A
+
+Input capacitors selected:
+	Bulk caps: HZA336M080G24T-F
+
+Output capacitors selected:
+	Bulk caps: A759MS186M2CAAE090
+
+Input inductor selected:
+	PQ26/25-3C96
+	with 54.0 turns of 21 gauge wire
+	and a core gap of 1.5 mm per side of the core.
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.670 (W)
+
+Switch selected:
+	EPC2207
+	with an optimal switching frequency of 95000 Hz
+
+Input capacitor requirements:
+	C >= 2.687 uF
+	V >= 73.553 V
+	Irms >= 433.36702740425125 mA
+
+Output capacitor requirements:
+	C >= 16.163 uF
+	V >= 130.286 V
+	Irms >= 433.36702740425125 mA
+
+Inductor requirements:
+	L >= 278.645 uH
+	I >= 6.737818079020521 A
+
+Input capacitors selected:
+	Bulk caps: HZA336M080G24T-F
+
+Output capacitors selected:
+	Bulk caps: A759MS186M2CAAE090
+
+Input inductor selected:
+	PQ26/25-3C96
+	with 53.0 turns of 21 gauge wire
+	and a core gap of 1.4 mm per side of the core.
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.670 (W)
+
+Switch selected:
+	EPC2207
+	with an optimal switching frequency of 95000 Hz
+
+Input capacitor requirements:
+	C >= 2.675 uF
+	V >= 73.553 V
+	Irms >= 431.450011280428 mA
+
+Output capacitor requirements:
+	C >= 16.163 uF
+	V >= 130.286 V
+	Irms >= 431.450011280428 mA
+
+Inductor requirements:
+	L >= 279.883 uH
+	I >= 6.7351470659527495 A
+
+Input capacitors selected:
+	Bulk caps: HZA336M080G24T-F
+
+Output capacitors selected:
+	Bulk caps: A759MS186M2CAAE090
+
+Input inductor selected:
+	PQ26/25-3C96
+	with 53.0 turns of 21 gauge wire
+	and a core gap of 1.4 mm per side of the core.
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.670 (W)
+
+Switch selected:
+	EPC2207
+	with an optimal switching frequency of 95000 Hz
+
+Input capacitor requirements:
+	C >= 2.669 uF
+	V >= 73.553 V
+	Irms >= 430.3990988742639 mA
+
+Output capacitor requirements:
+	C >= 16.163 uF
+	V >= 130.286 V
+	Irms >= 430.3990988742639 mA
+
+Inductor requirements:
+	L >= 280.566 uH
+	I >= 6.733682810782924 A
+
+Input capacitors selected:
+	Bulk caps: HZA336M080G24T-F
+
+Output capacitors selected:
+	Bulk caps: A759MS186M2CAAE090
+
+Input inductor selected:
+	PQ26/25-3C96
+	with 54.0 turns of 21 gauge wire
+	and a core gap of 1.5 mm per side of the core.
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.670 (W)
+
+Switch selected:
+	EPC2207
+	with an optimal switching frequency of 95000 Hz
+
+Input capacitor requirements:
+	C >= 2.679 uF
+	V >= 73.553 V
+	Irms >= 432.1000077190099 mA
+
+Output capacitor requirements:
+	C >= 16.163 uF
+	V >= 130.286 V
+	Irms >= 432.1000077190099 mA
+
+Inductor requirements:
+	L >= 279.462 uH
+	I >= 6.736052717689259 A
+
+Input capacitors selected:
+	Bulk caps: HZA336M080G24T-F
+
+Output capacitors selected:
+	Bulk caps: A759MS186M2CAAE090
+
+Input inductor selected:
+	PQ26/25-3C96
+	with 53.0 turns of 21 gauge wire
+	and a core gap of 1.4 mm per side of the core.
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.670 (W)
+
+Switch selected:
+	EPC2207
+	with an optimal switching frequency of 95000 Hz
+
+Input capacitor requirements:
+	C >= 2.673 uF
+	V >= 73.553 V
+	Irms >= 431.04848108950824 mA
+
+Output capacitor requirements:
+	C >= 16.163 uF
+	V >= 130.286 V
+	Irms >= 431.04848108950824 mA
+
+Inductor requirements:
+	L >= 280.143 uH
+	I >= 6.734587606711003 A
+
+Input capacitors selected:
+	Bulk caps: HZA336M080G24T-F
+
+Output capacitors selected:
+	Bulk caps: A759MS186M2CAAE090
+
+Input inductor selected:
+	PQ26/25-3C96
+	with 53.0 turns of 21 gauge wire
+	and a core gap of 1.4 mm per side of the core.
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.670 (W)
+
+Switch selected:
+	EPC2207
+	with an optimal switching frequency of 95000 Hz
+
+Input capacitor requirements:
+	C >= 2.671 uF
+	V >= 73.553 V
+	Irms >= 430.80039430609276 mA
+
+Output capacitor requirements:
+	C >= 16.163 uF
+	V >= 130.286 V
+	Irms >= 430.80039430609276 mA
+
+Inductor requirements:
+	L >= 280.305 uH
+	I >= 6.734241942930605 A
+
+Input capacitors selected:
+	Bulk caps: HZA336M080G24T-F
+
+Output capacitors selected:
+	Bulk caps: A759MS186M2CAAE090
+
+Input inductor selected:
+	PQ26/25-3C96
+	with 53.0 turns of 21 gauge wire
+	and a core gap of 1.4 mm per side of the core.
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.670 (W)
+
+Switch selected:
+	EPC2207
+	with an optimal switching frequency of 95000 Hz
+
+Input capacitor requirements:
+	C >= 2.670 uF
+	V >= 73.553 V
+	Irms >= 430.6098788326104 mA
+
+Output capacitor requirements:
+	C >= 16.163 uF
+	V >= 130.286 V
+	Irms >= 430.6098788326104 mA
+
+Inductor requirements:
+	L >= 280.429 uH
+	I >= 6.733976494292506 A
+
+Input capacitors selected:
+	Bulk caps: HZA336M080G24T-F
+
+Output capacitors selected:
+	Bulk caps: A759MS186M2CAAE090
+
+Input inductor selected:
+	PQ26/25-3C96
+	with 53.0 turns of 21 gauge wire
+	and a core gap of 1.4 mm per side of the core.
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.670 (W)
+
+Switch selected:
+	EPC2207
+	with an optimal switching frequency of 95000 Hz
+
+Input capacitor requirements:
+	C >= 2.670 uF
+	V >= 73.553 V
+	Irms >= 430.6098788326104 mA
+
+Output capacitor requirements:
+	C >= 16.163 uF
+	V >= 130.286 V
+	Irms >= 430.6098788326104 mA
+
+Inductor requirements:
+	L >= 280.429 uH
+	I >= 6.733976494292506 A
+
+Input capacitors selected:
+	Bulk caps: HZA336M080G24T-F
+
+Output capacitors selected:
+	Bulk caps: A759MS186M2CAAE090
+
+Input inductor selected:
+	PQ26/25-3C96
+	with 53.0 turns of 21 gauge wire
+	and a core gap of 1.4 mm per side of the core.
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 8.554 (W)
+
+Switch selected:
+	EPC2207
+	with an optimal switching frequency of 610000 Hz
+
+Input capacitor requirements:
+	C >= 0.416 uF
+	V >= 73.553 V
+	Irms >= 430.60987883261043 mA
+
+Output capacitor requirements:
+	C >= 2.517 uF
+	V >= 130.286 V
+	Irms >= 430.60987883261043 mA
+
+Inductor requirements:
+	L >= 43.673 uH
+	I >= 6.733976494292506 A
+
+Input capacitors selected:
+	Bulk caps: HZA336M080G24T-F
+
+Output capacitors selected:
+	Bulk caps: A759MS186M2CAAE090
+
+Input inductor selected:
+	PQ20/20-3F36
+	with 16.0 turns of 17 gauge wire
+	and a core gap of 0.5 mm per side of the core.
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 1.488 (W)
+
+Switch selected:
+	EPC2307
+	with an optimal switching frequency of 20000 Hz
+
+Input capacitor requirements:
+	C >= 12.682 uF
+	V >= 73.553 V
+	Irms >= 430.60987883261043 mA
+
+Output capacitor requirements:
+	C >= 76.774 uF
+	V >= 130.286 V
+	Irms >= 430.60987883261043 mA
+
+Inductor requirements:
+	L >= 1332.036 uH
+	I >= 6.733976494292506 A
+
+Input capacitors selected:
+	Bulk caps: HZA336M080G24T-F
+
+Output capacitors selected:
+	Bulk caps: A759MS186M2CAAE090
+A759MS186M2CAAE090
+A759MS186M2CAAE090
+A759MS186M2CAAE090
+A759MS186M2CAAE090
+
+Input inductor selected:
+	PQ26/25-3C96
+	with 252.0 turns of 28 gauge wire
+	and a core gap of 6.8 mm per side of the core.
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 0.446 (W)
+
+Switch selected:
+	EPC2019
+	with an optimal switching frequency of 5000 Hz
+
+Input capacitor requirements:
+	C >= 50.727 uF
+	V >= 73.553 V
+	Irms >= 430.60987883261043 mA
+
+Output capacitor requirements:
+	C >= 307.094 uF
+	V >= 130.286 V
+	Irms >= 430.60987883261043 mA
+
+Inductor requirements:
+	L >= 5328.144 uH
+	I >= 6.733976494292506 A
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 4.797 (W)
+
+Switch selected:
+	EPC2207
+	with an optimal switching frequency of 280000 Hz
+
+Input capacitor requirements:
+	C >= 0.906 uF
+	V >= 73.553 V
+	Irms >= 430.60987883261043 mA
+
+Output capacitor requirements:
+	C >= 5.484 uF
+	V >= 130.286 V
+	Irms >= 430.60987883261043 mA
+
+Inductor requirements:
+	L >= 95.145 uH
+	I >= 6.733976494292506 A
+
+Input capacitors selected:
+	Bulk caps: HZA336M080G24T-F
+
+Output capacitors selected:
+	Bulk caps: A759MS186M2CAAE090
+
+Input inductor selected:
+	RM8/ILP-3C95
+	with 38.0 turns of 25 gauge wire
+	and a core gap of 1.1 mm per side of the core.
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 3.686 (W)
+
+Switch selected:
+	EPC2207
+	with an optimal switching frequency of 185000 Hz
+
+Input capacitor requirements:
+	C >= 1.371 uF
+	V >= 73.553 V
+	Irms >= 430.60987883261043 mA
+
+Output capacitor requirements:
+	C >= 8.300 uF
+	V >= 130.286 V
+	Irms >= 430.60987883261043 mA
+
+Inductor requirements:
+	L >= 144.004 uH
+	I >= 6.733976494292506 A
+
+Input capacitors selected:
+	Bulk caps: HZA336M080G24T-F
+
+Output capacitors selected:
+	Bulk caps: A759MS186M2CAAE090
+
+Input inductor selected:
+	RM8/ILP-3C95
+	with 57.0 turns of 27 gauge wire
+	and a core gap of 1.6 mm per side of the core.
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.054 (W)
+
+Switch selected:
+	EPC2207
+	with an optimal switching frequency of 40000 Hz
+
+Input capacitor requirements:
+	C >= 6.341 uF
+	V >= 73.553 V
+	Irms >= 430.60987883261043 mA
+
+Output capacitor requirements:
+	C >= 38.387 uF
+	V >= 130.286 V
+	Irms >= 430.60987883261043 mA
+
+Inductor requirements:
+	L >= 666.018 uH
+	I >= 6.733976494292506 A
+
+Input capacitors selected:
+	Bulk caps: HZA336M080G24T-F
+
+Output capacitors selected:
+	Bulk caps: A759MS186M2CAAE090
+A759MS186M2CAAE090
+A759MS186M2CAAE090
+
+Input inductor selected:
+	PQ26/25-3C96
+	with 126.0 turns of 25 gauge wire
+	and a core gap of 3.4 mm per side of the core.
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 3.045 (W)
+
+Switch selected:
+	EPC2207
+	with an optimal switching frequency of 125000 Hz
+
+Input capacitor requirements:
+	C >= 2.029 uF
+	V >= 73.553 V
+	Irms >= 430.6098788326104 mA
+
+Output capacitor requirements:
+	C >= 12.284 uF
+	V >= 130.286 V
+	Irms >= 430.6098788326104 mA
+
+Inductor requirements:
+	L >= 213.126 uH
+	I >= 6.733976494292506 A
+
+Input capacitors selected:
+	Bulk caps: HZA336M080G24T-F
+
+Output capacitors selected:
+	Bulk caps: A759MS186M2CAAE090
+
+Input inductor selected:
+	PQ26/25-3C96
+	with 41.0 turns of 20 gauge wire
+	and a core gap of 1.1 mm per side of the core.
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.523 (W)
+
+Switch selected:
+	EPC2207
+	with an optimal switching frequency of 80000 Hz
+
+Input capacitor requirements:
+	C >= 3.170 uF
+	V >= 73.553 V
+	Irms >= 430.60987883261043 mA
+
+Output capacitor requirements:
+	C >= 19.193 uF
+	V >= 130.286 V
+	Irms >= 430.60987883261043 mA
+
+Inductor requirements:
+	L >= 333.009 uH
+	I >= 6.733976494292506 A
+
+Input capacitors selected:
+	Bulk caps: HZA336M080G24T-F
+
+Output capacitors selected:
+	Bulk caps: A759MS186M2CAAE090
+A759MS186M2CAAE090
+
+Input inductor selected:
+	PQ26/25-3C96
+	with 63.0 turns of 22 gauge wire
 	and a core gap of 1.7 mm per side of the core.
 
 Switch requirements:
-	V_DS >= 155.748 (V)
-	I_D >= 7.374 (A)
-	P_D >= 2.954 (W)
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.740 (W)
 
 Switch selected:
 	EPC2207
-	with an optimal switching frequency of 115000 Hz
+	with an optimal switching frequency of 100000 Hz
 
 Input capacitor requirements:
-	C >= 4.107 uF
-	V >= 69.769 V
-	Irms >= 294.9341696815443 mA
+	C >= 2.536 uF
+	V >= 73.553 V
+	Irms >= 430.60987883261043 mA
 
 Output capacitor requirements:
-	C >= 13.350 uF
-	V >= 130.279 V
-	Irms >= 294.9341696815443 mA
+	C >= 15.355 uF
+	V >= 130.286 V
+	Irms >= 430.60987883261043 mA
 
 Inductor requirements:
-	L >= 338.229 uH
-	I >= 6.533067571412889 A
+	L >= 266.407 uH
+	I >= 6.733976494292506 A
 
 Input capacitors selected:
 	Bulk caps: HZA336M080G24T-F
@@ -2271,31 +2127,31 @@ Output capacitors selected:
 
 Input inductor selected:
 	PQ26/25-3C96
-	with 62.0 turns of 22 gauge wire
-	and a core gap of 1.6 mm per side of the core.
+	with 51.0 turns of 21 gauge wire
+	and a core gap of 1.4 mm per side of the core.
 
 Switch requirements:
-	V_DS >= 155.748 (V)
-	I_D >= 7.374 (A)
-	P_D >= 2.964 (W)
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.664 (W)
 
 Switch selected:
 	EPC2207
-	with an optimal switching frequency of 115000 Hz
+	with an optimal switching frequency of 95000 Hz
 
 Input capacitor requirements:
-	C >= 4.107 uF
-	V >= 69.769 V
-	Irms >= 294.9341696815443 mA
+	C >= 2.670 uF
+	V >= 73.553 V
+	Irms >= 430.6098788326104 mA
 
 Output capacitor requirements:
-	C >= 13.350 uF
-	V >= 130.279 V
-	Irms >= 294.9341696815443 mA
+	C >= 16.163 uF
+	V >= 130.286 V
+	Irms >= 430.6098788326104 mA
 
 Inductor requirements:
-	L >= 338.229 uH
-	I >= 6.533067571412889 A
+	L >= 280.429 uH
+	I >= 6.733976494292506 A
 
 Input capacitors selected:
 	Bulk caps: HZA336M080G24T-F
@@ -2305,31 +2161,31 @@ Output capacitors selected:
 
 Input inductor selected:
 	PQ26/25-3C96
-	with 62.0 turns of 22 gauge wire
-	and a core gap of 1.6 mm per side of the core.
+	with 53.0 turns of 21 gauge wire
+	and a core gap of 1.4 mm per side of the core.
 
 Switch requirements:
-	V_DS >= 155.748 (V)
-	I_D >= 7.374 (A)
-	P_D >= 2.960 (W)
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.667 (W)
 
 Switch selected:
 	EPC2207
-	with an optimal switching frequency of 115000 Hz
+	with an optimal switching frequency of 95000 Hz
 
 Input capacitor requirements:
-	C >= 4.107 uF
-	V >= 69.769 V
-	Irms >= 294.9341696815443 mA
+	C >= 2.670 uF
+	V >= 73.553 V
+	Irms >= 430.6098788326104 mA
 
 Output capacitor requirements:
-	C >= 13.350 uF
-	V >= 130.279 V
-	Irms >= 294.9341696815443 mA
+	C >= 16.163 uF
+	V >= 130.286 V
+	Irms >= 430.6098788326104 mA
 
 Inductor requirements:
-	L >= 338.229 uH
-	I >= 6.533067571412889 A
+	L >= 280.429 uH
+	I >= 6.733976494292506 A
 
 Input capacitors selected:
 	Bulk caps: HZA336M080G24T-F
@@ -2339,31 +2195,31 @@ Output capacitors selected:
 
 Input inductor selected:
 	PQ26/25-3C96
-	with 62.0 turns of 22 gauge wire
-	and a core gap of 1.6 mm per side of the core.
+	with 53.0 turns of 21 gauge wire
+	and a core gap of 1.4 mm per side of the core.
 
 Switch requirements:
-	V_DS >= 155.748 (V)
-	I_D >= 7.374 (A)
-	P_D >= 2.958 (W)
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.666 (W)
 
 Switch selected:
 	EPC2207
-	with an optimal switching frequency of 115000 Hz
+	with an optimal switching frequency of 95000 Hz
 
 Input capacitor requirements:
-	C >= 4.107 uF
-	V >= 69.769 V
-	Irms >= 294.9341696815443 mA
+	C >= 2.670 uF
+	V >= 73.553 V
+	Irms >= 430.6098788326104 mA
 
 Output capacitor requirements:
-	C >= 13.350 uF
-	V >= 130.279 V
-	Irms >= 294.9341696815443 mA
+	C >= 16.163 uF
+	V >= 130.286 V
+	Irms >= 430.6098788326104 mA
 
 Inductor requirements:
-	L >= 338.229 uH
-	I >= 6.533067571412889 A
+	L >= 280.429 uH
+	I >= 6.733976494292506 A
 
 Input capacitors selected:
 	Bulk caps: HZA336M080G24T-F
@@ -2373,31 +2229,31 @@ Output capacitors selected:
 
 Input inductor selected:
 	PQ26/25-3C96
-	with 62.0 turns of 22 gauge wire
-	and a core gap of 1.6 mm per side of the core.
+	with 53.0 turns of 21 gauge wire
+	and a core gap of 1.4 mm per side of the core.
 
 Switch requirements:
-	V_DS >= 155.748 (V)
-	I_D >= 7.374 (A)
-	P_D >= 2.956 (W)
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.666 (W)
 
 Switch selected:
 	EPC2207
-	with an optimal switching frequency of 115000 Hz
+	with an optimal switching frequency of 95000 Hz
 
 Input capacitor requirements:
-	C >= 4.107 uF
-	V >= 69.769 V
-	Irms >= 294.9341696815443 mA
+	C >= 2.670 uF
+	V >= 73.553 V
+	Irms >= 430.6098788326104 mA
 
 Output capacitor requirements:
-	C >= 13.350 uF
-	V >= 130.279 V
-	Irms >= 294.9341696815443 mA
+	C >= 16.163 uF
+	V >= 130.286 V
+	Irms >= 430.6098788326104 mA
 
 Inductor requirements:
-	L >= 338.229 uH
-	I >= 6.533067571412889 A
+	L >= 280.429 uH
+	I >= 6.733976494292506 A
 
 Input capacitors selected:
 	Bulk caps: HZA336M080G24T-F
@@ -2407,31 +2263,31 @@ Output capacitors selected:
 
 Input inductor selected:
 	PQ26/25-3C96
-	with 62.0 turns of 22 gauge wire
-	and a core gap of 1.6 mm per side of the core.
+	with 53.0 turns of 21 gauge wire
+	and a core gap of 1.4 mm per side of the core.
 
 Switch requirements:
-	V_DS >= 155.748 (V)
-	I_D >= 7.374 (A)
-	P_D >= 2.955 (W)
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.665 (W)
 
 Switch selected:
 	EPC2207
-	with an optimal switching frequency of 115000 Hz
+	with an optimal switching frequency of 95000 Hz
 
 Input capacitor requirements:
-	C >= 4.107 uF
-	V >= 69.769 V
-	Irms >= 294.9341696815443 mA
+	C >= 2.670 uF
+	V >= 73.553 V
+	Irms >= 430.6098788326104 mA
 
 Output capacitor requirements:
-	C >= 13.350 uF
-	V >= 130.279 V
-	Irms >= 294.9341696815443 mA
+	C >= 16.163 uF
+	V >= 130.286 V
+	Irms >= 430.6098788326104 mA
 
 Inductor requirements:
-	L >= 338.229 uH
-	I >= 6.533067571412889 A
+	L >= 280.429 uH
+	I >= 6.733976494292506 A
 
 Input capacitors selected:
 	Bulk caps: HZA336M080G24T-F
@@ -2441,31 +2297,31 @@ Output capacitors selected:
 
 Input inductor selected:
 	PQ26/25-3C96
-	with 62.0 turns of 22 gauge wire
-	and a core gap of 1.6 mm per side of the core.
+	with 53.0 turns of 21 gauge wire
+	and a core gap of 1.4 mm per side of the core.
 
 Switch requirements:
-	V_DS >= 155.748 (V)
-	I_D >= 7.374 (A)
-	P_D >= 2.955 (W)
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.665 (W)
 
 Switch selected:
 	EPC2207
-	with an optimal switching frequency of 115000 Hz
+	with an optimal switching frequency of 95000 Hz
 
 Input capacitor requirements:
-	C >= 4.107 uF
-	V >= 69.769 V
-	Irms >= 294.9341696815443 mA
+	C >= 2.670 uF
+	V >= 73.553 V
+	Irms >= 430.6098788326104 mA
 
 Output capacitor requirements:
-	C >= 13.350 uF
-	V >= 130.279 V
-	Irms >= 294.9341696815443 mA
+	C >= 16.163 uF
+	V >= 130.286 V
+	Irms >= 430.6098788326104 mA
 
 Inductor requirements:
-	L >= 338.229 uH
-	I >= 6.533067571412889 A
+	L >= 280.429 uH
+	I >= 6.733976494292506 A
 
 Input capacitors selected:
 	Bulk caps: HZA336M080G24T-F
@@ -2475,31 +2331,31 @@ Output capacitors selected:
 
 Input inductor selected:
 	PQ26/25-3C96
-	with 62.0 turns of 22 gauge wire
-	and a core gap of 1.6 mm per side of the core.
+	with 53.0 turns of 21 gauge wire
+	and a core gap of 1.4 mm per side of the core.
 
 Switch requirements:
-	V_DS >= 155.748 (V)
-	I_D >= 7.374 (A)
-	P_D >= 2.954 (W)
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.665 (W)
 
 Switch selected:
 	EPC2207
-	with an optimal switching frequency of 115000 Hz
+	with an optimal switching frequency of 95000 Hz
 
 Input capacitor requirements:
-	C >= 4.107 uF
-	V >= 69.769 V
-	Irms >= 294.9341696815443 mA
+	C >= 2.670 uF
+	V >= 73.553 V
+	Irms >= 430.6098788326104 mA
 
 Output capacitor requirements:
-	C >= 13.350 uF
-	V >= 130.279 V
-	Irms >= 294.9341696815443 mA
+	C >= 16.163 uF
+	V >= 130.286 V
+	Irms >= 430.6098788326104 mA
 
 Inductor requirements:
-	L >= 338.229 uH
-	I >= 6.533067571412889 A
+	L >= 280.429 uH
+	I >= 6.733976494292506 A
 
 Input capacitors selected:
 	Bulk caps: HZA336M080G24T-F
@@ -2509,31 +2365,31 @@ Output capacitors selected:
 
 Input inductor selected:
 	PQ26/25-3C96
-	with 62.0 turns of 22 gauge wire
-	and a core gap of 1.6 mm per side of the core.
+	with 53.0 turns of 21 gauge wire
+	and a core gap of 1.4 mm per side of the core.
 
 Switch requirements:
-	V_DS >= 155.748 (V)
-	I_D >= 7.374 (A)
-	P_D >= 2.954 (W)
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.665 (W)
 
 Switch selected:
 	EPC2207
-	with an optimal switching frequency of 115000 Hz
+	with an optimal switching frequency of 95000 Hz
 
 Input capacitor requirements:
-	C >= 4.107 uF
-	V >= 69.769 V
-	Irms >= 294.9341696815443 mA
+	C >= 2.670 uF
+	V >= 73.553 V
+	Irms >= 430.6098788326104 mA
 
 Output capacitor requirements:
-	C >= 13.350 uF
-	V >= 130.279 V
-	Irms >= 294.9341696815443 mA
+	C >= 16.163 uF
+	V >= 130.286 V
+	Irms >= 430.6098788326104 mA
 
 Inductor requirements:
-	L >= 338.229 uH
-	I >= 6.533067571412889 A
+	L >= 280.429 uH
+	I >= 6.733976494292506 A
 
 Input capacitors selected:
 	Bulk caps: HZA336M080G24T-F
@@ -2543,31 +2399,31 @@ Output capacitors selected:
 
 Input inductor selected:
 	PQ26/25-3C96
-	with 62.0 turns of 22 gauge wire
-	and a core gap of 1.6 mm per side of the core.
+	with 53.0 turns of 21 gauge wire
+	and a core gap of 1.4 mm per side of the core.
 
 Switch requirements:
-	V_DS >= 155.748 (V)
-	I_D >= 7.374 (A)
-	P_D >= 2.954 (W)
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.664 (W)
 
 Switch selected:
 	EPC2207
-	with an optimal switching frequency of 115000 Hz
+	with an optimal switching frequency of 95000 Hz
 
 Input capacitor requirements:
-	C >= 4.107 uF
-	V >= 69.769 V
-	Irms >= 294.9341696815443 mA
+	C >= 2.670 uF
+	V >= 73.553 V
+	Irms >= 430.6098788326104 mA
 
 Output capacitor requirements:
-	C >= 13.350 uF
-	V >= 130.279 V
-	Irms >= 294.9341696815443 mA
+	C >= 16.163 uF
+	V >= 130.286 V
+	Irms >= 430.6098788326104 mA
 
 Inductor requirements:
-	L >= 338.229 uH
-	I >= 6.533067571412889 A
+	L >= 280.429 uH
+	I >= 6.733976494292506 A
 
 Input capacitors selected:
 	Bulk caps: HZA336M080G24T-F
@@ -2577,31 +2433,31 @@ Output capacitors selected:
 
 Input inductor selected:
 	PQ26/25-3C96
-	with 62.0 turns of 22 gauge wire
-	and a core gap of 1.6 mm per side of the core.
+	with 53.0 turns of 21 gauge wire
+	and a core gap of 1.4 mm per side of the core.
 
 Switch requirements:
-	V_DS >= 155.748 (V)
-	I_D >= 7.374 (A)
-	P_D >= 2.943 (W)
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.658 (W)
 
 Switch selected:
 	EPC2207
-	with an optimal switching frequency of 115000 Hz
+	with an optimal switching frequency of 90000 Hz
 
 Input capacitor requirements:
-	C >= 4.149 uF
-	V >= 69.769 V
-	Irms >= 297.9526999428286 mA
+	C >= 2.943 uF
+	V >= 73.553 V
+	Irms >= 449.6275561418608 mA
 
 Output capacitor requirements:
-	C >= 13.350 uF
-	V >= 130.279 V
-	Irms >= 297.9526999428286 mA
+	C >= 17.061 uF
+	V >= 130.286 V
+	Irms >= 449.6275561418608 mA
 
 Inductor requirements:
-	L >= 334.803 uH
-	I >= 6.537182568100795 A
+	L >= 283.488 uH
+	I >= 6.760474166367554 A
 
 Input capacitors selected:
 	Bulk caps: HZA336M080G24T-F
@@ -2611,31 +2467,31 @@ Output capacitors selected:
 
 Input inductor selected:
 	PQ26/25-3C96
-	with 62.0 turns of 22 gauge wire
-	and a core gap of 1.6 mm per side of the core.
+	with 54.0 turns of 21 gauge wire
+	and a core gap of 1.5 mm per side of the core.
 
 Switch requirements:
-	V_DS >= 155.748 (V)
-	I_D >= 7.374 (A)
-	P_D >= 2.972 (W)
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.664 (W)
 
 Switch selected:
 	EPC2207
-	with an optimal switching frequency of 120000 Hz
+	with an optimal switching frequency of 95000 Hz
 
 Input capacitor requirements:
-	C >= 3.871 uF
-	V >= 69.769 V
-	Irms >= 290.0705568058634 mA
+	C >= 2.670 uF
+	V >= 73.553 V
+	Irms >= 430.6098788326104 mA
 
 Output capacitor requirements:
-	C >= 12.794 uF
-	V >= 130.279 V
-	Irms >= 290.0705568058634 mA
+	C >= 16.163 uF
+	V >= 130.286 V
+	Irms >= 430.6098788326104 mA
 
 Inductor requirements:
-	L >= 329.571 uH
-	I >= 6.526437274830682 A
+	L >= 280.429 uH
+	I >= 6.733976494292506 A
 
 Input capacitors selected:
 	Bulk caps: HZA336M080G24T-F
@@ -2645,65 +2501,1047 @@ Output capacitors selected:
 
 Input inductor selected:
 	PQ26/25-3C96
-	with 61.0 turns of 22 gauge wire
-	and a core gap of 1.6 mm per side of the core.
+	with 53.0 turns of 21 gauge wire
+	and a core gap of 1.4 mm per side of the core.
 
 Switch requirements:
-	V_DS >= 155.748 (V)
-	I_D >= 7.374 (A)
-	P_D >= 2.961 (W)
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.658 (W)
 
 Switch selected:
 	EPC2207
-	with an optimal switching frequency of 115000 Hz
+	with an optimal switching frequency of 90000 Hz
 
 Input capacitor requirements:
-	C >= 4.081 uF
-	V >= 69.769 V
-	Irms >= 293.0734232686435 mA
+	C >= 2.943 uF
+	V >= 73.553 V
+	Irms >= 449.6275561418608 mA
 
 Output capacitor requirements:
-	C >= 13.350 uF
-	V >= 130.279 V
-	Irms >= 293.0734232686435 mA
+	C >= 17.061 uF
+	V >= 130.286 V
+	Irms >= 449.6275561418608 mA
 
 Inductor requirements:
-	L >= 340.377 uH
-	I >= 6.530530917921511 A
+	L >= 283.488 uH
+	I >= 6.760474166367554 A
 
 Input capacitors selected:
 	Bulk caps: HZA336M080G24T-F
 
 Output capacitors selected:
 	Bulk caps: A759MS186M2CAAE090
+
+Input inductor selected:
+	PQ26/25-3C96
+	with 54.0 turns of 21 gauge wire
+	and a core gap of 1.5 mm per side of the core.
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.674 (W)
+
+Switch selected:
+	EPC2207
+	with an optimal switching frequency of 100000 Hz
+
+Input capacitor requirements:
+	C >= 2.359 uF
+	V >= 73.553 V
+	Irms >= 400.5232056764618 mA
+
+Output capacitor requirements:
+	C >= 15.355 uF
+	V >= 130.286 V
+	Irms >= 400.5232056764618 mA
+
+Inductor requirements:
+	L >= 286.419 uH
+	I >= 6.692056191084236 A
+
+Input capacitors selected:
+	Bulk caps: HZA336M080G24T-F
+
+Output capacitors selected:
+	Bulk caps: A759MS186M2CAAE090
+
+Input inductor selected:
+	PQ26/25-3C96
+	with 54.0 turns of 21 gauge wire
+	and a core gap of 1.4 mm per side of the core.
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.668 (W)
+
+Switch selected:
+	EPC2207
+	with an optimal switching frequency of 95000 Hz
+
+Input capacitor requirements:
+	C >= 2.598 uF
+	V >= 73.553 V
+	Irms >= 419.01585525755485 mA
+
+Output capacitor requirements:
+	C >= 16.163 uF
+	V >= 130.286 V
+	Irms >= 419.01585525755485 mA
+
+Inductor requirements:
+	L >= 288.188 uH
+	I >= 6.717822332576197 A
+
+Input capacitors selected:
+	Bulk caps: HZA336M080G24T-F
+
+Output capacitors selected:
+	Bulk caps: A759MS186M2CAAE090
+
+Input inductor selected:
+	PQ26/25-3C96
+	with 55.0 turns of 21 gauge wire
+	and a core gap of 1.5 mm per side of the core.
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.662 (W)
+
+Switch selected:
+	EPC2207
+	with an optimal switching frequency of 90000 Hz
+
+Input capacitor requirements:
+	C >= 2.865 uF
+	V >= 73.553 V
+	Irms >= 437.83681128534005 mA
+
+Output capacitor requirements:
+	C >= 17.061 uF
+	V >= 130.286 V
+	Irms >= 437.83681128534005 mA
+
+Inductor requirements:
+	L >= 291.122 uH
+	I >= 6.744045909349191 A
+
+Input capacitors selected:
+	Bulk caps: HZA336M080G24T-F
+
+Output capacitors selected:
+	Bulk caps: A759MS186M2CAAE090
+
+Input inductor selected:
+	PQ26/25-3C96
+	with 56.0 turns of 21 gauge wire
+	and a core gap of 1.5 mm per side of the core.
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.666 (W)
+
+Switch selected:
+	EPC2207
+	with an optimal switching frequency of 95000 Hz
+
+Input capacitor requirements:
+	C >= 2.650 uF
+	V >= 73.553 V
+	Irms >= 427.40481324833326 mA
+
+Output capacitor requirements:
+	C >= 16.163 uF
+	V >= 130.286 V
+	Irms >= 427.40481324833326 mA
+
+Inductor requirements:
+	L >= 282.532 uH
+	I >= 6.729510818729176 A
+
+Input capacitors selected:
+	Bulk caps: HZA336M080G24T-F
+
+Output capacitors selected:
+	Bulk caps: A759MS186M2CAAE090
+
+Input inductor selected:
+	PQ26/25-3C96
+	with 54.0 turns of 21 gauge wire
+	and a core gap of 1.5 mm per side of the core.
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.664 (W)
+
+Switch selected:
+	EPC2207
+	with an optimal switching frequency of 95000 Hz
+
+Input capacitor requirements:
+	C >= 2.687 uF
+	V >= 73.553 V
+	Irms >= 433.3648364553687 mA
+
+Output capacitor requirements:
+	C >= 16.163 uF
+	V >= 130.286 V
+	Irms >= 433.3648364553687 mA
+
+Inductor requirements:
+	L >= 278.646 uH
+	I >= 6.73781502633201 A
+
+Input capacitors selected:
+	Bulk caps: HZA336M080G24T-F
+
+Output capacitors selected:
+	Bulk caps: A759MS186M2CAAE090
+
+Input inductor selected:
+	PQ26/25-3C96
+	with 53.0 turns of 21 gauge wire
+	and a core gap of 1.4 mm per side of the core.
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.665 (W)
+
+Switch selected:
+	EPC2207
+	with an optimal switching frequency of 95000 Hz
+
+Input capacitor requirements:
+	C >= 2.662 uF
+	V >= 73.553 V
+	Irms >= 429.384553023826 mA
+
+Output capacitor requirements:
+	C >= 16.163 uF
+	V >= 130.286 V
+	Irms >= 429.384553023826 mA
+
+Inductor requirements:
+	L >= 281.229 uH
+	I >= 6.732269225789718 A
+
+Input capacitors selected:
+	Bulk caps: HZA336M080G24T-F
+
+Output capacitors selected:
+	Bulk caps: A759MS186M2CAAE090
+
+Input inductor selected:
+	PQ26/25-3C96
+	with 54.0 turns of 21 gauge wire
+	and a core gap of 1.5 mm per side of the core.
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.664 (W)
+
+Switch selected:
+	EPC2207
+	with an optimal switching frequency of 95000 Hz
+
+Input capacitor requirements:
+	C >= 2.676 uF
+	V >= 73.553 V
+	Irms >= 431.6613753436821 mA
+
+Output capacitor requirements:
+	C >= 16.163 uF
+	V >= 130.286 V
+	Irms >= 431.6613753436821 mA
+
+Inductor requirements:
+	L >= 279.746 uH
+	I >= 6.735441563306211 A
+
+Input capacitors selected:
+	Bulk caps: HZA336M080G24T-F
+
+Output capacitors selected:
+	Bulk caps: A759MS186M2CAAE090
+
+Input inductor selected:
+	PQ26/25-3C96
+	with 53.0 turns of 21 gauge wire
+	and a core gap of 1.4 mm per side of the core.
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.665 (W)
+
+Switch selected:
+	EPC2207
+	with an optimal switching frequency of 95000 Hz
+
+Input capacitor requirements:
+	C >= 2.667 uF
+	V >= 73.553 V
+	Irms >= 430.1416858865001 mA
+
+Output capacitor requirements:
+	C >= 16.163 uF
+	V >= 130.286 V
+	Irms >= 430.1416858865001 mA
+
+Inductor requirements:
+	L >= 280.734 uH
+	I >= 6.733324152634156 A
+
+Input capacitors selected:
+	Bulk caps: HZA336M080G24T-F
+
+Output capacitors selected:
+	Bulk caps: A759MS186M2CAAE090
+
+Input inductor selected:
+	PQ26/25-3C96
+	with 54.0 turns of 21 gauge wire
+	and a core gap of 1.5 mm per side of the core.
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.664 (W)
+
+Switch selected:
+	EPC2207
+	with an optimal switching frequency of 95000 Hz
+
+Input capacitor requirements:
+	C >= 2.672 uF
+	V >= 73.553 V
+	Irms >= 431.0113973112865 mA
+
+Output capacitor requirements:
+	C >= 16.163 uF
+	V >= 130.286 V
+	Irms >= 431.0113973112865 mA
+
+Inductor requirements:
+	L >= 280.167 uH
+	I >= 6.734535937215373 A
+
+Input capacitors selected:
+	Bulk caps: HZA336M080G24T-F
+
+Output capacitors selected:
+	Bulk caps: A759MS186M2CAAE090
+
+Input inductor selected:
+	PQ26/25-3C96
+	with 53.0 turns of 21 gauge wire
+	and a core gap of 1.4 mm per side of the core.
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.665 (W)
+
+Switch selected:
+	EPC2207
+	with an optimal switching frequency of 95000 Hz
+
+Input capacitor requirements:
+	C >= 2.669 uF
+	V >= 73.553 V
+	Irms >= 430.43102169716906 mA
+
+Output capacitor requirements:
+	C >= 16.163 uF
+	V >= 130.286 V
+	Irms >= 430.43102169716906 mA
+
+Inductor requirements:
+	L >= 280.545 uH
+	I >= 6.733727289426625 A
+
+Input capacitors selected:
+	Bulk caps: HZA336M080G24T-F
+
+Output capacitors selected:
+	Bulk caps: A759MS186M2CAAE090
+
+Input inductor selected:
+	PQ26/25-3C96
+	with 54.0 turns of 21 gauge wire
+	and a core gap of 1.5 mm per side of the core.
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.664 (W)
+
+Switch selected:
+	EPC2207
+	with an optimal switching frequency of 95000 Hz
+
+Input capacitor requirements:
+	C >= 2.671 uF
+	V >= 73.553 V
+	Irms >= 430.76322809536833 mA
+
+Output capacitor requirements:
+	C >= 16.163 uF
+	V >= 130.286 V
+	Irms >= 430.76322809536833 mA
+
+Inductor requirements:
+	L >= 280.329 uH
+	I >= 6.734190158580286 A
+
+Input capacitors selected:
+	Bulk caps: HZA336M080G24T-F
+
+Output capacitors selected:
+	Bulk caps: A759MS186M2CAAE090
+
+Input inductor selected:
+	PQ26/25-3C96
+	with 53.0 turns of 21 gauge wire
+	and a core gap of 1.4 mm per side of the core.
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.665 (W)
+
+Switch selected:
+	EPC2207
+	with an optimal switching frequency of 95000 Hz
+
+Input capacitor requirements:
+	C >= 2.669 uF
+	V >= 73.553 V
+	Irms >= 430.5415580824338 mA
+
+Output capacitor requirements:
+	C >= 16.163 uF
+	V >= 130.286 V
+	Irms >= 430.5415580824338 mA
+
+Inductor requirements:
+	L >= 280.473 uH
+	I >= 6.733881301761648 A
+
+Input capacitors selected:
+	Bulk caps: HZA336M080G24T-F
+
+Output capacitors selected:
+	Bulk caps: A759MS186M2CAAE090
+
+Input inductor selected:
+	PQ26/25-3C96
+	with 53.0 turns of 21 gauge wire
+	and a core gap of 1.4 mm per side of the core.
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.665 (W)
+
+Switch selected:
+	EPC2207
+	with an optimal switching frequency of 95000 Hz
+
+Input capacitor requirements:
+	C >= 2.669 uF
+	V >= 73.553 V
+	Irms >= 430.49933564058546 mA
+
+Output capacitor requirements:
+	C >= 16.163 uF
+	V >= 130.286 V
+	Irms >= 430.49933564058546 mA
+
+Inductor requirements:
+	L >= 280.501 uH
+	I >= 6.733822472473501 A
+
+Input capacitors selected:
+	Bulk caps: HZA336M080G24T-F
+
+Output capacitors selected:
+	Bulk caps: A759MS186M2CAAE090
+
+Input inductor selected:
+	PQ26/25-3C96
+	with 53.0 turns of 21 gauge wire
+	and a core gap of 1.4 mm per side of the core.
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.665 (W)
+
+Switch selected:
+	EPC2207
+	with an optimal switching frequency of 95000 Hz
+
+Input capacitor requirements:
+	C >= 2.669 uF
+	V >= 73.553 V
+	Irms >= 430.47324153994606 mA
+
+Output capacitor requirements:
+	C >= 16.163 uF
+	V >= 130.286 V
+	Irms >= 430.47324153994606 mA
+
+Inductor requirements:
+	L >= 280.518 uH
+	I >= 6.733786115093439 A
+
+Input capacitors selected:
+	Bulk caps: HZA336M080G24T-F
+
+Output capacitors selected:
+	Bulk caps: A759MS186M2CAAE090
+
+Input inductor selected:
+	PQ26/25-3C96
+	with 54.0 turns of 21 gauge wire
+	and a core gap of 1.5 mm per side of the core.
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.665 (W)
+
+Switch selected:
+	EPC2207
+	with an optimal switching frequency of 95000 Hz
+
+Input capacitor requirements:
+	C >= 2.669 uF
+	V >= 73.553 V
+	Irms >= 430.5154629880186 mA
+
+Output capacitor requirements:
+	C >= 16.163 uF
+	V >= 130.286 V
+	Irms >= 430.5154629880186 mA
+
+Inductor requirements:
+	L >= 280.490 uH
+	I >= 6.73384494299694 A
+
+Input capacitors selected:
+	Bulk caps: HZA336M080G24T-F
+
+Output capacitors selected:
+	Bulk caps: A759MS186M2CAAE090
+
+Input inductor selected:
+	PQ26/25-3C96
+	with 53.0 turns of 21 gauge wire
+	and a core gap of 1.4 mm per side of the core.
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.665 (W)
+
+Switch selected:
+	EPC2207
+	with an optimal switching frequency of 95000 Hz
+
+Input capacitor requirements:
+	C >= 2.669 uF
+	V >= 73.553 V
+	Irms >= 430.48936850884263 mA
+
+Output capacitor requirements:
+	C >= 16.163 uF
+	V >= 130.286 V
+	Irms >= 430.48936850884263 mA
+
+Inductor requirements:
+	L >= 280.507 uH
+	I >= 6.733808585089456 A
+
+Input capacitors selected:
+	Bulk caps: HZA336M080G24T-F
+
+Output capacitors selected:
+	Bulk caps: A759MS186M2CAAE090
+
+Input inductor selected:
+	PQ26/25-3C96
+	with 53.0 turns of 21 gauge wire
+	and a core gap of 1.4 mm per side of the core.
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.665 (W)
+
+Switch selected:
+	EPC2207
+	with an optimal switching frequency of 95000 Hz
+
+Input capacitor requirements:
+	C >= 2.669 uF
+	V >= 73.553 V
+	Irms >= 430.4832085273491 mA
+
+Output capacitor requirements:
+	C >= 16.163 uF
+	V >= 130.286 V
+	Irms >= 430.4832085273491 mA
+
+Inductor requirements:
+	L >= 280.511 uH
+	I >= 6.733800002276373 A
+
+Input capacitors selected:
+	Bulk caps: HZA336M080G24T-F
+
+Output capacitors selected:
+	Bulk caps: A759MS186M2CAAE090
+
+Input inductor selected:
+	PQ26/25-3C96
+	with 53.0 turns of 21 gauge wire
+	and a core gap of 1.4 mm per side of the core.
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.665 (W)
+
+Switch selected:
+	EPC2207
+	with an optimal switching frequency of 95000 Hz
+
+Input capacitor requirements:
+	C >= 2.669 uF
+	V >= 73.553 V
+	Irms >= 430.4794014664611 mA
+
+Output capacitor requirements:
+	C >= 16.163 uF
+	V >= 130.286 V
+	Irms >= 430.4794014664611 mA
+
+Inductor requirements:
+	L >= 280.514 uH
+	I >= 6.733794697829919 A
+
+Input capacitors selected:
+	Bulk caps: HZA336M080G24T-F
+
+Output capacitors selected:
+	Bulk caps: A759MS186M2CAAE090
+
+Input inductor selected:
+	PQ26/25-3C96
+	with 54.0 turns of 21 gauge wire
+	and a core gap of 1.5 mm per side of the core.
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.665 (W)
+
+Switch selected:
+	EPC2207
+	with an optimal switching frequency of 95000 Hz
+
+Input capacitor requirements:
+	C >= 2.669 uF
+	V >= 73.553 V
+	Irms >= 430.48556142679996 mA
+
+Output capacitor requirements:
+	C >= 16.163 uF
+	V >= 130.286 V
+	Irms >= 430.48556142679996 mA
+
+Inductor requirements:
+	L >= 280.510 uH
+	I >= 6.733803280613525 A
+
+Input capacitors selected:
+	Bulk caps: HZA336M080G24T-F
+
+Output capacitors selected:
+	Bulk caps: A759MS186M2CAAE090
+
+Input inductor selected:
+	PQ26/25-3C96
+	with 53.0 turns of 21 gauge wire
+	and a core gap of 1.4 mm per side of the core.
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.665 (W)
+
+Switch selected:
+	EPC2207
+	with an optimal switching frequency of 95000 Hz
+
+Input capacitor requirements:
+	C >= 2.669 uF
+	V >= 73.553 V
+	Irms >= 430.4817543579867 mA
+
+Output capacitor requirements:
+	C >= 16.163 uF
+	V >= 130.286 V
+	Irms >= 430.4817543579867 mA
+
+Inductor requirements:
+	L >= 280.512 uH
+	I >= 6.733797976156029 A
+
+Input capacitors selected:
+	Bulk caps: HZA336M080G24T-F
+
+Output capacitors selected:
+	Bulk caps: A759MS186M2CAAE090
+
+Input inductor selected:
+	PQ26/25-3C96
+	with 53.0 turns of 21 gauge wire
+	and a core gap of 1.4 mm per side of the core.
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.665 (W)
+
+Switch selected:
+	EPC2207
+	with an optimal switching frequency of 95000 Hz
+
+Input capacitor requirements:
+	C >= 2.669 uF
+	V >= 73.553 V
+	Irms >= 430.4817543579867 mA
+
+Output capacitor requirements:
+	C >= 16.163 uF
+	V >= 130.286 V
+	Irms >= 430.4817543579867 mA
+
+Inductor requirements:
+	L >= 280.512 uH
+	I >= 6.733797976156029 A
+
+Input capacitors selected:
+	Bulk caps: HZA336M080G24T-F
+
+Output capacitors selected:
+	Bulk caps: A759MS186M2CAAE090
+
+Input inductor selected:
+	PQ26/25-3C96
+	with 53.0 turns of 21 gauge wire
+	and a core gap of 1.4 mm per side of the core.
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 8.547 (W)
+
+Switch selected:
+	EPC2207
+	with an optimal switching frequency of 610000 Hz
+
+Input capacitor requirements:
+	C >= 0.416 uF
+	V >= 73.553 V
+	Irms >= 430.48175435798674 mA
+
+Output capacitor requirements:
+	C >= 2.517 uF
+	V >= 130.286 V
+	Irms >= 430.48175435798674 mA
+
+Inductor requirements:
+	L >= 43.686 uH
+	I >= 6.733797976156029 A
+
+Input capacitors selected:
+	Bulk caps: HZA336M080G24T-F
+
+Output capacitors selected:
+	Bulk caps: A759MS186M2CAAE090
+
+Input inductor selected:
+	PQ20/20-3F36
+	with 16.0 turns of 17 gauge wire
+	and a core gap of 0.5 mm per side of the core.
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 1.493 (W)
+
+Switch selected:
+	EPC2307
+	with an optimal switching frequency of 20000 Hz
+
+Input capacitor requirements:
+	C >= 12.678 uF
+	V >= 73.553 V
+	Irms >= 430.4817543579867 mA
+
+Output capacitor requirements:
+	C >= 76.774 uF
+	V >= 130.286 V
+	Irms >= 430.4817543579867 mA
+
+Inductor requirements:
+	L >= 1332.432 uH
+	I >= 6.733797976156029 A
+
+Input capacitors selected:
+	Bulk caps: HZA336M080G24T-F
+
+Output capacitors selected:
+	Bulk caps: A759MS186M2CAAE090
+A759MS186M2CAAE090
+A759MS186M2CAAE090
+A759MS186M2CAAE090
+A759MS186M2CAAE090
+
+Input inductor selected:
+	PQ26/25-3C96
+	with 252.0 turns of 28 gauge wire
+	and a core gap of 6.8 mm per side of the core.
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 0.443 (W)
+
+Switch selected:
+	EPC2019
+	with an optimal switching frequency of 5000 Hz
+
+Input capacitor requirements:
+	C >= 50.712 uF
+	V >= 73.553 V
+	Irms >= 430.4817543579867 mA
+
+Output capacitor requirements:
+	C >= 307.094 uF
+	V >= 130.286 V
+	Irms >= 430.4817543579867 mA
+
+Inductor requirements:
+	L >= 5329.730 uH
+	I >= 6.733797976156029 A
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 4.790 (W)
+
+Switch selected:
+	EPC2207
+	with an optimal switching frequency of 280000 Hz
+
+Input capacitor requirements:
+	C >= 0.906 uF
+	V >= 73.553 V
+	Irms >= 430.48175435798674 mA
+
+Output capacitor requirements:
+	C >= 5.484 uF
+	V >= 130.286 V
+	Irms >= 430.48175435798674 mA
+
+Inductor requirements:
+	L >= 95.174 uH
+	I >= 6.733797976156029 A
+
+Input capacitors selected:
+	Bulk caps: HZA336M080G24T-F
+
+Output capacitors selected:
+	Bulk caps: A759MS186M2CAAE090
+
+Input inductor selected:
+	RM8/ILP-3C95
+	with 38.0 turns of 25 gauge wire
+	and a core gap of 1.1 mm per side of the core.
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 3.680 (W)
+
+Switch selected:
+	EPC2207
+	with an optimal switching frequency of 185000 Hz
+
+Input capacitor requirements:
+	C >= 1.371 uF
+	V >= 73.553 V
+	Irms >= 430.48175435798674 mA
+
+Output capacitor requirements:
+	C >= 8.300 uF
+	V >= 130.286 V
+	Irms >= 430.48175435798674 mA
+
+Inductor requirements:
+	L >= 144.047 uH
+	I >= 6.733797976156029 A
+
+Input capacitors selected:
+	Bulk caps: HZA336M080G24T-F
+
+Output capacitors selected:
+	Bulk caps: A759MS186M2CAAE090
+
+Input inductor selected:
+	RM8/ILP-3C95
+	with 57.0 turns of 27 gauge wire
+	and a core gap of 1.6 mm per side of the core.
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.048 (W)
+
+Switch selected:
+	EPC2207
+	with an optimal switching frequency of 40000 Hz
+
+Input capacitor requirements:
+	C >= 6.339 uF
+	V >= 73.553 V
+	Irms >= 430.4817543579867 mA
+
+Output capacitor requirements:
+	C >= 38.387 uF
+	V >= 130.286 V
+	Irms >= 430.4817543579867 mA
+
+Inductor requirements:
+	L >= 666.216 uH
+	I >= 6.733797976156029 A
+
+Input capacitors selected:
+	Bulk caps: HZA336M080G24T-F
+
+Output capacitors selected:
+	Bulk caps: A759MS186M2CAAE090
+A759MS186M2CAAE090
+A759MS186M2CAAE090
+
+Input inductor selected:
+	PQ26/25-3C96
+	with 126.0 turns of 25 gauge wire
+	and a core gap of 3.4 mm per side of the core.
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 3.038 (W)
+
+Switch selected:
+	EPC2207
+	with an optimal switching frequency of 125000 Hz
+
+Input capacitor requirements:
+	C >= 2.028 uF
+	V >= 73.553 V
+	Irms >= 430.48175435798674 mA
+
+Output capacitor requirements:
+	C >= 12.284 uF
+	V >= 130.286 V
+	Irms >= 430.48175435798674 mA
+
+Inductor requirements:
+	L >= 213.189 uH
+	I >= 6.733797976156029 A
+
+Input capacitors selected:
+	Bulk caps: HZA336M080G24T-F
+
+Output capacitors selected:
+	Bulk caps: A759MS186M2CAAE090
+
+Input inductor selected:
+	PQ26/25-3C96
+	with 41.0 turns of 20 gauge wire
+	and a core gap of 1.1 mm per side of the core.
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.517 (W)
+
+Switch selected:
+	EPC2207
+	with an optimal switching frequency of 80000 Hz
+
+Input capacitor requirements:
+	C >= 3.169 uF
+	V >= 73.553 V
+	Irms >= 430.4817543579867 mA
+
+Output capacitor requirements:
+	C >= 19.193 uF
+	V >= 130.286 V
+	Irms >= 430.4817543579867 mA
+
+Inductor requirements:
+	L >= 333.108 uH
+	I >= 6.733797976156029 A
+
+Input capacitors selected:
+	Bulk caps: HZA336M080G24T-F
+
+Output capacitors selected:
+	Bulk caps: A759MS186M2CAAE090
+A759MS186M2CAAE090
 
 Input inductor selected:
 	PQ26/25-3C96
 	with 63.0 turns of 22 gauge wire
-	and a core gap of 1.6 mm per side of the core.
+	and a core gap of 1.7 mm per side of the core.
 
 Switch requirements:
-	V_DS >= 155.748 (V)
-	I_D >= 7.374 (A)
-	P_D >= 2.950 (W)
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.733 (W)
 
 Switch selected:
 	EPC2207
-	with an optimal switching frequency of 115000 Hz
+	with an optimal switching frequency of 100000 Hz
 
 Input capacitor requirements:
-	C >= 4.123 uF
-	V >= 69.769 V
-	Irms >= 296.0860165149793 mA
+	C >= 2.536 uF
+	V >= 73.553 V
+	Irms >= 430.48175435798674 mA
 
 Output capacitor requirements:
-	C >= 13.350 uF
-	V >= 130.279 V
-	Irms >= 296.0860165149793 mA
+	C >= 15.355 uF
+	V >= 130.286 V
+	Irms >= 430.48175435798674 mA
 
 Inductor requirements:
-	L >= 336.914 uH
-	I >= 6.534637821002683 A
+	L >= 266.486 uH
+	I >= 6.733797976156029 A
 
 Input capacitors selected:
 	Bulk caps: HZA336M080G24T-F
@@ -2713,31 +3551,31 @@ Output capacitors selected:
 
 Input inductor selected:
 	PQ26/25-3C96
-	with 62.0 turns of 22 gauge wire
-	and a core gap of 1.6 mm per side of the core.
+	with 51.0 turns of 21 gauge wire
+	and a core gap of 1.4 mm per side of the core.
 
 Switch requirements:
-	V_DS >= 155.748 (V)
-	I_D >= 7.374 (A)
-	P_D >= 2.954 (W)
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.658 (W)
 
 Switch selected:
 	EPC2207
-	with an optimal switching frequency of 115000 Hz
+	with an optimal switching frequency of 95000 Hz
 
 Input capacitor requirements:
-	C >= 4.107 uF
-	V >= 69.769 V
-	Irms >= 294.95144299652605 mA
+	C >= 2.669 uF
+	V >= 73.553 V
+	Irms >= 430.4817543579867 mA
 
 Output capacitor requirements:
-	C >= 13.350 uF
-	V >= 130.279 V
-	Irms >= 294.95144299652605 mA
+	C >= 16.163 uF
+	V >= 130.286 V
+	Irms >= 430.4817543579867 mA
 
 Inductor requirements:
-	L >= 338.210 uH
-	I >= 6.533091119175471 A
+	L >= 280.512 uH
+	I >= 6.733797976156029 A
 
 Input capacitors selected:
 	Bulk caps: HZA336M080G24T-F
@@ -2747,31 +3585,31 @@ Output capacitors selected:
 
 Input inductor selected:
 	PQ26/25-3C96
-	with 62.0 turns of 22 gauge wire
-	and a core gap of 1.6 mm per side of the core.
+	with 53.0 turns of 21 gauge wire
+	and a core gap of 1.4 mm per side of the core.
 
 Switch requirements:
-	V_DS >= 155.748 (V)
-	I_D >= 7.374 (A)
-	P_D >= 2.957 (W)
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.661 (W)
 
 Switch selected:
 	EPC2207
-	with an optimal switching frequency of 115000 Hz
+	with an optimal switching frequency of 95000 Hz
 
 Input capacitor requirements:
-	C >= 4.097 uF
-	V >= 69.769 V
-	Irms >= 294.2229915188643 mA
+	C >= 2.669 uF
+	V >= 73.553 V
+	Irms >= 430.4817543579867 mA
 
 Output capacitor requirements:
-	C >= 13.350 uF
-	V >= 130.279 V
-	Irms >= 294.2229915188643 mA
+	C >= 16.163 uF
+	V >= 130.286 V
+	Irms >= 430.4817543579867 mA
 
 Inductor requirements:
-	L >= 339.047 uH
-	I >= 6.532098061243826 A
+	L >= 280.512 uH
+	I >= 6.733797976156029 A
 
 Input capacitors selected:
 	Bulk caps: HZA336M080G24T-F
@@ -2781,31 +3619,31 @@ Output capacitors selected:
 
 Input inductor selected:
 	PQ26/25-3C96
-	with 63.0 turns of 22 gauge wire
-	and a core gap of 1.6 mm per side of the core.
+	with 53.0 turns of 21 gauge wire
+	and a core gap of 1.4 mm per side of the core.
 
 Switch requirements:
-	V_DS >= 155.748 (V)
-	I_D >= 7.374 (A)
-	P_D >= 2.955 (W)
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.660 (W)
 
 Switch selected:
 	EPC2207
-	with an optimal switching frequency of 115000 Hz
+	with an optimal switching frequency of 95000 Hz
 
 Input capacitor requirements:
-	C >= 4.103 uF
-	V >= 69.769 V
-	Irms >= 294.6624603211689 mA
+	C >= 2.669 uF
+	V >= 73.553 V
+	Irms >= 430.4817543579867 mA
 
 Output capacitor requirements:
-	C >= 13.350 uF
-	V >= 130.279 V
-	Irms >= 294.6624603211689 mA
+	C >= 16.163 uF
+	V >= 130.286 V
+	Irms >= 430.4817543579867 mA
 
 Inductor requirements:
-	L >= 338.541 uH
-	I >= 6.532697164949731 A
+	L >= 280.512 uH
+	I >= 6.733797976156029 A
 
 Input capacitors selected:
 	Bulk caps: HZA336M080G24T-F
@@ -2815,31 +3653,31 @@ Output capacitors selected:
 
 Input inductor selected:
 	PQ26/25-3C96
-	with 63.0 turns of 22 gauge wire
-	and a core gap of 1.6 mm per side of the core.
+	with 53.0 turns of 21 gauge wire
+	and a core gap of 1.4 mm per side of the core.
 
 Switch requirements:
-	V_DS >= 155.748 (V)
-	I_D >= 7.374 (A)
-	P_D >= 2.955 (W)
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.660 (W)
 
 Switch selected:
 	EPC2207
-	with an optimal switching frequency of 115000 Hz
+	with an optimal switching frequency of 95000 Hz
 
 Input capacitor requirements:
-	C >= 4.105 uF
-	V >= 69.769 V
-	Irms >= 294.8303766916914 mA
+	C >= 2.669 uF
+	V >= 73.553 V
+	Irms >= 430.4817543579867 mA
 
 Output capacitor requirements:
-	C >= 13.350 uF
-	V >= 130.279 V
-	Irms >= 294.8303766916914 mA
+	C >= 16.163 uF
+	V >= 130.286 V
+	Irms >= 430.4817543579867 mA
 
 Inductor requirements:
-	L >= 338.348 uH
-	I >= 6.532926076124619 A
+	L >= 280.512 uH
+	I >= 6.733797976156029 A
 
 Input capacitors selected:
 	Bulk caps: HZA336M080G24T-F
@@ -2849,31 +3687,31 @@ Output capacitors selected:
 
 Input inductor selected:
 	PQ26/25-3C96
-	with 63.0 turns of 22 gauge wire
-	and a core gap of 1.6 mm per side of the core.
+	with 53.0 turns of 21 gauge wire
+	and a core gap of 1.4 mm per side of the core.
 
 Switch requirements:
-	V_DS >= 155.748 (V)
-	I_D >= 7.374 (A)
-	P_D >= 2.954 (W)
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.659 (W)
 
 Switch selected:
 	EPC2207
-	with an optimal switching frequency of 115000 Hz
+	with an optimal switching frequency of 95000 Hz
 
 Input capacitor requirements:
-	C >= 4.106 uF
-	V >= 69.769 V
-	Irms >= 294.8945229390257 mA
+	C >= 2.669 uF
+	V >= 73.553 V
+	Irms >= 430.4817543579867 mA
 
 Output capacitor requirements:
-	C >= 13.350 uF
-	V >= 130.279 V
-	Irms >= 294.8945229390257 mA
+	C >= 16.163 uF
+	V >= 130.286 V
+	Irms >= 430.4817543579867 mA
 
 Inductor requirements:
-	L >= 338.275 uH
-	I >= 6.533013523184106 A
+	L >= 280.512 uH
+	I >= 6.733797976156029 A
 
 Input capacitors selected:
 	Bulk caps: HZA336M080G24T-F
@@ -2883,31 +3721,31 @@ Output capacitors selected:
 
 Input inductor selected:
 	PQ26/25-3C96
-	with 63.0 turns of 22 gauge wire
-	and a core gap of 1.6 mm per side of the core.
+	with 53.0 turns of 21 gauge wire
+	and a core gap of 1.4 mm per side of the core.
 
 Switch requirements:
-	V_DS >= 155.748 (V)
-	I_D >= 7.374 (A)
-	P_D >= 2.954 (W)
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.659 (W)
 
 Switch selected:
 	EPC2207
-	with an optimal switching frequency of 115000 Hz
+	with an optimal switching frequency of 95000 Hz
 
 Input capacitor requirements:
-	C >= 4.106 uF
-	V >= 69.769 V
-	Irms >= 294.9190257770529 mA
+	C >= 2.669 uF
+	V >= 73.553 V
+	Irms >= 430.4817543579867 mA
 
 Output capacitor requirements:
-	C >= 13.350 uF
-	V >= 130.279 V
-	Irms >= 294.9190257770529 mA
+	C >= 16.163 uF
+	V >= 130.286 V
+	Irms >= 430.4817543579867 mA
 
 Inductor requirements:
-	L >= 338.247 uH
-	I >= 6.533046926558795 A
+	L >= 280.512 uH
+	I >= 6.733797976156029 A
 
 Input capacitors selected:
 	Bulk caps: HZA336M080G24T-F
@@ -2917,31 +3755,31 @@ Output capacitors selected:
 
 Input inductor selected:
 	PQ26/25-3C96
-	with 63.0 turns of 22 gauge wire
-	and a core gap of 1.6 mm per side of the core.
+	with 53.0 turns of 21 gauge wire
+	and a core gap of 1.4 mm per side of the core.
 
 Switch requirements:
-	V_DS >= 155.748 (V)
-	I_D >= 7.374 (A)
-	P_D >= 2.954 (W)
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.659 (W)
 
 Switch selected:
 	EPC2207
-	with an optimal switching frequency of 115000 Hz
+	with an optimal switching frequency of 95000 Hz
 
 Input capacitor requirements:
-	C >= 4.107 uF
-	V >= 69.769 V
-	Irms >= 294.94076746321855 mA
+	C >= 2.669 uF
+	V >= 73.553 V
+	Irms >= 430.4817543579867 mA
 
 Output capacitor requirements:
-	C >= 13.350 uF
-	V >= 130.279 V
-	Irms >= 294.94076746321855 mA
+	C >= 16.163 uF
+	V >= 130.286 V
+	Irms >= 430.4817543579867 mA
 
 Inductor requirements:
-	L >= 338.222 uH
-	I >= 6.533076565806646 A
+	L >= 280.512 uH
+	I >= 6.733797976156029 A
 
 Input capacitors selected:
 	Bulk caps: HZA336M080G24T-F
@@ -2951,31 +3789,31 @@ Output capacitors selected:
 
 Input inductor selected:
 	PQ26/25-3C96
-	with 62.0 turns of 22 gauge wire
-	and a core gap of 1.6 mm per side of the core.
+	with 53.0 turns of 21 gauge wire
+	and a core gap of 1.4 mm per side of the core.
 
 Switch requirements:
-	V_DS >= 155.748 (V)
-	I_D >= 7.374 (A)
-	P_D >= 2.954 (W)
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.659 (W)
 
 Switch selected:
 	EPC2207
-	with an optimal switching frequency of 115000 Hz
+	with an optimal switching frequency of 95000 Hz
 
 Input capacitor requirements:
-	C >= 4.107 uF
-	V >= 69.769 V
-	Irms >= 294.92838519620466 mA
+	C >= 2.669 uF
+	V >= 73.553 V
+	Irms >= 430.4817543579867 mA
 
 Output capacitor requirements:
-	C >= 13.350 uF
-	V >= 130.279 V
-	Irms >= 294.92838519620466 mA
+	C >= 16.163 uF
+	V >= 130.286 V
+	Irms >= 430.4817543579867 mA
 
 Inductor requirements:
-	L >= 338.236 uH
-	I >= 6.533059685741403 A
+	L >= 280.512 uH
+	I >= 6.733797976156029 A
 
 Input capacitors selected:
 	Bulk caps: HZA336M080G24T-F
@@ -2985,31 +3823,31 @@ Output capacitors selected:
 
 Input inductor selected:
 	PQ26/25-3C96
-	with 63.0 turns of 22 gauge wire
-	and a core gap of 1.6 mm per side of the core.
+	with 53.0 turns of 21 gauge wire
+	and a core gap of 1.4 mm per side of the core.
 
 Switch requirements:
-	V_DS >= 155.748 (V)
-	I_D >= 7.374 (A)
-	P_D >= 2.954 (W)
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.658 (W)
 
 Switch selected:
 	EPC2207
-	with an optimal switching frequency of 115000 Hz
+	with an optimal switching frequency of 95000 Hz
 
 Input capacitor requirements:
-	C >= 4.107 uF
-	V >= 69.769 V
-	Irms >= 294.9366898043689 mA
+	C >= 2.669 uF
+	V >= 73.553 V
+	Irms >= 430.4817543579867 mA
 
 Output capacitor requirements:
-	C >= 13.350 uF
-	V >= 130.279 V
-	Irms >= 294.9366898043689 mA
+	C >= 16.163 uF
+	V >= 130.286 V
+	Irms >= 430.4817543579867 mA
 
 Inductor requirements:
-	L >= 338.226 uH
-	I >= 6.533071006958065 A
+	L >= 280.512 uH
+	I >= 6.733797976156029 A
 
 Input capacitors selected:
 	Bulk caps: HZA336M080G24T-F
@@ -3019,31 +3857,31 @@ Output capacitors selected:
 
 Input inductor selected:
 	PQ26/25-3C96
-	with 62.0 turns of 22 gauge wire
-	and a core gap of 1.6 mm per side of the core.
+	with 53.0 turns of 21 gauge wire
+	and a core gap of 1.4 mm per side of the core.
 
 Switch requirements:
-	V_DS >= 155.748 (V)
-	I_D >= 7.374 (A)
-	P_D >= 2.954 (W)
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.658 (W)
 
 Switch selected:
 	EPC2207
-	with an optimal switching frequency of 115000 Hz
+	with an optimal switching frequency of 95000 Hz
 
 Input capacitor requirements:
-	C >= 4.107 uF
-	V >= 69.769 V
-	Irms >= 294.93196020062743 mA
+	C >= 2.669 uF
+	V >= 73.553 V
+	Irms >= 430.4817543579867 mA
 
 Output capacitor requirements:
-	C >= 13.350 uF
-	V >= 130.279 V
-	Irms >= 294.93196020062743 mA
+	C >= 16.163 uF
+	V >= 130.286 V
+	Irms >= 430.4817543579867 mA
 
 Inductor requirements:
-	L >= 338.232 uH
-	I >= 6.533064559348783 A
+	L >= 280.512 uH
+	I >= 6.733797976156029 A
 
 Input capacitors selected:
 	Bulk caps: HZA336M080G24T-F
@@ -3053,31 +3891,31 @@ Output capacitors selected:
 
 Input inductor selected:
 	PQ26/25-3C96
-	with 63.0 turns of 22 gauge wire
-	and a core gap of 1.6 mm per side of the core.
+	with 53.0 turns of 21 gauge wire
+	and a core gap of 1.4 mm per side of the core.
 
 Switch requirements:
-	V_DS >= 155.748 (V)
-	I_D >= 7.374 (A)
-	P_D >= 2.954 (W)
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.659 (W)
 
 Switch selected:
 	EPC2207
-	with an optimal switching frequency of 115000 Hz
+	with an optimal switching frequency of 95000 Hz
 
 Input capacitor requirements:
-	C >= 4.107 uF
-	V >= 69.769 V
-	Irms >= 294.9351322819839 mA
+	C >= 2.668 uF
+	V >= 73.553 V
+	Irms >= 430.35364469000706 mA
 
 Output capacitor requirements:
-	C >= 13.350 uF
-	V >= 130.279 V
-	Irms >= 294.9351322819839 mA
+	C >= 16.163 uF
+	V >= 130.286 V
+	Irms >= 430.35364469000706 mA
 
 Inductor requirements:
-	L >= 338.228 uH
-	I >= 6.533068883673254 A
+	L >= 280.596 uH
+	I >= 6.733619478649915 A
 
 Input capacitors selected:
 	Bulk caps: HZA336M080G24T-F
@@ -3087,31 +3925,31 @@ Output capacitors selected:
 
 Input inductor selected:
 	PQ26/25-3C96
-	with 62.0 turns of 22 gauge wire
-	and a core gap of 1.6 mm per side of the core.
+	with 54.0 turns of 21 gauge wire
+	and a core gap of 1.5 mm per side of the core.
 
 Switch requirements:
-	V_DS >= 155.748 (V)
-	I_D >= 7.374 (A)
-	P_D >= 2.954 (W)
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.658 (W)
 
 Switch selected:
 	EPC2207
-	with an optimal switching frequency of 115000 Hz
+	with an optimal switching frequency of 95000 Hz
 
 Input capacitor requirements:
-	C >= 4.107 uF
-	V >= 69.769 V
-	Irms >= 294.93332573434515 mA
+	C >= 2.670 uF
+	V >= 73.553 V
+	Irms >= 430.6890715157828 mA
 
 Output capacitor requirements:
-	C >= 13.350 uF
-	V >= 130.279 V
-	Irms >= 294.93332573434515 mA
+	C >= 16.163 uF
+	V >= 130.286 V
+	Irms >= 430.6890715157828 mA
 
 Inductor requirements:
-	L >= 338.230 uH
-	I >= 6.5330664209059774 A
+	L >= 280.377 uH
+	I >= 6.734086834883279 A
 
 Input capacitors selected:
 	Bulk caps: HZA336M080G24T-F
@@ -3121,31 +3959,31 @@ Output capacitors selected:
 
 Input inductor selected:
 	PQ26/25-3C96
-	with 63.0 turns of 22 gauge wire
-	and a core gap of 1.6 mm per side of the core.
+	with 53.0 turns of 21 gauge wire
+	and a core gap of 1.4 mm per side of the core.
 
 Switch requirements:
-	V_DS >= 155.748 (V)
-	I_D >= 7.374 (A)
-	P_D >= 2.954 (W)
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.658 (W)
 
 Switch selected:
 	EPC2207
-	with an optimal switching frequency of 115000 Hz
+	with an optimal switching frequency of 95000 Hz
 
 Input capacitor requirements:
-	C >= 4.107 uF
-	V >= 69.769 V
-	Irms >= 294.9345373620677 mA
+	C >= 2.670 uF
+	V >= 73.553 V
+	Irms >= 430.560937888874 mA
 
 Output capacitor requirements:
-	C >= 13.350 uF
-	V >= 130.279 V
-	Irms >= 294.9345373620677 mA
+	C >= 16.163 uF
+	V >= 130.286 V
+	Irms >= 430.560937888874 mA
 
 Inductor requirements:
-	L >= 338.229 uH
-	I >= 6.533068072651574 A
+	L >= 280.461 uH
+	I >= 6.733908303994759 A
 
 Input capacitors selected:
 	Bulk caps: HZA336M080G24T-F
@@ -3155,31 +3993,31 @@ Output capacitors selected:
 
 Input inductor selected:
 	PQ26/25-3C96
-	with 62.0 turns of 22 gauge wire
-	and a core gap of 1.6 mm per side of the core.
+	with 53.0 turns of 21 gauge wire
+	and a core gap of 1.4 mm per side of the core.
 
 Switch requirements:
-	V_DS >= 155.748 (V)
-	I_D >= 7.374 (A)
-	P_D >= 2.954 (W)
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.658 (W)
 
 Switch selected:
 	EPC2207
-	with an optimal switching frequency of 115000 Hz
+	with an optimal switching frequency of 95000 Hz
 
 Input capacitor requirements:
-	C >= 4.107 uF
-	V >= 69.769 V
-	Irms >= 294.9338473223193 mA
+	C >= 2.669 uF
+	V >= 73.553 V
+	Irms >= 430.43281907264816 mA
 
 Output capacitor requirements:
-	C >= 13.350 uF
-	V >= 130.279 V
-	Irms >= 294.9338473223193 mA
+	C >= 16.163 uF
+	V >= 130.286 V
+	Irms >= 430.43281907264816 mA
 
 Inductor requirements:
-	L >= 338.230 uH
-	I >= 6.533067131958245 A
+	L >= 280.544 uH
+	I >= 6.73372979374223 A
 
 Input capacitors selected:
 	Bulk caps: HZA336M080G24T-F
@@ -3189,31 +4027,31 @@ Output capacitors selected:
 
 Input inductor selected:
 	PQ26/25-3C96
-	with 62.0 turns of 22 gauge wire
-	and a core gap of 1.6 mm per side of the core.
+	with 54.0 turns of 21 gauge wire
+	and a core gap of 1.5 mm per side of the core.
 
 Switch requirements:
-	V_DS >= 155.748 (V)
-	I_D >= 7.374 (A)
-	P_D >= 2.954 (W)
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.658 (W)
 
 Switch selected:
 	EPC2207
-	with an optimal switching frequency of 115000 Hz
+	with an optimal switching frequency of 95000 Hz
 
 Input capacitor requirements:
-	C >= 4.107 uF
-	V >= 69.769 V
-	Irms >= 294.9336480934131 mA
+	C >= 2.669 uF
+	V >= 73.553 V
+	Irms >= 430.52095396501085 mA
 
 Output capacitor requirements:
-	C >= 13.350 uF
-	V >= 130.279 V
-	Irms >= 294.9336480934131 mA
+	C >= 16.163 uF
+	V >= 130.286 V
+	Irms >= 430.52095396501085 mA
 
 Inductor requirements:
-	L >= 338.230 uH
-	I >= 6.5330668603604085 A
+	L >= 280.487 uH
+	I >= 6.733852593674009 A
 
 Input capacitors selected:
 	Bulk caps: HZA336M080G24T-F
@@ -3223,31 +4061,31 @@ Output capacitors selected:
 
 Input inductor selected:
 	PQ26/25-3C96
-	with 62.0 turns of 22 gauge wire
-	and a core gap of 1.6 mm per side of the core.
+	with 53.0 turns of 21 gauge wire
+	and a core gap of 1.4 mm per side of the core.
 
 Switch requirements:
-	V_DS >= 155.748 (V)
-	I_D >= 7.374 (A)
-	P_D >= 2.954 (W)
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.658 (W)
 
 Switch selected:
 	EPC2207
-	with an optimal switching frequency of 115000 Hz
+	with an optimal switching frequency of 95000 Hz
 
 Input capacitor requirements:
-	C >= 4.107 uF
-	V >= 69.769 V
-	Irms >= 294.9335249631963 mA
+	C >= 2.669 uF
+	V >= 73.553 V
+	Irms >= 430.4630624877912 mA
 
 Output capacitor requirements:
-	C >= 13.350 uF
-	V >= 130.279 V
-	Irms >= 294.9335249631963 mA
+	C >= 16.163 uF
+	V >= 130.286 V
+	Irms >= 430.4630624877912 mA
 
 Inductor requirements:
-	L >= 338.230 uH
-	I >= 6.5330666925037395 A
+	L >= 280.524 uH
+	I >= 6.733771932436869 A
 
 Input capacitors selected:
 	Bulk caps: HZA336M080G24T-F
@@ -3257,31 +4095,31 @@ Output capacitors selected:
 
 Input inductor selected:
 	PQ26/25-3C96
-	with 62.0 turns of 22 gauge wire
-	and a core gap of 1.6 mm per side of the core.
+	with 54.0 turns of 21 gauge wire
+	and a core gap of 1.5 mm per side of the core.
 
 Switch requirements:
-	V_DS >= 155.748 (V)
-	I_D >= 7.374 (A)
-	P_D >= 2.954 (W)
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.658 (W)
 
 Switch selected:
 	EPC2207
-	with an optimal switching frequency of 115000 Hz
+	with an optimal switching frequency of 95000 Hz
 
 Input capacitor requirements:
-	C >= 4.107 uF
-	V >= 69.769 V
-	Irms >= 294.93344886454406 mA
+	C >= 2.669 uF
+	V >= 73.553 V
+	Irms >= 430.4967271114839 mA
 
 Output capacitor requirements:
-	C >= 13.350 uF
-	V >= 130.279 V
-	Irms >= 294.93344886454406 mA
+	C >= 16.163 uF
+	V >= 130.286 V
+	Irms >= 430.4967271114839 mA
 
 Inductor requirements:
-	L >= 338.230 uH
-	I >= 6.533066588762622 A
+	L >= 280.502 uH
+	I >= 6.733818837962955 A
 
 Input capacitors selected:
 	Bulk caps: HZA336M080G24T-F
@@ -3291,31 +4129,31 @@ Output capacitors selected:
 
 Input inductor selected:
 	PQ26/25-3C96
-	with 63.0 turns of 22 gauge wire
-	and a core gap of 1.6 mm per side of the core.
+	with 53.0 turns of 21 gauge wire
+	and a core gap of 1.4 mm per side of the core.
 
 Switch requirements:
-	V_DS >= 155.748 (V)
-	I_D >= 7.374 (A)
-	P_D >= 2.954 (W)
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.658 (W)
 
 Switch selected:
 	EPC2207
-	with an optimal switching frequency of 115000 Hz
+	with an optimal switching frequency of 95000 Hz
 
 Input capacitor requirements:
-	C >= 4.107 uF
-	V >= 69.769 V
-	Irms >= 294.9335719947507 mA
+	C >= 2.669 uF
+	V >= 73.553 V
+	Irms >= 430.47461466189316 mA
 
 Output capacitor requirements:
-	C >= 13.350 uF
-	V >= 130.279 V
-	Irms >= 294.9335719947507 mA
+	C >= 16.163 uF
+	V >= 130.286 V
+	Irms >= 430.47461466189316 mA
 
 Inductor requirements:
-	L >= 338.230 uH
-	I >= 6.533066756619277 A
+	L >= 280.517 uH
+	I >= 6.733788028288961 A
 
 Input capacitors selected:
 	Bulk caps: HZA336M080G24T-F
@@ -3325,31 +4163,31 @@ Output capacitors selected:
 
 Input inductor selected:
 	PQ26/25-3C96
-	with 62.0 turns of 22 gauge wire
-	and a core gap of 1.6 mm per side of the core.
+	with 54.0 turns of 21 gauge wire
+	and a core gap of 1.5 mm per side of the core.
 
 Switch requirements:
-	V_DS >= 155.748 (V)
-	I_D >= 7.374 (A)
-	P_D >= 2.954 (W)
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.658 (W)
 
 Switch selected:
 	EPC2207
-	with an optimal switching frequency of 115000 Hz
+	with an optimal switching frequency of 95000 Hz
 
 Input capacitor requirements:
-	C >= 4.107 uF
-	V >= 69.769 V
-	Irms >= 294.9334958960977 mA
+	C >= 2.669 uF
+	V >= 73.553 V
+	Irms >= 430.48747341687965 mA
 
 Output capacitor requirements:
-	C >= 13.350 uF
-	V >= 130.279 V
-	Irms >= 294.9334958960977 mA
+	C >= 16.163 uF
+	V >= 130.286 V
+	Irms >= 430.48747341687965 mA
 
 Inductor requirements:
-	L >= 338.230 uH
-	I >= 6.5330666528781585 A
+	L >= 280.508 uH
+	I >= 6.7338059446237155 A
 
 Input capacitors selected:
 	Bulk caps: HZA336M080G24T-F
@@ -3359,31 +4197,31 @@ Output capacitors selected:
 
 Input inductor selected:
 	PQ26/25-3C96
-	with 63.0 turns of 22 gauge wire
-	and a core gap of 1.6 mm per side of the core.
+	with 53.0 turns of 21 gauge wire
+	and a core gap of 1.4 mm per side of the core.
 
 Switch requirements:
-	V_DS >= 155.748 (V)
-	I_D >= 7.374 (A)
-	P_D >= 2.954 (W)
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.658 (W)
 
 Switch selected:
 	EPC2207
-	with an optimal switching frequency of 115000 Hz
+	with an optimal switching frequency of 95000 Hz
 
 Input capacitor requirements:
-	C >= 4.107 uF
-	V >= 69.769 V
-	Irms >= 294.9335429276507 mA
+	C >= 2.669 uF
+	V >= 73.553 V
+	Irms >= 430.479027231401 mA
 
 Output capacitor requirements:
-	C >= 13.350 uF
-	V >= 130.279 V
-	Irms >= 294.9335429276507 mA
+	C >= 16.163 uF
+	V >= 130.286 V
+	Irms >= 430.479027231401 mA
 
 Inductor requirements:
-	L >= 338.230 uH
-	I >= 6.5330667169936945 A
+	L >= 280.514 uH
+	I >= 6.733794176401474 A
 
 Input capacitors selected:
 	Bulk caps: HZA336M080G24T-F
@@ -3393,31 +4231,31 @@ Output capacitors selected:
 
 Input inductor selected:
 	PQ26/25-3C96
-	with 62.0 turns of 22 gauge wire
-	and a core gap of 1.6 mm per side of the core.
+	with 54.0 turns of 21 gauge wire
+	and a core gap of 1.5 mm per side of the core.
 
 Switch requirements:
-	V_DS >= 155.748 (V)
-	I_D >= 7.374 (A)
-	P_D >= 2.954 (W)
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.658 (W)
 
 Switch selected:
 	EPC2207
-	with an optimal switching frequency of 115000 Hz
+	with an optimal switching frequency of 95000 Hz
 
 Input capacitor requirements:
-	C >= 4.107 uF
-	V >= 69.769 V
-	Irms >= 294.93351386055275 mA
+	C >= 2.669 uF
+	V >= 73.553 V
+	Irms >= 430.4839388405534 mA
 
 Output capacitor requirements:
-	C >= 13.350 uF
-	V >= 130.279 V
-	Irms >= 294.93351386055275 mA
+	C >= 16.163 uF
+	V >= 130.286 V
+	Irms >= 430.4839388405534 mA
 
 Inductor requirements:
-	L >= 338.230 uH
-	I >= 6.533066677368114 A
+	L >= 280.511 uH
+	I >= 6.733801019834905 A
 
 Input capacitors selected:
 	Bulk caps: HZA336M080G24T-F
@@ -3427,31 +4265,31 @@ Output capacitors selected:
 
 Input inductor selected:
 	PQ26/25-3C96
-	with 63.0 turns of 22 gauge wire
-	and a core gap of 1.6 mm per side of the core.
+	with 53.0 turns of 21 gauge wire
+	and a core gap of 1.4 mm per side of the core.
 
 Switch requirements:
-	V_DS >= 155.748 (V)
-	I_D >= 7.374 (A)
-	P_D >= 2.954 (W)
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.658 (W)
 
 Switch selected:
 	EPC2207
-	with an optimal switching frequency of 115000 Hz
+	with an optimal switching frequency of 95000 Hz
 
 Input capacitor requirements:
-	C >= 4.107 uF
-	V >= 69.769 V
-	Irms >= 294.9335318250071 mA
+	C >= 2.669 uF
+	V >= 73.553 V
+	Irms >= 430.48071268756144 mA
 
 Output capacitor requirements:
-	C >= 13.350 uF
-	V >= 130.279 V
-	Irms >= 294.9335318250071 mA
+	C >= 16.163 uF
+	V >= 130.286 V
+	Irms >= 430.48071268756144 mA
 
 Inductor requirements:
-	L >= 338.230 uH
-	I >= 6.533066701858069 A
+	L >= 280.513 uH
+	I >= 6.733796524777877 A
 
 Input capacitors selected:
 	Bulk caps: HZA336M080G24T-F
@@ -3461,31 +4299,31 @@ Output capacitors selected:
 
 Input inductor selected:
 	PQ26/25-3C96
-	with 62.0 turns of 22 gauge wire
-	and a core gap of 1.6 mm per side of the core.
+	with 53.0 turns of 21 gauge wire
+	and a core gap of 1.4 mm per side of the core.
 
 Switch requirements:
-	V_DS >= 155.748 (V)
-	I_D >= 7.374 (A)
-	P_D >= 2.954 (W)
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.658 (W)
 
 Switch selected:
 	EPC2207
-	with an optimal switching frequency of 115000 Hz
+	with an optimal switching frequency of 95000 Hz
 
 Input capacitor requirements:
-	C >= 4.107 uF
-	V >= 69.769 V
-	Irms >= 294.9335249631963 mA
+	C >= 2.669 uF
+	V >= 73.553 V
+	Irms >= 430.4800689003112 mA
 
 Output capacitor requirements:
-	C >= 13.350 uF
-	V >= 130.279 V
-	Irms >= 294.9335249631963 mA
+	C >= 16.163 uF
+	V >= 130.286 V
+	Irms >= 430.4800689003112 mA
 
 Inductor requirements:
-	L >= 338.230 uH
-	I >= 6.5330666925037395 A
+	L >= 280.513 uH
+	I >= 6.733795627777514 A
 
 Input capacitors selected:
 	Bulk caps: HZA336M080G24T-F
@@ -3495,49 +4333,321 @@ Output capacitors selected:
 
 Input inductor selected:
 	PQ26/25-3C96
-	with 62.0 turns of 22 gauge wire
-	and a core gap of 1.6 mm per side of the core.
+	with 53.0 turns of 21 gauge wire
+	and a core gap of 1.4 mm per side of the core.
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.658 (W)
+
+Switch selected:
+	EPC2207
+	with an optimal switching frequency of 95000 Hz
+
+Input capacitor requirements:
+	C >= 2.669 uF
+	V >= 73.553 V
+	Irms >= 430.47967101808865 mA
+
+Output capacitor requirements:
+	C >= 16.163 uF
+	V >= 130.286 V
+	Irms >= 430.47967101808865 mA
+
+Inductor requirements:
+	L >= 280.513 uH
+	I >= 6.733795073401053 A
+
+Input capacitors selected:
+	Bulk caps: HZA336M080G24T-F
+
+Output capacitors selected:
+	Bulk caps: A759MS186M2CAAE090
+
+Input inductor selected:
+	PQ26/25-3C96
+	with 54.0 turns of 21 gauge wire
+	and a core gap of 1.5 mm per side of the core.
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.658 (W)
+
+Switch selected:
+	EPC2207
+	with an optimal switching frequency of 95000 Hz
+
+Input capacitor requirements:
+	C >= 2.669 uF
+	V >= 73.553 V
+	Irms >= 430.4803148051078 mA
+
+Output capacitor requirements:
+	C >= 16.163 uF
+	V >= 130.286 V
+	Irms >= 430.4803148051078 mA
+
+Inductor requirements:
+	L >= 280.513 uH
+	I >= 6.7337959704010935 A
+
+Input capacitors selected:
+	Bulk caps: HZA336M080G24T-F
+
+Output capacitors selected:
+	Bulk caps: A759MS186M2CAAE090
+
+Input inductor selected:
+	PQ26/25-3C96
+	with 53.0 turns of 21 gauge wire
+	and a core gap of 1.4 mm per side of the core.
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.658 (W)
+
+Switch selected:
+	EPC2207
+	with an optimal switching frequency of 95000 Hz
+
+Input capacitor requirements:
+	C >= 2.669 uF
+	V >= 73.553 V
+	Irms >= 430.4799169228134 mA
+
+Output capacitor requirements:
+	C >= 16.163 uF
+	V >= 130.286 V
+	Irms >= 430.4799169228134 mA
+
+Inductor requirements:
+	L >= 280.513 uH
+	I >= 6.733795416024531 A
+
+Input capacitors selected:
+	Bulk caps: HZA336M080G24T-F
+
+Output capacitors selected:
+	Bulk caps: A759MS186M2CAAE090
+
+Input inductor selected:
+	PQ26/25-3C96
+	with 53.0 turns of 21 gauge wire
+	and a core gap of 1.4 mm per side of the core.
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.658 (W)
+
+Switch selected:
+	EPC2207
+	with an optimal switching frequency of 95000 Hz
+
+Input capacitor requirements:
+	C >= 2.669 uF
+	V >= 73.553 V
+	Irms >= 430.4798229955628 mA
+
+Output capacitor requirements:
+	C >= 16.163 uF
+	V >= 130.286 V
+	Irms >= 430.4798229955628 mA
+
+Inductor requirements:
+	L >= 280.513 uH
+	I >= 6.733795285154002 A
+
+Input capacitors selected:
+	Bulk caps: HZA336M080G24T-F
+
+Output capacitors selected:
+	Bulk caps: A759MS186M2CAAE090
+
+Input inductor selected:
+	PQ26/25-3C96
+	with 53.0 turns of 21 gauge wire
+	and a core gap of 1.4 mm per side of the core.
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.658 (W)
+
+Switch selected:
+	EPC2207
+	with an optimal switching frequency of 95000 Hz
+
+Input capacitor requirements:
+	C >= 2.669 uF
+	V >= 73.553 V
+	Irms >= 430.4797649453326 mA
+
+Output capacitor requirements:
+	C >= 16.163 uF
+	V >= 130.286 V
+	Irms >= 430.4797649453326 mA
+
+Inductor requirements:
+	L >= 280.513 uH
+	I >= 6.733795204271572 A
+
+Input capacitors selected:
+	Bulk caps: HZA336M080G24T-F
+
+Output capacitors selected:
+	Bulk caps: A759MS186M2CAAE090
+
+Input inductor selected:
+	PQ26/25-3C96
+	with 53.0 turns of 21 gauge wire
+	and a core gap of 1.4 mm per side of the core.
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.658 (W)
+
+Switch selected:
+	EPC2207
+	with an optimal switching frequency of 95000 Hz
+
+Input capacitor requirements:
+	C >= 2.669 uF
+	V >= 73.553 V
+	Irms >= 430.479729068318 mA
+
+Output capacitor requirements:
+	C >= 16.163 uF
+	V >= 130.286 V
+	Irms >= 430.479729068318 mA
+
+Inductor requirements:
+	L >= 280.513 uH
+	I >= 6.733795154283482 A
+
+Input capacitors selected:
+	Bulk caps: HZA336M080G24T-F
+
+Output capacitors selected:
+	Bulk caps: A759MS186M2CAAE090
+
+Input inductor selected:
+	PQ26/25-3C96
+	with 53.0 turns of 21 gauge wire
+	and a core gap of 1.4 mm per side of the core.
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.658 (W)
+
+Switch selected:
+	EPC2207
+	with an optimal switching frequency of 95000 Hz
+
+Input capacitor requirements:
+	C >= 2.669 uF
+	V >= 73.553 V
+	Irms >= 430.47970689510373 mA
+
+Output capacitor requirements:
+	C >= 16.163 uF
+	V >= 130.286 V
+	Irms >= 430.47970689510373 mA
+
+Inductor requirements:
+	L >= 280.513 uH
+	I >= 6.733795123389143 A
+
+Input capacitors selected:
+	Bulk caps: HZA336M080G24T-F
+
+Output capacitors selected:
+	Bulk caps: A759MS186M2CAAE090
+
+Input inductor selected:
+	PQ26/25-3C96
+	with 53.0 turns of 21 gauge wire
+	and a core gap of 1.4 mm per side of the core.
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.658 (W)
+
+Switch selected:
+	EPC2207
+	with an optimal switching frequency of 95000 Hz
+
+Input capacitor requirements:
+	C >= 2.669 uF
+	V >= 73.553 V
+	Irms >= 430.47970689510373 mA
+
+Output capacitor requirements:
+	C >= 16.163 uF
+	V >= 130.286 V
+	Irms >= 430.47970689510373 mA
+
+Inductor requirements:
+	L >= 280.513 uH
+	I >= 6.733795123389143 A
+
+Input capacitors selected:
+	Bulk caps: HZA336M080G24T-F
+
+Output capacitors selected:
+	Bulk caps: A759MS186M2CAAE090
+
+Input inductor selected:
+	PQ26/25-3C96
+	with 53.0 turns of 21 gauge wire
+	and a core gap of 1.4 mm per side of the core.
 
 [[Fit Statistics]]
     # fitting method   = Powell
-    # function evals   = 103
+    # function evals   = 135
     # data points      = 2
     # variables        = 2
-    chi-square         = 35.4404767
-    reduced chi-square = 35.4404767
-    Akaike info crit   = 9.74941479
-    Bayesian info crit = 7.13570915
+    chi-square         = 26.2620333
+    reduced chi-square = 26.2620333
+    Akaike info crit   = 9.14995423
+    Bayesian info crit = 6.53624859
 ##  Warning: uncertainties could not be estimated:
     this fitting method does not natively calculate uncertainties
     and numdifftools is not installed for lmfit to do this. Use
     `pip install numdifftools` for lmfit to estimate uncertainties
     with this fitting method.
 [[Variables]]
-    R_L:       1.5371e-08 (init = 1.5e-08)
-    P_SW_BUD:  2.4619e-07 (init = 2.5e-07)
+    R_L:       1.1964e-08 (init = 1.5e-08)
+    P_SW_BUD:  2.1268e-07 (init = 2.5e-07)
 
 Switch requirements:
-	V_DS >= 155.748 (V)
-	I_D >= 7.374 (A)
-	P_D >= 2.954 (W)
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.658 (W)
 
 Switch selected:
 	EPC2207
-	with an optimal switching frequency of 115000 Hz
+	with an optimal switching frequency of 95000 Hz
 
 Input capacitor requirements:
-	C >= 4.107 uF
-	V >= 69.769 V
-	Irms >= 294.9335249631963 mA
+	C >= 2.669 uF
+	V >= 73.553 V
+	Irms >= 430.47970689510373 mA
 
 Output capacitor requirements:
-	C >= 13.350 uF
-	V >= 130.279 V
-	Irms >= 294.9335249631963 mA
+	C >= 16.163 uF
+	V >= 130.286 V
+	Irms >= 430.47970689510373 mA
 
 Inductor requirements:
-	L >= 338.230 uH
-	I >= 6.5330666925037395 A
+	L >= 280.513 uH
+	I >= 6.733795123389143 A
 
 Input capacitors selected:
 	Bulk caps: HZA336M080G24T-F
@@ -3547,285 +4657,285 @@ Output capacitors selected:
 
 Input inductor selected:
 	PQ26/25-3C96
-	with 62.0 turns of 22 gauge wire
-	and a core gap of 1.6 mm per side of the core.
+	with 53.0 turns of 21 gauge wire
+	and a core gap of 1.4 mm per side of the core.
 
 Worst case conduction, switching, and total loss:
-	Conduction loss: 1.387 W
-	Switching loss: 1.046 W
-	Total loss: 2.433 W
+	Conduction loss: 1.259 W
+	Switching loss: 0.864 W
+	Total loss: 2.123 W
 
 Best case thermal area for both switches:
-	40.596 cm^2
+	35.546 cm^2
 
 Worst case deadtime:
-	22.508 ns
+	12.509 ns
 
 Input inductor selected:
 	PQ26/25-3C96
-	with 62.0 turns of 22 gauge wire
-	and a core gap of 1.6 mm per side of the core.
+	with 53.0 turns of 21 gauge wire
+	and a core gap of 1.4 mm per side of the core.
 
 Worst case ripple:
-	Input voltage ripple: 0.027 V
-	Output voltage ripple: 0.742 V
-	Inductor current ripple: 0.834 A
+	Input voltage ripple: 0.049 V
+	Output voltage ripple: 0.898 V
+	Inductor current ripple: 1.218 A
 
 Worst case input capacitor ripple, leakage, and total loss:
-	Ripple loss: 0.003 W
+	Ripple loss: 0.007 W
 	Leakage loss: 0.002 W
-	Total loss: 0.005 W
+	Total loss: 0.008 W
 
 Worst case output capacitor ripple, leakage, and total loss:
-	Ripple loss: 0.008 W
+	Ripple loss: 0.017 W
 	Leakage loss: 0.056 W
-	Total loss: 0.064 W
+	Total loss: 0.073 W
 
 Worst case inductor conduction, core, and total loss:
-	Conduction loss: 1.013 W
-	Core loss: 0.035 W
-	Total loss: 1.018 W
+	Conduction loss: 0.786 W
+	Core loss: 0.016 W
+	Total loss: 0.797 W
 
 Highest duty cycle:
-        VI (V)  II (A)      VO (V)    IO (A)  ...  PO_TOT (W)  PL_COND (W)  PL_CORE (W)  PL_TOT (W)
-1154  24.50678   6.145  129.789831  1.160292  ...    0.059106     0.972312     0.001776    0.974088
+       VI (V)  II (A)      VO (V)    IO (A)  ...  PO_TOT (W)  PL_COND (W)  PL_CORE (W)  PL_TOT (W)
+54  20.429644   6.146  129.789831  0.967415  ...    0.060866     0.725791     0.002432    0.728223
 
 [1 rows x 28 columns]
 
 Lowest duty cycle:
          VI (V)  II (A)  VO (V)    IO (A)  ...  PO_TOT (W)  PL_COND (W)  PL_CORE (W)  PL_TOT (W)
-3135  69.659322   2.699    80.0  2.350131  ...    0.035195      0.18804     0.001915    0.189955
+2145  73.258119   5.004    80.0  4.582295  ...    0.035213     0.454624     0.000316    0.454941
 
 [1 rows x 28 columns]
 
 Highest input current:
-         VI (V)  II (A)      VO (V)    IO (A)  ...  PO_TOT (W)  PL_COND (W)  PL_CORE (W)  PL_TOT (W)
-1100  24.506780   6.145   80.000000  1.882427  ...    0.036845     0.961097     0.001206    0.962303
-1101  24.506780   6.145   80.922034  1.860978  ...    0.037264     0.961430     0.001221    0.962650
-1102  24.506780   6.145   81.844068  1.840013  ...    0.037683     0.961754     0.001236    0.962990
-1103  24.506780   6.145   82.766102  1.819515  ...    0.038101     0.962072     0.001250    0.963322
-1104  24.506780   6.145   83.688136  1.799468  ...    0.038519     0.962382     0.001265    0.963647
-...         ...     ...         ...       ...  ...         ...          ...          ...         ...
-1205  25.727119   6.145  126.101695  1.253696  ...    0.057698     0.974653     0.001910    0.976563
-1206  25.727119   6.145  127.023729  1.244595  ...    0.058108     0.974802     0.001919    0.976721
-1207  25.727119   6.145  127.945763  1.235626  ...    0.058517     0.974949     0.001928    0.976876
-1208  25.727119   6.145  128.867797  1.226785  ...    0.058926     0.975093     0.001936    0.977030
-1209  25.727119   6.145  129.789831  1.218070  ...    0.059335     0.975236     0.001945    0.977181
+        VI (V)  II (A)      VO (V)    IO (A)  ...  PO_TOT (W)  PL_COND (W)  PL_CORE (W)  PL_TOT (W)
+0    20.429644   6.146   80.000000  1.569507  ...    0.038374     0.717390     0.001802    0.719192
+1    20.429644   6.146   80.922034  1.551624  ...    0.038800     0.717639     0.001819    0.719458
+2    20.429644   6.146   81.844068  1.534144  ...    0.039225     0.717882     0.001836    0.719718
+3    20.429644   6.146   82.766102  1.517053  ...    0.039650     0.718120     0.001853    0.719972
+4    20.429644   6.146   83.688136  1.500339  ...    0.040074     0.718352     0.001869    0.720221
+..         ...     ...         ...       ...  ...         ...          ...          ...         ...
+160  23.138797   6.146  126.101695  1.127749  ...    0.060247     0.732878     0.003040    0.735918
+161  23.138797   6.146  127.023729  1.119563  ...    0.060663     0.733008     0.003052    0.736061
+162  23.138797   6.146  127.945763  1.111495  ...    0.061079     0.733137     0.003064    0.736201
+163  23.138797   6.146  128.867797  1.103542  ...    0.061495     0.733263     0.003076    0.736339
+164  23.138797   6.146  129.789831  1.095703  ...    0.061910     0.733388     0.003087    0.736475
 
-[110 rows x 28 columns]
+[165 rows x 28 columns]
 
 Lowest input current:
          VI (V)  II (A)      VO (V)    IO (A)  ...  PO_TOT (W)  PL_COND (W)  PL_CORE (W)  PL_TOT (W)
-3135  69.659322   2.699   80.000000  2.350131  ...    0.035195     0.188040     0.001915    0.189955
-3136  69.659322   2.699   80.922034  2.323354  ...    0.035691     0.189229     0.002295    0.191524
-3137  69.659322   2.699   81.844068  2.297179  ...    0.036192     0.190394     0.002704    0.193098
-3138  69.659322   2.699   82.766102  2.271588  ...    0.036697     0.191538     0.003139    0.194677
-3139  69.659322   2.699   83.688136  2.246561  ...    0.037206     0.192659     0.003600    0.196259
-3140  69.659322   2.699   84.610169  2.222079  ...    0.037719     0.193759     0.004083    0.197842
-3141  69.659322   2.699   85.532203  2.198125  ...    0.038235     0.194838     0.004588    0.199427
-3142  69.659322   2.699   86.454237  2.174682  ...    0.038754     0.195898     0.005113    0.201011
-3143  69.659322   2.699   87.376271  2.151734  ...    0.039276     0.196937     0.005656    0.202593
-3144  69.659322   2.699   88.298305  2.129265  ...    0.039800     0.197958     0.006215    0.204173
-3145  69.659322   2.699   89.220339  2.107261  ...    0.040326     0.198960     0.006789    0.205749
-3146  69.659322   2.699   90.142373  2.085706  ...    0.040854     0.199944     0.007377    0.207321
-3147  69.659322   2.699   91.064407  2.064588  ...    0.041384     0.200910     0.007977    0.208888
-3148  69.659322   2.699   91.986441  2.043894  ...    0.041916     0.201860     0.008588    0.210448
-3149  69.659322   2.699   92.908475  2.023610  ...    0.042449     0.202792     0.009210    0.212002
-3150  69.659322   2.699   93.830508  2.003725  ...    0.042983     0.203709     0.009840    0.213549
-3151  69.659322   2.699   94.752542  1.984227  ...    0.043519     0.204609     0.010478    0.215087
-3152  69.659322   2.699   95.674576  1.965104  ...    0.044055     0.205495     0.011123    0.216617
-3153  69.659322   2.699   96.596610  1.946347  ...    0.044592     0.206365     0.011774    0.218138
-3154  69.659322   2.699   97.518644  1.927944  ...    0.045130     0.207220     0.012430    0.219650
-3155  69.659322   2.699   98.440678  1.909886  ...    0.045669     0.208061     0.013090    0.221151
-3156  69.659322   2.699   99.362712  1.892164  ...    0.046208     0.208889     0.013754    0.222643
-3157  69.659322   2.699  100.284746  1.874767  ...    0.046748     0.209702     0.014421    0.224123
-3158  69.659322   2.699  101.206780  1.857687  ...    0.047288     0.210502     0.015090    0.225593
-3159  69.659322   2.699  102.128814  1.840915  ...    0.047828     0.211290     0.015761    0.227051
-3160  69.659322   2.699  103.050847  1.824444  ...    0.048368     0.212064     0.016434    0.228498
-3161  69.659322   2.699  103.972881  1.808265  ...    0.048908     0.212827     0.017107    0.229934
-3162  69.659322   2.699  104.894915  1.792370  ...    0.049449     0.213577     0.017780    0.231357
-3163  69.659322   2.699  105.816949  1.776752  ...    0.049989     0.214315     0.018454    0.232769
-3164  69.659322   2.699  106.738983  1.761404  ...    0.050529     0.215042     0.019126    0.234169
-3165  69.659322   2.699  107.661017  1.746319  ...    0.051069     0.215758     0.019798    0.235556
-3166  69.659322   2.699  108.583051  1.731490  ...    0.051609     0.216463     0.020468    0.236931
-3167  69.659322   2.699  109.505085  1.716911  ...    0.052149     0.217157     0.021137    0.238294
-3168  69.659322   2.699  110.427119  1.702576  ...    0.052688     0.217840     0.021804    0.239644
-3169  69.659322   2.699  111.349153  1.688477  ...    0.053227     0.218513     0.022469    0.240982
-3170  69.659322   2.699  112.271186  1.674611  ...    0.053765     0.219176     0.023131    0.242308
-3171  69.659322   2.699  113.193220  1.660970  ...    0.054303     0.219830     0.023791    0.243621
-3172  69.659322   2.699  114.115254  1.647549  ...    0.054841     0.220473     0.024448    0.244921
-3173  69.659322   2.699  115.037288  1.634344  ...    0.055378     0.221108     0.025102    0.246209
-3174  69.659322   2.699  115.959322  1.621349  ...    0.055914     0.221733     0.025752    0.247485
-3175  69.659322   2.699  116.881356  1.608559  ...    0.056450     0.222349     0.026400    0.248749
-3176  69.659322   2.699  117.803390  1.595969  ...    0.056986     0.222956     0.027044    0.250000
-3177  69.659322   2.699  118.725424  1.583574  ...    0.057520     0.223555     0.027684    0.251239
-3178  69.659322   2.699  119.647458  1.571371  ...    0.058054     0.224145     0.028320    0.252465
-3179  69.659322   2.699  120.569492  1.559354  ...    0.058588     0.224727     0.028953    0.253680
-3180  69.659322   2.699  121.491525  1.547520  ...    0.059121     0.225301     0.029582    0.254883
-3181  69.659322   2.699  122.413559  1.535863  ...    0.059653     0.225867     0.030206    0.256073
-3182  69.659322   2.699  123.335593  1.524382  ...    0.060184     0.226425     0.030827    0.257252
-3183  69.659322   2.699  124.257627  1.513070  ...    0.060715     0.226976     0.031443    0.258419
-3184  69.659322   2.699  125.179661  1.501925  ...    0.061245     0.227519     0.032055    0.259574
-3185  69.659322   2.699  126.101695  1.490944  ...    0.061774     0.228054     0.032663    0.260718
-3186  69.659322   2.699  127.023729  1.480121  ...    0.062303     0.228583     0.033267    0.261850
-3187  69.659322   2.699  127.945763  1.469455  ...    0.062831     0.229105     0.033866    0.262970
-3188  69.659322   2.699  128.867797  1.458941  ...    0.063358     0.229619     0.034460    0.264080
-3189  69.659322   2.699  129.789831  1.448577  ...    0.063884     0.230127     0.035051    0.265178
+2145  73.258119   5.004   80.000000  4.582295  ...    0.035213     0.454624     0.000316    0.454941
+2146  73.258119   5.004   80.922034  4.530084  ...    0.035775     0.457175     0.000426    0.457600
+2147  73.258119   5.004   81.844068  4.479049  ...    0.036352     0.459675     0.000551    0.460226
+2148  73.258119   5.004   82.766102  4.429152  ...    0.036941     0.462125     0.000692    0.462818
+2149  73.258119   5.004   83.688136  4.380354  ...    0.037543     0.464529     0.000849    0.465378
+2150  73.258119   5.004   84.610169  4.332619  ...    0.038155     0.466885     0.001020    0.467905
+2151  73.258119   5.004   85.532203  4.285914  ...    0.038778     0.469197     0.001205    0.470402
+2152  73.258119   5.004   86.454237  4.240204  ...    0.039411     0.471465     0.001403    0.472868
+2153  73.258119   5.004   87.376271  4.195460  ...    0.040052     0.473690     0.001613    0.475303
+2154  73.258119   5.004   88.298305  4.151650  ...    0.040701     0.475874     0.001835    0.477709
+2155  73.258119   5.004   89.220339  4.108745  ...    0.041357     0.478018     0.002068    0.480086
+2156  73.258119   5.004   90.142373  4.066718  ...    0.042020     0.480123     0.002310    0.482433
+2157  73.258119   5.004   91.064407  4.025542  ...    0.042690     0.482189     0.002563    0.484752
+2158  73.258119   5.004   91.986441  3.985192  ...    0.043365     0.484218     0.002824    0.487043
+2159  73.258119   5.004   92.908475  3.945642  ...    0.044045     0.486212     0.003093    0.489305
+2160  73.258119   5.004   93.830508  3.906870  ...    0.044730     0.488170     0.003370    0.491540
+2161  73.258119   5.004   94.752542  3.868853  ...    0.045419     0.490093     0.003654    0.493748
+2162  73.258119   5.004   95.674576  3.831568  ...    0.046112     0.491983     0.003945    0.495928
+2163  73.258119   5.004   96.596610  3.794995  ...    0.046808     0.493841     0.004241    0.498082
+2164  73.258119   5.004   97.518644  3.759113  ...    0.047508     0.495667     0.004542    0.500210
+2165  73.258119   5.004   98.440678  3.723904  ...    0.048210     0.497462     0.004849    0.502311
+2166  73.258119   5.004   99.362712  3.689348  ...    0.048915     0.499227     0.005160    0.504387
+2167  73.258119   5.004  100.284746  3.655428  ...    0.049622     0.500963     0.005474    0.506437
+2168  73.258119   5.004  101.206780  3.622125  ...    0.050331     0.502669     0.005793    0.508462
+2169  73.258119   5.004  102.128814  3.589424  ...    0.051042     0.504348     0.006115    0.510463
+2170  73.258119   5.004  103.050847  3.557308  ...    0.051754     0.506000     0.006439    0.512439
+2171  73.258119   5.004  103.972881  3.525762  ...    0.052467     0.507624     0.006766    0.514390
+2172  73.258119   5.004  104.894915  3.494770  ...    0.053181     0.509223     0.007095    0.516318
+2173  73.258119   5.004  105.816949  3.464319  ...    0.053896     0.510797     0.007426    0.518223
+2174  73.258119   5.004  106.738983  3.434393  ...    0.054612     0.512345     0.007759    0.520104
+2175  73.258119   5.004  107.661017  3.404980  ...    0.055328     0.513869     0.008093    0.521962
+2176  73.258119   5.004  108.583051  3.376067  ...    0.056045     0.515370     0.008428    0.523798
+2177  73.258119   5.004  109.505085  3.347640  ...    0.056761     0.516848     0.008764    0.525612
+2178  73.258119   5.004  110.427119  3.319688  ...    0.057478     0.518302     0.009100    0.527403
+2179  73.258119   5.004  111.349153  3.292200  ...    0.058194     0.519735     0.009438    0.529173
+2180  73.258119   5.004  112.271186  3.265162  ...    0.058910     0.521146     0.009775    0.530921
+2181  73.258119   5.004  113.193220  3.238565  ...    0.059626     0.522537     0.010112    0.532649
+2182  73.258119   5.004  114.115254  3.212398  ...    0.060341     0.523906     0.010449    0.534355
+2183  73.258119   5.004  115.037288  3.186650  ...    0.061056     0.525255     0.010786    0.536041
+2184  73.258119   5.004  115.959322  3.161312  ...    0.061770     0.526585     0.011123    0.537707
+2185  73.258119   5.004  116.881356  3.136374  ...    0.062483     0.527895     0.011459    0.539354
+2186  73.258119   5.004  117.803390  3.111826  ...    0.063196     0.529186     0.011794    0.540980
+2187  73.258119   5.004  118.725424  3.087659  ...    0.063907     0.530458     0.012129    0.542587
+2188  73.258119   5.004  119.647458  3.063865  ...    0.064618     0.531713     0.012463    0.544176
+2189  73.258119   5.004  120.569492  3.040434  ...    0.065328     0.532950     0.012795    0.545745
+2190  73.258119   5.004  121.491525  3.017360  ...    0.066036     0.534169     0.013127    0.547296
+2191  73.258119   5.004  122.413559  2.994633  ...    0.066743     0.535372     0.013457    0.548829
+2192  73.258119   5.004  123.335593  2.972245  ...    0.067449     0.536557     0.013787    0.550344
+2193  73.258119   5.004  124.257627  2.950190  ...    0.068154     0.537727     0.014114    0.551841
+2194  73.258119   5.004  125.179661  2.928460  ...    0.068857     0.538880     0.014441    0.553321
+2195  73.258119   5.004  126.101695  2.907048  ...    0.069560     0.540018     0.014766    0.554784
+2196  73.258119   5.004  127.023729  2.885946  ...    0.070260     0.541141     0.015089    0.556230
+2197  73.258119   5.004  127.945763  2.865149  ...    0.070960     0.542248     0.015411    0.557659
+2198  73.258119   5.004  128.867797  2.844649  ...    0.071657     0.543341     0.015731    0.559072
+2199  73.258119   5.004  129.789831  2.824440  ...    0.072354     0.544419     0.016050    0.560469
 
 [55 rows x 28 columns]
 
 Highest output current:
-         VI (V)  II (A)  VO (V)    IO (A)  ...  PO_TOT (W)  PL_COND (W)  PL_CORE (W)  PL_TOT (W)
-2805  62.337288   5.831    80.0  4.543609  ...    0.036073     0.856683     0.000811    0.857494
+        VI (V)  II (A)  VO (V)    IO (A)  ...  PO_TOT (W)  PL_COND (W)  PL_CORE (W)  PL_TOT (W)
+1980  69.19439   5.831    80.0  5.043406  ...     0.03603     0.625695     0.000614    0.626309
 
 [1 rows x 28 columns]
 
 Lowest output current:
-        VI (V)  II (A)      VO (V)    IO (A)  ...  PO_TOT (W)  PL_COND (W)  PL_CORE (W)  PL_TOT (W)
-1154  24.50678   6.145  129.789831  1.160292  ...    0.059106     0.972312     0.001776    0.974088
+       VI (V)  II (A)      VO (V)    IO (A)  ...  PO_TOT (W)  PL_COND (W)  PL_CORE (W)  PL_TOT (W)
+54  20.429644   6.146  129.789831  0.967415  ...    0.060866     0.725791     0.002432    0.728223
 
 [1 rows x 28 columns]
 
 Highest device efficiency:
          VI (V)  II (A)  VO (V)    IO (A)  ...  PL_CORE (W)  PL_TOT (W)  P_LOSS (W)    EFF (%)
-3080  68.438983   3.689    80.0  3.155893  ...     0.001115    0.346752    1.777321  99.296031
+2145  73.258119   5.004    80.0  4.582295  ...     0.000316    0.454941    2.196188  99.400904
 
 [1 rows x 30 columns]
 
 Lowest device efficiency:
-        VI (V)  II (A)      VO (V)    IO (A)  ...  PL_CORE (W)  PL_TOT (W)  P_LOSS (W)    EFF (%)
-1154  24.50678   6.145  129.789831  1.160292  ...     0.001776    0.974088    5.900292  96.081992
+       VI (V)  II (A)      VO (V)    IO (A)  ...  PL_CORE (W)  PL_TOT (W)  P_LOSS (W)    EFF (%)
+54  20.429644   6.146  129.789831  0.967415  ...     0.002432    0.728223    5.037452  95.988031
 
 [1 rows x 30 columns]
 
 Highest power transfer:
-         VI (V)  II (A)      VO (V)    IO (A)  ...  PL_CORE (W)  PL_TOT (W)  P_LOSS (W)    EFF (%)
-2805  62.337288   5.831   80.000000  4.543609  ...     0.000811    0.857494    3.254043  99.104775
-2806  62.337288   5.831   80.922034  4.491839  ...     0.000895    0.859609    3.283333  99.096717
-2807  62.337288   5.831   81.844068  4.441235  ...     0.000982    0.861682    3.312654  99.088650
-2808  62.337288   5.831   82.766102  4.391758  ...     0.001072    0.863717    3.342012  99.080573
-2809  62.337288   5.831   83.688136  4.343372  ...     0.001164    0.865713    3.371412  99.072485
-2810  62.337288   5.831   84.610169  4.296041  ...     0.001258    0.867672    3.400860  99.064384
-2811  62.337288   5.831   85.532203  4.249729  ...     0.001355    0.869594    3.430360  99.056268
-2812  62.337288   5.831   86.454237  4.204406  ...     0.001453    0.871482    3.459918  99.048136
-2813  62.337288   5.831   87.376271  4.160039  ...     0.001553    0.873335    3.489537  99.039987
-2814  62.337288   5.831   88.298305  4.116599  ...     0.001654    0.875155    3.519223  99.031821
-2815  62.337288   5.831   89.220339  4.074057  ...     0.001757    0.876942    3.548979  99.023634
-2816  62.337288   5.831   90.142373  4.032385  ...     0.001862    0.878698    3.578809  99.015428
-2817  62.337288   5.831   91.064407  3.991557  ...     0.001967    0.880423    3.608718  99.007199
-2818  62.337288   5.831   91.986441  3.951547  ...     0.002073    0.882118    3.638709  98.998949
-2819  62.337288   5.831   92.908475  3.912331  ...     0.002181    0.883784    3.668785  98.990674
-2820  62.337288   5.831   93.830508  3.873886  ...     0.002289    0.885421    3.698951  98.982375
-2821  62.337288   5.831   94.752542  3.836190  ...     0.002398    0.887031    3.729209  98.974051
-2822  62.337288   5.831   95.674576  3.799220  ...     0.002508    0.888613    3.759563  98.965700
-2823  62.337288   5.831   96.596610  3.762955  ...     0.002618    0.890169    3.790016  98.957322
-2824  62.337288   5.831   97.518644  3.727377  ...     0.002729    0.891700    3.820571  98.948916
-2825  62.337288   5.831   98.440678  3.692465  ...     0.002840    0.893205    3.851230  98.940481
-2826  62.337288   5.831   99.362712  3.658201  ...     0.002951    0.894686    3.881997  98.932017
-2827  62.337288   5.831  100.284746  3.624566  ...     0.003062    0.896143    3.912874  98.923522
-2828  62.337288   5.831  101.206780  3.591545  ...     0.003174    0.897577    3.943864  98.914997
-2829  62.337288   5.831  102.128814  3.559120  ...     0.003286    0.898987    3.974970  98.906439
-2830  62.337288   5.831  103.050847  3.527275  ...     0.003398    0.900376    4.006193  98.897849
-2831  62.337288   5.831  103.972881  3.495996  ...     0.003510    0.901743    4.037536  98.889227
-2832  62.337288   5.831  104.894915  3.465265  ...     0.003622    0.903088    4.069002  98.880570
-2833  62.337288   5.831  105.816949  3.435071  ...     0.003733    0.904413    4.100592  98.871879
-2834  62.337288   5.831  106.738983  3.405398  ...     0.003845    0.905717    4.132308  98.863154
-2835  62.337288   5.831  107.661017  3.376233  ...     0.003956    0.907002    4.164154  98.854393
-2836  62.337288   5.831  108.583051  3.347564  ...     0.004068    0.908267    4.196130  98.845596
-2837  62.337288   5.831  109.505085  3.319378  ...     0.004179    0.909513    4.228239  98.836762
-2838  62.337288   5.831  110.427119  3.291662  ...     0.004289    0.910741    4.260482  98.827891
-2839  62.337288   5.831  111.349153  3.264405  ...     0.004399    0.911950    4.292862  98.818983
-2840  62.337288   5.831  112.271186  3.237596  ...     0.004509    0.913142    4.325380  98.810037
-2841  62.337288   5.831  113.193220  3.211223  ...     0.004619    0.914316    4.358037  98.801053
-2842  62.337288   5.831  114.115254  3.185277  ...     0.004728    0.915474    4.390836  98.792030
-2843  62.337288   5.831  115.037288  3.159747  ...     0.004837    0.916614    4.423778  98.782967
-2844  62.337288   5.831  115.959322  3.134623  ...     0.004945    0.917739    4.456865  98.773864
-2845  62.337288   5.831  116.881356  3.109895  ...     0.005053    0.918847    4.490097  98.764722
-2846  62.337288   5.831  117.803390  3.085554  ...     0.005161    0.919940    4.523477  98.755539
-2847  62.337288   5.831  118.725424  3.061591  ...     0.005267    0.921018    4.557006  98.746314
-2848  62.337288   5.831  119.647458  3.037998  ...     0.005374    0.922080    4.590685  98.737049
-2849  62.337288   5.831  120.569492  3.014765  ...     0.005480    0.923128    4.624516  98.727742
-2850  62.337288   5.831  121.491525  2.991885  ...     0.005585    0.924162    4.658500  98.718392
-2851  62.337288   5.831  122.413559  2.969350  ...     0.005690    0.925181    4.692637  98.709001
-2852  62.337288   5.831  123.335593  2.947152  ...     0.005794    0.926187    4.726930  98.699566
-2853  62.337288   5.831  124.257627  2.925283  ...     0.005897    0.927179    4.761380  98.690089
-2854  62.337288   5.831  125.179661  2.903736  ...     0.006000    0.928158    4.795988  98.680568
-2855  62.337288   5.831  126.101695  2.882505  ...     0.006103    0.929124    4.830754  98.671003
-2856  62.337288   5.831  127.023729  2.861581  ...     0.006204    0.930077    4.865680  98.661395
-2857  62.337288   5.831  127.945763  2.840959  ...     0.006305    0.931018    4.900767  98.651742
-2858  62.337288   5.831  128.867797  2.820633  ...     0.006406    0.931946    4.936016  98.642044
-2859  62.337288   5.831  129.789831  2.800595  ...     0.006506    0.932862    4.971428  98.632302
+        VI (V)  II (A)      VO (V)    IO (A)  ...  PL_CORE (W)  PL_TOT (W)  P_LOSS (W)    EFF (%)
+1980  69.19439   5.831   80.000000  5.043406  ...     0.000614    0.626309    2.777425  99.311620
+1981  69.19439   5.831   80.922034  4.985941  ...     0.000732    0.629096    2.802817  99.305326
+1982  69.19439   5.831   81.844068  4.929771  ...     0.000860    0.631838    2.828223  99.299029
+1983  69.19439   5.831   82.766102  4.874852  ...     0.000996    0.634535    2.853649  99.292728
+1984  69.19439   5.831   83.688136  4.821143  ...     0.001141    0.637189    2.879097  99.286420
+1985  69.19439   5.831   84.610169  4.768605  ...     0.001293    0.639801    2.904573  99.280106
+1986  69.19439   5.831   85.532203  4.717200  ...     0.001453    0.642371    2.930080  99.273784
+1987  69.19439   5.831   86.454237  4.666891  ...     0.001619    0.644902    2.955622  99.267454
+1988  69.19439   5.831   87.376271  4.617644  ...     0.001791    0.647393    2.981202  99.261114
+1989  69.19439   5.831   88.298305  4.569425  ...     0.001970    0.649845    3.006824  99.254764
+1990  69.19439   5.831   89.220339  4.522203  ...     0.002153    0.652260    3.032491  99.248402
+1991  69.19439   5.831   90.142373  4.475947  ...     0.002342    0.654637    3.058206  99.242029
+1992  69.19439   5.831   91.064407  4.430628  ...     0.002536    0.656979    3.083972  99.235643
+1993  69.19439   5.831   91.986441  4.386217  ...     0.002733    0.659285    3.109792  99.229243
+1994  69.19439   5.831   92.908475  4.342688  ...     0.002935    0.661557    3.135670  99.222829
+1995  69.19439   5.831   93.830508  4.300014  ...     0.003140    0.663794    3.161608  99.216401
+1996  69.19439   5.831   94.752542  4.258171  ...     0.003348    0.665999    3.187608  99.209957
+1997  69.19439   5.831   95.674576  4.217134  ...     0.003559    0.668170    3.213673  99.203496
+1998  69.19439   5.831   96.596610  4.176880  ...     0.003773    0.670310    3.239807  99.197019
+1999  69.19439   5.831   97.518644  4.137388  ...     0.003990    0.672419    3.266010  99.190525
+2000  69.19439   5.831   98.440678  4.098636  ...     0.004208    0.674496    3.292287  99.184012
+2001  69.19439   5.831   99.362712  4.060603  ...     0.004429    0.676544    3.318638  99.177481
+2002  69.19439   5.831  100.284746  4.023269  ...     0.004651    0.678562    3.345067  99.170931
+2003  69.19439   5.831  101.206780  3.986615  ...     0.004874    0.680552    3.371575  99.164361
+2004  69.19439   5.831  102.128814  3.950623  ...     0.005099    0.682513    3.398164  99.157770
+2005  69.19439   5.831  103.050847  3.915276  ...     0.005325    0.684446    3.424838  99.151160
+2006  69.19439   5.831  103.972881  3.880555  ...     0.005552    0.686351    3.451597  99.144527
+2007  69.19439   5.831  104.894915  3.846445  ...     0.005779    0.688231    3.478443  99.137873
+2008  69.19439   5.831  105.816949  3.812929  ...     0.006007    0.690083    3.505379  99.131197
+2009  69.19439   5.831  106.738983  3.779992  ...     0.006236    0.691910    3.532407  99.124499
+2010  69.19439   5.831  107.661017  3.747619  ...     0.006465    0.693712    3.559527  99.117777
+2011  69.19439   5.831  108.583051  3.715796  ...     0.006694    0.695489    3.586743  99.111032
+2012  69.19439   5.831  109.505085  3.684509  ...     0.006923    0.697242    3.614054  99.104262
+2013  69.19439   5.831  110.427119  3.653745  ...     0.007152    0.698971    3.641465  99.097469
+2014  69.19439   5.831  111.349153  3.623490  ...     0.007381    0.700676    3.668974  99.090651
+2015  69.19439   5.831  112.271186  3.593731  ...     0.007610    0.702359    3.696586  99.083807
+2016  69.19439   5.831  113.193220  3.564458  ...     0.007838    0.704019    3.724300  99.076938
+2017  69.19439   5.831  114.115254  3.535658  ...     0.008066    0.705656    3.752118  99.070044
+2018  69.19439   5.831  115.037288  3.507319  ...     0.008293    0.707272    3.780043  99.063123
+2019  69.19439   5.831  115.959322  3.479431  ...     0.008520    0.708867    3.808074  99.056175
+2020  69.19439   5.831  116.881356  3.451983  ...     0.008746    0.710441    3.836214  99.049201
+2021  69.19439   5.831  117.803390  3.424965  ...     0.008971    0.711994    3.864464  99.042199
+2022  69.19439   5.831  118.725424  3.398366  ...     0.009196    0.713527    3.892825  99.035170
+2023  69.19439   5.831  119.647458  3.372178  ...     0.009420    0.715041    3.921299  99.028112
+2024  69.19439   5.831  120.569492  3.346390  ...     0.009643    0.716535    3.949886  99.021027
+2025  69.19439   5.831  121.491525  3.320993  ...     0.009865    0.718009    3.978588  99.013913
+2026  69.19439   5.831  122.413559  3.295979  ...     0.010086    0.719465    4.007407  99.006771
+2027  69.19439   5.831  123.335593  3.271339  ...     0.010306    0.720903    4.036342  98.999599
+2028  69.19439   5.831  124.257627  3.247064  ...     0.010525    0.722322    4.065395  98.992398
+2029  69.19439   5.831  125.179661  3.223147  ...     0.010743    0.723724    4.094568  98.985168
+2030  69.19439   5.831  126.101695  3.199580  ...     0.010960    0.725108    4.123862  98.977908
+2031  69.19439   5.831  127.023729  3.176355  ...     0.011175    0.726476    4.153277  98.970617
+2032  69.19439   5.831  127.945763  3.153465  ...     0.011390    0.727826    4.182814  98.963296
+2033  69.19439   5.831  128.867797  3.130902  ...     0.011603    0.729159    4.212475  98.955945
+2034  69.19439   5.831  129.789831  3.108660  ...     0.011815    0.730477    4.242260  98.948563
 
 [55 rows x 30 columns]
 
 Lowest power transfer:
-        VI (V)  II (A)      VO (V)    IO (A)  ...  PL_CORE (W)  PL_TOT (W)  P_LOSS (W)    EFF (%)
-1100  24.50678   6.145   80.000000  1.882427  ...     0.001206    0.962303    4.186253  97.220176
-1101  24.50678   6.145   80.922034  1.860978  ...     0.001221    0.962650    4.213570  97.202037
-1102  24.50678   6.145   81.844068  1.840013  ...     0.001236    0.962990    4.241028  97.183803
-1103  24.50678   6.145   82.766102  1.819515  ...     0.001250    0.963322    4.268629  97.165475
-1104  24.50678   6.145   83.688136  1.799468  ...     0.001265    0.963647    4.296377  97.147050
-1105  24.50678   6.145   84.610169  1.779859  ...     0.001279    0.963965    4.324272  97.128526
-1106  24.50678   6.145   85.532203  1.760672  ...     0.001293    0.964277    4.352317  97.109903
-1107  24.50678   6.145   86.454237  1.741895  ...     0.001307    0.964582    4.380514  97.091180
-1108  24.50678   6.145   87.376271  1.723513  ...     0.001320    0.964880    4.408864  97.072354
-1109  24.50678   6.145   88.298305  1.705516  ...     0.001334    0.965173    4.437371  97.053425
-1110  24.50678   6.145   89.220339  1.687890  ...     0.001347    0.965459    4.466034  97.034391
-1111  24.50678   6.145   90.142373  1.670626  ...     0.001360    0.965740    4.494856  97.015252
-1112  24.50678   6.145   91.064407  1.653710  ...     0.001373    0.966015    4.523839  96.996006
-1113  24.50678   6.145   91.986441  1.637134  ...     0.001385    0.966285    4.552984  96.976653
-1114  24.50678   6.145   92.908475  1.620887  ...     0.001398    0.966549    4.582292  96.957191
-1115  24.50678   6.145   93.830508  1.604959  ...     0.001410    0.966809    4.611765  96.937620
-1116  24.50678   6.145   94.752542  1.589342  ...     0.001422    0.967063    4.641404  96.917939
-1117  24.50678   6.145   95.674576  1.574025  ...     0.001434    0.967313    4.671211  96.898146
-1118  24.50678   6.145   96.596610  1.559000  ...     0.001446    0.967558    4.701186  96.878241
-1119  24.50678   6.145   97.518644  1.544260  ...     0.001457    0.967798    4.731332  96.858224
-1120  24.50678   6.145   98.440678  1.529796  ...     0.001469    0.968034    4.761648  96.838092
-1121  24.50678   6.145   99.362712  1.515600  ...     0.001480    0.968266    4.792137  96.817847
-1122  24.50678   6.145  100.284746  1.501666  ...     0.001491    0.968493    4.822799  96.797486
-1123  24.50678   6.145  101.206780  1.487985  ...     0.001502    0.968717    4.853635  96.777010
-1124  24.50678   6.145  102.128814  1.474551  ...     0.001512    0.968936    4.884647  96.756417
-1125  24.50678   6.145  103.050847  1.461358  ...     0.001523    0.969152    4.915835  96.735707
-1126  24.50678   6.145  103.972881  1.448398  ...     0.001533    0.969364    4.947200  96.714880
-1127  24.50678   6.145  104.894915  1.435667  ...     0.001544    0.969572    4.978743  96.693934
-1128  24.50678   6.145  105.816949  1.423157  ...     0.001554    0.969776    5.010465  96.672869
-1129  24.50678   6.145  106.738983  1.410864  ...     0.001564    0.969977    5.042367  96.651685
-1130  24.50678   6.145  107.661017  1.398781  ...     0.001574    0.970175    5.074449  96.630381
-1131  24.50678   6.145  108.583051  1.386903  ...     0.001583    0.970370    5.106713  96.608957
-1132  24.50678   6.145  109.505085  1.375225  ...     0.001593    0.970561    5.139159  96.587412
-1133  24.50678   6.145  110.427119  1.363743  ...     0.001603    0.970749    5.171787  96.565745
-1134  24.50678   6.145  111.349153  1.352450  ...     0.001612    0.970934    5.204599  96.543957
-1135  24.50678   6.145  112.271186  1.341343  ...     0.001621    0.971116    5.237596  96.522046
-1136  24.50678   6.145  113.193220  1.330417  ...     0.001630    0.971295    5.270777  96.500012
-1137  24.50678   6.145  114.115254  1.319667  ...     0.001639    0.971471    5.304144  96.477855
-1138  24.50678   6.145  115.037288  1.309090  ...     0.001648    0.971644    5.337697  96.455575
-1139  24.50678   6.145  115.959322  1.298681  ...     0.001657    0.971815    5.371437  96.433171
-1140  24.50678   6.145  116.881356  1.288436  ...     0.001666    0.971983    5.405364  96.410642
-1141  24.50678   6.145  117.803390  1.278352  ...     0.001674    0.972149    5.439479  96.387988
-1142  24.50678   6.145  118.725424  1.268424  ...     0.001683    0.972312    5.473782  96.365210
-1143  24.50678   6.145  119.647458  1.258649  ...     0.001691    0.972472    5.508274  96.342306
-1144  24.50678   6.145  120.569492  1.249024  ...     0.001699    0.972630    5.542956  96.319276
-1145  24.50678   6.145  121.491525  1.239545  ...     0.001707    0.972786    5.577827  96.296120
-1146  24.50678   6.145  122.413559  1.230208  ...     0.001715    0.972939    5.612889  96.272838
-1147  24.50678   6.145  123.335593  1.221011  ...     0.001723    0.973090    5.648142  96.249428
-1148  24.50678   6.145  124.257627  1.211951  ...     0.001731    0.973239    5.683586  96.225892
-1149  24.50678   6.145  125.179661  1.203024  ...     0.001739    0.973386    5.719222  96.202229
-1150  24.50678   6.145  126.101695  1.194228  ...     0.001746    0.973530    5.755050  96.178438
-1151  24.50678   6.145  127.023729  1.185559  ...     0.001754    0.973673    5.791070  96.154519
-1152  24.50678   6.145  127.945763  1.177016  ...     0.001761    0.973813    5.827284  96.130472
-1153  24.50678   6.145  128.867797  1.168594  ...     0.001769    0.973952    5.863691  96.106296
-1154  24.50678   6.145  129.789831  1.160292  ...     0.001776    0.974088    5.900292  96.081992
+       VI (V)  II (A)      VO (V)    IO (A)  ...  PL_CORE (W)  PL_TOT (W)  P_LOSS (W)    EFF (%)
+0   20.429644   6.146   80.000000  1.569507  ...     0.001802    0.719192    3.660618  97.084580
+1   20.429644   6.146   80.922034  1.551624  ...     0.001819    0.719458    3.682302  97.067311
+2   20.429644   6.146   81.844068  1.534144  ...     0.001836    0.719718    3.704111  97.049941
+3   20.429644   6.146   82.766102  1.517053  ...     0.001853    0.719972    3.726048  97.032470
+4   20.429644   6.146   83.688136  1.500339  ...     0.001869    0.720221    3.748115  97.014895
+5   20.429644   6.146   84.610169  1.483989  ...     0.001885    0.720465    3.770312  96.997217
+6   20.429644   6.146   85.532203  1.467992  ...     0.001901    0.720704    3.792642  96.979433
+7   20.429644   6.146   86.454237  1.452336  ...     0.001916    0.720937    3.815104  96.961543
+8   20.429644   6.146   87.376271  1.437010  ...     0.001932    0.721166    3.837702  96.943546
+9   20.429644   6.146   88.298305  1.422005  ...     0.001947    0.721390    3.860436  96.925440
+10  20.429644   6.146   89.220339  1.407309  ...     0.001961    0.721610    3.883306  96.907225
+11  20.429644   6.146   90.142373  1.392914  ...     0.001976    0.721825    3.906316  96.888900
+12  20.429644   6.146   91.064407  1.378811  ...     0.001990    0.722036    3.929464  96.870464
+13  20.429644   6.146   91.986441  1.364990  ...     0.002004    0.722242    3.952753  96.851916
+14  20.429644   6.146   92.908475  1.351444  ...     0.002018    0.722445    3.976184  96.833255
+15  20.429644   6.146   93.830508  1.338164  ...     0.002032    0.722644    3.999757  96.814481
+16  20.429644   6.146   94.752542  1.325142  ...     0.002045    0.722839    4.023473  96.795593
+17  20.429644   6.146   95.674576  1.312372  ...     0.002058    0.723030    4.047334  96.776589
+18  20.429644   6.146   96.596610  1.299845  ...     0.002071    0.723218    4.071339  96.757471
+19  20.429644   6.146   97.518644  1.287555  ...     0.002084    0.723402    4.095491  96.738235
+20  20.429644   6.146   98.440678  1.275495  ...     0.002096    0.723583    4.119789  96.718884
+21  20.429644   6.146   99.362712  1.263659  ...     0.002109    0.723760    4.144235  96.699414
+22  20.429644   6.146  100.284746  1.252041  ...     0.002121    0.723935    4.168829  96.679827
+23  20.429644   6.146  101.206780  1.240634  ...     0.002133    0.724106    4.193573  96.660120
+24  20.429644   6.146  102.128814  1.229434  ...     0.002145    0.724274    4.218465  96.640295
+25  20.429644   6.146  103.050847  1.218433  ...     0.002156    0.724439    4.243508  96.620350
+26  20.429644   6.146  103.972881  1.207628  ...     0.002168    0.724602    4.268703  96.600285
+27  20.429644   6.146  104.894915  1.197013  ...     0.002179    0.724761    4.294048  96.580099
+28  20.429644   6.146  105.816949  1.186583  ...     0.002190    0.724918    4.319546  96.559792
+29  20.429644   6.146  106.738983  1.176333  ...     0.002201    0.725072    4.345197  96.539363
+30  20.429644   6.146  107.661017  1.166259  ...     0.002212    0.725223    4.371001  96.518812
+31  20.429644   6.146  108.583051  1.156355  ...     0.002223    0.725372    4.396958  96.498138
+32  20.429644   6.146  109.505085  1.146619  ...     0.002233    0.725519    4.423070  96.477342
+33  20.429644   6.146  110.427119  1.137045  ...     0.002244    0.725663    4.449337  96.456422
+34  20.429644   6.146  111.349153  1.127630  ...     0.002254    0.725805    4.475760  96.435379
+35  20.429644   6.146  112.271186  1.118369  ...     0.002264    0.725944    4.502338  96.414211
+36  20.429644   6.146  113.193220  1.109259  ...     0.002274    0.726082    4.529072  96.392919
+37  20.429644   6.146  114.115254  1.100296  ...     0.002284    0.726217    4.555963  96.371502
+38  20.429644   6.146  115.037288  1.091477  ...     0.002293    0.726350    4.583011  96.349960
+39  20.429644   6.146  115.959322  1.082799  ...     0.002303    0.726480    4.610217  96.328293
+40  20.429644   6.146  116.881356  1.074257  ...     0.002312    0.726609    4.637581  96.306500
+41  20.429644   6.146  117.803390  1.065849  ...     0.002322    0.726736    4.665103  96.284581
+42  20.429644   6.146  118.725424  1.057571  ...     0.002331    0.726861    4.692783  96.262535
+43  20.429644   6.146  119.647458  1.049421  ...     0.002340    0.726984    4.720623  96.240363
+44  20.429644   6.146  120.569492  1.041396  ...     0.002349    0.727105    4.748622  96.218063
+45  20.429644   6.146  121.491525  1.033493  ...     0.002357    0.727224    4.776781  96.195637
+46  20.429644   6.146  122.413559  1.025708  ...     0.002366    0.727342    4.805100  96.173083
+47  20.429644   6.146  123.335593  1.018040  ...     0.002375    0.727458    4.833580  96.150401
+48  20.429644   6.146  124.257627  1.010486  ...     0.002383    0.727572    4.862220  96.127591
+49  20.429644   6.146  125.179661  1.003043  ...     0.002391    0.727684    4.891021  96.104653
+50  20.429644   6.146  126.101695  0.995709  ...     0.002400    0.727795    4.919983  96.081586
+51  20.429644   6.146  127.023729  0.988481  ...     0.002408    0.727904    4.949107  96.058391
+52  20.429644   6.146  127.945763  0.981358  ...     0.002416    0.728012    4.978393  96.035067
+53  20.429644   6.146  128.867797  0.974336  ...     0.002424    0.728118    5.007841  96.011614
+54  20.429644   6.146  129.789831  0.967415  ...     0.002432    0.728223    5.037452  95.988031
 
 [55 rows x 30 columns]
 
 Highest power loss:
-        VI (V)  II (A)      VO (V)    IO (A)  ...  PL_CORE (W)  PL_TOT (W)  P_LOSS (W)    EFF (%)
-1154  24.50678   6.145  129.789831  1.160292  ...     0.001776    0.974088    5.900292  96.081992
+       VI (V)  II (A)      VO (V)    IO (A)  ...  PL_CORE (W)  PL_TOT (W)  P_LOSS (W)    EFF (%)
+54  20.429644   6.146  129.789831  0.967415  ...     0.002432    0.728223    5.037452  95.988031
 
 [1 rows x 30 columns]
 
 Lowest power loss:
          VI (V)  II (A)  VO (V)    IO (A)  ...  PL_CORE (W)  PL_TOT (W)  P_LOSS (W)    EFF (%)
-3135  69.659322   2.699    80.0  2.350131  ...     0.001915    0.189955    1.339474  99.287554
+2145  73.258119   5.004    80.0  4.582295  ...     0.000316    0.454941    2.196188  99.400904
 
 [1 rows x 30 columns]
