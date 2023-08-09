@@ -56,13 +56,7 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [
-        "silk_edge_clearance|204950000|48300000|1b9c3617-ac4a-421c-9dec-cb03128b23db|3ff9b5cf-7aaf-48d2-81fe-9064428f76bd",
-        "silk_overlap|127180000|43348000|f92e3fee-2ff4-4740-8998-746f46618a2b|54ae1b32-3e71-4798-a04e-aad4aa85280c",
-        "silk_overlap|127180000|58752000|fb160e99-e76b-4121-8e65-79e11aeabe15|54ae1b32-3e71-4798-a04e-aad4aa85280c",
-        "silk_overlap|204950000|60535198|3ff9b5cf-7aaf-48d2-81fe-9064428f76bd|dbad76b7-834e-4217-b21f-002b69aebf2b",
-        "silk_overlap|90040857|57482931|b8e2d2de-75ce-4d81-ac34-0fca2d0d01f6|d8834e57-9ca5-4b84-ae8d-67842b02d94c"
-      ],
+      "drc_exclusions": [],
       "meta": {
         "version": 2
       },
@@ -562,6 +556,10 @@
     [
       "3521ffae-6721-4a9d-861c-ca3039bccb82",
       "comm_can"
+    ],
+    [
+      "377c83e9-a9c7-4c03-8339-be5691ce457a",
+      "power_reg"
     ]
   ],
   "text_variables": {}

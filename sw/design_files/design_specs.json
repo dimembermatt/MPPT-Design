@@ -1,7 +1,7 @@
 {
     "NAME": "Broad range MPPT",
     "AUTHORS": ["Matthew Yu", "Jacob Pustilnik"],
-    "DESCRIPTION": "MPPT Boost Converter v0.2.0",
+    "DESCRIPTION": "MPPT Boost Converter v0.3.0",
     "DATE_DESIGNED": "05/07/23",
     "DESIGN": {
         "input_source": {
@@ -10,7 +10,7 @@
             "num_cells": 100,
             "r_sh": 40,
             "r_s": 0.0035,
-            "inp_ripple (V)": 0.5,
+            "inp_ripple (V)": 0.50,
             "min_power": 150
         },
         "output_sink": {
@@ -18,7 +18,7 @@
             "battery_type": "INR21700-M50LT",
             "num_cells": 32,
             "out_ripple (V)": 1.0,
-            "user_v_range": [80, 130]
+            "user_v_range": [80, 125]
         },
         "safety_factor": 1.2
     }

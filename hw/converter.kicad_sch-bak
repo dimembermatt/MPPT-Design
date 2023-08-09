@@ -963,12 +963,12 @@
     (uuid ff9a54f9-5ea2-4434-a393-cbdd127590a9)
   )
 
-  (text_box "Design Specs:\n- 0-75 V input\n- 80-125 V output\n- 150-363 W transfer\n- 0.5 V input pkpk\n- 1.5 V output pkpk"
-    (at 78.74 26.67 0) (size 57.15 35.56)
+  (text_box "update parts based on v0.3.0 design\nnote user design specs here"
+    (at 128.27 43.18 0) (size 25.4 17.78)
     (stroke (width 0) (type default))
     (fill (type none))
-    (effects (font (size 1 1)) (justify left top))
-    (uuid 40763ae2-56f0-4934-ab3f-bfaebd03e455)
+    (effects (font (size 1.27 1.27)) (justify left top))
+    (uuid 8e42f60d-6589-4faf-b6ab-8b4aefb80427)
   )
   (text_box "Core:\n- Existing: \n  - PQ 26/25 N97 TDK core (871-B65877A0000R097)\n  - Associated bobbin (871-B65878E1012D001)\n  - Used 21 AWG wiring\n  - Thinnest material gap\n  - 175uH, ~9 turns\n  - Likely core and conduction loss: 5% of P_TRANSFER, mostly core loss\n- Proposed:\n  - PQ 20/16 N95 Ferroxcube core (1779-1173-ND)\n  - Associated bobbin (1779-1380-ND)\n  - Use 19 AWG wiring\n  - Use thicker material gap, ~0.3 to ~0.5 mm\n  - Use ~15-30 turns to hit 250 uH target\n  - Anticipated core and conduction loss: ~1 W"
     (at 19.05 26.67 0) (size 57.15 35.56)

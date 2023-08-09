@@ -1,0 +1,12 @@
+SHAPE,K_G (mm^5),VOLUME (mm^3),CORE_CSA (mm^2),WINDING_CSA (mm^2),TURN_LENGTH (mm),BOBBIN,DATASHEET
+PQ20/16,2240,2330,59.1,23.5,44,CPV-PQ20/16-1S-14P,https://www.ferroxcube.com/en-global/download/download/11
+PQ20/20,3360,2850,59.1,36,44,CPV-PQ20/20-1S-14P-Z,https://www.ferroxcube.com/en-global/download/download/11
+PQ26/20,8390,5470,109,31.1,56.4,CPV-PQ26/20-1S-12P-Z,https://www.ferroxcube.com/en-global/download/download/11
+PQ26/25,12500,6530,108,47.5,56.4,CPV-PQ26/25-1S-12P-Z,https://www.ferroxcube.com/en-global/download/download/11
+PQ32/20,20300,9440,142,44.8,66.7,CPV-PQ32/20-1S-12P-Z,https://www.ferroxcube.com/en-global/download/download/11
+RM6S/I,460,1090,31.2,15.7,31,CPV-RM6S/I-1S-8PD,https://www.ferroxcube.com/en-global/download/download/11
+RM6S/ILP,460,820,31.2,6.3,31,CSVS-RM6S/LP-1S-8P,https://www.ferroxcube.com/en-global/download/download/11
+RM8/I,2000,2440,55.4,30.9,42,CPV-RM8/I-1S-12PD,https://www.ferroxcube.com/en-global/download/download/11
+RM8/ILP,2000,1860,55.4,13.3,3.95,CSV-RM8/ILP-1S-12P-Z,https://www.ferroxcube.com/en-global/download/download/11
+RM10/I,6000,4310,89.1,44.2,52,CPV-RM10-1S-12PD,https://www.ferroxcube.com/en-global/download/download/11
+RM10/ILP,6000,3360,89.1,21,52,CPV-RM10/ILP-1S-12PD,https://www.ferroxcube.com/en-global/download/download/11

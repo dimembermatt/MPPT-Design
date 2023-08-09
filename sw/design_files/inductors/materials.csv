@@ -1,0 +1,13 @@
+MATERIAL,B_SAT (mT),FREQ_MIN (Hz),FREQ_MAX (Hz),Cm,X,Y,Ct2,Ct1,Ct0,Datasheet
+3C95,410,20000,150000,92.16643453,1.045,2.44,4.62E-05,7.94E-03,1.332362959,https://www.ferroxcube.com/en-global/download/download/11
+3C95,410,150000,300000,7.47E-03,1.955,3.07,6.06E-05,0.0126,1.654230769,https://www.ferroxcube.com/en-global/download/download/11
+3C95,410,300000,400001,7.87E-04,2.055,2.535,9.55E-05,9.78E-03,1.022919887,https://www.ferroxcube.com/en-global/download/download/11
+3C96,440,20000,100000,5.120544636,1.33999997,2.66499994,0.000547543,0.110384636,6.563034122,https://www.ferroxcube.com/en-global/download/download/11
+3C96,440,100000,200000,0.082700122,1.719999962,2.804999937,0.000183438,0.036614276,2.827045247,https://www.ferroxcube.com/en-global/download/download/11
+3C96,440,200000,400001,0.0000917,2.21999995,2.464999945,0.000232691,0.047189773,3.39206666,https://www.ferroxcube.com/en-global/download/download/11
+3C97,410,20000,150000,42.36588301,1.16,2.8,0.0000635519,0.01100719,1.465,https://www.ferroxcube.com/en-global/download/download/94
+3C97,410,150000,300000,0.003448693,1.99,2.935,0.0000785219,0.0136,1.575,https://www.ferroxcube.com/en-global/download/download/94
+3C97,410,300000,400001,0.000449188,2.055,2.415,0.0000874899,0.01403339,1.528,https://www.ferroxcube.com/en-global/download/download/94
+3F36,420,100000,499999,6.83,1.43902,3.26718,0.000083946,0.010783518,1.232717265,https://www.ferroxcube.com/en-global/download/download/11
+3F36,420,500000,799999,0.000112499,2.19515,2.71986,0.0000892639,0.011719438,1.28161335,https://www.ferroxcube.com/en-global/download/download/11
+3F36,420,800000,1200000,0.000000223928,2.61053,2.49772,0.0000611871,0.006141983,1.010843873,https://www.ferroxcube.com/en-global/download/download/11
