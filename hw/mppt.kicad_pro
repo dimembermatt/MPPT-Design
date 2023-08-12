@@ -489,7 +489,7 @@
       "idf": "",
       "netlist": "",
       "specctra_dsn": "",
-      "step": "production/sunscatter.step",
+      "step": "production/model.step",
       "vrml": ""
     },
     "page_layout_descr_file": ""
