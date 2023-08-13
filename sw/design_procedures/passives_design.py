@@ -75,7 +75,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 
-k_u = 0.7  # Winding factor
+k_u = 0.6  # Winding factor
 rho = 2.08 * 1e-8
 
 
