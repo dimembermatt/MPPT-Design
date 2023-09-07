@@ -11,7 +11,7 @@
             "r_sh": 40,
             "r_s": 0.0035,
             "inp_ripple (V)": 0.725,
-            "user_v_range": [20.335, 74.481]
+            "user_v_range": [20, 75]
         },
         "output_sink": {
             "sink_model_type": "battery",

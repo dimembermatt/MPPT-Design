@@ -389,11 +389,11 @@ if __name__ == "__main__":
 
     boost_converter.optimize_design()
 
-    # switch_choice = "EPC2059"
-    # inp_cap_choice = ("HZA336M080G24T-F")
+    # switch_choice = "EPC2307"
+    # inp_cap_choice = ("A759KS156M2AAAE052")
     # out_cap_choice = ("A759MS186M2CAAE090", "A759MS186M2CAAE090")
-    # ind_choice = "PQ32/20-3C96"
-    # f_sw = 85000
-    # r_l = 0.30
+    # ind_choice = "PQ26/25-3C97"
+    # f_sw = 104000
+    # r_l = 0.223
     # boost_converter.set_design(switch_choice, inp_cap_choice, out_cap_choice, ind_choice, f_sw, r_l)
     boost_converter.map_design()

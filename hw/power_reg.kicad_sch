@@ -793,7 +793,7 @@
     (uuid d95a89c9-bcda-4944-915e-ed2d479bc3ed)
   )
 
-  (text_box "12V to 12V. Isolated."
+  (text_box "12V to 12V. Nonisolated."
     (at 120.65 58.42 0) (size 39.37 3.81)
     (stroke (width 0) (type default))
     (fill (type none))

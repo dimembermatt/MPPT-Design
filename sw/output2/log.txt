@@ -1,0 +1,4133 @@
+
+Start logging.
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 3.125 (W)
+
+Switch selected:
+	EPC2307
+	with an optimal switching frequency of 70000 Hz
+
+Input capacitor requirements:
+	C >= 4.541 uF
+	V >= 74.875 V
+	Irms >= 482.59716916572205 mA
+
+Output capacitor requirements:
+	C >= 21.935 uF
+	V >= 130.286 V
+	Irms >= 482.59716916572205 mA
+
+Inductor requirements:
+	L >= 339.584 uH
+	I >= 6.806578840850285 A
+
+Input capacitors selected:
+	Bulk caps: A759KS156M2AAAE052
+
+Output capacitors selected:
+	Bulk caps: A759MS186M2CAAE090
+A759MS186M2CAAE090
+
+Input inductor selected:
+	PQ26/25-3C97
+	with 63.0 turns of 21 gauge wire
+	and a core gap of 1.8 mm per side of the core.
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 3.125 (W)
+
+Switch selected:
+	EPC2307
+	with an optimal switching frequency of 70000 Hz
+
+Input capacitor requirements:
+	C >= 4.541 uF
+	V >= 74.875 V
+	Irms >= 482.59716916572205 mA
+
+Output capacitor requirements:
+	C >= 21.935 uF
+	V >= 130.286 V
+	Irms >= 482.59716916572205 mA
+
+Inductor requirements:
+	L >= 339.584 uH
+	I >= 6.806578840850285 A
+
+Input capacitors selected:
+	Bulk caps: A759KS156M2AAAE052
+
+Output capacitors selected:
+	Bulk caps: A759MS186M2CAAE090
+A759MS186M2CAAE090
+
+Input inductor selected:
+	PQ26/25-3C97
+	with 63.0 turns of 21 gauge wire
+	and a core gap of 1.8 mm per side of the core.
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 3.125 (W)
+
+Switch selected:
+	EPC2307
+	with an optimal switching frequency of 20000 Hz
+
+Input capacitor requirements:
+	C >= 40.748 uF
+	V >= 74.875 V
+	Irms >= 1237.1725923064942 mA
+
+Output capacitor requirements:
+	C >= 76.774 uF
+	V >= 130.286 V
+	Irms >= 1237.1725923064942 mA
+
+Inductor requirements:
+	L >= 463.628 uH
+	I >= 7.864490529414843 A
+
+Input capacitors selected:
+	Bulk caps: A759KS156M2AAAE052
+A759KS156M2AAAE052
+A759KS156M2AAAE052
+
+Output capacitors selected:
+	Bulk caps: A759MS186M2CAAE090
+A759MS186M2CAAE090
+A759MS186M2CAAE090
+A759MS186M2CAAE090
+A759MS186M2CAAE090
+
+Input inductor selected:
+	PQ26/25-3C97
+	with 99.0 turns of 23 gauge wire
+	and a core gap of 3.3 mm per side of the core.
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 3.125 (W)
+
+Switch selected:
+	EPC2307
+	with an optimal switching frequency of 80000 Hz
+
+Input capacitor requirements:
+	C >= 1.029 uF
+	V >= 74.875 V
+	Irms >= 124.97850944089463 mA
+
+Output capacitor requirements:
+	C >= 19.193 uF
+	V >= 130.286 V
+	Irms >= 124.97850944089463 mA
+
+Inductor requirements:
+	L >= 1147.373 uH
+	I >= 6.309160493936234 A
+
+Input capacitors selected:
+	Bulk caps: A759KS156M2AAAE052
+
+Output capacitors selected:
+	Bulk caps: A759MS186M2CAAE090
+A759MS186M2CAAE090
+
+Input inductor selected:
+	PQ26/25-3C97
+	with 197.0 turns of 26 gauge wire
+	and a core gap of 5.3 mm per side of the core.
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 3.125 (W)
+
+Switch selected:
+	EPC2307
+	with an optimal switching frequency of 80000 Hz
+
+Input capacitor requirements:
+	C >= 1.090 uF
+	V >= 74.875 V
+	Irms >= 132.42406448769708 mA
+
+Output capacitor requirements:
+	C >= 19.193 uF
+	V >= 130.286 V
+	Irms >= 132.42406448769708 mA
+
+Inductor requirements:
+	L >= 1082.862 uH
+	I >= 6.319476475422159 A
+
+Input capacitors selected:
+	Bulk caps: A759KS156M2AAAE052
+
+Output capacitors selected:
+	Bulk caps: A759MS186M2CAAE090
+A759MS186M2CAAE090
+
+Input inductor selected:
+	PQ26/25-3C97
+	with 186.0 turns of 26 gauge wire
+	and a core gap of 5.0 mm per side of the core.
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 3.125 (W)
+
+Switch selected:
+	EPC2307
+	with an optimal switching frequency of 55000 Hz
+
+Input capacitor requirements:
+	C >= 9.251 uF
+	V >= 74.875 V
+	Irms >= 772.4054748159762 mA
+
+Output capacitor requirements:
+	C >= 27.918 uF
+	V >= 130.286 V
+	Irms >= 772.4054748159762 mA
+
+Inductor requirements:
+	L >= 270.036 uH
+	I >= 7.212276121541628 A
+
+Input capacitors selected:
+	Bulk caps: A759KS156M2AAAE052
+A759KS156M2AAAE052
+
+Output capacitors selected:
+	Bulk caps: A759MS186M2CAAE090
+A759MS186M2CAAE090
+
+Input inductor selected:
+	PQ26/25-3C97
+	with 53.0 turns of 20 gauge wire
+	and a core gap of 1.6 mm per side of the core.
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 3.125 (W)
+
+Switch selected:
+	EPC2307
+	with an optimal switching frequency of 60000 Hz
+
+Input capacitor requirements:
+	C >= 6.909 uF
+	V >= 74.875 V
+	Irms >= 629.2689228593437 mA
+
+Output capacitor requirements:
+	C >= 25.591 uF
+	V >= 130.286 V
+	Irms >= 629.2689228593437 mA
+
+Inductor requirements:
+	L >= 303.838 uH
+	I >= 7.011901912921048 A
+
+Input capacitors selected:
+	Bulk caps: A759KS156M2AAAE052
+
+Output capacitors selected:
+	Bulk caps: A759MS186M2CAAE090
+A759MS186M2CAAE090
+
+Input inductor selected:
+	PQ26/25-3C97
+	with 58.0 turns of 21 gauge wire
+	and a core gap of 1.7 mm per side of the core.
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 3.125 (W)
+
+Switch selected:
+	EPC2307
+	with an optimal switching frequency of 60000 Hz
+
+Input capacitor requirements:
+	C >= 7.031 uF
+	V >= 74.875 V
+	Irms >= 640.4599692675306 mA
+
+Output capacitor requirements:
+	C >= 25.591 uF
+	V >= 130.286 V
+	Irms >= 640.4599692675306 mA
+
+Inductor requirements:
+	L >= 298.529 uH
+	I >= 7.027568051562952 A
+
+Input capacitors selected:
+	Bulk caps: A759KS156M2AAAE052
+
+Output capacitors selected:
+	Bulk caps: A759MS186M2CAAE090
+A759MS186M2CAAE090
+
+Input inductor selected:
+	PQ26/25-3C97
+	with 57.0 turns of 21 gauge wire
+	and a core gap of 1.7 mm per side of the core.
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 3.125 (W)
+
+Switch selected:
+	EPC2307
+	with an optimal switching frequency of 65000 Hz
+
+Input capacitor requirements:
+	C >= 5.797 uF
+	V >= 74.875 V
+	Irms >= 572.0435433238649 mA
+
+Output capacitor requirements:
+	C >= 23.623 uF
+	V >= 130.286 V
+	Irms >= 572.0435433238649 mA
+
+Inductor requirements:
+	L >= 308.523 uH
+	I >= 6.931793163753274 A
+
+Input capacitors selected:
+	Bulk caps: A759KS156M2AAAE052
+
+Output capacitors selected:
+	Bulk caps: A759MS186M2CAAE090
+A759MS186M2CAAE090
+
+Input inductor selected:
+	PQ26/25-3C97
+	with 58.0 turns of 21 gauge wire
+	and a core gap of 1.7 mm per side of the core.
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 3.125 (W)
+
+Switch selected:
+	EPC2307
+	with an optimal switching frequency of 60000 Hz
+
+Input capacitor requirements:
+	C >= 6.853 uF
+	V >= 74.875 V
+	Irms >= 624.2026908373401 mA
+
+Output capacitor requirements:
+	C >= 25.591 uF
+	V >= 130.286 V
+	Irms >= 624.2026908373401 mA
+
+Inductor requirements:
+	L >= 306.304 uH
+	I >= 7.004809788525004 A
+
+Input capacitors selected:
+	Bulk caps: A759KS156M2AAAE052
+
+Output capacitors selected:
+	Bulk caps: A759MS186M2CAAE090
+A759MS186M2CAAE090
+
+Input inductor selected:
+	PQ26/25-3C97
+	with 59.0 turns of 21 gauge wire
+	and a core gap of 1.8 mm per side of the core.
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 3.125 (W)
+
+Switch selected:
+	EPC2307
+	with an optimal switching frequency of 60000 Hz
+
+Input capacitor requirements:
+	C >= 6.954 uF
+	V >= 74.875 V
+	Irms >= 633.4287536919419 mA
+
+Output capacitor requirements:
+	C >= 25.591 uF
+	V >= 130.286 V
+	Irms >= 633.4287536919419 mA
+
+Inductor requirements:
+	L >= 301.843 uH
+	I >= 7.017725183075899 A
+
+Input capacitors selected:
+	Bulk caps: A759KS156M2AAAE052
+
+Output capacitors selected:
+	Bulk caps: A759MS186M2CAAE090
+A759MS186M2CAAE090
+
+Input inductor selected:
+	PQ26/25-3C97
+	with 58.0 turns of 21 gauge wire
+	and a core gap of 1.7 mm per side of the core.
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 3.125 (W)
+
+Switch selected:
+	EPC2307
+	with an optimal switching frequency of 60000 Hz
+
+Input capacitor requirements:
+	C >= 6.887 uF
+	V >= 74.875 V
+	Irms >= 627.3327904575367 mA
+
+Output capacitor requirements:
+	C >= 25.591 uF
+	V >= 130.286 V
+	Irms >= 627.3327904575367 mA
+
+Inductor requirements:
+	L >= 304.776 uH
+	I >= 7.0091915570231755 A
+
+Input capacitors selected:
+	Bulk caps: A759KS156M2AAAE052
+
+Output capacitors selected:
+	Bulk caps: A759MS186M2CAAE090
+A759MS186M2CAAE090
+
+Input inductor selected:
+	PQ26/25-3C97
+	with 58.0 turns of 21 gauge wire
+	and a core gap of 1.7 mm per side of the core.
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 3.125 (W)
+
+Switch selected:
+	EPC2307
+	with an optimal switching frequency of 60000 Hz
+
+Input capacitor requirements:
+	C >= 6.871 uF
+	V >= 74.875 V
+	Irms >= 625.8395553558911 mA
+
+Output capacitor requirements:
+	C >= 25.591 uF
+	V >= 130.286 V
+	Irms >= 625.8395553558911 mA
+
+Inductor requirements:
+	L >= 305.503 uH
+	I >= 7.007101204854658 A
+
+Input capacitors selected:
+	Bulk caps: A759KS156M2AAAE052
+
+Output capacitors selected:
+	Bulk caps: A759MS186M2CAAE090
+A759MS186M2CAAE090
+
+Input inductor selected:
+	PQ26/25-3C97
+	with 59.0 turns of 21 gauge wire
+	and a core gap of 1.8 mm per side of the core.
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 3.125 (W)
+
+Switch selected:
+	EPC2307
+	with an optimal switching frequency of 60000 Hz
+
+Input capacitor requirements:
+	C >= 6.887 uF
+	V >= 74.875 V
+	Irms >= 627.3327904575367 mA
+
+Output capacitor requirements:
+	C >= 25.591 uF
+	V >= 130.286 V
+	Irms >= 627.3327904575367 mA
+
+Inductor requirements:
+	L >= 304.776 uH
+	I >= 7.0091915570231755 A
+
+Input capacitors selected:
+	Bulk caps: A759KS156M2AAAE052
+
+Output capacitors selected:
+	Bulk caps: A759MS186M2CAAE090
+A759MS186M2CAAE090
+
+Input inductor selected:
+	PQ26/25-3C97
+	with 58.0 turns of 21 gauge wire
+	and a core gap of 1.7 mm per side of the core.
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 9.053 (W)
+
+Switch selected:
+	EPC2307
+	with an optimal switching frequency of 255000 Hz
+
+Input capacitor requirements:
+	C >= 1.621 uF
+	V >= 74.875 V
+	Irms >= 627.3327904575367 mA
+
+Output capacitor requirements:
+	C >= 6.021 uF
+	V >= 130.286 V
+	Irms >= 627.3327904575367 mA
+
+Inductor requirements:
+	L >= 71.712 uH
+	I >= 7.0091915570231755 A
+
+Input capacitors selected:
+	Bulk caps: A759KS156M2AAAE052
+
+Output capacitors selected:
+	Bulk caps: A759MS186M2CAAE090
+
+Input inductor selected:
+	PQ26/25-3C97
+	with 14.0 turns of 15 gauge wire
+	and a core gap of 0.4 mm per side of the core.
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 1.166 (W)
+
+Switch selected:
+	EPC2307
+	with an optimal switching frequency of 5000 Hz
+
+Input capacitor requirements:
+	C >= 82.647 uF
+	V >= 74.875 V
+	Irms >= 627.3327904575368 mA
+
+Output capacitor requirements:
+	C >= 307.094 uF
+	V >= 130.286 V
+	Irms >= 627.3327904575368 mA
+
+Inductor requirements:
+	L >= 3657.312 uH
+	I >= 7.009191557023176 A
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 0.642 (W)
+
+Switch selected:
+	EPC2307
+	with an optimal switching frequency of 5000 Hz
+
+Input capacitor requirements:
+	C >= 82.647 uF
+	V >= 74.875 V
+	Irms >= 627.3327904575368 mA
+
+Output capacitor requirements:
+	C >= 307.094 uF
+	V >= 130.286 V
+	Irms >= 627.3327904575368 mA
+
+Inductor requirements:
+	L >= 3657.312 uH
+	I >= 7.009191557023176 A
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 5.331 (W)
+
+Switch selected:
+	EPC2307
+	with an optimal switching frequency of 135000 Hz
+
+Input capacitor requirements:
+	C >= 3.061 uF
+	V >= 74.875 V
+	Irms >= 627.3327904575367 mA
+
+Output capacitor requirements:
+	C >= 11.374 uF
+	V >= 130.286 V
+	Irms >= 627.3327904575367 mA
+
+Inductor requirements:
+	L >= 135.456 uH
+	I >= 7.0091915570231755 A
+
+Input capacitors selected:
+	Bulk caps: A759KS156M2AAAE052
+
+Output capacitors selected:
+	Bulk caps: A759MS186M2CAAE090
+
+Input inductor selected:
+	PQ26/25-3C97
+	with 26.0 turns of 17 gauge wire
+	and a core gap of 0.8 mm per side of the core.
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 4.190 (W)
+
+Switch selected:
+	EPC2307
+	with an optimal switching frequency of 95000 Hz
+
+Input capacitor requirements:
+	C >= 4.350 uF
+	V >= 74.875 V
+	Irms >= 627.3327904575367 mA
+
+Output capacitor requirements:
+	C >= 16.163 uF
+	V >= 130.286 V
+	Irms >= 627.3327904575367 mA
+
+Inductor requirements:
+	L >= 192.490 uH
+	I >= 7.0091915570231755 A
+
+Input capacitors selected:
+	Bulk caps: A759KS156M2AAAE052
+
+Output capacitors selected:
+	Bulk caps: A759MS186M2CAAE090
+
+Input inductor selected:
+	PQ26/25-3C97
+	with 37.0 turns of 19 gauge wire
+	and a core gap of 1.1 mm per side of the core.
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.583 (W)
+
+Switch selected:
+	EPC2307
+	with an optimal switching frequency of 45000 Hz
+
+Input capacitor requirements:
+	C >= 9.183 uF
+	V >= 74.875 V
+	Irms >= 627.3327904575368 mA
+
+Output capacitor requirements:
+	C >= 34.122 uF
+	V >= 130.286 V
+	Irms >= 627.3327904575368 mA
+
+Inductor requirements:
+	L >= 406.368 uH
+	I >= 7.009191557023176 A
+
+Input capacitors selected:
+	Bulk caps: A759KS156M2AAAE052
+
+Output capacitors selected:
+	Bulk caps: A759MS186M2CAAE090
+A759MS186M2CAAE090
+
+Input inductor selected:
+	PQ26/25-3C97
+	with 78.0 turns of 22 gauge wire
+	and a core gap of 2.3 mm per side of the core.
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.778 (W)
+
+Switch selected:
+	EPC2307
+	with an optimal switching frequency of 50000 Hz
+
+Input capacitor requirements:
+	C >= 8.265 uF
+	V >= 74.875 V
+	Irms >= 627.3327904575367 mA
+
+Output capacitor requirements:
+	C >= 30.709 uF
+	V >= 130.286 V
+	Irms >= 627.3327904575367 mA
+
+Inductor requirements:
+	L >= 365.731 uH
+	I >= 7.0091915570231755 A
+
+Input capacitors selected:
+	Bulk caps: A759KS156M2AAAE052
+
+Output capacitors selected:
+	Bulk caps: A759MS186M2CAAE090
+A759MS186M2CAAE090
+
+Input inductor selected:
+	PQ26/25-3C97
+	with 70.0 turns of 22 gauge wire
+	and a core gap of 2.1 mm per side of the core.
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.797 (W)
+
+Switch selected:
+	EPC2307
+	with an optimal switching frequency of 50000 Hz
+
+Input capacitor requirements:
+	C >= 8.265 uF
+	V >= 74.875 V
+	Irms >= 627.3327904575367 mA
+
+Output capacitor requirements:
+	C >= 30.709 uF
+	V >= 130.286 V
+	Irms >= 627.3327904575367 mA
+
+Inductor requirements:
+	L >= 365.731 uH
+	I >= 7.0091915570231755 A
+
+Input capacitors selected:
+	Bulk caps: A759KS156M2AAAE052
+
+Output capacitors selected:
+	Bulk caps: A759MS186M2CAAE090
+A759MS186M2CAAE090
+
+Input inductor selected:
+	PQ26/25-3C97
+	with 70.0 turns of 22 gauge wire
+	and a core gap of 2.1 mm per side of the core.
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.787 (W)
+
+Switch selected:
+	EPC2307
+	with an optimal switching frequency of 50000 Hz
+
+Input capacitor requirements:
+	C >= 8.265 uF
+	V >= 74.875 V
+	Irms >= 627.3327904575367 mA
+
+Output capacitor requirements:
+	C >= 30.709 uF
+	V >= 130.286 V
+	Irms >= 627.3327904575367 mA
+
+Inductor requirements:
+	L >= 365.731 uH
+	I >= 7.0091915570231755 A
+
+Input capacitors selected:
+	Bulk caps: A759KS156M2AAAE052
+
+Output capacitors selected:
+	Bulk caps: A759MS186M2CAAE090
+A759MS186M2CAAE090
+
+Input inductor selected:
+	PQ26/25-3C97
+	with 70.0 turns of 22 gauge wire
+	and a core gap of 2.1 mm per side of the core.
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.784 (W)
+
+Switch selected:
+	EPC2307
+	with an optimal switching frequency of 50000 Hz
+
+Input capacitor requirements:
+	C >= 8.265 uF
+	V >= 74.875 V
+	Irms >= 627.3327904575367 mA
+
+Output capacitor requirements:
+	C >= 30.709 uF
+	V >= 130.286 V
+	Irms >= 627.3327904575367 mA
+
+Inductor requirements:
+	L >= 365.731 uH
+	I >= 7.0091915570231755 A
+
+Input capacitors selected:
+	Bulk caps: A759KS156M2AAAE052
+
+Output capacitors selected:
+	Bulk caps: A759MS186M2CAAE090
+A759MS186M2CAAE090
+
+Input inductor selected:
+	PQ26/25-3C97
+	with 70.0 turns of 22 gauge wire
+	and a core gap of 2.1 mm per side of the core.
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.458 (W)
+
+Switch selected:
+	EPC2307
+	with an optimal switching frequency of 30000 Hz
+
+Input capacitor requirements:
+	C >= 17.114 uF
+	V >= 74.875 V
+	Irms >= 779.4200675926977 mA
+
+Output capacitor requirements:
+	C >= 51.182 uF
+	V >= 130.286 V
+	Irms >= 779.4200675926977 mA
+
+Inductor requirements:
+	L >= 490.611 uH
+	I >= 7.222095720080351 A
+
+Input capacitors selected:
+	Bulk caps: A759KS156M2AAAE052
+A759KS156M2AAAE052
+
+Output capacitors selected:
+	Bulk caps: A759MS186M2CAAE090
+A759MS186M2CAAE090
+A759MS186M2CAAE090
+
+Input inductor selected:
+	PQ26/25-3C97
+	with 97.0 turns of 23 gauge wire
+	and a core gap of 3.0 mm per side of the core.
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.784 (W)
+
+Switch selected:
+	EPC2307
+	with an optimal switching frequency of 50000 Hz
+
+Input capacitor requirements:
+	C >= 8.265 uF
+	V >= 74.875 V
+	Irms >= 627.3327904575367 mA
+
+Output capacitor requirements:
+	C >= 30.709 uF
+	V >= 130.286 V
+	Irms >= 627.3327904575367 mA
+
+Inductor requirements:
+	L >= 365.731 uH
+	I >= 7.0091915570231755 A
+
+Input capacitors selected:
+	Bulk caps: A759KS156M2AAAE052
+
+Output capacitors selected:
+	Bulk caps: A759MS186M2CAAE090
+A759MS186M2CAAE090
+
+Input inductor selected:
+	PQ26/25-3C97
+	with 70.0 turns of 22 gauge wire
+	and a core gap of 2.1 mm per side of the core.
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.784 (W)
+
+Switch selected:
+	EPC2307
+	with an optimal switching frequency of 5000 Hz
+
+Input capacitor requirements:
+	C >= 179.062 uF
+	V >= 74.875 V
+	Irms >= 1359.1681597495983 mA
+
+Output capacitor requirements:
+	C >= 307.094 uF
+	V >= 130.286 V
+	Irms >= 1359.1681597495983 mA
+
+Inductor requirements:
+	L >= 1688.056 uH
+	I >= 8.03592023934317 A
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.784 (W)
+
+Switch selected:
+	EPC2307
+	with an optimal switching frequency of 70000 Hz
+
+Input capacitor requirements:
+	C >= 0.623 uF
+	V >= 74.875 V
+	Irms >= 66.15687230731548 mA
+
+Output capacitor requirements:
+	C >= 21.935 uF
+	V >= 130.286 V
+	Irms >= 66.15687230731548 mA
+
+Inductor requirements:
+	L >= 2477.176 uH
+	I >= 6.2286253939001535 A
+
+Input capacitors selected:
+	Bulk caps: A759KS156M2AAAE052
+
+Output capacitors selected:
+	Bulk caps: A759MS186M2CAAE090
+A759MS186M2CAAE090
+
+Input inductor selected:
+	PQ26/25-3C97
+	with 419.0 turns of 29 gauge wire
+	and a core gap of 11.2 mm per side of the core.
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.784 (W)
+
+Switch selected:
+	EPC2307
+	with an optimal switching frequency of 65000 Hz
+
+Input capacitor requirements:
+	C >= 2.232 uF
+	V >= 74.875 V
+	Irms >= 220.22958599031085 mA
+
+Output capacitor requirements:
+	C >= 23.623 uF
+	V >= 130.286 V
+	Irms >= 220.22958599031085 mA
+
+Inductor requirements:
+	L >= 801.384 uH
+	I >= 6.441132970940519 A
+
+Input capacitors selected:
+	Bulk caps: A759KS156M2AAAE052
+
+Output capacitors selected:
+	Bulk caps: A759MS186M2CAAE090
+A759MS186M2CAAE090
+
+Input inductor selected:
+	PQ26/25-3C97
+	with 140.0 turns of 25 gauge wire
+	and a core gap of 3.9 mm per side of the core.
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.784 (W)
+
+Switch selected:
+	EPC2307
+	with an optimal switching frequency of 35000 Hz
+
+Input capacitor requirements:
+	C >= 17.430 uF
+	V >= 74.875 V
+	Irms >= 926.1101599883613 mA
+
+Output capacitor requirements:
+	C >= 43.871 uF
+	V >= 130.286 V
+	Irms >= 926.1101599883613 mA
+
+Inductor requirements:
+	L >= 353.915 uH
+	I >= 7.427444464160524 A
+
+Input capacitors selected:
+	Bulk caps: A759KS156M2AAAE052
+A759KS156M2AAAE052
+
+Output capacitors selected:
+	Bulk caps: A759MS186M2CAAE090
+A759MS186M2CAAE090
+A759MS186M2CAAE090
+
+Input inductor selected:
+	PQ26/25-3C97
+	with 72.0 turns of 22 gauge wire
+	and a core gap of 2.3 mm per side of the core.
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.784 (W)
+
+Switch selected:
+	EPC2307
+	with an optimal switching frequency of 50000 Hz
+
+Input capacitor requirements:
+	C >= 8.964 uF
+	V >= 74.875 V
+	Irms >= 680.4373858592074 mA
+
+Output capacitor requirements:
+	C >= 30.709 uF
+	V >= 130.286 V
+	Irms >= 680.4373858592074 mA
+
+Inductor requirements:
+	L >= 337.188 uH
+	I >= 7.083531696786706 A
+
+Input capacitors selected:
+	Bulk caps: A759KS156M2AAAE052
+A759KS156M2AAAE052
+
+Output capacitors selected:
+	Bulk caps: A759MS186M2CAAE090
+A759MS186M2CAAE090
+
+Input inductor selected:
+	PQ26/25-3C97
+	with 65.0 turns of 21 gauge wire
+	and a core gap of 2.0 mm per side of the core.
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.784 (W)
+
+Switch selected:
+	EPC2307
+	with an optimal switching frequency of 55000 Hz
+
+Input capacitor requirements:
+	C >= 6.979 uF
+	V >= 74.875 V
+	Irms >= 582.7130419316543 mA
+
+Output capacitor requirements:
+	C >= 27.918 uF
+	V >= 130.286 V
+	Irms >= 582.7130419316543 mA
+
+Inductor requirements:
+	L >= 357.942 uH
+	I >= 6.946729197286916 A
+
+Input capacitors selected:
+	Bulk caps: A759KS156M2AAAE052
+
+Output capacitors selected:
+	Bulk caps: A759MS186M2CAAE090
+A759MS186M2CAAE090
+
+Input inductor selected:
+	PQ26/25-3C97
+	with 68.0 turns of 21 gauge wire
+	and a core gap of 2.0 mm per side of the core.
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.784 (W)
+
+Switch selected:
+	EPC2307
+	with an optimal switching frequency of 50000 Hz
+
+Input capacitor requirements:
+	C >= 8.274 uF
+	V >= 74.875 V
+	Irms >= 628.0593802487011 mA
+
+Output capacitor requirements:
+	C >= 30.709 uF
+	V >= 130.286 V
+	Irms >= 628.0593802487011 mA
+
+Inductor requirements:
+	L >= 365.308 uH
+	I >= 7.010208696617544 A
+
+Input capacitors selected:
+	Bulk caps: A759KS156M2AAAE052
+
+Output capacitors selected:
+	Bulk caps: A759MS186M2CAAE090
+A759MS186M2CAAE090
+
+Input inductor selected:
+	PQ26/25-3C97
+	with 70.0 turns of 22 gauge wire
+	and a core gap of 2.1 mm per side of the core.
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.784 (W)
+
+Switch selected:
+	EPC2307
+	with an optimal switching frequency of 50000 Hz
+
+Input capacitor requirements:
+	C >= 8.028 uF
+	V >= 74.875 V
+	Irms >= 609.3928208959735 mA
+
+Output capacitor requirements:
+	C >= 30.709 uF
+	V >= 130.286 V
+	Irms >= 609.3928208959735 mA
+
+Inductor requirements:
+	L >= 376.498 uH
+	I >= 6.984077725828858 A
+
+Input capacitors selected:
+	Bulk caps: A759KS156M2AAAE052
+
+Output capacitors selected:
+	Bulk caps: A759MS186M2CAAE090
+A759MS186M2CAAE090
+
+Input inductor selected:
+	PQ26/25-3C97
+	with 72.0 turns of 22 gauge wire
+	and a core gap of 2.2 mm per side of the core.
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.784 (W)
+
+Switch selected:
+	EPC2307
+	with an optimal switching frequency of 50000 Hz
+
+Input capacitor requirements:
+	C >= 8.174 uF
+	V >= 74.875 V
+	Irms >= 620.4671542919256 mA
+
+Output capacitor requirements:
+	C >= 30.709 uF
+	V >= 130.286 V
+	Irms >= 620.4671542919256 mA
+
+Inductor requirements:
+	L >= 369.778 uH
+	I >= 6.999580480086112 A
+
+Input capacitors selected:
+	Bulk caps: A759KS156M2AAAE052
+
+Output capacitors selected:
+	Bulk caps: A759MS186M2CAAE090
+A759MS186M2CAAE090
+
+Input inductor selected:
+	PQ26/25-3C97
+	with 71.0 turns of 22 gauge wire
+	and a core gap of 2.1 mm per side of the core.
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.784 (W)
+
+Switch selected:
+	EPC2307
+	with an optimal switching frequency of 50000 Hz
+
+Input capacitor requirements:
+	C >= 8.230 uF
+	V >= 74.875 V
+	Irms >= 624.7084770700492 mA
+
+Output capacitor requirements:
+	C >= 30.709 uF
+	V >= 130.286 V
+	Irms >= 624.7084770700492 mA
+
+Inductor requirements:
+	L >= 367.268 uH
+	I >= 7.005517829306516 A
+
+Input capacitors selected:
+	Bulk caps: A759KS156M2AAAE052
+
+Output capacitors selected:
+	Bulk caps: A759MS186M2CAAE090
+A759MS186M2CAAE090
+
+Input inductor selected:
+	PQ26/25-3C97
+	with 70.0 turns of 22 gauge wire
+	and a core gap of 2.1 mm per side of the core.
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.784 (W)
+
+Switch selected:
+	EPC2307
+	with an optimal switching frequency of 50000 Hz
+
+Input capacitor requirements:
+	C >= 8.209 uF
+	V >= 74.875 V
+	Irms >= 623.0877150859193 mA
+
+Output capacitor requirements:
+	C >= 30.709 uF
+	V >= 130.286 V
+	Irms >= 623.0877150859193 mA
+
+Inductor requirements:
+	L >= 368.223 uH
+	I >= 7.003248954616627 A
+
+Input capacitors selected:
+	Bulk caps: A759KS156M2AAAE052
+
+Output capacitors selected:
+	Bulk caps: A759MS186M2CAAE090
+A759MS186M2CAAE090
+
+Input inductor selected:
+	PQ26/25-3C97
+	with 70.0 turns of 22 gauge wire
+	and a core gap of 2.1 mm per side of the core.
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.784 (W)
+
+Switch selected:
+	EPC2307
+	with an optimal switching frequency of 50000 Hz
+
+Input capacitor requirements:
+	C >= 8.196 uF
+	V >= 74.875 V
+	Irms >= 622.086473389804 mA
+
+Output capacitor requirements:
+	C >= 30.709 uF
+	V >= 130.286 V
+	Irms >= 622.086473389804 mA
+
+Inductor requirements:
+	L >= 368.816 uH
+	I >= 7.001847334906256 A
+
+Input capacitors selected:
+	Bulk caps: A759KS156M2AAAE052
+
+Output capacitors selected:
+	Bulk caps: A759MS186M2CAAE090
+A759MS186M2CAAE090
+
+Input inductor selected:
+	PQ26/25-3C97
+	with 70.0 turns of 22 gauge wire
+	and a core gap of 2.1 mm per side of the core.
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.784 (W)
+
+Switch selected:
+	EPC2307
+	with an optimal switching frequency of 50000 Hz
+
+Input capacitor requirements:
+	C >= 8.187 uF
+	V >= 74.875 V
+	Irms >= 621.4678426229394 mA
+
+Output capacitor requirements:
+	C >= 30.709 uF
+	V >= 130.286 V
+	Irms >= 621.4678426229394 mA
+
+Inductor requirements:
+	L >= 369.183 uH
+	I >= 7.000981325150925 A
+
+Input capacitors selected:
+	Bulk caps: A759KS156M2AAAE052
+
+Output capacitors selected:
+	Bulk caps: A759MS186M2CAAE090
+A759MS186M2CAAE090
+
+Input inductor selected:
+	PQ26/25-3C97
+	with 71.0 turns of 22 gauge wire
+	and a core gap of 2.1 mm per side of the core.
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.784 (W)
+
+Switch selected:
+	EPC2307
+	with an optimal switching frequency of 50000 Hz
+
+Input capacitor requirements:
+	C >= 8.201 uF
+	V >= 74.875 V
+	Irms >= 622.468873459851 mA
+
+Output capacitor requirements:
+	C >= 30.709 uF
+	V >= 130.286 V
+	Irms >= 622.468873459851 mA
+
+Inductor requirements:
+	L >= 368.589 uH
+	I >= 7.002382649683402 A
+
+Input capacitors selected:
+	Bulk caps: A759KS156M2AAAE052
+
+Output capacitors selected:
+	Bulk caps: A759MS186M2CAAE090
+A759MS186M2CAAE090
+
+Input inductor selected:
+	PQ26/25-3C97
+	with 70.0 turns of 22 gauge wire
+	and a core gap of 2.1 mm per side of the core.
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.784 (W)
+
+Switch selected:
+	EPC2307
+	with an optimal switching frequency of 50000 Hz
+
+Input capacitor requirements:
+	C >= 8.193 uF
+	V >= 74.875 V
+	Irms >= 621.8501620513672 mA
+
+Output capacitor requirements:
+	C >= 30.709 uF
+	V >= 130.286 V
+	Irms >= 621.8501620513672 mA
+
+Inductor requirements:
+	L >= 368.956 uH
+	I >= 7.001516527039362 A
+
+Input capacitors selected:
+	Bulk caps: A759KS156M2AAAE052
+
+Output capacitors selected:
+	Bulk caps: A759MS186M2CAAE090
+A759MS186M2CAAE090
+
+Input inductor selected:
+	PQ26/25-3C97
+	with 71.0 turns of 22 gauge wire
+	and a core gap of 2.1 mm per side of the core.
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.784 (W)
+
+Switch selected:
+	EPC2307
+	with an optimal switching frequency of 50000 Hz
+
+Input capacitor requirements:
+	C >= 8.198 uF
+	V >= 74.875 V
+	Irms >= 622.2325313391232 mA
+
+Output capacitor requirements:
+	C >= 30.709 uF
+	V >= 130.286 V
+	Irms >= 622.2325313391232 mA
+
+Inductor requirements:
+	L >= 368.729 uH
+	I >= 7.002051798724948 A
+
+Input capacitors selected:
+	Bulk caps: A759KS156M2AAAE052
+
+Output capacitors selected:
+	Bulk caps: A759MS186M2CAAE090
+A759MS186M2CAAE090
+
+Input inductor selected:
+	PQ26/25-3C97
+	with 70.0 turns of 22 gauge wire
+	and a core gap of 2.1 mm per side of the core.
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.784 (W)
+
+Switch selected:
+	EPC2307
+	with an optimal switching frequency of 50000 Hz
+
+Input capacitor requirements:
+	C >= 8.194 uF
+	V >= 74.875 V
+	Irms >= 621.9962082455085 mA
+
+Output capacitor requirements:
+	C >= 30.709 uF
+	V >= 130.286 V
+	Irms >= 621.9962082455085 mA
+
+Inductor requirements:
+	L >= 368.869 uH
+	I >= 7.001720974402199 A
+
+Input capacitors selected:
+	Bulk caps: A759KS156M2AAAE052
+
+Output capacitors selected:
+	Bulk caps: A759MS186M2CAAE090
+A759MS186M2CAAE090
+
+Input inductor selected:
+	PQ26/25-3C97
+	with 70.0 turns of 22 gauge wire
+	and a core gap of 2.1 mm per side of the core.
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.784 (W)
+
+Switch selected:
+	EPC2307
+	with an optimal switching frequency of 50000 Hz
+
+Input capacitor requirements:
+	C >= 8.194 uF
+	V >= 74.875 V
+	Irms >= 621.9404227062005 mA
+
+Output capacitor requirements:
+	C >= 30.709 uF
+	V >= 130.286 V
+	Irms >= 621.9404227062005 mA
+
+Inductor requirements:
+	L >= 368.902 uH
+	I >= 7.001642881258704 A
+
+Input capacitors selected:
+	Bulk caps: A759KS156M2AAAE052
+
+Output capacitors selected:
+	Bulk caps: A759MS186M2CAAE090
+A759MS186M2CAAE090
+
+Input inductor selected:
+	PQ26/25-3C97
+	with 70.0 turns of 22 gauge wire
+	and a core gap of 2.1 mm per side of the core.
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.784 (W)
+
+Switch selected:
+	EPC2307
+	with an optimal switching frequency of 50000 Hz
+
+Input capacitor requirements:
+	C >= 8.194 uF
+	V >= 74.875 V
+	Irms >= 621.9404227062005 mA
+
+Output capacitor requirements:
+	C >= 30.709 uF
+	V >= 130.286 V
+	Irms >= 621.9404227062005 mA
+
+Inductor requirements:
+	L >= 368.902 uH
+	I >= 7.001642881258704 A
+
+Input capacitors selected:
+	Bulk caps: A759KS156M2AAAE052
+
+Output capacitors selected:
+	Bulk caps: A759MS186M2CAAE090
+A759MS186M2CAAE090
+
+Input inductor selected:
+	PQ26/25-3C97
+	with 70.0 turns of 22 gauge wire
+	and a core gap of 2.1 mm per side of the core.
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 8.683 (W)
+
+Switch selected:
+	EPC2307
+	with an optimal switching frequency of 240000 Hz
+
+Input capacitor requirements:
+	C >= 1.707 uF
+	V >= 74.875 V
+	Irms >= 621.9404227062005 mA
+
+Output capacitor requirements:
+	C >= 6.398 uF
+	V >= 130.286 V
+	Irms >= 621.9404227062005 mA
+
+Inductor requirements:
+	L >= 76.855 uH
+	I >= 7.001642881258704 A
+
+Input capacitors selected:
+	Bulk caps: A759KS156M2AAAE052
+
+Output capacitors selected:
+	Bulk caps: A759MS186M2CAAE090
+
+Input inductor selected:
+	PQ26/25-3C97
+	with 15.0 turns of 15 gauge wire
+	and a core gap of 0.5 mm per side of the core.
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 1.402 (W)
+
+Switch selected:
+	EPC2307
+	with an optimal switching frequency of 5000 Hz
+
+Input capacitor requirements:
+	C >= 81.937 uF
+	V >= 74.875 V
+	Irms >= 621.9404227062005 mA
+
+Output capacitor requirements:
+	C >= 307.094 uF
+	V >= 130.286 V
+	Irms >= 621.9404227062005 mA
+
+Inductor requirements:
+	L >= 3689.021 uH
+	I >= 7.001642881258704 A
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 0.492 (W)
+
+Switch selected:
+	EPC2307
+	with an optimal switching frequency of 5000 Hz
+
+Input capacitor requirements:
+	C >= 81.937 uF
+	V >= 74.875 V
+	Irms >= 621.9404227062005 mA
+
+Output capacitor requirements:
+	C >= 307.094 uF
+	V >= 130.286 V
+	Irms >= 621.9404227062005 mA
+
+Inductor requirements:
+	L >= 3689.021 uH
+	I >= 7.001642881258704 A
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 4.933 (W)
+
+Switch selected:
+	EPC2307
+	with an optimal switching frequency of 120000 Hz
+
+Input capacitor requirements:
+	C >= 3.414 uF
+	V >= 74.875 V
+	Irms >= 621.9404227062005 mA
+
+Output capacitor requirements:
+	C >= 12.796 uF
+	V >= 130.286 V
+	Irms >= 621.9404227062005 mA
+
+Inductor requirements:
+	L >= 153.709 uH
+	I >= 7.001642881258704 A
+
+Input capacitors selected:
+	Bulk caps: A759KS156M2AAAE052
+
+Output capacitors selected:
+	Bulk caps: A759MS186M2CAAE090
+
+Input inductor selected:
+	PQ26/25-3C97
+	with 30.0 turns of 18 gauge wire
+	and a core gap of 0.9 mm per side of the core.
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 3.813 (W)
+
+Switch selected:
+	EPC2307
+	with an optimal switching frequency of 85000 Hz
+
+Input capacitor requirements:
+	C >= 4.820 uF
+	V >= 74.875 V
+	Irms >= 621.9404227062005 mA
+
+Output capacitor requirements:
+	C >= 18.064 uF
+	V >= 130.286 V
+	Irms >= 621.9404227062005 mA
+
+Inductor requirements:
+	L >= 217.001 uH
+	I >= 7.001642881258704 A
+
+Input capacitors selected:
+	Bulk caps: A759KS156M2AAAE052
+
+Output capacitors selected:
+	Bulk caps: A759MS186M2CAAE090
+A759MS186M2CAAE090
+
+Input inductor selected:
+	PQ26/25-3C97
+	with 42.0 turns of 19 gauge wire
+	and a core gap of 1.3 mm per side of the core.
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.089 (W)
+
+Switch selected:
+	EPC2307
+	with an optimal switching frequency of 30000 Hz
+
+Input capacitor requirements:
+	C >= 13.656 uF
+	V >= 74.875 V
+	Irms >= 621.9404227062005 mA
+
+Output capacitor requirements:
+	C >= 51.182 uF
+	V >= 130.286 V
+	Irms >= 621.9404227062005 mA
+
+Inductor requirements:
+	L >= 614.837 uH
+	I >= 7.001642881258704 A
+
+Input capacitors selected:
+	Bulk caps: A759KS156M2AAAE052
+
+Output capacitors selected:
+	Bulk caps: A759MS186M2CAAE090
+A759MS186M2CAAE090
+A759MS186M2CAAE090
+
+Input inductor selected:
+	PQ26/25-3C97
+	with 117.0 turns of 24 gauge wire
+	and a core gap of 3.5 mm per side of the core.
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.975 (W)
+
+Switch selected:
+	EPC2307
+	with an optimal switching frequency of 55000 Hz
+
+Input capacitor requirements:
+	C >= 7.449 uF
+	V >= 74.875 V
+	Irms >= 621.9404227062005 mA
+
+Output capacitor requirements:
+	C >= 27.918 uF
+	V >= 130.286 V
+	Irms >= 621.9404227062005 mA
+
+Inductor requirements:
+	L >= 335.366 uH
+	I >= 7.001642881258704 A
+
+Input capacitors selected:
+	Bulk caps: A759KS156M2AAAE052
+
+Output capacitors selected:
+	Bulk caps: A759MS186M2CAAE090
+A759MS186M2CAAE090
+
+Input inductor selected:
+	PQ26/25-3C97
+	with 64.0 turns of 21 gauge wire
+	and a core gap of 1.9 mm per side of the core.
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.760 (W)
+
+Switch selected:
+	EPC2307
+	with an optimal switching frequency of 50000 Hz
+
+Input capacitor requirements:
+	C >= 8.194 uF
+	V >= 74.875 V
+	Irms >= 621.9404227062005 mA
+
+Output capacitor requirements:
+	C >= 30.709 uF
+	V >= 130.286 V
+	Irms >= 621.9404227062005 mA
+
+Inductor requirements:
+	L >= 368.902 uH
+	I >= 7.001642881258704 A
+
+Input capacitors selected:
+	Bulk caps: A759KS156M2AAAE052
+
+Output capacitors selected:
+	Bulk caps: A759MS186M2CAAE090
+A759MS186M2CAAE090
+
+Input inductor selected:
+	PQ26/25-3C97
+	with 70.0 turns of 22 gauge wire
+	and a core gap of 2.1 mm per side of the core.
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.772 (W)
+
+Switch selected:
+	EPC2307
+	with an optimal switching frequency of 50000 Hz
+
+Input capacitor requirements:
+	C >= 8.194 uF
+	V >= 74.875 V
+	Irms >= 621.9404227062005 mA
+
+Output capacitor requirements:
+	C >= 30.709 uF
+	V >= 130.286 V
+	Irms >= 621.9404227062005 mA
+
+Inductor requirements:
+	L >= 368.902 uH
+	I >= 7.001642881258704 A
+
+Input capacitors selected:
+	Bulk caps: A759KS156M2AAAE052
+
+Output capacitors selected:
+	Bulk caps: A759MS186M2CAAE090
+A759MS186M2CAAE090
+
+Input inductor selected:
+	PQ26/25-3C97
+	with 70.0 turns of 22 gauge wire
+	and a core gap of 2.1 mm per side of the core.
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.767 (W)
+
+Switch selected:
+	EPC2307
+	with an optimal switching frequency of 50000 Hz
+
+Input capacitor requirements:
+	C >= 8.194 uF
+	V >= 74.875 V
+	Irms >= 621.9404227062005 mA
+
+Output capacitor requirements:
+	C >= 30.709 uF
+	V >= 130.286 V
+	Irms >= 621.9404227062005 mA
+
+Inductor requirements:
+	L >= 368.902 uH
+	I >= 7.001642881258704 A
+
+Input capacitors selected:
+	Bulk caps: A759KS156M2AAAE052
+
+Output capacitors selected:
+	Bulk caps: A759MS186M2CAAE090
+A759MS186M2CAAE090
+
+Input inductor selected:
+	PQ26/25-3C97
+	with 70.0 turns of 22 gauge wire
+	and a core gap of 2.1 mm per side of the core.
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.764 (W)
+
+Switch selected:
+	EPC2307
+	with an optimal switching frequency of 50000 Hz
+
+Input capacitor requirements:
+	C >= 8.194 uF
+	V >= 74.875 V
+	Irms >= 621.9404227062005 mA
+
+Output capacitor requirements:
+	C >= 30.709 uF
+	V >= 130.286 V
+	Irms >= 621.9404227062005 mA
+
+Inductor requirements:
+	L >= 368.902 uH
+	I >= 7.001642881258704 A
+
+Input capacitors selected:
+	Bulk caps: A759KS156M2AAAE052
+
+Output capacitors selected:
+	Bulk caps: A759MS186M2CAAE090
+A759MS186M2CAAE090
+
+Input inductor selected:
+	PQ26/25-3C97
+	with 70.0 turns of 22 gauge wire
+	and a core gap of 2.1 mm per side of the core.
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.762 (W)
+
+Switch selected:
+	EPC2307
+	with an optimal switching frequency of 50000 Hz
+
+Input capacitor requirements:
+	C >= 8.194 uF
+	V >= 74.875 V
+	Irms >= 621.9404227062005 mA
+
+Output capacitor requirements:
+	C >= 30.709 uF
+	V >= 130.286 V
+	Irms >= 621.9404227062005 mA
+
+Inductor requirements:
+	L >= 368.902 uH
+	I >= 7.001642881258704 A
+
+Input capacitors selected:
+	Bulk caps: A759KS156M2AAAE052
+
+Output capacitors selected:
+	Bulk caps: A759MS186M2CAAE090
+A759MS186M2CAAE090
+
+Input inductor selected:
+	PQ26/25-3C97
+	with 70.0 turns of 22 gauge wire
+	and a core gap of 2.1 mm per side of the core.
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.761 (W)
+
+Switch selected:
+	EPC2307
+	with an optimal switching frequency of 50000 Hz
+
+Input capacitor requirements:
+	C >= 8.194 uF
+	V >= 74.875 V
+	Irms >= 621.9404227062005 mA
+
+Output capacitor requirements:
+	C >= 30.709 uF
+	V >= 130.286 V
+	Irms >= 621.9404227062005 mA
+
+Inductor requirements:
+	L >= 368.902 uH
+	I >= 7.001642881258704 A
+
+Input capacitors selected:
+	Bulk caps: A759KS156M2AAAE052
+
+Output capacitors selected:
+	Bulk caps: A759MS186M2CAAE090
+A759MS186M2CAAE090
+
+Input inductor selected:
+	PQ26/25-3C97
+	with 70.0 turns of 22 gauge wire
+	and a core gap of 2.1 mm per side of the core.
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.761 (W)
+
+Switch selected:
+	EPC2307
+	with an optimal switching frequency of 50000 Hz
+
+Input capacitor requirements:
+	C >= 8.194 uF
+	V >= 74.875 V
+	Irms >= 621.9404227062005 mA
+
+Output capacitor requirements:
+	C >= 30.709 uF
+	V >= 130.286 V
+	Irms >= 621.9404227062005 mA
+
+Inductor requirements:
+	L >= 368.902 uH
+	I >= 7.001642881258704 A
+
+Input capacitors selected:
+	Bulk caps: A759KS156M2AAAE052
+
+Output capacitors selected:
+	Bulk caps: A759MS186M2CAAE090
+A759MS186M2CAAE090
+
+Input inductor selected:
+	PQ26/25-3C97
+	with 70.0 turns of 22 gauge wire
+	and a core gap of 2.1 mm per side of the core.
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.760 (W)
+
+Switch selected:
+	EPC2307
+	with an optimal switching frequency of 50000 Hz
+
+Input capacitor requirements:
+	C >= 8.194 uF
+	V >= 74.875 V
+	Irms >= 621.9404227062005 mA
+
+Output capacitor requirements:
+	C >= 30.709 uF
+	V >= 130.286 V
+	Irms >= 621.9404227062005 mA
+
+Inductor requirements:
+	L >= 368.902 uH
+	I >= 7.001642881258704 A
+
+Input capacitors selected:
+	Bulk caps: A759KS156M2AAAE052
+
+Output capacitors selected:
+	Bulk caps: A759MS186M2CAAE090
+A759MS186M2CAAE090
+
+Input inductor selected:
+	PQ26/25-3C97
+	with 70.0 turns of 22 gauge wire
+	and a core gap of 2.1 mm per side of the core.
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.760 (W)
+
+Switch selected:
+	EPC2307
+	with an optimal switching frequency of 50000 Hz
+
+Input capacitor requirements:
+	C >= 8.194 uF
+	V >= 74.875 V
+	Irms >= 621.9404227062005 mA
+
+Output capacitor requirements:
+	C >= 30.709 uF
+	V >= 130.286 V
+	Irms >= 621.9404227062005 mA
+
+Inductor requirements:
+	L >= 368.902 uH
+	I >= 7.001642881258704 A
+
+Input capacitors selected:
+	Bulk caps: A759KS156M2AAAE052
+
+Output capacitors selected:
+	Bulk caps: A759MS186M2CAAE090
+A759MS186M2CAAE090
+
+Input inductor selected:
+	PQ26/25-3C97
+	with 70.0 turns of 22 gauge wire
+	and a core gap of 2.1 mm per side of the core.
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.736 (W)
+
+Switch selected:
+	EPC2307
+	with an optimal switching frequency of 50000 Hz
+
+Input capacitor requirements:
+	C >= 8.123 uF
+	V >= 74.875 V
+	Irms >= 616.5579541271967 mA
+
+Output capacitor requirements:
+	C >= 30.709 uF
+	V >= 130.286 V
+	Irms >= 616.5579541271967 mA
+
+Inductor requirements:
+	L >= 372.123 uH
+	I >= 6.994108063162277 A
+
+Input capacitors selected:
+	Bulk caps: A759KS156M2AAAE052
+
+Output capacitors selected:
+	Bulk caps: A759MS186M2CAAE090
+A759MS186M2CAAE090
+
+Input inductor selected:
+	PQ26/25-3C97
+	with 71.0 turns of 22 gauge wire
+	and a core gap of 2.1 mm per side of the core.
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.760 (W)
+
+Switch selected:
+	EPC2307
+	with an optimal switching frequency of 50000 Hz
+
+Input capacitor requirements:
+	C >= 8.194 uF
+	V >= 74.875 V
+	Irms >= 621.9404227062005 mA
+
+Output capacitor requirements:
+	C >= 30.709 uF
+	V >= 130.286 V
+	Irms >= 621.9404227062005 mA
+
+Inductor requirements:
+	L >= 368.902 uH
+	I >= 7.001642881258704 A
+
+Input capacitors selected:
+	Bulk caps: A759KS156M2AAAE052
+
+Output capacitors selected:
+	Bulk caps: A759MS186M2CAAE090
+A759MS186M2CAAE090
+
+Input inductor selected:
+	PQ26/25-3C97
+	with 70.0 turns of 22 gauge wire
+	and a core gap of 2.1 mm per side of the core.
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.760 (W)
+
+Switch selected:
+	EPC2307
+	with an optimal switching frequency of 5000 Hz
+
+Input capacitor requirements:
+	C >= 178.525 uF
+	V >= 74.875 V
+	Irms >= 1355.0911846780016 mA
+
+Output capacitor requirements:
+	C >= 307.094 uF
+	V >= 130.286 V
+	Irms >= 1355.0911846780016 mA
+
+Inductor requirements:
+	L >= 1693.134 uH
+	I >= 8.030191222555452 A
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.760 (W)
+
+Switch selected:
+	EPC2307
+	with an optimal switching frequency of 70000 Hz
+
+Input capacitor requirements:
+	C >= 0.638 uF
+	V >= 74.875 V
+	Irms >= 67.79261585526848 mA
+
+Output capacitor requirements:
+	C >= 21.935 uF
+	V >= 130.286 V
+	Irms >= 67.79261585526848 mA
+
+Inductor requirements:
+	L >= 2417.406 uH
+	I >= 6.2308414019230725 A
+
+Input capacitors selected:
+	Bulk caps: A759KS156M2AAAE052
+
+Output capacitors selected:
+	Bulk caps: A759MS186M2CAAE090
+A759MS186M2CAAE090
+
+Input inductor selected:
+	PQ26/25-3C97
+	with 409.0 turns of 29 gauge wire
+	and a core gap of 10.9 mm per side of the core.
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.760 (W)
+
+Switch selected:
+	EPC2307
+	with an optimal switching frequency of 65000 Hz
+
+Input capacitor requirements:
+	C >= 2.195 uF
+	V >= 74.875 V
+	Irms >= 216.63586146349397 mA
+
+Output capacitor requirements:
+	C >= 23.623 uF
+	V >= 130.286 V
+	Irms >= 216.63586146349397 mA
+
+Inductor requirements:
+	L >= 814.678 uH
+	I >= 6.436153785983706 A
+
+Input capacitors selected:
+	Bulk caps: A759KS156M2AAAE052
+
+Output capacitors selected:
+	Bulk caps: A759MS186M2CAAE090
+A759MS186M2CAAE090
+
+Input inductor selected:
+	PQ26/25-3C97
+	with 143.0 turns of 25 gauge wire
+	and a core gap of 3.9 mm per side of the core.
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.760 (W)
+
+Switch selected:
+	EPC2307
+	with an optimal switching frequency of 35000 Hz
+
+Input capacitor requirements:
+	C >= 17.326 uF
+	V >= 74.875 V
+	Irms >= 920.591021258989 mA
+
+Output capacitor requirements:
+	C >= 43.871 uF
+	V >= 130.286 V
+	Irms >= 920.591021258989 mA
+
+Inductor requirements:
+	L >= 356.037 uH
+	I >= 7.4197183240513205 A
+
+Input capacitors selected:
+	Bulk caps: A759KS156M2AAAE052
+A759KS156M2AAAE052
+
+Output capacitors selected:
+	Bulk caps: A759MS186M2CAAE090
+A759MS186M2CAAE090
+A759MS186M2CAAE090
+
+Input inductor selected:
+	PQ26/25-3C97
+	with 72.0 turns of 22 gauge wire
+	and a core gap of 2.3 mm per side of the core.
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.760 (W)
+
+Switch selected:
+	EPC2307
+	with an optimal switching frequency of 45000 Hz
+
+Input capacitor requirements:
+	C >= 9.972 uF
+	V >= 74.875 V
+	Irms >= 681.2291490711208 mA
+
+Output capacitor requirements:
+	C >= 34.122 uF
+	V >= 130.286 V
+	Irms >= 681.2291490711208 mA
+
+Inductor requirements:
+	L >= 374.218 uH
+	I >= 7.084640071445962 A
+
+Input capacitors selected:
+	Bulk caps: A759KS156M2AAAE052
+A759KS156M2AAAE052
+
+Output capacitors selected:
+	Bulk caps: A759MS186M2CAAE090
+A759MS186M2CAAE090
+
+Input inductor selected:
+	PQ26/25-3C97
+	with 72.0 turns of 22 gauge wire
+	and a core gap of 2.2 mm per side of the core.
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.760 (W)
+
+Switch selected:
+	EPC2307
+	with an optimal switching frequency of 55000 Hz
+
+Input capacitor requirements:
+	C >= 6.553 uF
+	V >= 74.875 V
+	Irms >= 547.1257176216059 mA
+
+Output capacitor requirements:
+	C >= 27.918 uF
+	V >= 130.286 V
+	Irms >= 547.1257176216059 mA
+
+Inductor requirements:
+	L >= 381.224 uH
+	I >= 6.896911160956753 A
+
+Input capacitors selected:
+	Bulk caps: A759KS156M2AAAE052
+
+Output capacitors selected:
+	Bulk caps: A759MS186M2CAAE090
+A759MS186M2CAAE090
+
+Input inductor selected:
+	PQ26/25-3C97
+	with 72.0 turns of 22 gauge wire
+	and a core gap of 2.1 mm per side of the core.
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.760 (W)
+
+Switch selected:
+	EPC2307
+	with an optimal switching frequency of 50000 Hz
+
+Input capacitor requirements:
+	C >= 8.129 uF
+	V >= 74.875 V
+	Irms >= 617.0206550946139 mA
+
+Output capacitor requirements:
+	C >= 30.709 uF
+	V >= 130.286 V
+	Irms >= 617.0206550946139 mA
+
+Inductor requirements:
+	L >= 371.844 uH
+	I >= 6.994755789678717 A
+
+Input capacitors selected:
+	Bulk caps: A759KS156M2AAAE052
+
+Output capacitors selected:
+	Bulk caps: A759MS186M2CAAE090
+A759MS186M2CAAE090
+
+Input inductor selected:
+	PQ26/25-3C97
+	with 71.0 turns of 22 gauge wire
+	and a core gap of 2.1 mm per side of the core.
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.760 (W)
+
+Switch selected:
+	EPC2307
+	with an optimal switching frequency of 50000 Hz
+
+Input capacitor requirements:
+	C >= 8.489 uF
+	V >= 74.875 V
+	Irms >= 644.3216399408129 mA
+
+Output capacitor requirements:
+	C >= 30.709 uF
+	V >= 130.286 V
+	Irms >= 644.3216399408129 mA
+
+Inductor requirements:
+	L >= 356.088 uH
+	I >= 7.032973932831816 A
+
+Input capacitors selected:
+	Bulk caps: A759KS156M2AAAE052
+
+Output capacitors selected:
+	Bulk caps: A759MS186M2CAAE090
+A759MS186M2CAAE090
+
+Input inductor selected:
+	PQ26/25-3C97
+	with 68.0 turns of 21 gauge wire
+	and a core gap of 2.1 mm per side of the core.
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.760 (W)
+
+Switch selected:
+	EPC2307
+	with an optimal switching frequency of 50000 Hz
+
+Input capacitor requirements:
+	C >= 8.306 uF
+	V >= 74.875 V
+	Irms >= 630.4703063737566 mA
+
+Output capacitor requirements:
+	C >= 30.709 uF
+	V >= 130.286 V
+	Irms >= 630.4703063737566 mA
+
+Inductor requirements:
+	L >= 363.911 uH
+	I >= 7.013583707456823 A
+
+Input capacitors selected:
+	Bulk caps: A759KS156M2AAAE052
+
+Output capacitors selected:
+	Bulk caps: A759MS186M2CAAE090
+A759MS186M2CAAE090
+
+Input inductor selected:
+	PQ26/25-3C97
+	with 70.0 turns of 22 gauge wire
+	and a core gap of 2.1 mm per side of the core.
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.760 (W)
+
+Switch selected:
+	EPC2307
+	with an optimal switching frequency of 50000 Hz
+
+Input capacitor requirements:
+	C >= 8.237 uF
+	V >= 74.875 V
+	Irms >= 625.1956853655305 mA
+
+Output capacitor requirements:
+	C >= 30.709 uF
+	V >= 130.286 V
+	Irms >= 625.1956853655305 mA
+
+Inductor requirements:
+	L >= 366.981 uH
+	I >= 7.006199863177711 A
+
+Input capacitors selected:
+	Bulk caps: A759KS156M2AAAE052
+
+Output capacitors selected:
+	Bulk caps: A759MS186M2CAAE090
+A759MS186M2CAAE090
+
+Input inductor selected:
+	PQ26/25-3C97
+	with 70.0 turns of 22 gauge wire
+	and a core gap of 2.1 mm per side of the core.
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.760 (W)
+
+Switch selected:
+	EPC2307
+	with an optimal switching frequency of 50000 Hz
+
+Input capacitor requirements:
+	C >= 8.169 uF
+	V >= 74.875 V
+	Irms >= 620.0602515695052 mA
+
+Output capacitor requirements:
+	C >= 30.709 uF
+	V >= 130.286 V
+	Irms >= 620.0602515695052 mA
+
+Inductor requirements:
+	L >= 370.021 uH
+	I >= 6.999010864499625 A
+
+Input capacitors selected:
+	Bulk caps: A759KS156M2AAAE052
+
+Output capacitors selected:
+	Bulk caps: A759MS186M2CAAE090
+A759MS186M2CAAE090
+
+Input inductor selected:
+	PQ26/25-3C97
+	with 71.0 turns of 22 gauge wire
+	and a core gap of 2.1 mm per side of the core.
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.760 (W)
+
+Switch selected:
+	EPC2307
+	with an optimal switching frequency of 50000 Hz
+
+Input capacitor requirements:
+	C >= 8.210 uF
+	V >= 74.875 V
+	Irms >= 623.1833994616597 mA
+
+Output capacitor requirements:
+	C >= 30.709 uF
+	V >= 130.286 V
+	Irms >= 623.1833994616597 mA
+
+Inductor requirements:
+	L >= 368.166 uH
+	I >= 7.0033829014024365 A
+
+Input capacitors selected:
+	Bulk caps: A759KS156M2AAAE052
+
+Output capacitors selected:
+	Bulk caps: A759MS186M2CAAE090
+A759MS186M2CAAE090
+
+Input inductor selected:
+	PQ26/25-3C97
+	with 70.0 turns of 22 gauge wire
+	and a core gap of 2.1 mm per side of the core.
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.760 (W)
+
+Switch selected:
+	EPC2307
+	with an optimal switching frequency of 50000 Hz
+
+Input capacitor requirements:
+	C >= 8.184 uF
+	V >= 74.875 V
+	Irms >= 621.222118235164 mA
+
+Output capacitor requirements:
+	C >= 30.709 uF
+	V >= 130.286 V
+	Irms >= 621.222118235164 mA
+
+Inductor requirements:
+	L >= 369.329 uH
+	I >= 7.000637340130563 A
+
+Input capacitors selected:
+	Bulk caps: A759KS156M2AAAE052
+
+Output capacitors selected:
+	Bulk caps: A759MS186M2CAAE090
+A759MS186M2CAAE090
+
+Input inductor selected:
+	PQ26/25-3C97
+	with 71.0 turns of 22 gauge wire
+	and a core gap of 2.1 mm per side of the core.
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.760 (W)
+
+Switch selected:
+	EPC2307
+	with an optimal switching frequency of 50000 Hz
+
+Input capacitor requirements:
+	C >= 8.200 uF
+	V >= 74.875 V
+	Irms >= 622.4151355748215 mA
+
+Output capacitor requirements:
+	C >= 30.709 uF
+	V >= 130.286 V
+	Irms >= 622.4151355748215 mA
+
+Inductor requirements:
+	L >= 368.621 uH
+	I >= 7.002307423013215 A
+
+Input capacitors selected:
+	Bulk caps: A759KS156M2AAAE052
+
+Output capacitors selected:
+	Bulk caps: A759MS186M2CAAE090
+A759MS186M2CAAE090
+
+Input inductor selected:
+	PQ26/25-3C97
+	with 70.0 turns of 22 gauge wire
+	and a core gap of 2.1 mm per side of the core.
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.760 (W)
+
+Switch selected:
+	EPC2307
+	with an optimal switching frequency of 50000 Hz
+
+Input capacitor requirements:
+	C >= 8.190 uF
+	V >= 74.875 V
+	Irms >= 621.6660340099334 mA
+
+Output capacitor requirements:
+	C >= 30.709 uF
+	V >= 130.286 V
+	Irms >= 621.6660340099334 mA
+
+Inductor requirements:
+	L >= 369.065 uH
+	I >= 7.001258769603663 A
+
+Input capacitors selected:
+	Bulk caps: A759KS156M2AAAE052
+
+Output capacitors selected:
+	Bulk caps: A759MS186M2CAAE090
+A759MS186M2CAAE090
+
+Input inductor selected:
+	PQ26/25-3C97
+	with 71.0 turns of 22 gauge wire
+	and a core gap of 2.1 mm per side of the core.
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.760 (W)
+
+Switch selected:
+	EPC2307
+	with an optimal switching frequency of 50000 Hz
+
+Input capacitor requirements:
+	C >= 8.196 uF
+	V >= 74.875 V
+	Irms >= 622.1217378212757 mA
+
+Output capacitor requirements:
+	C >= 30.709 uF
+	V >= 130.286 V
+	Irms >= 622.1217378212757 mA
+
+Inductor requirements:
+	L >= 368.795 uH
+	I >= 7.001896700930881 A
+
+Input capacitors selected:
+	Bulk caps: A759KS156M2AAAE052
+
+Output capacitors selected:
+	Bulk caps: A759MS186M2CAAE090
+A759MS186M2CAAE090
+
+Input inductor selected:
+	PQ26/25-3C97
+	with 70.0 turns of 22 gauge wire
+	and a core gap of 2.1 mm per side of the core.
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.760 (W)
+
+Switch selected:
+	EPC2307
+	with an optimal switching frequency of 50000 Hz
+
+Input capacitor requirements:
+	C >= 8.192 uF
+	V >= 74.875 V
+	Irms >= 621.8356125203278 mA
+
+Output capacitor requirements:
+	C >= 30.709 uF
+	V >= 130.286 V
+	Irms >= 621.8356125203278 mA
+
+Inductor requirements:
+	L >= 368.964 uH
+	I >= 7.001496159420274 A
+
+Input capacitors selected:
+	Bulk caps: A759KS156M2AAAE052
+
+Output capacitors selected:
+	Bulk caps: A759MS186M2CAAE090
+A759MS186M2CAAE090
+
+Input inductor selected:
+	PQ26/25-3C97
+	with 71.0 turns of 22 gauge wire
+	and a core gap of 2.1 mm per side of the core.
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.760 (W)
+
+Switch selected:
+	EPC2307
+	with an optimal switching frequency of 50000 Hz
+
+Input capacitor requirements:
+	C >= 8.195 uF
+	V >= 74.875 V
+	Irms >= 622.0096775926352 mA
+
+Output capacitor requirements:
+	C >= 30.709 uF
+	V >= 130.286 V
+	Irms >= 622.0096775926352 mA
+
+Inductor requirements:
+	L >= 368.861 uH
+	I >= 7.001739829891829 A
+
+Input capacitors selected:
+	Bulk caps: A759KS156M2AAAE052
+
+Output capacitors selected:
+	Bulk caps: A759MS186M2CAAE090
+A759MS186M2CAAE090
+
+Input inductor selected:
+	PQ26/25-3C97
+	with 70.0 turns of 22 gauge wire
+	and a core gap of 2.1 mm per side of the core.
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.760 (W)
+
+Switch selected:
+	EPC2307
+	with an optimal switching frequency of 50000 Hz
+
+Input capacitor requirements:
+	C >= 8.193 uF
+	V >= 74.875 V
+	Irms >= 621.9003883363922 mA
+
+Output capacitor requirements:
+	C >= 30.709 uF
+	V >= 130.286 V
+	Irms >= 621.9003883363922 mA
+
+Inductor requirements:
+	L >= 368.926 uH
+	I >= 7.001586837885727 A
+
+Input capacitors selected:
+	Bulk caps: A759KS156M2AAAE052
+
+Output capacitors selected:
+	Bulk caps: A759MS186M2CAAE090
+A759MS186M2CAAE090
+
+Input inductor selected:
+	PQ26/25-3C97
+	with 71.0 turns of 22 gauge wire
+	and a core gap of 2.1 mm per side of the core.
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.760 (W)
+
+Switch selected:
+	EPC2307
+	with an optimal switching frequency of 50000 Hz
+
+Input capacitor requirements:
+	C >= 8.194 uF
+	V >= 74.875 V
+	Irms >= 621.9668755251067 mA
+
+Output capacitor requirements:
+	C >= 30.709 uF
+	V >= 130.286 V
+	Irms >= 621.9668755251067 mA
+
+Inductor requirements:
+	L >= 368.886 uH
+	I >= 7.001679912070063 A
+
+Input capacitors selected:
+	Bulk caps: A759KS156M2AAAE052
+
+Output capacitors selected:
+	Bulk caps: A759MS186M2CAAE090
+A759MS186M2CAAE090
+
+Input inductor selected:
+	PQ26/25-3C97
+	with 70.0 turns of 22 gauge wire
+	and a core gap of 2.1 mm per side of the core.
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.760 (W)
+
+Switch selected:
+	EPC2307
+	with an optimal switching frequency of 50000 Hz
+
+Input capacitor requirements:
+	C >= 8.193 uF
+	V >= 74.875 V
+	Irms >= 621.9251308735738 mA
+
+Output capacitor requirements:
+	C >= 30.709 uF
+	V >= 130.286 V
+	Irms >= 621.9251308735738 mA
+
+Inductor requirements:
+	L >= 368.911 uH
+	I >= 7.001621474505368 A
+
+Input capacitors selected:
+	Bulk caps: A759KS156M2AAAE052
+
+Output capacitors selected:
+	Bulk caps: A759MS186M2CAAE090
+A759MS186M2CAAE090
+
+Input inductor selected:
+	PQ26/25-3C97
+	with 70.0 turns of 22 gauge wire
+	and a core gap of 2.1 mm per side of the core.
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.760 (W)
+
+Switch selected:
+	EPC2307
+	with an optimal switching frequency of 50000 Hz
+
+Input capacitor requirements:
+	C >= 8.193 uF
+	V >= 74.875 V
+	Irms >= 621.9156800409681 mA
+
+Output capacitor requirements:
+	C >= 30.709 uF
+	V >= 130.286 V
+	Irms >= 621.9156800409681 mA
+
+Inductor requirements:
+	L >= 368.917 uH
+	I >= 7.001608244459805 A
+
+Input capacitors selected:
+	Bulk caps: A759KS156M2AAAE052
+
+Output capacitors selected:
+	Bulk caps: A759MS186M2CAAE090
+A759MS186M2CAAE090
+
+Input inductor selected:
+	PQ26/25-3C97
+	with 71.0 turns of 22 gauge wire
+	and a core gap of 2.1 mm per side of the core.
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.760 (W)
+
+Switch selected:
+	EPC2307
+	with an optimal switching frequency of 50000 Hz
+
+Input capacitor requirements:
+	C >= 8.194 uF
+	V >= 74.875 V
+	Irms >= 621.9309718243007 mA
+
+Output capacitor requirements:
+	C >= 30.709 uF
+	V >= 130.286 V
+	Irms >= 621.9309718243007 mA
+
+Inductor requirements:
+	L >= 368.908 uH
+	I >= 7.0016296511441345 A
+
+Input capacitors selected:
+	Bulk caps: A759KS156M2AAAE052
+
+Output capacitors selected:
+	Bulk caps: A759MS186M2CAAE090
+A759MS186M2CAAE090
+
+Input inductor selected:
+	PQ26/25-3C97
+	with 70.0 turns of 22 gauge wire
+	and a core gap of 2.1 mm per side of the core.
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.760 (W)
+
+Switch selected:
+	EPC2307
+	with an optimal switching frequency of 50000 Hz
+
+Input capacitor requirements:
+	C >= 8.193 uF
+	V >= 74.875 V
+	Irms >= 621.9215209732506 mA
+
+Output capacitor requirements:
+	C >= 30.709 uF
+	V >= 130.286 V
+	Irms >= 621.9215209732506 mA
+
+Inductor requirements:
+	L >= 368.913 uH
+	I >= 7.001616421072751 A
+
+Input capacitors selected:
+	Bulk caps: A759KS156M2AAAE052
+
+Output capacitors selected:
+	Bulk caps: A759MS186M2CAAE090
+A759MS186M2CAAE090
+
+Input inductor selected:
+	PQ26/25-3C97
+	with 70.0 turns of 22 gauge wire
+	and a core gap of 2.1 mm per side of the core.
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.760 (W)
+
+Switch selected:
+	EPC2307
+	with an optimal switching frequency of 50000 Hz
+
+Input capacitor requirements:
+	C >= 8.193 uF
+	V >= 74.875 V
+	Irms >= 621.9192899343368 mA
+
+Output capacitor requirements:
+	C >= 30.709 uF
+	V >= 130.286 V
+	Irms >= 621.9192899343368 mA
+
+Inductor requirements:
+	L >= 368.915 uH
+	I >= 7.001613297882688 A
+
+Input capacitors selected:
+	Bulk caps: A759KS156M2AAAE052
+
+Output capacitors selected:
+	Bulk caps: A759MS186M2CAAE090
+A759MS186M2CAAE090
+
+Input inductor selected:
+	PQ26/25-3C97
+	with 70.0 turns of 22 gauge wire
+	and a core gap of 2.1 mm per side of the core.
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.760 (W)
+
+Switch selected:
+	EPC2307
+	with an optimal switching frequency of 50000 Hz
+
+Input capacitor requirements:
+	C >= 8.193 uF
+	V >= 74.875 V
+	Irms >= 621.9179110772816 mA
+
+Output capacitor requirements:
+	C >= 30.709 uF
+	V >= 130.286 V
+	Irms >= 621.9179110772816 mA
+
+Inductor requirements:
+	L >= 368.915 uH
+	I >= 7.001611367646229 A
+
+Input capacitors selected:
+	Bulk caps: A759KS156M2AAAE052
+
+Output capacitors selected:
+	Bulk caps: A759MS186M2CAAE090
+A759MS186M2CAAE090
+
+Input inductor selected:
+	PQ26/25-3C97
+	with 71.0 turns of 22 gauge wire
+	and a core gap of 2.1 mm per side of the core.
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.760 (W)
+
+Switch selected:
+	EPC2307
+	with an optimal switching frequency of 50000 Hz
+
+Input capacitor requirements:
+	C >= 8.193 uF
+	V >= 74.875 V
+	Irms >= 621.9201421151461 mA
+
+Output capacitor requirements:
+	C >= 30.709 uF
+	V >= 130.286 V
+	Irms >= 621.9201421151461 mA
+
+Inductor requirements:
+	L >= 368.914 uH
+	I >= 7.001614490834823 A
+
+Input capacitors selected:
+	Bulk caps: A759KS156M2AAAE052
+
+Output capacitors selected:
+	Bulk caps: A759MS186M2CAAE090
+A759MS186M2CAAE090
+
+Input inductor selected:
+	PQ26/25-3C97
+	with 70.0 turns of 22 gauge wire
+	and a core gap of 2.1 mm per side of the core.
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.760 (W)
+
+Switch selected:
+	EPC2307
+	with an optimal switching frequency of 50000 Hz
+
+Input capacitor requirements:
+	C >= 8.193 uF
+	V >= 74.875 V
+	Irms >= 621.9187632577461 mA
+
+Output capacitor requirements:
+	C >= 30.709 uF
+	V >= 130.286 V
+	Irms >= 621.9187632577461 mA
+
+Inductor requirements:
+	L >= 368.915 uH
+	I >= 7.001612560597881 A
+
+Input capacitors selected:
+	Bulk caps: A759KS156M2AAAE052
+
+Output capacitors selected:
+	Bulk caps: A759MS186M2CAAE090
+A759MS186M2CAAE090
+
+Input inductor selected:
+	PQ26/25-3C97
+	with 70.0 turns of 22 gauge wire
+	and a core gap of 2.1 mm per side of the core.
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.760 (W)
+
+Switch selected:
+	EPC2307
+	with an optimal switching frequency of 50000 Hz
+
+Input capacitor requirements:
+	C >= 8.193 uF
+	V >= 74.875 V
+	Irms >= 621.9184377537537 mA
+
+Output capacitor requirements:
+	C >= 30.709 uF
+	V >= 130.286 V
+	Irms >= 621.9184377537537 mA
+
+Inductor requirements:
+	L >= 368.915 uH
+	I >= 7.001612104930869 A
+
+Input capacitors selected:
+	Bulk caps: A759KS156M2AAAE052
+
+Output capacitors selected:
+	Bulk caps: A759MS186M2CAAE090
+A759MS186M2CAAE090
+
+Input inductor selected:
+	PQ26/25-3C97
+	with 71.0 turns of 22 gauge wire
+	and a core gap of 2.1 mm per side of the core.
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.760 (W)
+
+Switch selected:
+	EPC2307
+	with an optimal switching frequency of 50000 Hz
+
+Input capacitor requirements:
+	C >= 8.193 uF
+	V >= 74.875 V
+	Irms >= 621.9189798590671 mA
+
+Output capacitor requirements:
+	C >= 30.709 uF
+	V >= 130.286 V
+	Irms >= 621.9189798590671 mA
+
+Inductor requirements:
+	L >= 368.915 uH
+	I >= 7.00161286381406 A
+
+Input capacitors selected:
+	Bulk caps: A759KS156M2AAAE052
+
+Output capacitors selected:
+	Bulk caps: A759MS186M2CAAE090
+A759MS186M2CAAE090
+
+Input inductor selected:
+	PQ26/25-3C97
+	with 70.0 turns of 22 gauge wire
+	and a core gap of 2.1 mm per side of the core.
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.760 (W)
+
+Switch selected:
+	EPC2307
+	with an optimal switching frequency of 50000 Hz
+
+Input capacitor requirements:
+	C >= 8.193 uF
+	V >= 74.875 V
+	Irms >= 621.9187632577461 mA
+
+Output capacitor requirements:
+	C >= 30.709 uF
+	V >= 130.286 V
+	Irms >= 621.9187632577461 mA
+
+Inductor requirements:
+	L >= 368.915 uH
+	I >= 7.001612560597881 A
+
+Input capacitors selected:
+	Bulk caps: A759KS156M2AAAE052
+
+Output capacitors selected:
+	Bulk caps: A759MS186M2CAAE090
+A759MS186M2CAAE090
+
+Input inductor selected:
+	PQ26/25-3C97
+	with 70.0 turns of 22 gauge wire
+	and a core gap of 2.1 mm per side of the core.
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 8.656 (W)
+
+Switch selected:
+	EPC2307
+	with an optimal switching frequency of 240000 Hz
+
+Input capacitor requirements:
+	C >= 1.707 uF
+	V >= 74.875 V
+	Irms >= 621.9187632577463 mA
+
+Output capacitor requirements:
+	C >= 6.398 uF
+	V >= 130.286 V
+	Irms >= 621.9187632577463 mA
+
+Inductor requirements:
+	L >= 76.857 uH
+	I >= 7.001612560597882 A
+
+Input capacitors selected:
+	Bulk caps: A759KS156M2AAAE052
+
+Output capacitors selected:
+	Bulk caps: A759MS186M2CAAE090
+
+Input inductor selected:
+	PQ26/25-3C97
+	with 15.0 turns of 15 gauge wire
+	and a core gap of 0.5 mm per side of the core.
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 1.420 (W)
+
+Switch selected:
+	EPC2307
+	with an optimal switching frequency of 5000 Hz
+
+Input capacitor requirements:
+	C >= 81.934 uF
+	V >= 74.875 V
+	Irms >= 621.9187632577463 mA
+
+Output capacitor requirements:
+	C >= 307.094 uF
+	V >= 130.286 V
+	Irms >= 621.9187632577463 mA
+
+Inductor requirements:
+	L >= 3689.150 uH
+	I >= 7.001612560597882 A
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 0.482 (W)
+
+Switch selected:
+	EPC2307
+	with an optimal switching frequency of 5000 Hz
+
+Input capacitor requirements:
+	C >= 81.934 uF
+	V >= 74.875 V
+	Irms >= 621.9187632577463 mA
+
+Output capacitor requirements:
+	C >= 307.094 uF
+	V >= 130.286 V
+	Irms >= 621.9187632577463 mA
+
+Inductor requirements:
+	L >= 3689.150 uH
+	I >= 7.001612560597882 A
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 4.904 (W)
+
+Switch selected:
+	EPC2307
+	with an optimal switching frequency of 120000 Hz
+
+Input capacitor requirements:
+	C >= 3.414 uF
+	V >= 74.875 V
+	Irms >= 621.9187632577463 mA
+
+Output capacitor requirements:
+	C >= 12.796 uF
+	V >= 130.286 V
+	Irms >= 621.9187632577463 mA
+
+Inductor requirements:
+	L >= 153.715 uH
+	I >= 7.001612560597882 A
+
+Input capacitors selected:
+	Bulk caps: A759KS156M2AAAE052
+
+Output capacitors selected:
+	Bulk caps: A759MS186M2CAAE090
+
+Input inductor selected:
+	PQ26/25-3C97
+	with 30.0 turns of 18 gauge wire
+	and a core gap of 0.9 mm per side of the core.
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 3.786 (W)
+
+Switch selected:
+	EPC2307
+	with an optimal switching frequency of 85000 Hz
+
+Input capacitor requirements:
+	C >= 4.820 uF
+	V >= 74.875 V
+	Irms >= 621.9187632577461 mA
+
+Output capacitor requirements:
+	C >= 18.064 uF
+	V >= 130.286 V
+	Irms >= 621.9187632577461 mA
+
+Inductor requirements:
+	L >= 217.009 uH
+	I >= 7.001612560597881 A
+
+Input capacitors selected:
+	Bulk caps: A759KS156M2AAAE052
+
+Output capacitors selected:
+	Bulk caps: A759MS186M2CAAE090
+A759MS186M2CAAE090
+
+Input inductor selected:
+	PQ26/25-3C97
+	with 42.0 turns of 19 gauge wire
+	and a core gap of 1.3 mm per side of the core.
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.067 (W)
+
+Switch selected:
+	EPC2307
+	with an optimal switching frequency of 30000 Hz
+
+Input capacitor requirements:
+	C >= 13.656 uF
+	V >= 74.875 V
+	Irms >= 621.9187632577463 mA
+
+Output capacitor requirements:
+	C >= 51.182 uF
+	V >= 130.286 V
+	Irms >= 621.9187632577463 mA
+
+Inductor requirements:
+	L >= 614.858 uH
+	I >= 7.001612560597882 A
+
+Input capacitors selected:
+	Bulk caps: A759KS156M2AAAE052
+
+Output capacitors selected:
+	Bulk caps: A759MS186M2CAAE090
+A759MS186M2CAAE090
+A759MS186M2CAAE090
+
+Input inductor selected:
+	PQ26/25-3C97
+	with 117.0 turns of 24 gauge wire
+	and a core gap of 3.5 mm per side of the core.
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.950 (W)
+
+Switch selected:
+	EPC2307
+	with an optimal switching frequency of 55000 Hz
+
+Input capacitor requirements:
+	C >= 7.449 uF
+	V >= 74.875 V
+	Irms >= 621.9187632577461 mA
+
+Output capacitor requirements:
+	C >= 27.918 uF
+	V >= 130.286 V
+	Irms >= 621.9187632577461 mA
+
+Inductor requirements:
+	L >= 335.377 uH
+	I >= 7.001612560597881 A
+
+Input capacitors selected:
+	Bulk caps: A759KS156M2AAAE052
+
+Output capacitors selected:
+	Bulk caps: A759MS186M2CAAE090
+A759MS186M2CAAE090
+
+Input inductor selected:
+	PQ26/25-3C97
+	with 64.0 turns of 21 gauge wire
+	and a core gap of 1.9 mm per side of the core.
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.736 (W)
+
+Switch selected:
+	EPC2307
+	with an optimal switching frequency of 50000 Hz
+
+Input capacitor requirements:
+	C >= 8.193 uF
+	V >= 74.875 V
+	Irms >= 621.9187632577461 mA
+
+Output capacitor requirements:
+	C >= 30.709 uF
+	V >= 130.286 V
+	Irms >= 621.9187632577461 mA
+
+Inductor requirements:
+	L >= 368.915 uH
+	I >= 7.001612560597881 A
+
+Input capacitors selected:
+	Bulk caps: A759KS156M2AAAE052
+
+Output capacitors selected:
+	Bulk caps: A759MS186M2CAAE090
+A759MS186M2CAAE090
+
+Input inductor selected:
+	PQ26/25-3C97
+	with 70.0 turns of 22 gauge wire
+	and a core gap of 2.1 mm per side of the core.
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.748 (W)
+
+Switch selected:
+	EPC2307
+	with an optimal switching frequency of 50000 Hz
+
+Input capacitor requirements:
+	C >= 8.193 uF
+	V >= 74.875 V
+	Irms >= 621.9187632577461 mA
+
+Output capacitor requirements:
+	C >= 30.709 uF
+	V >= 130.286 V
+	Irms >= 621.9187632577461 mA
+
+Inductor requirements:
+	L >= 368.915 uH
+	I >= 7.001612560597881 A
+
+Input capacitors selected:
+	Bulk caps: A759KS156M2AAAE052
+
+Output capacitors selected:
+	Bulk caps: A759MS186M2CAAE090
+A759MS186M2CAAE090
+
+Input inductor selected:
+	PQ26/25-3C97
+	with 70.0 turns of 22 gauge wire
+	and a core gap of 2.1 mm per side of the core.
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.743 (W)
+
+Switch selected:
+	EPC2307
+	with an optimal switching frequency of 50000 Hz
+
+Input capacitor requirements:
+	C >= 8.193 uF
+	V >= 74.875 V
+	Irms >= 621.9187632577461 mA
+
+Output capacitor requirements:
+	C >= 30.709 uF
+	V >= 130.286 V
+	Irms >= 621.9187632577461 mA
+
+Inductor requirements:
+	L >= 368.915 uH
+	I >= 7.001612560597881 A
+
+Input capacitors selected:
+	Bulk caps: A759KS156M2AAAE052
+
+Output capacitors selected:
+	Bulk caps: A759MS186M2CAAE090
+A759MS186M2CAAE090
+
+Input inductor selected:
+	PQ26/25-3C97
+	with 70.0 turns of 22 gauge wire
+	and a core gap of 2.1 mm per side of the core.
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.740 (W)
+
+Switch selected:
+	EPC2307
+	with an optimal switching frequency of 50000 Hz
+
+Input capacitor requirements:
+	C >= 8.193 uF
+	V >= 74.875 V
+	Irms >= 621.9187632577461 mA
+
+Output capacitor requirements:
+	C >= 30.709 uF
+	V >= 130.286 V
+	Irms >= 621.9187632577461 mA
+
+Inductor requirements:
+	L >= 368.915 uH
+	I >= 7.001612560597881 A
+
+Input capacitors selected:
+	Bulk caps: A759KS156M2AAAE052
+
+Output capacitors selected:
+	Bulk caps: A759MS186M2CAAE090
+A759MS186M2CAAE090
+
+Input inductor selected:
+	PQ26/25-3C97
+	with 70.0 turns of 22 gauge wire
+	and a core gap of 2.1 mm per side of the core.
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.738 (W)
+
+Switch selected:
+	EPC2307
+	with an optimal switching frequency of 50000 Hz
+
+Input capacitor requirements:
+	C >= 8.193 uF
+	V >= 74.875 V
+	Irms >= 621.9187632577461 mA
+
+Output capacitor requirements:
+	C >= 30.709 uF
+	V >= 130.286 V
+	Irms >= 621.9187632577461 mA
+
+Inductor requirements:
+	L >= 368.915 uH
+	I >= 7.001612560597881 A
+
+Input capacitors selected:
+	Bulk caps: A759KS156M2AAAE052
+
+Output capacitors selected:
+	Bulk caps: A759MS186M2CAAE090
+A759MS186M2CAAE090
+
+Input inductor selected:
+	PQ26/25-3C97
+	with 70.0 turns of 22 gauge wire
+	and a core gap of 2.1 mm per side of the core.
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.737 (W)
+
+Switch selected:
+	EPC2307
+	with an optimal switching frequency of 50000 Hz
+
+Input capacitor requirements:
+	C >= 8.193 uF
+	V >= 74.875 V
+	Irms >= 621.9187632577461 mA
+
+Output capacitor requirements:
+	C >= 30.709 uF
+	V >= 130.286 V
+	Irms >= 621.9187632577461 mA
+
+Inductor requirements:
+	L >= 368.915 uH
+	I >= 7.001612560597881 A
+
+Input capacitors selected:
+	Bulk caps: A759KS156M2AAAE052
+
+Output capacitors selected:
+	Bulk caps: A759MS186M2CAAE090
+A759MS186M2CAAE090
+
+Input inductor selected:
+	PQ26/25-3C97
+	with 70.0 turns of 22 gauge wire
+	and a core gap of 2.1 mm per side of the core.
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.737 (W)
+
+Switch selected:
+	EPC2307
+	with an optimal switching frequency of 50000 Hz
+
+Input capacitor requirements:
+	C >= 8.193 uF
+	V >= 74.875 V
+	Irms >= 621.9187632577461 mA
+
+Output capacitor requirements:
+	C >= 30.709 uF
+	V >= 130.286 V
+	Irms >= 621.9187632577461 mA
+
+Inductor requirements:
+	L >= 368.915 uH
+	I >= 7.001612560597881 A
+
+Input capacitors selected:
+	Bulk caps: A759KS156M2AAAE052
+
+Output capacitors selected:
+	Bulk caps: A759MS186M2CAAE090
+A759MS186M2CAAE090
+
+Input inductor selected:
+	PQ26/25-3C97
+	with 70.0 turns of 22 gauge wire
+	and a core gap of 2.1 mm per side of the core.
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.736 (W)
+
+Switch selected:
+	EPC2307
+	with an optimal switching frequency of 50000 Hz
+
+Input capacitor requirements:
+	C >= 8.193 uF
+	V >= 74.875 V
+	Irms >= 621.9187632577461 mA
+
+Output capacitor requirements:
+	C >= 30.709 uF
+	V >= 130.286 V
+	Irms >= 621.9187632577461 mA
+
+Inductor requirements:
+	L >= 368.915 uH
+	I >= 7.001612560597881 A
+
+Input capacitors selected:
+	Bulk caps: A759KS156M2AAAE052
+
+Output capacitors selected:
+	Bulk caps: A759MS186M2CAAE090
+A759MS186M2CAAE090
+
+Input inductor selected:
+	PQ26/25-3C97
+	with 70.0 turns of 22 gauge wire
+	and a core gap of 2.1 mm per side of the core.
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.736 (W)
+
+Switch selected:
+	EPC2307
+	with an optimal switching frequency of 50000 Hz
+
+Input capacitor requirements:
+	C >= 8.193 uF
+	V >= 74.875 V
+	Irms >= 621.9187632577461 mA
+
+Output capacitor requirements:
+	C >= 30.709 uF
+	V >= 130.286 V
+	Irms >= 621.9187632577461 mA
+
+Inductor requirements:
+	L >= 368.915 uH
+	I >= 7.001612560597881 A
+
+Input capacitors selected:
+	Bulk caps: A759KS156M2AAAE052
+
+Output capacitors selected:
+	Bulk caps: A759MS186M2CAAE090
+A759MS186M2CAAE090
+
+Input inductor selected:
+	PQ26/25-3C97
+	with 70.0 turns of 22 gauge wire
+	and a core gap of 2.1 mm per side of the core.
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.736 (W)
+
+Switch selected:
+	EPC2307
+	with an optimal switching frequency of 50000 Hz
+
+Input capacitor requirements:
+	C >= 8.193 uF
+	V >= 74.875 V
+	Irms >= 621.9187632577461 mA
+
+Output capacitor requirements:
+	C >= 30.709 uF
+	V >= 130.286 V
+	Irms >= 621.9187632577461 mA
+
+Inductor requirements:
+	L >= 368.915 uH
+	I >= 7.001612560597881 A
+
+Input capacitors selected:
+	Bulk caps: A759KS156M2AAAE052
+
+Output capacitors selected:
+	Bulk caps: A759MS186M2CAAE090
+A759MS186M2CAAE090
+
+Input inductor selected:
+	PQ26/25-3C97
+	with 70.0 turns of 22 gauge wire
+	and a core gap of 2.1 mm per side of the core.
+
+[[Fit Statistics]]
+    # fitting method   = Powell
+    # function evals   = 110
+    # data points      = 2
+    # variables        = 2
+    chi-square         = 32.8330834
+    reduced chi-square = 32.8330834
+    Akaike info crit   = 9.59657893
+    Bayesian info crit = 6.98287329
+##  Warning: uncertainties could not be estimated:
+    this fitting method does not natively calculate uncertainties
+    and numdifftools is not installed for lmfit to do this. Use
+    `pip install numdifftools` for lmfit to estimate uncertainties
+    with this fitting method.
+[[Variables]]
+    R_L:       1.9330e-08 (init = 1.5e-08)
+    P_SW_BUD:  2.1888e-07 (init = 2.5e-07)
+
+Switch requirements:
+	V_DS >= 162.237 (V)
+	I_D >= 7.683 (A)
+	P_D >= 2.736 (W)
+
+Switch selected:
+	EPC2307
+	with an optimal switching frequency of 50000 Hz
+
+Input capacitor requirements:
+	C >= 8.193 uF
+	V >= 74.875 V
+	Irms >= 621.9187632577461 mA
+
+Output capacitor requirements:
+	C >= 30.709 uF
+	V >= 130.286 V
+	Irms >= 621.9187632577461 mA
+
+Inductor requirements:
+	L >= 368.915 uH
+	I >= 7.001612560597881 A
+
+Input capacitors selected:
+	Bulk caps: A759KS156M2AAAE052
+
+Output capacitors selected:
+	Bulk caps: A759MS186M2CAAE090
+A759MS186M2CAAE090
+
+Input inductor selected:
+	PQ26/25-3C97
+	with 70.0 turns of 22 gauge wire
+	and a core gap of 2.1 mm per side of the core.
+
+Worst case conduction, switching, and total loss:
+	Conduction loss: 0.892 W
+	Switching loss: 1.242 W
+	Total loss: 2.134 W
+
+Best case thermal area for both switches:
+	35.546 cm^2
+
+Worst case deadtime:
+	36.068 ns
+
+Input inductor selected:
+	PQ26/25-3C97
+	with 70.0 turns of 22 gauge wire
+	and a core gap of 2.1 mm per side of the core.
+
+Worst case ripple:
+	Input voltage ripple: 0.293 V
+	Output voltage ripple: 0.853 V
+	Inductor current ripple: 1.759 A
+
+Worst case input capacitor ripple, leakage, and total loss:
+	Ripple loss: 0.020 W
+	Leakage loss: 0.017 W
+	Total loss: 0.036 W
+
+Worst case output capacitor ripple, leakage, and total loss:
+	Ripple loss: 0.070 W
+	Leakage loss: 0.113 W
+	Total loss: 0.182 W
+
+Worst case inductor conduction, core, and total loss:
+	Conduction loss: 1.236 W
+	Core loss: 0.012 W
+	Total loss: 1.242 W
+
+Highest duty cycle:
+       VI (V)  II (A)      VO (V)    IO (A)  ...  PO_TOT (W)  PL_COND (W)  PL_CORE (W)  PL_TOT (W)
+54  20.429644   6.146  129.789831  0.967415  ...    0.131929     1.102426     0.001418    1.103844
+
+[1 rows x 28 columns]
+
+Lowest duty cycle:
+         VI (V)  II (A)  VO (V)    IO (A)  ...  PO_TOT (W)  PL_COND (W)  PL_CORE (W)  PL_TOT (W)
+2200  74.612695   4.448    80.0  4.148466  ...    0.070857     0.529822      0.00014    0.529963
+
+[1 rows x 28 columns]
+
+Highest input current:
+        VI (V)  II (A)      VO (V)    IO (A)  ...  PO_TOT (W)  PL_COND (W)  PL_CORE (W)  PL_TOT (W)
+0    20.429644   6.146   80.000000  1.569507  ...    0.084704     1.084411     0.001048    1.085459
+1    20.429644   6.146   80.922034  1.551624  ...    0.085618     1.084944     0.001058    1.086002
+2    20.429644   6.146   81.844068  1.534144  ...    0.086531     1.085465     0.001068    1.086533
+3    20.429644   6.146   82.766102  1.517053  ...    0.087440     1.085975     0.001077    1.087052
+4    20.429644   6.146   83.688136  1.500339  ...    0.088348     1.086473     0.001087    1.087560
+..         ...     ...         ...       ...  ...         ...          ...          ...         ...
+160  23.138797   6.146  126.101695  1.127749  ...    0.132777     1.117654     0.001776    1.119429
+161  23.138797   6.146  127.023729  1.119563  ...    0.133650     1.117934     0.001783    1.119717
+162  23.138797   6.146  127.945763  1.111495  ...    0.134521     1.118211     0.001790    1.120000
+163  23.138797   6.146  128.867797  1.103542  ...    0.135392     1.118483     0.001796    1.120280
+164  23.138797   6.146  129.789831  1.095703  ...    0.136261     1.118752     0.001803    1.120555
+
+[165 rows x 28 columns]
+
+Lowest input current:
+         VI (V)  II (A)      VO (V)    IO (A)  ...  PO_TOT (W)  PL_COND (W)  PL_CORE (W)  PL_TOT (W)
+2200  74.612695   4.448   80.000000  4.148466  ...    0.070857     0.529822     0.000140    0.529963
+2201  74.612695   4.448   80.922034  4.101198  ...    0.072231     0.534802     0.000206    0.535008
+2202  74.612695   4.448   81.844068  4.054995  ...    0.073673     0.539692     0.000286    0.539978
+2203  74.612695   4.448   82.766102  4.009821  ...    0.075177     0.544495     0.000378    0.544873
+2204  74.612695   4.448   83.688136  3.965643  ...    0.076739     0.549212     0.000484    0.549695
+2205  74.612695   4.448   84.610169  3.922428  ...    0.078354     0.553846     0.000601    0.554447
+2206  74.612695   4.448   85.532203  3.880144  ...    0.080019     0.558399     0.000731    0.559130
+2207  74.612695   4.448   86.454237  3.838762  ...    0.081729     0.562873     0.000871    0.563744
+2208  74.612695   4.448   87.376271  3.798254  ...    0.083482     0.567270     0.001022    0.568292
+2209  74.612695   4.448   88.298305  3.758592  ...    0.085273     0.571592     0.001182    0.572774
+2210  74.612695   4.448   89.220339  3.719749  ...    0.087101     0.575840     0.001352    0.577192
+2211  74.612695   4.448   90.142373  3.681701  ...    0.088962     0.580017     0.001530    0.581547
+2212  74.612695   4.448   91.064407  3.644424  ...    0.090853     0.584123     0.001716    0.585839
+2213  74.612695   4.448   91.986441  3.607893  ...    0.092773     0.588162     0.001909    0.590071
+2214  74.612695   4.448   92.908475  3.572088  ...    0.094718     0.592133     0.002108    0.594242
+2215  74.612695   4.448   93.830508  3.536987  ...    0.096687     0.596040     0.002314    0.598354
+2216  74.612695   4.448   94.752542  3.502568  ...    0.098677     0.599883     0.002525    0.602408
+2217  74.612695   4.448   95.674576  3.468814  ...    0.100687     0.603664     0.002741    0.606405
+2218  74.612695   4.448   96.596610  3.435703  ...    0.102715     0.607385     0.002961    0.610346
+2219  74.612695   4.448   97.518644  3.403219  ...    0.104759     0.611046     0.003186    0.614232
+2220  74.612695   4.448   98.440678  3.371343  ...    0.106818     0.614649     0.003414    0.618063
+2221  74.612695   4.448   99.362712  3.340058  ...    0.108890     0.618196     0.003645    0.621841
+2222  74.612695   4.448  100.284746  3.309349  ...    0.110974     0.621687     0.003879    0.625566
+2223  74.612695   4.448  101.206780  3.279200  ...    0.113069     0.625124     0.004116    0.629240
+2224  74.612695   4.448  102.128814  3.249595  ...    0.115173     0.628509     0.004355    0.632864
+2225  74.612695   4.448  103.050847  3.220520  ...    0.117285     0.631841     0.004596    0.636437
+2226  74.612695   4.448  103.972881  3.191960  ...    0.119405     0.635124     0.004838    0.639961
+2227  74.612695   4.448  104.894915  3.163902  ...    0.121530     0.638357     0.005081    0.643438
+2228  74.612695   4.448  105.816949  3.136334  ...    0.123661     0.641541     0.005326    0.646867
+2229  74.612695   4.448  106.738983  3.109241  ...    0.125797     0.644678     0.005571    0.650249
+2230  74.612695   4.448  107.661017  3.082613  ...    0.127936     0.647769     0.005817    0.653586
+2231  74.612695   4.448  108.583051  3.056437  ...    0.130077     0.650815     0.006063    0.656878
+2232  74.612695   4.448  109.505085  3.030702  ...    0.132221     0.653816     0.006310    0.660126
+2233  74.612695   4.448  110.427119  3.005396  ...    0.134367     0.656774     0.006557    0.663331
+2234  74.612695   4.448  111.349153  2.980510  ...    0.136513     0.659689     0.006803    0.666493
+2235  74.612695   4.448  112.271186  2.956032  ...    0.138660     0.662563     0.007050    0.669613
+2236  74.612695   4.448  113.193220  2.931954  ...    0.140806     0.665396     0.007295    0.672692
+2237  74.612695   4.448  114.115254  2.908264  ...    0.142951     0.668190     0.007541    0.675730
+2238  74.612695   4.448  115.037288  2.884954  ...    0.145096     0.670944     0.007786    0.678729
+2239  74.612695   4.448  115.959322  2.862015  ...    0.147238     0.673660     0.008030    0.681689
+2240  74.612695   4.448  116.881356  2.839437  ...    0.149378     0.676338     0.008273    0.684611
+2241  74.612695   4.448  117.803390  2.817213  ...    0.151516     0.678980     0.008515    0.687495
+2242  74.612695   4.448  118.725424  2.795334  ...    0.153650     0.681586     0.008756    0.690342
+2243  74.612695   4.448  119.647458  2.773793  ...    0.155782     0.684156     0.008996    0.693152
+2244  74.612695   4.448  120.569492  2.752581  ...    0.157910     0.686692     0.009235    0.695927
+2245  74.612695   4.448  121.491525  2.731691  ...    0.160034     0.689194     0.009473    0.698667
+2246  74.612695   4.448  122.413559  2.711115  ...    0.162154     0.691662     0.009710    0.701372
+2247  74.612695   4.448  123.335593  2.690847  ...    0.164269     0.694098     0.009945    0.704043
+2248  74.612695   4.448  124.257627  2.670880  ...    0.166380     0.696502     0.010179    0.706681
+2249  74.612695   4.448  125.179661  2.651208  ...    0.168486     0.698875     0.010411    0.709286
+2250  74.612695   4.448  126.101695  2.631822  ...    0.170586     0.701217     0.010642    0.711859
+2251  74.612695   4.448  127.023729  2.612719  ...    0.172682     0.703529     0.010872    0.714401
+2252  74.612695   4.448  127.945763  2.593890  ...    0.174772     0.705811     0.011100    0.716911
+2253  74.612695   4.448  128.867797  2.575331  ...    0.176856     0.708064     0.011326    0.719391
+2254  74.612695   4.448  129.789831  2.557036  ...    0.178935     0.710289     0.011551    0.721840
+
+[55 rows x 28 columns]
+
+Highest output current:
+        VI (V)  II (A)  VO (V)    IO (A)  ...  PO_TOT (W)  PL_COND (W)  PL_CORE (W)  PL_TOT (W)
+1980  69.19439   5.831    80.0  5.043406  ...     0.07506      0.93332      0.00035     0.93367
+
+[1 rows x 28 columns]
+
+Lowest output current:
+       VI (V)  II (A)      VO (V)    IO (A)  ...  PO_TOT (W)  PL_COND (W)  PL_CORE (W)  PL_TOT (W)
+54  20.429644   6.146  129.789831  0.967415  ...    0.131929     1.102426     0.001418    1.103844
+
+[1 rows x 28 columns]
+
+Highest device efficiency:
+         VI (V)  II (A)  VO (V)    IO (A)  ...  PL_CORE (W)  PL_TOT (W)  P_LOSS (W)    EFF (%)
+2200  74.612695   4.448    80.0  4.148466  ...      0.00014    0.529963    1.987823  99.401037
+
+[1 rows x 30 columns]
+
+Lowest device efficiency:
+       VI (V)  II (A)      VO (V)    IO (A)  ...  PL_CORE (W)  PL_TOT (W)  P_LOSS (W)    EFF (%)
+54  20.429644   6.146  129.789831  0.967415  ...     0.001418    1.103844    5.514774  95.607878
+
+[1 rows x 30 columns]
+
+Highest power transfer:
+        VI (V)  II (A)      VO (V)    IO (A)  ...  PL_CORE (W)  PL_TOT (W)  P_LOSS (W)    EFF (%)
+1980  69.19439   5.831   80.000000  5.043406  ...     0.000350    0.933670    2.739237  99.321085
+1981  69.19439   5.831   80.922034  4.985941  ...     0.000419    0.939419    2.774394  99.312371
+1982  69.19439   5.831   81.844068  4.929771  ...     0.000494    0.945062    2.809652  99.303632
+1983  69.19439   5.831   82.766102  4.874852  ...     0.000574    0.950602    2.845013  99.294868
+1984  69.19439   5.831   83.688136  4.821143  ...     0.000659    0.956042    2.880477  99.286078
+1985  69.19439   5.831   84.610169  4.768605  ...     0.000748    0.961384    2.916048  99.277262
+1986  69.19439   5.831   85.532203  4.717200  ...     0.000842    0.966631    2.951727  99.268419
+1987  69.19439   5.831   86.454237  4.666891  ...     0.000940    0.971786    2.987516  99.259549
+1988  69.19439   5.831   87.376271  4.617644  ...     0.001041    0.976851    3.023417  99.250651
+1989  69.19439   5.831   88.298305  4.569425  ...     0.001146    0.981827    3.059432  99.241725
+1990  69.19439   5.831   89.220339  4.522203  ...     0.001255    0.986718    3.095563  99.232770
+1991  69.19439   5.831   90.142373  4.475947  ...     0.001366    0.991525    3.131812  99.223786
+1992  69.19439   5.831   91.064407  4.430628  ...     0.001479    0.996251    3.168181  99.214772
+1993  69.19439   5.831   91.986441  4.386217  ...     0.001595    1.000896    3.204671  99.205727
+1994  69.19439   5.831   92.908475  4.342688  ...     0.001714    1.005465    3.241286  99.196653
+1995  69.19439   5.831   93.830508  4.300014  ...     0.001834    1.009957    3.278026  99.187546
+1996  69.19439   5.831   94.752542  4.258171  ...     0.001956    1.014375    3.314895  99.178409
+1997  69.19439   5.831   95.674576  4.217134  ...     0.002080    1.018721    3.351893  99.169239
+1998  69.19439   5.831   96.596610  4.176880  ...     0.002205    1.022996    3.389022  99.160036
+1999  69.19439   5.831   97.518644  4.137388  ...     0.002331    1.027203    3.426286  99.150801
+2000  69.19439   5.831   98.440678  4.098636  ...     0.002459    1.031342    3.463684  99.141531
+2001  69.19439   5.831   99.362712  4.060603  ...     0.002588    1.035415    3.501221  99.132228
+2002  69.19439   5.831  100.284746  4.023269  ...     0.002717    1.039424    3.538896  99.122890
+2003  69.19439   5.831  101.206780  3.986615  ...     0.002847    1.043369    3.576713  99.113518
+2004  69.19439   5.831  102.128814  3.950623  ...     0.002978    1.047254    3.614672  99.104109
+2005  69.19439   5.831  103.050847  3.915276  ...     0.003109    1.051078    3.652776  99.094665
+2006  69.19439   5.831  103.972881  3.880555  ...     0.003241    1.054843    3.691027  99.085185
+2007  69.19439   5.831  104.894915  3.846445  ...     0.003372    1.058551    3.729425  99.075668
+2008  69.19439   5.831  105.816949  3.812929  ...     0.003505    1.062203    3.767974  99.066114
+2009  69.19439   5.831  106.738983  3.779992  ...     0.003637    1.065800    3.806674  99.056522
+2010  69.19439   5.831  107.661017  3.747619  ...     0.003769    1.069343    3.845527  99.046892
+2011  69.19439   5.831  108.583051  3.715796  ...     0.003901    1.072833    3.884536  99.037224
+2012  69.19439   5.831  109.505085  3.684509  ...     0.004033    1.076272    3.923700  99.027517
+2013  69.19439   5.831  110.427119  3.653745  ...     0.004165    1.079661    3.963023  99.017771
+2014  69.19439   5.831  111.349153  3.623490  ...     0.004297    1.083000    4.002505  99.007986
+2015  69.19439   5.831  112.271186  3.593731  ...     0.004428    1.086291    4.042149  98.998160
+2016  69.19439   5.831  113.193220  3.564458  ...     0.004559    1.089534    4.081955  98.988294
+2017  69.19439   5.831  114.115254  3.535658  ...     0.004690    1.092731    4.121925  98.978387
+2018  69.19439   5.831  115.037288  3.507319  ...     0.004820    1.095883    4.162061  98.968440
+2019  69.19439   5.831  115.959322  3.479431  ...     0.004949    1.098990    4.202364  98.958451
+2020  69.19439   5.831  116.881356  3.451983  ...     0.005079    1.102054    4.242835  98.948420
+2021  69.19439   5.831  117.803390  3.424965  ...     0.005207    1.105075    4.283476  98.938347
+2022  69.19439   5.831  118.725424  3.398366  ...     0.005335    1.108055    4.324289  98.928232
+2023  69.19439   5.831  119.647458  3.372178  ...     0.005463    1.110993    4.365273  98.918074
+2024  69.19439   5.831  120.569492  3.346390  ...     0.005590    1.113891    4.406431  98.907873
+2025  69.19439   5.831  121.491525  3.320993  ...     0.005716    1.116750    4.447765  98.897629
+2026  69.19439   5.831  122.413559  3.295979  ...     0.005841    1.119571    4.489274  98.887341
+2027  69.19439   5.831  123.335593  3.271339  ...     0.005966    1.122353    4.530961  98.877009
+2028  69.19439   5.831  124.257627  3.247064  ...     0.006090    1.125099    4.572827  98.866632
+2029  69.19439   5.831  125.179661  3.223147  ...     0.006214    1.127808    4.614873  98.856211
+2030  69.19439   5.831  126.101695  3.199580  ...     0.006336    1.130482    4.657099  98.845745
+2031  69.19439   5.831  127.023729  3.176355  ...     0.006458    1.133120    4.699508  98.835235
+2032  69.19439   5.831  127.945763  3.153465  ...     0.006579    1.135725    4.742100  98.824678
+2033  69.19439   5.831  128.867797  3.130902  ...     0.006700    1.138295    4.784877  98.814076
+2034  69.19439   5.831  129.789831  3.108660  ...     0.006819    1.140833    4.827839  98.803428
+
+[55 rows x 30 columns]
+
+Lowest power transfer:
+       VI (V)  II (A)      VO (V)    IO (A)  ...  PL_CORE (W)  PL_TOT (W)  P_LOSS (W)    EFF (%)
+0   20.429644   6.146   80.000000  1.569507  ...     0.001048    1.085459    3.582657  97.146671
+1   20.429644   6.146   80.922034  1.551624  ...     0.001058    1.086002    3.612566  97.122850
+2   20.429644   6.146   81.844068  1.534144  ...     0.001068    1.086533    3.642680  97.098867
+3   20.429644   6.146   82.766102  1.517053  ...     0.001077    1.087052    3.673001  97.074719
+4   20.429644   6.146   83.688136  1.500339  ...     0.001087    1.087560    3.703528  97.050405
+5   20.429644   6.146   84.610169  1.483989  ...     0.001097    1.088057    3.734265  97.025926
+6   20.429644   6.146   85.532203  1.467992  ...     0.001106    1.088544    3.765213  97.001278
+7   20.429644   6.146   86.454237  1.452336  ...     0.001115    1.089020    3.796372  96.976463
+8   20.429644   6.146   87.376271  1.437010  ...     0.001124    1.089487    3.827743  96.951477
+9   20.429644   6.146   88.298305  1.422005  ...     0.001133    1.089943    3.859329  96.926321
+10  20.429644   6.146   89.220339  1.407309  ...     0.001141    1.090391    3.891130  96.900994
+11  20.429644   6.146   90.142373  1.392914  ...     0.001150    1.090829    3.923147  96.875495
+12  20.429644   6.146   91.064407  1.378811  ...     0.001158    1.091259    3.955381  96.849823
+13  20.429644   6.146   91.986441  1.364990  ...     0.001167    1.091680    3.987834  96.823977
+14  20.429644   6.146   92.908475  1.351444  ...     0.001175    1.092093    4.020506  96.797956
+15  20.429644   6.146   93.830508  1.338164  ...     0.001183    1.092498    4.053398  96.771760
+16  20.429644   6.146   94.752542  1.325142  ...     0.001191    1.092895    4.086510  96.745388
+17  20.429644   6.146   95.674576  1.312372  ...     0.001198    1.093285    4.119845  96.718839
+18  20.429644   6.146   96.596610  1.299845  ...     0.001206    1.093667    4.153403  96.692113
+19  20.429644   6.146   97.518644  1.287555  ...     0.001214    1.094042    4.187183  96.665209
+20  20.429644   6.146   98.440678  1.275495  ...     0.001221    1.094410    4.221189  96.638126
+21  20.429644   6.146   99.362712  1.263659  ...     0.001228    1.094772    4.255419  96.610864
+22  20.429644   6.146  100.284746  1.252041  ...     0.001235    1.095127    4.289874  96.583423
+23  20.429644   6.146  101.206780  1.240634  ...     0.001243    1.095475    4.324556  96.555801
+24  20.429644   6.146  102.128814  1.229434  ...     0.001249    1.095817    4.359465  96.527999
+25  20.429644   6.146  103.050847  1.218433  ...     0.001256    1.096154    4.394602  96.500015
+26  20.429644   6.146  103.972881  1.207628  ...     0.001263    1.096484    4.429967  96.471849
+27  20.429644   6.146  104.894915  1.197013  ...     0.001270    1.096808    4.465560  96.443502
+28  20.429644   6.146  105.816949  1.186583  ...     0.001276    1.097127    4.501383  96.414971
+29  20.429644   6.146  106.738983  1.176333  ...     0.001283    1.097441    4.537436  96.386258
+30  20.429644   6.146  107.661017  1.166259  ...     0.001289    1.097749    4.573720  96.357360
+31  20.429644   6.146  108.583051  1.156355  ...     0.001295    1.098052    4.610234  96.328279
+32  20.429644   6.146  109.505085  1.146619  ...     0.001302    1.098350    4.646980  96.299014
+33  20.429644   6.146  110.427119  1.137045  ...     0.001308    1.098643    4.683958  96.269564
+34  20.429644   6.146  111.349153  1.127630  ...     0.001314    1.098931    4.721168  96.239929
+35  20.429644   6.146  112.271186  1.118369  ...     0.001320    1.099215    4.758611  96.210108
+36  20.429644   6.146  113.193220  1.109259  ...     0.001325    1.099494    4.796287  96.180101
+37  20.429644   6.146  114.115254  1.100296  ...     0.001331    1.099768    4.834197  96.149909
+38  20.429644   6.146  115.037288  1.091477  ...     0.001337    1.100039    4.872341  96.119530
+39  20.429644   6.146  115.959322  1.082799  ...     0.001342    1.100304    4.910720  96.088964
+40  20.429644   6.146  116.881356  1.074257  ...     0.001348    1.100566    4.949334  96.058211
+41  20.429644   6.146  117.803390  1.065849  ...     0.001353    1.100824    4.988182  96.027271
+42  20.429644   6.146  118.725424  1.057571  ...     0.001359    1.101078    5.027267  95.996143
+43  20.429644   6.146  119.647458  1.049421  ...     0.001364    1.101328    5.066587  95.964827
+44  20.429644   6.146  120.569492  1.041396  ...     0.001369    1.101574    5.106144  95.933323
+45  20.429644   6.146  121.491525  1.033493  ...     0.001375    1.101816    5.145937  95.901630
+46  20.429644   6.146  122.413559  1.025708  ...     0.001380    1.102055    5.185967  95.869749
+47  20.429644   6.146  123.335593  1.018040  ...     0.001385    1.102290    5.226235  95.837679
+48  20.429644   6.146  124.257627  1.010486  ...     0.001390    1.102522    5.266740  95.805420
+49  20.429644   6.146  125.179661  1.003043  ...     0.001395    1.102750    5.307483  95.772971
+50  20.429644   6.146  126.101695  0.995709  ...     0.001399    1.102975    5.348464  95.740333
+51  20.429644   6.146  127.023729  0.988481  ...     0.001404    1.103197    5.389683  95.707504
+52  20.429644   6.146  127.945763  0.981358  ...     0.001409    1.103416    5.431141  95.674486
+53  20.429644   6.146  128.867797  0.974336  ...     0.001414    1.103631    5.472838  95.641277
+54  20.429644   6.146  129.789831  0.967415  ...     0.001418    1.103844    5.514774  95.607878
+
+[55 rows x 30 columns]
+
+Highest power loss:
+       VI (V)  II (A)      VO (V)    IO (A)  ...  PL_CORE (W)  PL_TOT (W)  P_LOSS (W)    EFF (%)
+54  20.429644   6.146  129.789831  0.967415  ...     0.001418    1.103844    5.514774  95.607878
+
+[1 rows x 30 columns]
+
+Lowest power loss:
+         VI (V)  II (A)  VO (V)    IO (A)  ...  PL_CORE (W)  PL_TOT (W)  P_LOSS (W)    EFF (%)
+2200  74.612695   4.448    80.0  4.148466  ...      0.00014    0.529963    1.987823  99.401037
+
+[1 rows x 30 columns]
