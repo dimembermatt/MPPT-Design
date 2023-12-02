@@ -1,7 +1,7 @@
 {
     "NAME": "Broad range MPPT",
     "AUTHORS": ["Matthew Yu", "Jacob Pustilnik"],
-    "DESCRIPTION": "MPPT Boost Converter v0.1.0",
+    "DESCRIPTION": "MPPT Boost Converter v0.2.0",
     "DATE_DESIGNED": "05/07/23",
     "DESIGN": {
         "input_source": {

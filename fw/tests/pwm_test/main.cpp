@@ -10,6 +10,7 @@
  *
  */
 
+#include "ThisThread.h"
 #include "mbed.h"
 #include "FastPWM.h"
 #include <chrono>
@@ -20,7 +21,7 @@ using namespace std::chrono;
 // Duty cycle is a function of pwm_control, which takes a value from 0 - 1 V.
 
 
-#define __MODE__ 0 // 0 for using BNC, 1 if manual control
+#define __MODE__ 1 // 0 for using BNC, 1 if manual control
 
 #if __MODE__ == 0
 class UnlockedAnalogIn : public AnalogIn {
@@ -77,10 +78,10 @@ int main()
 
 #else
 
-DigitalOut led_heartbeat(PA_9);
-DigitalOut led_tracking(PA_10);
-DigitalOut pwm_enable(PA_3);
-FastPWM pwm_out(PA_1);
+DigitalOut led_heartbeat(D1);
+DigitalOut led_tracking(D0);
+DigitalOut pwm_enable(A3);
+FastPWM pwm_out(A2);
 
 Ticker ticker_heartbeat;
 Ticker ticker_pwm_update;
@@ -95,7 +96,9 @@ void adjust_duty_cycle() {
 
 int main()
 {
-    // Set the pwm frequency to 104 kHz.
+    ThisThread::sleep_for(500ms);
+
+    // Set the pwm frequency to 100 kHz.
     printf("HELLO WORLD FIXED MODE\n");
     float f = 100000.0;
     float d = 1-0.5;

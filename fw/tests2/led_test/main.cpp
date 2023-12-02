@@ -1,10 +1,10 @@
 /**
  * @file main.cpp
  * @author Matthew Yu (matthewjkyu@gmail.com)
- * @brief Sunscatter 0.2.0 liveliness test. Verify that Error, Tracking, Heartbeat, 
+ * @brief Blackbody A/B liveliness test. Verify that Error, Tracking, Heartbeat, 
  *      CAN_TX/CAN_RX LEDs turn on. 
- * @version 0.2.0
- * @date 2023-09-30
+ * @version 0.1.0
+ * @date 2023-09-16
  * 
  * @copyright Copyright (c) 2023
  *

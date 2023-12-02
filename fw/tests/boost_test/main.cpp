@@ -34,12 +34,12 @@ typedef enum Error {
 } ErrorCode;
 ErrorCode status = OK;
 
-DigitalOut led_heartbeat(PA_9);
-DigitalOut led_tracking(PA_10);
-DigitalOut pwm_enable(PA_3);
-FastPWM pwm_out(PA_1);
-UnlockedAnalogIn arr_voltage_sensor(PA_4);
-UnlockedAnalogIn batt_voltage_sensor(PA_7);
+DigitalOut led_heartbeat(D1);
+DigitalOut led_tracking(D0);
+DigitalOut pwm_enable(A3);
+FastPWM pwm_out(A4);
+UnlockedAnalogIn arr_voltage_sensor(A1);
+UnlockedAnalogIn batt_voltage_sensor(A5);
 SmaFilter arr_voltage_filter(5);
 SmaFilter batt_voltage_filter(5);
 
@@ -113,10 +113,10 @@ int main() {
     pwm_enable = 1;
 
     ThisThread::sleep_for(500ms);
-    ticker_check_redlines.attach(&check_redlines, 100ms);
+    // ticker_check_redlines.attach(&check_redlines, 100ms);
 
     // Start pwm update.
-    ticker_update_pwm.attach(&update_pwm, 50ms);
+    // ticker_update_pwm.attach(&update_pwm, 50ms);
     while (true) {
         ThisThread::sleep_for(100ms);
         
