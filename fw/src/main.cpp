@@ -29,8 +29,9 @@
 
 #include "mbed.h"
 #include "FastPWM.h"
-#include "./pid_controller/pid_controller.hpp"
 #include "./Filter/MedianFilter.h"
+#include "./pid_controller/pid_controller.hpp"
+#include "./mppt/local/pando.hpp"
 
 // Debug define
 #define __DEBUG__ 1 // 0 - no debug, 1 - turn on DEBUG, auto start and disable CAN
@@ -39,11 +40,11 @@
 #define PWM_FREQ 50000.0
 #define PWM_DUTY_START 0.5
 
-#define HEARTBEAT_FREQ 1.0
-#define REDLINE_FREQ 2.0
-#define MEASURE_FREQ 10.0
-#define PID_FREQ 2.0
-#define MPPT_FREQ 0.25
+#define HEARTBEAT_PERIOD 1000ms // 1 Hz
+#define MEASURE_PERIOD 100ms // 10 Hz
+#define REDLINE_PERIOD 500ms // 2 Hz
+#define PID_PERIOD 500ms // 2 Hz
+#define MPPT_PERIOD 4000ms // 0.25 Hz
 
 #define FILTER_WIDTH 10
 #define NUM_SENSORS 4
@@ -129,7 +130,9 @@ MedianFilter batt_voltage_filter(FILTER_WIDTH);
 MedianFilter batt_current_filter(FILTER_WIDTH);
 CAN can(D10, D2);
 Sensors sensors;
-PIDConfig_t pidConfig = PIDControllerInit(MAX_DUTY, MIN_DUTY, PID_P_COEFF, PID_I_COEFF, PID_D_COEFF);
+PIDController pid(MIN_DUTY, MAX_DUTY, PID_P_COEFF, PID_I_COEFF, PID_D_COEFF);
+PandO mppt;
+
 
 Ticker ticker_heartbeat;
 Ticker ticker_measure;
@@ -138,13 +141,12 @@ Ticker ticker_pid;
 Ticker ticker_mppt;
 EventQueue queue(32 * EVENTS_EVENT_SIZE);
 
-
 ErrorCode status = OK;
 enum State current_state;
 bool is_error;
 bool set_mode;
 bool ack_fault;
-double ref_inp_v;
+float ref_inp_v;
 
 /**
  * @brief Interrupt triggered by the heartbeat ticker to call an event that
@@ -278,11 +280,11 @@ int main(void) {
     pwm_enable = 0;
     pwm_out.period(1.0 / PWM_FREQ);
 
-    ticker_heartbeat.attach(&handler_heartbeat, (1.0 / HEARTBEAT_FREQ));
-    ticker_measure.attach(&handler_measure_sensors, (1.0 / MEASURE_FREQ));
-    ticker_redlines.attach(&handler_check_redlines, (1.0 / REDLINE_FREQ));
-    ticker_pid.attach(&handler_run_pid, (1.0 / PID_FREQ));
-    ticker_mppt.attach(&handler_run_mppt, (1.0 / MPPT_FREQ));
+    ticker_heartbeat.attach(&handler_heartbeat, HEARTBEAT_PERIOD);
+    ticker_measure.attach(&handler_measure_sensors, MEASURE_PERIOD);
+    ticker_redlines.attach(&handler_check_redlines, REDLINE_PERIOD);
+    ticker_pid.attach(&handler_run_pid, PID_PERIOD);
+    ticker_mppt.attach(&handler_run_mppt, MPPT_PERIOD);
     can.attach(&handler_process_can, CAN::RxIrq);
 
 #if __DEBUG__ == 1
@@ -391,69 +393,29 @@ void event_check_redlines(void) {
     _assert(pwm <= MAX_DUTY, PWM_OLO);
 }
 
-double target_source_voltage = 0.0;
-
 void event_run_pid(void) {
-    // Duty direction is reverse of error, so we invert the result.
-    float new_duty = PIDControllerStep(
-        pidConfig, 
-        (double) ref_inp_v, 
-        (double) arr_voltage_filter.getResult()
-    );
-
+    float new_duty = pid.step_pid(ref_inp_v, arr_voltage_filter.getResult());
     pwm_out.write(1.0 - new_duty); // Inverted to get the correct output.
 }
 
-float prev_arr_v = 0.0;
-float prev_arr_p = 0.0;
 void event_run_mppt(void) {    
-    // Step through MPPT once
-
-    // Primitive PandO taken from https://github.com/lhr-solar/MPPT/blob/master/mppt/PandO.h
-
-    // Get sensor data
-    float arr_v = arr_voltage_filter.getResult();
-    float arr_i = arr_current_filter.getResult();
-    float batt_v = batt_voltage_filter.getResult();
-    float batt_i = batt_current_filter.getResult();
+    // Step through MPPT once.
+    float context[4] = {
+        arr_voltage_filter.getResult(),
+        arr_current_filter.getResult(),
+        batt_voltage_filter.getResult(),
+        batt_current_filter.getResult()
+    };
+    
+    mppt.input_context((void*)context);
 
     // run the algorithm
-    // generate the differences
-    float delta_arr_v = arr_v - prev_arr_v;
-    float delta_arr_p = arr_v * arr_i - prev_arr_p;
-
-    // get the voltage perturb stride (pwm) 
-    float stride = 0.1;
-
-    // determine the direction of movement and vref
-    ref_inp_v = arr_v;
-    if (delta_arr_p >= 0.0) {
-        if (delta_arr_v > 0.0) {
-            // Increase ref pwm
-            ref_inp_v += stride;
-        } else {
-            // Decrease ref pwm
-            ref_inp_v -= stride;
-        }
-    } else {
-        if (delta_arr_v >= 0.0) {
-            // Decrease ref pwm
-            ref_inp_v -= stride;
-        } else {
-            // Increase ref pwm
-            ref_inp_v += stride;
-        }
-    }
+    mppt.step_algorithm();    
 
     // Derive and set reference pwm starting point
-    float ref_pwm = 1.0 - (ref_inp_v / batt_v);
+    ref_inp_v = mppt.get_reference();
+    float ref_pwm = 1.0 - (ref_inp_v / batt_voltage_filter.getResult());
     pwm_out.write(1.0 - ref_pwm); // Negative logic duty cycle
-
-    printf("\t\t\t\t\t%f, %f, %f, %f\n", delta_arr_v, delta_arr_p, ref_inp_v, ref_pwm);
-
-    // assign old variables
-    prev_arr_v = arr_v;
-    prev_arr_p = arr_v * arr_i;
 }
 
 void event_process_can(void) {
@@ -514,12 +476,16 @@ void event_update_state_machine(void) {
         case STATE_STOP:
             // Turn off tracking LED
             // Turn off error LED
-            // Disable and reset MPPT controller
+            // Disable and reset PID, MPPT
             pwm_enable = 0;
-            pwm_out.write(1.0 - 0.5); // 50% duty cycle.
+
+            ticker_pid.detach();
             ticker_mppt.detach();
-            prev_arr_v = 0.0;
-            prev_arr_p = 0.0;
+            pid.reset_state();
+            mppt.reset_state();
+
+            pwm_out.write(1.0 - 0.5); // 50% duty cycle.
+            ref_inp_v = 0.0; // TODO: double check starting point, maybe should be VOC
 
             led_tracking = 0;
             led_error = 0;
@@ -527,8 +493,10 @@ void event_update_state_machine(void) {
         case STATE_RUN:
             // Turn on tracking LED
             // Turn off error LED
-            // Enable MPPT controller
-            ticker_mppt.attach(handler_run_mppt, (1.0 / MPPT_FREQ));
+            // Enable PID, MPPT controller
+            ticker_pid.attach(handler_run_pid, PID_PERIOD);
+            ticker_mppt.attach(handler_run_mppt, MPPT_PERIOD);
+
             pwm_enable = 1;
 
             led_tracking = 1;
@@ -537,15 +505,19 @@ void event_update_state_machine(void) {
         case STATE_ERROR:
             // Turn on error LED
             // Turn off tracking LED
-            // Disable and reset MPPT controller
+            // Disable and reset PID, MPPT
             pwm_enable = 0;
-            pwm_out.write(1.0 - 0.5); // 50% duty cycle.
-            ticker_mppt.detach();
-            prev_arr_v = 0.0;
-            prev_arr_p = 0.0;
 
-            led_error = 1;
+            ticker_pid.detach();
+            ticker_mppt.detach();
+            pid.reset_state();
+            mppt.reset_state();
+
+            pwm_out.write(1.0 - 0.5); // 50% duty cycle.
+            ref_inp_v = 0.0; // TODO: double check starting point, maybe should be VOC
+
             led_tracking = 0;
+            led_error = 1;
             break;
     }
 }
