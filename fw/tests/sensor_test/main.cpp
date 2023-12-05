@@ -1,12 +1,12 @@
 /**
  * @file main.cpp
- * @author Matthew Yu (matthewjkyu@gmail.com.com)
- * @brief Sunscatter boost test. Verify that:
- *  1. Liveliness - verify that the converter boosts the output to an
- *     appropriate voltage when hooked up to a source and load.  
- *  2. Performance - verify that the converter boosts at various input/output
- *     ratios and meets specific power transfer and efficiency requirements when
- *     hooked up to a source and load. 
+ * @author Matthew Yu (matthewjkyu@gmail.com)
+ * @brief Sunscatter sensor test. Verify that:
+ *  1. Liveliness - verify that measurements can be taken from each sensor.   
+ *  2. Variance - verify that the measurements taken at known test conditions
+ *     remain stable with low variance according to requirements. 
+ *  3. Accuracy - verify that the measurements taken at known test conditions
+ *     remain accurate according to requirements. 
  * @version 0.2.0
  * @date 2023-12-02
  * @copyright Copyright (c) 2023
@@ -25,12 +25,11 @@
  *  - A3  | PA4  | PWM ENABLE
  *  - A4  | PA5  | PWM OUT
  * @note To load FastPWM: import http://os.mbed.com/users/Sissors/code/FastPWM/
- * @errata v0.2.0 hardware - PWM_OUT A4 is not PWM enabled. Solder bridge to A2 (PA_3). 
+ * @errata v0.2.0 hardware - PWM_OUT A4 is not PWM enabled. Solder bridge to A2 (PA_3).
  */
-
 #include "mbed.h"
 #include "FastPWM.h"
-#include "./Filter/MedianFilter.h"
+#include "Filter/MedianFilter.h"
 
 // Control parameters
 #define PWM_FREQ 50000.0 // v0.2.0
@@ -39,23 +38,10 @@
 #define PWM_DUTY 0.5
 
 #define HEARTBEAT_FREQ 1.0
-#define REDLINE_FREQ 2.0
 
 #define MEASURE_FREQ 10.0
 #define FILTER_WIDTH 10
 #define NUM_SENSORS 4
-
-// Redline parameters
-#define MIN_INP_VOLT 0.0
-#define MAX_INP_VOLT 70.0
-#define MIN_INP_CURR 0.0
-#define MAX_INP_CURR 8.0
-#define MIN_OUT_VOLT 80.0
-#define MAX_OUT_VOLT 130.0
-#define MIN_OUT_CURR 0.0
-#define MAX_OUT_CURR 5.0
-#define MIN_DUTY 0.1
-#define MAX_DUTY 0.9
 
 enum SensorIdx {
     SEN_IDX_ARRV = 0,
@@ -63,21 +49,6 @@ enum SensorIdx {
     SEN_IDX_BATTV = 2,
     SEN_IDX_BATTI = 3
 };
-
-typedef enum Error { 
-    OK=0,
-    INP_UVLO=100,       // Input Undervoltage lockout
-    INP_OVLO=101,       // Input Overvoltage lockout
-    INP_UILO=102,       // Input Undercurrent lockout
-    INP_OILO=103,       // Input Overcurrent lockout
-    OUT_UVLO=104,       // Output Undervoltage lockout
-    OUT_OVLO=105,       // Output Overvoltage lockout
-    OUT_UILO=106,       // Output Undercurrent lockout
-    OUT_OILO=107,       // Output Overcurrent lockout
-    INP_OUT_INV=108,    // Input/Output Voltage inversion
-    PWM_ULO=109,        // PWM Under lockout
-    PWM_OLO=110         // PWM Over lockout
-} ErrorCode;
 
 typedef struct Sensors {
     float slope_correction[NUM_SENSORS] = { 1.03, 1.00, 1.00, 0.91 };
@@ -101,7 +72,6 @@ Sensors sensors;
 
 Ticker ticker_heartbeat;
 Ticker ticker_measure;
-Ticker ticker_redlines;
 EventQueue queue(32 * EVENTS_EVENT_SIZE);
 
 /**
@@ -117,12 +87,6 @@ void handler_heartbeat(void);
 void handler_measure_sensors(void);
 
 /**
- * @brief Interrupt triggered by the redline ticker to call event
- * event_check_redlines.
- */
-void handler_check_redlines(void);
-
-/**
  * @brief Event to print sensor output periodically.
  */
 void event_heartbeat(void);
@@ -131,11 +95,6 @@ void event_heartbeat(void);
  * @brief Event to measure the onboard sensors.
  */
 void event_measure_sensors(void);
-
-/**
- * @brief Event to verify that system isn't about to fault. Premptive stop.
- */
-void event_check_redlines(void);
 
 /**
  * @brief Apply calibration function for the array voltage sensor.
@@ -169,22 +128,12 @@ float calibrate_batt_v(float inp);
  */
 float calibrate_batt_i(float inp);
 
-/**
- * @brief Realtime assert check on a specific condition.
- * 
- * @param condition Condition to evaluate.
- * @param code Error code associated with assert failure.
- */
-void _assert(bool condition, ErrorCode code);
-
 int main() {
     set_time(0);
 
     ThisThread::sleep_for(1000ms);
-    printf("Starting up main program. Boost TEST.\n");
-    printf("Operating freq: %f\n", PWM_FREQ);
-    printf("Operating duty cycle: %f\n", PWM_DUTY);
-
+    printf("Starting up main program. Sensor TEST.\n");
+    
     arr_voltage_sensor.set_reference_voltage(3.321);
     arr_current_sensor.set_reference_voltage(3.321);
     batt_voltage_sensor.set_reference_voltage(3.321);
@@ -200,9 +149,17 @@ int main() {
 
     led_tracking = 1;
 
+    /**
+     * Testing:
+     * - V_ARR: Supply 0 - 80 V to input and compare expected (multimeter) with received.
+     * - V_BATT: enable off, supply 0 - 130 V to output and compare expected with received.
+     * - I_ARR, I_BATT: enable on, 100% duty to short high side switch, tie output to short current. 
+     *   Supply 0 - 6 A to input and compare expected (multimeter on both sides) with received.
+     * Note that there is ~1.29V drop on some conditions (enable = 0, duty = 1.0). This may be an issue.
+     */
+
     ticker_heartbeat.attach(&handler_heartbeat, (1.0 / HEARTBEAT_FREQ));
     ticker_measure.attach(&handler_measure_sensors, (1.0 / MEASURE_FREQ));
-    ticker_redlines.attach(&handler_check_redlines, (1.0 / REDLINE_FREQ));
     queue.dispatch_forever();
 }
 
@@ -213,10 +170,6 @@ void handler_heartbeat(void) {
 
 void handler_measure_sensors(void) {
     queue.call(&event_measure_sensors);
-}
-
-void handler_check_redlines(void) {
-    queue.call(&event_check_redlines);
 }
 
 void event_heartbeat(void) {
@@ -242,31 +195,6 @@ void event_measure_sensors(void) {
     arr_current_filter.addSample(arr_i);
     batt_voltage_filter.addSample(batt_v);
     batt_current_filter.addSample(batt_i);
-}
-
-void event_check_redlines(void) {
-    float arr_v_filtered = arr_voltage_filter.getResult();
-    float arr_i_filtered = arr_current_filter.getResult();
-    float batt_v_filtered = batt_voltage_filter.getResult();
-    float batt_i_filtered = batt_current_filter.getResult();
-
-    _assert(arr_v_filtered >= MIN_INP_VOLT, INP_UVLO);
-    _assert(arr_v_filtered <= MAX_INP_VOLT, INP_OVLO);
-
-    _assert(arr_i_filtered >= MIN_INP_CURR, INP_UILO);
-    _assert(arr_i_filtered <= MAX_INP_CURR, INP_OILO);
-
-    _assert(batt_v_filtered >= MIN_OUT_VOLT, OUT_UVLO);
-    _assert(batt_v_filtered <= MAX_OUT_VOLT, OUT_OVLO);
-
-    _assert(batt_i_filtered >= MIN_OUT_CURR, OUT_UILO);
-    _assert(batt_i_filtered <= MAX_OUT_CURR, OUT_OILO);
-
-    _assert(arr_v_filtered < batt_v_filtered, INP_OUT_INV);
-
-    float pwm = pwm_out;
-    _assert(pwm >= MIN_DUTY, PWM_ULO);
-    _assert(pwm <= MAX_DUTY, PWM_OLO);
 }
 
 float calibrate_arr_v(float inp) {
@@ -295,18 +223,4 @@ float calibrate_batt_i(float inp) {
         * 8.3025
         * sensors.slope_correction[SEN_IDX_BATTI] 
         + sensors.y_int_correction[SEN_IDX_BATTI];
-}
-
-void _assert(bool condition, ErrorCode code) {
-    // If we fail our condition, raise the flag and let the main thread handle it.
-    if (!condition) { 
-        printf("A redline (%u) has been crossed. Tracking is disabled.\n", code);
-        
-        // Disable tracking.
-        pwm_enable = 0;
-        led_error = 1;
-        led_tracking = 0;
-        ticker_measure.detach();
-        ticker_redlines.detach();
-    }
 }

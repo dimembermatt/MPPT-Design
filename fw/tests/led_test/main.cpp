@@ -1,33 +1,21 @@
 /**
  * @file main.cpp
  * @author Matthew Yu (matthewjkyu@gmail.com)
- * @brief Sunscatter 0.2.0 liveliness test. Verify that Error, Tracking, Heartbeat, 
- *      CAN_TX/CAN_RX LEDs turn on. 
+ * @brief Sunscatter LED test. Verify that:
+ *  1. Liveliness - verify that Error, Tracking, Heartbeat, CAN_TX/CAN_RX LEDs
+ *     turn on and blink at 1 Hz.  
  * @version 0.2.0
- * @date 2023-09-30
- * 
+ * @date 2023-12-02
  * @copyright Copyright (c) 2023
  *
+ * @note For board revision v0.2.0.
+ * @note See the TESTING.md document for detailed test instructions.
  * @note Pinout:
- *  - D1  | HEARTBEAT LED
- *  - D0  | TRACKING LED
- *  - D3  | ERROR LED
+ *  - D1  | PA9  | HEARTBEAT LED
+ *  - D0  | PA10 | TRACKING LED
+ *  - D3  | PB0  | ERROR LED
  * 
- *  - D2  | CAN_TX
- *  - D10 | CAN_RX
- *  - D4  | I2C_SDA to Blackbody C
- *  - D5  | I2C_SCL to Blackbody C
- *  - D11 | SPI_MISO to RTDs
- *  - D12 | SPI_MOSI to RTDs
- *  - D13 | SPI_SCLK to RTDs
- *  - A0  | SPI_CS_3 to RTDs
- *  - A1  | SPI_CS_7 to RTDs
- *  - A2  | SPI_CS_6 to RTDs
- *  - A3  | SPI_CS_2 to RTDs
- *  - A4  | SPI_CS_1 to RTDs
- *  - A5  | SPI_CS_5 to RTDs
- *  - A6  | SPI_CS_0 to RTDs
- *  - A7  | SPI_CS_4 to RTDs
+ * @errata v0.2.0 hardware - PWM_OUT A4 is not PWM enabled. Solder bridge to A2 (PA_3).
  */
 #include "mbed.h"
 
@@ -38,16 +26,19 @@ DigitalOut led_can_tx(D2);
 DigitalOut led_can_rx(D10);
 
 Ticker ticker_heartbeat;
-void handler_heartbeat(void) { 
-    led_heartbeat = !led_heartbeat;
-    led_tracking = !led_tracking;
-    led_error = !led_error;
-    led_can_tx = !led_can_tx;
-    led_can_rx = !led_can_rx;
-}
+EventQueue queue(32 * EVENTS_EVENT_SIZE);
 
-int main(void)
-{
+/**
+ * @brief Interrupt triggered by the heartbeat ticker to toggle LEDs.
+ */
+void handler_heartbeat(void);
+
+int main(void) {
+    set_time(0);
+
+    ThisThread::sleep_for(1000ms);
+    printf("Starting up main program. LED TEST.\n");
+
     led_heartbeat = 0;
     led_tracking = 0;
     led_error = 0;
@@ -55,7 +46,13 @@ int main(void)
     led_can_rx = 0;
 
     ticker_heartbeat.attach(&handler_heartbeat, 1000ms);
-
-    while (true);
+    queue.dispatch_forever();
 }
 
+void handler_heartbeat(void) { 
+    led_heartbeat = !led_heartbeat;
+    led_tracking = !led_tracking;
+    led_error = !led_error;
+    led_can_tx = !led_can_tx;
+    led_can_rx = !led_can_rx;
+}

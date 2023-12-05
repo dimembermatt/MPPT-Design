@@ -1,123 +1,74 @@
 /**
  * @file main.cpp
- * @author Matthew Yu (matthewjkyu@gmail.com.com)
- * @brief Tests the PWM gate driver. Two modes, one for feedback using BNC, the
- *        other uses manual control.
- * @version 0.1
- * @date 2023-03-26
- * @note For board revision v0.1.0. To load FastPWM: import http://os.mbed.com/users/Sissors/code/FastPWM/
+ * @author Matthew Yu (matthewjkyu@gmail.com)
+ * @brief Sunscatter PWM test. Verify that:
+ *  1. Liveliness - verify that the gate driver can be actuated at a known
+ *     frequency. 
+ *  2. Correctness - verify that driving the gate driver to a specific input
+ *     results in the correct state of each switch. 
+ * @version 0.2.0
+ * @date 2023-12-02
  * @copyright Copyright (c) 2023
  *
+ * @note For board revision v0.2.0.
+ * @note See the TESTING.md document for detailed test instructions.
+ * @note Pinout:
+ *  - D1  | PA9  | HEARTBEAT LED
+ *  - D0  | PA10 | TRACKING LED
+ *  - D3  | PB0  | ERROR LED
+ * 
+ *  - D2  | PA12 | CAN_TX
+ *  - D10 | PA11 | CAN_RX
+ *
+ *  - A3  | PA4  | PWM ENABLE
+ *  - A4  | PA5  | PWM OUT
+ * @note To load FastPWM: import http://os.mbed.com/users/Sissors/code/FastPWM/
+ * @errata v0.2.0 PWM_OUT A4 is not PWM enabled. Solder bridge to A2 (PA_3).
  */
-
-#include "ThisThread.h"
 #include "mbed.h"
 #include "FastPWM.h"
-#include <chrono>
-using namespace std::chrono;
 
+#define PWM_FREQ 50000.0 // v0.2.0
+// 0.0 - Force LOW SIDE switch closed, HIGH side switch open
+// 1.0 - Force HIGH SIDE switch closed, LOW side switch open
+#define PWM_DUTY 0.5
+#define HEARTBEAT_FREQ 1.0
 
-// Switching frequency is 104kHz.
-// Duty cycle is a function of pwm_control, which takes a value from 0 - 1 V.
-
-
-#define __MODE__ 1 // 0 for using BNC, 1 if manual control
-
-#if __MODE__ == 0
-class UnlockedAnalogIn : public AnalogIn {
-public:
-    UnlockedAnalogIn(PinName inp) : AnalogIn(inp) { }
-    virtual void lock() { }
-    virtual void unlock() { }
-};
-
-DigitalOut led_heartbeat(PA_9);
-DigitalOut led_tracking(PA_10);
-DigitalOut pwm_enable(PA_3);
-UnlockedAnalogIn pwm_control(PA_0);
-FastPWM pwm_out(PA_1);
-
-Ticker ticker_heartbeat;
-Timer t;
-
-
-void heartbeat() { led_heartbeat = !led_heartbeat; }
-inline void adjust_duty_cycle() {
-    pwm_out.write(pwm_control.read());
-}
-
-int main()
-{
-    // Set the pwm frequency to 104 kHz.
-    float f = 100000.0;
-    pwm_out.period_us(1.0E6 / f);
- 
-    // Indicate that pwm is running.
-    led_tracking = 1;
-
-    // Start heartbeat.
-    ticker_heartbeat.attach(&heartbeat, 1000ms);
-
-    printf("HELLO WORLD MOKUGO MODE\n");
-    // Start PWM control.
-    pwm_enable = 1;
-
-    while (true) {
-        // 22 uS, max update freq is ~45kHz
-        // uint32_t i;
-        // t.reset();
-        // t.start();
-        // for (i = 0; ++i < 100000;) {
-            adjust_duty_cycle();
-        // }
-        // t.stop();
-        // printf("The time taken was %llu microseconds\n", duration_cast<microseconds>(t.elapsed_time()/100000).count());
-    }
-}
-
-
-#else
-
-DigitalOut led_heartbeat(D1);
 DigitalOut led_tracking(D0);
+DigitalOut led_heartbeat(D1);
+DigitalOut led_error(D3);
 DigitalOut pwm_enable(A3);
 FastPWM pwm_out(A2);
 
 Ticker ticker_heartbeat;
-Ticker ticker_pwm_update;
+EventQueue queue(32 * EVENTS_EVENT_SIZE);
 
-void heartbeat() { led_heartbeat = !led_heartbeat; }
-void adjust_duty_cycle() {
-    static int inp = 0.0;
-    static float n = 1;
-    inp = (inp + 1) % 101;
-    pwm_out.write((float) inp / 100.00);
-}
+/**
+ * @brief Interrupt triggered by the heartbeat ticker to toggle the hartbeat
+ * LED.
+ */
+void handler_heartbeat(void);
 
-int main()
-{
-    ThisThread::sleep_for(500ms);
+int main() {
+    set_time(0);
 
-    // Set the pwm frequency to 100 kHz.
-    printf("HELLO WORLD FIXED MODE\n");
-    float f = 100000.0;
-    float d = 1-0.5;
-    pwm_out.period_us(1.0E6 / f);
-    pwm_out.write(d);
+    ThisThread::sleep_for(1000ms);
+    printf("Starting up main program. PWM TEST.\n");
 
-    // Indicate that pwm is running.
+    led_heartbeat = 0;
+    led_tracking = 0;
+    led_error = 0;
+
+    pwm_out.period(1.0 / PWM_FREQ);
+    pwm_out.write(1 - PWM_DUTY); // Inverted to get the correct output.
+    pwm_enable = 1;
+
     led_tracking = 1;
 
-    // Start heartbeat.
-    ticker_heartbeat.attach(&heartbeat, 500ms);
-
-    // Start PWM control.
-    pwm_enable = 1;
-    // ticker_pwm_update.attach(&adjust_duty_cycle, 100ms);
-
-    while (true) {
-        ThisThread::sleep_for(1000ms);
-    }
+    ticker_heartbeat.attach(&handler_heartbeat, (1.0 / HEARTBEAT_FREQ));
+    queue.dispatch_forever();
 }
 
-#endif
+void handler_heartbeat(void) { 
+    led_heartbeat = !led_heartbeat;
+}
