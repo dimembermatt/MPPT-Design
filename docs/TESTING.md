@@ -87,8 +87,8 @@ the following tests in the list.
    1. Checking liveliness: `PWM_DUTY` = 0.5
    2. Checking correctness:
       1. Observing slew delay: `PWM_DUTY` = 0.5
-      2. Low side switch closed, high side switch open: `PWM_DUTY` = ...
-      3. High side switch closed, low side switch opwn: `PWM_DUTY` = ...
+      2. Low side switch closed, high side switch open: `PWM_DUTY` = 1.0
+      3. High side switch closed, low side switch open: `PWM_DUTY` = 0.0
 4. Flash the program `fw/tests/pwm_test` onto the STM32 Nucleo board.
 5. Connect a logic analyzer (e.g. Saleae) to the board. Set CH1 to LOW side switch, with probes attached to SW1 and GND. Set CH2 to HIGH side switch, with probes attached to SW2 and VSW. Set CH3 to GATE signal, with probes attached to PWM and GND.
 6. Plug in USB power.
@@ -107,21 +107,21 @@ the following tests in the list.
 3. Ensure that the `fw/tests/sensor_test/main.cpp` is compatible with the hardware and reports in the code that it is for board revision `v0.2.0`. 
 4. Set the defines according to the test context.
    1. `PWM_DUTY` should be set to 1.0 to ...
-   2. `PWM_DUTY` should be set to 0.0 to ...
+   2. `PWM_DUTY` should be set to 0.0 to open low side switch
 5. Clear the cache (save the initial entry somewhere) in the sensors struct (`L67, L68`) to have a default slope of 1.0 and y-intercept of 0.0 for each sensor. 
 6. Flash the program `fw/tests/sensor_test` onto the STM32 Nucleo board.
 7. Plug in USB power.
 8. Sensor output should be recorded on the CLI serial terminal (MBED Studio, PuTTY, etc).
 9. Voltage sensor test
    1. Input voltage sensor
-      1. Open circuit the LOW SIDE SWITCH by applying `PWM_DUTY` = ...
-      2. Apply 0 - 113V on the input terminals (ARR) of the board. Do this at a known range and resolution (e.g., 0 - 110V, in steps of 5V). Wait for an appropriate amount of time per step for the value to settle.
+      1. Open circuit the LOW SIDE SWITCH by applying `PWM_DUTY` = 0.0
+      2. Apply 0 - 100V on the input terminals (ARR) of the board. Do this at a known range and resolution (e.g., 0 - 100V, in steps of 5V). Wait for an appropriate amount of time per step for the value to settle.
    2. Output voltage sensor 
-      1. Open circuit the LOW SIDE SWITCH by applying `PWM_DUTY` = ...
+      1. Open circuit the LOW SIDE SWITCH by applying `PWM_DUTY` = 0.0
       2. Apply 0 - 168 V on the output terminals (BATT) of the board. Do this at a known range and resolution (e.g., 0 - 165V, in steps of 5V). Wait for an appropriate amount of time per step for the value to settle.
 10. Current sensor test
     1.  Input, output current sensor
-       1.  Short circuit the HIGH SIDE SWITCH by applying `PWM_DUTY` = ...
+       1.  Short circuit the HIGH SIDE SWITCH by applying `PWM_DUTY` = 0.0
        2.  Short circuit the output terminals (BATT) of the board.
        3.  Apply 0 - 8.25A on the input terminals (ARR) of the board. Do this at a known range and resolution (e.g., 0 - 8A, in steps of 0.25A). Wait for an appropriate amount of time per step for the value to settle.
 11. Save the test data in a CSV.

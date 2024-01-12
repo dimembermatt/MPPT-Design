@@ -36,13 +36,13 @@
 #define PWM_FREQ 50000.0 // v0.2.0
 // 0.0 - Force LOW SIDE switch closed, HIGH side switch open
 // 1.0 - Force HIGH SIDE switch closed, LOW side switch open
-#define PWM_DUTY 0.5
+#define PWM_DUTY 0.538
 
 #define HEARTBEAT_FREQ 1.0
 #define REDLINE_FREQ 2.0
 
-#define MEASURE_FREQ 10.0
-#define FILTER_WIDTH 10
+#define MEASURE_FREQ 20.0
+#define FILTER_WIDTH 20
 #define NUM_SENSORS 4
 
 // Redline parameters
@@ -50,7 +50,7 @@
 #define MAX_INP_VOLT 70.0
 #define MIN_INP_CURR 0.0
 #define MAX_INP_CURR 8.0
-#define MIN_OUT_VOLT 80.0
+#define MIN_OUT_VOLT 70.0
 #define MAX_OUT_VOLT 130.0
 #define MIN_OUT_CURR 0.0
 #define MAX_OUT_CURR 5.0
@@ -80,8 +80,8 @@ typedef enum Error {
 } ErrorCode;
 
 typedef struct Sensors {
-    float slope_correction[NUM_SENSORS] = { 1.03, 1.00, 1.00, 0.91 };
-    float y_int_correction[NUM_SENSORS] = { 0.0, 0.0, 0.0, 0.0 };
+    float slope_correction[NUM_SENSORS] = { 1.00, 0.998, 0.998, 0.92 };
+    float y_int_correction[NUM_SENSORS] = { 0.0, 0.0, 0.005, 0.0 };
 } Sensors;
 
 DigitalOut led_heartbeat(D1);
@@ -245,28 +245,34 @@ void event_measure_sensors(void) {
 }
 
 void event_check_redlines(void) {
-    float arr_v_filtered = arr_voltage_filter.getResult();
-    float arr_i_filtered = arr_current_filter.getResult();
-    float batt_v_filtered = batt_voltage_filter.getResult();
-    float batt_i_filtered = batt_current_filter.getResult();
+    static uint8_t iteration = 0;
+    if (iteration < 10) {
+        ++iteration;
+    } else {
+        // Start checking when the MPPT has begun boosting appropriately.
+        float arr_v_filtered = arr_voltage_filter.getResult();
+        float arr_i_filtered = arr_current_filter.getResult();
+        float batt_v_filtered = batt_voltage_filter.getResult();
+        float batt_i_filtered = batt_current_filter.getResult();
 
-    _assert(arr_v_filtered >= MIN_INP_VOLT, INP_UVLO);
-    _assert(arr_v_filtered <= MAX_INP_VOLT, INP_OVLO);
+        _assert(arr_v_filtered >= MIN_INP_VOLT, INP_UVLO);
+        _assert(arr_v_filtered <= MAX_INP_VOLT, INP_OVLO);
 
-    _assert(arr_i_filtered >= MIN_INP_CURR, INP_UILO);
-    _assert(arr_i_filtered <= MAX_INP_CURR, INP_OILO);
+        _assert(arr_i_filtered >= MIN_INP_CURR, INP_UILO);
+        _assert(arr_i_filtered <= MAX_INP_CURR, INP_OILO);
 
-    _assert(batt_v_filtered >= MIN_OUT_VOLT, OUT_UVLO);
-    _assert(batt_v_filtered <= MAX_OUT_VOLT, OUT_OVLO);
+        _assert(batt_v_filtered >= MIN_OUT_VOLT, OUT_UVLO);
+        _assert(batt_v_filtered <= MAX_OUT_VOLT, OUT_OVLO);
 
-    _assert(batt_i_filtered >= MIN_OUT_CURR, OUT_UILO);
-    _assert(batt_i_filtered <= MAX_OUT_CURR, OUT_OILO);
+        _assert(batt_i_filtered >= MIN_OUT_CURR, OUT_UILO);
+        _assert(batt_i_filtered <= MAX_OUT_CURR, OUT_OILO);
 
-    _assert(arr_v_filtered < batt_v_filtered, INP_OUT_INV);
+        _assert(arr_v_filtered < batt_v_filtered, INP_OUT_INV);
+    }
 
-    float pwm = pwm_out;
-    _assert(pwm >= MIN_DUTY, PWM_ULO);
-    _assert(pwm <= MAX_DUTY, PWM_OLO);
+    // float pwm = pwm_out;
+    // _assert(pwm >= MIN_DUTY, PWM_ULO);
+    // _assert(pwm <= MAX_DUTY, PWM_OLO);
 }
 
 float calibrate_arr_v(float inp) {

@@ -33,9 +33,9 @@
 
 // Control parameters
 #define PWM_FREQ 50000.0 // v0.2.0
-// 0.0 - Force LOW SIDE switch closed, HIGH side switch open
-// 1.0 - Force HIGH SIDE switch closed, LOW side switch open
-#define PWM_DUTY 0.5
+// 1.0 - Force LOW SIDE switch closed, HIGH side switch open
+// 0.0 - Force HIGH SIDE switch closed, LOW side switch open
+#define PWM_DUTY 0.0
 
 #define HEARTBEAT_FREQ 1.0
 
@@ -51,7 +51,7 @@ enum SensorIdx {
 };
 
 typedef struct Sensors {
-    float slope_correction[NUM_SENSORS] = { 1.03, 1.00, 1.00, 0.91 };
+    float slope_correction[NUM_SENSORS] = { 1.00, 1.00, 1.00, 1.00 };
     float y_int_correction[NUM_SENSORS] = { 0.0, 0.0, 0.0, 0.0 };
 } Sensors;
 
