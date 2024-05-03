@@ -6,7 +6,7 @@
   (lib (name "molex_microfit_43650_0427")(type "KiCad")(uri "${KIPRJMOD}/symbols/molex_microfit_43650_0427.kicad_sym")(options "")(descr ""))
   (lib (name "stm_nucleo_L432KC")(type "KiCad")(uri "${KIPRJMOD}/symbols/stm_nucleo_L432KC.kicad_sym")(options "")(descr ""))
   (lib (name "tdk_B65878E1012D001")(type "KiCad")(uri "${KIPRJMOD}/symbols/tdk_B65878E1012D001.kicad_sym")(options "")(descr ""))
-  (lib (name "ti_INA210CQDCKRQ1")(type "KiCad")(uri "${KIPRJMOD}/symbols/ti_INA210CQDCKRQ1.kicad_sym")(options "")(descr ""))
+  (lib (name "ti_INA215CQDCKRQ1")(type "KiCad")(uri "${KIPRJMOD}/symbols/ti_INA215CQDCKRQ1.kicad_sym")(options "")(descr ""))
   (lib (name "ti_LMG1210RVRT")(type "KiCad")(uri "${KIPRJMOD}/symbols/ti_LMG1210RVRT.kicad_sym")(options "")(descr ""))
   (lib (name "ti_OPA990IDCKR")(type "KiCad")(uri "${KIPRJMOD}/symbols/ti_OPA990IDCKR.kicad_sym")(options "")(descr ""))
   (lib (name "xkb_TS_1187A_B_A_B")(type "KiCad")(uri "${KIPRJMOD}/symbols/xkb_TS_1187A_B_A_B.kicad_sym")(options "")(descr ""))
