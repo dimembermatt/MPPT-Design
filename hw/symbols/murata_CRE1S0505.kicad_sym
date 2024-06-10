@@ -2,11 +2,11 @@
 	(version 20231120)
 	(generator "kicad_symbol_editor")
 	(generator_version "8.0")
-	(symbol "CDSOT23-T24CAN"
+	(symbol "CRE1S0505MEC-R"
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "D"
+		(property "Reference" "U"
 			(at 4.826 7.366 0)
 			(effects
 				(font
@@ -15,7 +15,7 @@
 				(justify left top)
 			)
 		)
-		(property "Value" "CDSOT23-T24CAN"
+		(property "Value" "CRE1S0505"
 			(at 4.826 4.826 0)
 			(effects
 				(font
@@ -24,8 +24,8 @@
 				(justify left top)
 			)
 		)
-		(property "Footprint" "footprints:bourns_CDSOT23_T24CAN"
-			(at 19.05 -94.92 0)
+		(property "Footprint" "footprints:murata_CRE1S0505_MEC"
+			(at 26.67 -94.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -34,8 +34,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.bourns.com/docs/Product-Datasheets/CDSOT23-T24CAN.pdf"
-			(at 19.05 -194.92 0)
+		(property "Datasheet" "https://www.murata.com/products/productdata/8807029407774/kdc-cre1.pdf"
+			(at 26.67 -194.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -44,7 +44,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Bourns CDSOT23-T24CAN, Dual Bi-Directional ESD Protection Diode, 3-Pin SOT-23"
+		(property "Description" "Isolated Module DC DC Converter 1 Output 5V 200mA 4.5V - 5.5V Input"
 			(at 0 0 0)
 			(effects
 				(font
@@ -62,7 +62,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Bourns"
+		(property "Manufacturer" "Murata"
 			(at 0 0 0)
 			(effects
 				(font
@@ -71,7 +71,7 @@
 				(hide yes)
 			)
 		)
-		(property "P/N" "CDSOT23-T24CAN-Q"
+		(property "P/N" "CRE1S0505MEC-R"
 			(at 0 0 0)
 			(effects
 				(font
@@ -107,10 +107,10 @@
 				(hide yes)
 			)
 		)
-		(symbol "CDSOT23-T24CAN_1_1"
+		(symbol "CRE1S0505MEC-R_1_1"
 			(rectangle
 				(start 5.08 2.54)
-				(end 17.78 -5.08)
+				(end 25.4 -12.7)
 				(stroke
 					(width 0.254)
 					(type default)
@@ -120,9 +120,9 @@
 				)
 			)
 			(pin passive line
-				(at 0 0 0)
+				(at 0 -7.62 0)
 				(length 5.08)
-				(name "K1"
+				(name "-VIN"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -137,17 +137,17 @@
 					)
 				)
 			)
-			(pin passive line
-				(at 0 -2.54 0)
-				(length 5.08)
-				(name "K2"
+			(pin no_connect line
+				(at 30.48 0 180)
+				(length 5.08) hide
+				(name "NA"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "2"
+				(number "14"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -156,9 +156,9 @@
 				)
 			)
 			(pin passive line
-				(at 22.86 0 180)
+				(at 0 -2.54 0)
 				(length 5.08)
-				(name "K3"
+				(name "+VIN"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -166,6 +166,42 @@
 					)
 				)
 				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 30.48 -7.62 180)
+				(length 5.08)
+				(name "-VOUT"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 30.48 -2.54 180)
+				(length 5.08)
+				(name "+VOUT"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "8"
 					(effects
 						(font
 							(size 1.27 1.27)

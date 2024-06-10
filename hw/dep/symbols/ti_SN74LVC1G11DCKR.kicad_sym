@@ -2,12 +2,12 @@
 	(version 20231120)
 	(generator "kicad_symbol_editor")
 	(generator_version "8.0")
-	(symbol "CDSOT23-T24CAN"
+	(symbol "SN74LVC1G11DCKR"
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "D"
-			(at 4.826 7.366 0)
+		(property "Reference" "IC"
+			(at 1.524 11.684 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15,8 +15,8 @@
 				(justify left top)
 			)
 		)
-		(property "Value" "CDSOT23-T24CAN"
-			(at 4.826 4.826 0)
+		(property "Value" "SN74LVC1G11DCKR"
+			(at 1.524 9.144 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24,18 +24,8 @@
 				(justify left top)
 			)
 		)
-		(property "Footprint" "footprints:bourns_CDSOT23_T24CAN"
-			(at 19.05 -94.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.bourns.com/docs/Product-Datasheets/CDSOT23-T24CAN.pdf"
-			(at 19.05 -194.92 0)
+		(property "Footprint" "footprints:ti_SN74LVC1G11DCKR"
+			(at 10.16 -91.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -44,8 +34,18 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Bourns CDSOT23-T24CAN, Dual Bi-Directional ESD Protection Diode, 3-Pin SOT-23"
-			(at 0 0 0)
+		(property "Datasheet" "http://componentsearchengine.com/Datasheets/1/SN74LVC1G11DCKR.pdf"
+			(at 10.16 -191.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "SINGLE 3-INPUT POSITIVE-AND GATE"
+			(at -11.43 3.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -53,8 +53,8 @@
 				(hide yes)
 			)
 		)
-		(property "Distributor" ""
-			(at 0 0 0)
+		(property "Distributor" "Mouser"
+			(at -11.43 3.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -62,8 +62,8 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Bourns"
-			(at 0 0 0)
+		(property "Manufacturer" "Texas Instruments"
+			(at -11.43 3.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -71,8 +71,8 @@
 				(hide yes)
 			)
 		)
-		(property "P/N" "CDSOT23-T24CAN-Q"
-			(at 0 0 0)
+		(property "P/N" "SN74LVC1G11DCKR"
+			(at -11.43 3.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -81,7 +81,7 @@
 			)
 		)
 		(property "LCSC Part #" ""
-			(at 0 0 0)
+			(at -11.43 3.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -89,8 +89,8 @@
 				(hide yes)
 			)
 		)
-		(property "Cost" ""
-			(at 0 0 0)
+		(property "Cost" "0.22"
+			(at -11.43 3.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -99,7 +99,7 @@
 			)
 		)
 		(property "Notes" ""
-			(at 0 0 0)
+			(at -11.43 3.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -107,10 +107,10 @@
 				(hide yes)
 			)
 		)
-		(symbol "CDSOT23-T24CAN_1_1"
+		(symbol "SN74LVC1G11DCKR_1_1"
 			(rectangle
-				(start 5.08 2.54)
-				(end 17.78 -5.08)
+				(start -6.35 6.35)
+				(end 6.35 -6.35)
 				(stroke
 					(width 0.254)
 					(type default)
@@ -120,9 +120,9 @@
 				)
 			)
 			(pin passive line
-				(at 0 0 0)
+				(at -11.43 3.81 0)
 				(length 5.08)
-				(name "K1"
+				(name "A"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -138,9 +138,9 @@
 				)
 			)
 			(pin passive line
-				(at 0 -2.54 0)
+				(at 0 -11.43 90)
 				(length 5.08)
-				(name "K2"
+				(name "GND"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -156,9 +156,9 @@
 				)
 			)
 			(pin passive line
-				(at 22.86 0 180)
+				(at -11.43 0 0)
 				(length 5.08)
-				(name "K3"
+				(name "B"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -166,6 +166,60 @@
 					)
 				)
 				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 11.43 0 180)
+				(length 5.08)
+				(name "Y"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 11.43 270)
+				(length 5.08)
+				(name "VCC"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -11.43 -3.81 0)
+				(length 5.08)
+				(name "C"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "6"
 					(effects
 						(font
 							(size 1.27 1.27)

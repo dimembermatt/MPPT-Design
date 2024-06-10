@@ -4,6 +4,15 @@
 	(generator_version "8.0")
 	(uuid "b4c2eff7-5ec5-43a3-812b-e717569b020c")
 	(paper "A4")
+	(title_block
+		(title "Sunscatter MPPT")
+		(date "2024-05-03")
+		(rev "v0.3.0rc")
+		(company "LHR Solar")
+		(comment 1 "Matthew Yu")
+		(comment 2 "Jacob Pustilnik")
+		(comment 3 "Gary Hallock")
+	)
 	(lib_symbols
 		(symbol "Device:C_Small"
 			(pin_numbers hide)
@@ -1344,6 +1353,12 @@
 		)
 	)
 	(junction
+		(at 110.49 124.46)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "035825f0-e97a-4872-b7b4-45994f96b1e2")
+	)
+	(junction
 		(at 139.7 93.98)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1389,6 +1404,16 @@
 	)
 	(wire
 		(pts
+			(xy 110.49 124.46) (xy 114.3 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "22a55e01-3f38-41de-add4-b2efb63485f6")
+	)
+	(wire
+		(pts
 			(xy 129.54 119.38) (xy 129.54 118.11)
 		)
 		(stroke
@@ -1406,6 +1431,16 @@
 			(type default)
 		)
 		(uuid "38f2ec06-8a4f-4c44-a13c-f71bbd5abeeb")
+	)
+	(wire
+		(pts
+			(xy 119.38 124.46) (xy 121.92 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3af00123-fc54-426f-b8c3-e564c5a7cb8f")
 	)
 	(wire
 		(pts
@@ -1436,6 +1471,16 @@
 			(type default)
 		)
 		(uuid "8617b203-dd53-4fcc-a2ed-0e66a5e74b6c")
+	)
+	(wire
+		(pts
+			(xy 107.95 124.46) (xy 110.49 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8d0fdcea-1b6e-40e0-ac1b-077817a35afa")
 	)
 	(wire
 		(pts
@@ -1479,6 +1524,16 @@
 	)
 	(wire
 		(pts
+			(xy 110.49 129.54) (xy 129.54 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dc163019-22fe-41e8-8c1c-e5701d045dcb")
+	)
+	(wire
+		(pts
 			(xy 152.4 129.54) (xy 129.54 129.54)
 		)
 		(stroke
@@ -1498,9 +1553,29 @@
 		)
 		(uuid "2ed57d06-b675-4b41-a54b-cf8306a7bc29")
 	)
+	(text "Mounting points placed on FETs \nand gate driver as done on v0.1.0"
+		(exclude_from_sim no)
+		(at 109.728 105.41 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "6c81d1e4-e516-4420-b618-029c018745cb")
+	)
+	(text "Need to select slew resistor and \npulldown, double check circuit"
+		(exclude_from_sim no)
+		(at 95.504 119.888 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "79e952b3-12f8-4bf0-91a3-5244e59fb0f5")
+	)
 	(hierarchical_label "FAN"
 		(shape input)
-		(at 121.92 124.46 180)
+		(at 107.95 124.46 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1508,7 +1583,75 @@
 			)
 			(justify right)
 		)
-		(uuid "f2bb857c-fb9a-4334-9592-d61cff1efbac")
+		(uuid "a3a8734c-46da-4521-8f4b-b4fef979357f")
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 116.84 124.46 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0889f5ee-7e51-404b-bd65-25ef76d2ab4d")
+		(property "Reference" "R20"
+			(at 116.84 119.38 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "R_Small"
+			(at 116.84 121.92 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 116.84 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 116.84 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 116.84 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "43ace4a6-0d92-4dbd-9042-3e52d4abee6e")
+		)
+		(pin "1"
+			(uuid "7ef71e36-97c0-47a1-9969-e743c3e4b1f6")
+		)
+		(instances
+			(project "mppt"
+				(path "/06fd3a42-664d-41bc-bf0f-b5ee0ddcc902/e1f5a50e-a1f9-4d2e-b822-1c90ec1f58b5"
+					(reference "R20")
+					(unit 1)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole")
@@ -2160,6 +2303,76 @@
 			(project "mppt"
 				(path "/06fd3a42-664d-41bc-bf0f-b5ee0ddcc902/e1f5a50e-a1f9-4d2e-b822-1c90ec1f58b5"
 					(reference "R1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 110.49 127 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "be77b027-4f29-40d1-be85-113e1a8f84ef")
+		(property "Reference" "R21"
+			(at 113.03 125.7299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "R_Small"
+			(at 113.03 128.2699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 110.49 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 110.49 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 110.49 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "0af1b361-24b8-4f6c-9a3b-8ebd039faf35")
+		)
+		(pin "1"
+			(uuid "8f7a679d-5937-4528-9ceb-f5c6ab78a84a")
+		)
+		(instances
+			(project "mppt"
+				(path "/06fd3a42-664d-41bc-bf0f-b5ee0ddcc902/e1f5a50e-a1f9-4d2e-b822-1c90ec1f58b5"
+					(reference "R21")
 					(unit 1)
 				)
 			)

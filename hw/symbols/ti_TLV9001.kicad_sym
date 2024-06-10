@@ -2,49 +2,45 @@
 	(version 20231120)
 	(generator "kicad_symbol_editor")
 	(generator_version "8.0")
-	(symbol "CDSOT23-T24CAN"
+	(symbol "TLV9001"
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "D"
-			(at 4.826 7.366 0)
+		(property "Reference" "U"
+			(at 0 0 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 			)
 		)
-		(property "Value" "CDSOT23-T24CAN"
-			(at 4.826 4.826 0)
+		(property "Value" "TLV9001"
+			(at 0 0 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 			)
 		)
-		(property "Footprint" "footprints:bourns_CDSOT23_T24CAN"
-			(at 19.05 -94.92 0)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-363_SC-70-6"
+			(at 0 0 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.bourns.com/docs/Product-Datasheets/CDSOT23-T24CAN.pdf"
-			(at 19.05 -194.92 0)
+		(property "Datasheet" "https://www.ti.com/lit/gpn/tlv9001"
+			(at 0 0 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 				(hide yes)
 			)
 		)
-		(property "Description" "Bourns CDSOT23-T24CAN, Dual Bi-Directional ESD Protection Diode, 3-Pin SOT-23"
+		(property "Description" ""
 			(at 0 0 0)
 			(effects
 				(font
@@ -62,7 +58,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Bourns"
+		(property "Manufacturer" "Texas Instruments"
 			(at 0 0 0)
 			(effects
 				(font
@@ -71,7 +67,7 @@
 				(hide yes)
 			)
 		)
-		(property "P/N" "CDSOT23-T24CAN-Q"
+		(property "P/N" "TLV9001IDCKR"
 			(at 0 0 0)
 			(effects
 				(font
@@ -107,10 +103,11 @@
 				(hide yes)
 			)
 		)
-		(symbol "CDSOT23-T24CAN_1_1"
-			(rectangle
-				(start 5.08 2.54)
-				(end 17.78 -5.08)
+		(symbol "TLV9001_0_1"
+			(polyline
+				(pts
+					(xy -3.81 -1.27) (xy -3.81 -11.43) (xy 6.35 -6.35) (xy -3.81 -1.27)
+				)
 				(stroke
 					(width 0.254)
 					(type default)
@@ -119,10 +116,12 @@
 					(type background)
 				)
 			)
-			(pin passive line
-				(at 0 0 0)
-				(length 5.08)
-				(name "K1"
+		)
+		(symbol "TLV9001_1_1"
+			(pin input line
+				(at -6.35 -3.81 0)
+				(length 2.54)
+				(name "+"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -137,10 +136,10 @@
 					)
 				)
 			)
-			(pin passive line
-				(at 0 -2.54 0)
-				(length 5.08)
-				(name "K2"
+			(pin power_in line
+				(at -1.27 -13.97 90)
+				(length 3.81)
+				(name "V-"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -155,10 +154,10 @@
 					)
 				)
 			)
-			(pin passive line
-				(at 22.86 0 180)
-				(length 5.08)
-				(name "K3"
+			(pin input line
+				(at -6.35 -8.89 0)
+				(length 2.54)
+				(name "-"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -166,6 +165,60 @@
 					)
 				)
 				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at 8.89 -6.35 180)
+				(length 2.54)
+				(name "~"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 1.27 -11.43 90)
+				(length 2.54)
+				(name "~{SHDN}"
+					(effects
+						(font
+							(size 0.762 0.762)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at -1.27 1.27 270)
+				(length 3.81)
+				(name "V+"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "6"
 					(effects
 						(font
 							(size 1.27 1.27)

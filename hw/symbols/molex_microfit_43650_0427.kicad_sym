@@ -55,7 +55,7 @@
 				(hide yes)
 			)
 		)
-		(property "Distributor" "Mouser"
+		(property "Distributor" ""
 			(at 0 0 0)
 			(effects
 				(font
@@ -91,7 +91,7 @@
 				(hide yes)
 			)
 		)
-		(property "Cost" "1.41"
+		(property "Cost" ""
 			(at 0 0 0)
 			(effects
 				(font
