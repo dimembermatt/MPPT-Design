@@ -2,12 +2,12 @@
 	(version 20231120)
 	(generator "kicad_symbol_editor")
 	(generator_version "8.0")
-	(symbol "TLV9022DR"
+	(symbol "LM393LVQDRQ1"
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(property "Reference" "U"
-			(at 4.826 8.382 0)
+			(at 14.986 7.366 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15,8 +15,8 @@
 				(justify left top)
 			)
 		)
-		(property "Value" "TLV9022"
-			(at 4.826 5.842 0)
+		(property "Value" "LM393LV"
+			(at 14.986 4.826 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24,7 +24,7 @@
 				(justify left top)
 			)
 		)
-		(property "Footprint" "footprints:ti_TLV9022_DR"
+		(property "Footprint" "footprints:ti_LM393LV_DR"
 			(at 24.13 -94.92 0)
 			(effects
 				(font
@@ -34,7 +34,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tlv9022.pdf?ts=1717472247676&ref_url=https%253A%252F%252Fwww.mouser.com%252F"
+		(property "Datasheet" "https://www.ti.com/lit/gpn/lm393lv-q1"
 			(at 24.13 -194.92 0)
 			(effects
 				(font
@@ -44,8 +44,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Analog Comparators Dual precision comparator with open-drain output"
-			(at 0 1.27 0)
+		(property "Description" "Analog Comparators Automotive low-voltage commodity comparator 8-SOIC -40 to 125"
+			(at 0 0 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -53,7 +53,7 @@
 				(hide yes)
 			)
 		)
-		(property "Distributor" ""
+		(property "Distributor" "Texas Instruments"
 			(at 0 0 0)
 			(effects
 				(font
@@ -71,8 +71,8 @@
 				(hide yes)
 			)
 		)
-		(property "P/N" "TLV9022DR"
-			(at 0 1.27 0)
+		(property "P/N" "LM393LVDR"
+			(at 0 0 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -89,7 +89,7 @@
 				(hide yes)
 			)
 		)
-		(property "Cost" ""
+		(property "Cost" "0.192"
 			(at 0 0 0)
 			(effects
 				(font
@@ -107,10 +107,10 @@
 				(hide yes)
 			)
 		)
-		(symbol "TLV9022DR_1_1"
+		(symbol "LM393LVQDRQ1_1_1"
 			(rectangle
-				(start 5.08 3.81)
-				(end 22.86 -11.43)
+				(start 5.08 2.54)
+				(end 22.86 -12.7)
 				(stroke
 					(width 0.254)
 					(type default)
@@ -120,7 +120,7 @@
 				)
 			)
 			(pin passive line
-				(at 27.94 -1.27 180)
+				(at 27.94 -2.54 180)
 				(length 5.08)
 				(name "OUT1"
 					(effects
@@ -138,7 +138,7 @@
 				)
 			)
 			(pin passive line
-				(at 0 -1.27 0)
+				(at 0 -2.54 0)
 				(length 5.08)
 				(name "IN1-"
 					(effects
@@ -156,7 +156,7 @@
 				)
 			)
 			(pin passive line
-				(at 0 1.27 0)
+				(at 0 0 0)
 				(length 5.08)
 				(name "IN1+"
 					(effects
@@ -174,9 +174,9 @@
 				)
 			)
 			(pin passive line
-				(at 15.24 -16.51 90)
+				(at 13.97 -17.78 90)
 				(length 5.08)
-				(name "V-"
+				(name "GND"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -192,7 +192,7 @@
 				)
 			)
 			(pin passive line
-				(at 0 -6.35 0)
+				(at 0 -7.62 0)
 				(length 5.08)
 				(name "IN2+"
 					(effects
@@ -210,7 +210,7 @@
 				)
 			)
 			(pin passive line
-				(at 0 -8.89 0)
+				(at 0 -10.16 0)
 				(length 5.08)
 				(name "IN2-"
 					(effects
@@ -228,7 +228,7 @@
 				)
 			)
 			(pin passive line
-				(at 27.94 -6.35 180)
+				(at 27.94 -7.62 180)
 				(length 5.08)
 				(name "OUT2"
 					(effects
@@ -246,7 +246,7 @@
 				)
 			)
 			(pin passive line
-				(at 15.24 8.89 270)
+				(at 13.97 7.62 270)
 				(length 5.08)
 				(name "V+"
 					(effects

@@ -59,10 +59,7 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [
-        "silk_edge_clearance|204950000|48300000|1b9c3617-ac4a-421c-9dec-cb03128b23db|3ff9b5cf-7aaf-48d2-81fe-9064428f76bd",
-        "silk_overlap|204950000|60535198|3ff9b5cf-7aaf-48d2-81fe-9064428f76bd|dbad76b7-834e-4217-b21f-002b69aebf2b"
-      ],
+      "drc_exclusions": [],
       "meta": {
         "version": 2
       },
@@ -124,7 +121,7 @@
         "max_error": 0.005,
         "min_clearance": 0.127,
         "min_connection": 0.0,
-        "min_copper_edge_clearance": 0.0,
+        "min_copper_edge_clearance": 0.3,
         "min_hole_clearance": 0.254,
         "min_hole_to_hole": 0.5,
         "min_microvia_diameter": 0.4,
@@ -135,8 +132,8 @@
         "min_text_thickness": 0.15,
         "min_through_hole_diameter": 0.2,
         "min_track_width": 0.127,
-        "min_via_annular_width": 0.1,
-        "min_via_diameter": 0.4,
+        "min_via_annular_width": 0.2,
+        "min_via_diameter": 0.45,
         "solder_mask_clearance": 0.0,
         "solder_mask_min_width": 0.0,
         "solder_mask_to_copper_clearance": 0.0,
@@ -278,14 +275,14 @@
   "erc": {
     "erc_exclusions": [
       "lib_symbol_issues|1092200|1092200|af52939d-29f4-4772-96cb-39aa3705f43d|00000000-0000-0000-0000-000000000000|||",
-      "lib_symbol_issues|1638300|292100|e0a68723-43d8-43d8-bd70-532b49f45831|00000000-0000-0000-0000-000000000000|||",
-      "lib_symbol_issues|1638300|685800|32578e4c-7337-4645-9caa-0ed38b1797b1|00000000-0000-0000-0000-000000000000|||",
-      "lib_symbol_issues|2349500|342900|98caa5bf-7090-4cff-aa22-eba4866a50bb|00000000-0000-0000-0000-000000000000|||",
-      "lib_symbol_issues|2349500|495300|aa7009bf-6852-4d02-9402-972117ba5a11|00000000-0000-0000-0000-000000000000|||",
-      "lib_symbol_issues|2603500|342900|b4df1175-5775-48ce-9387-20f7c250ed3b|00000000-0000-0000-0000-000000000000|||",
-      "lib_symbol_issues|2603500|495300|7db62743-3818-4eb3-b498-e8ee92e90df4|00000000-0000-0000-0000-000000000000|||",
-      "lib_symbol_issues|584200|1308100|51102368-b4a9-44e3-8cb0-ce8a598215e0|00000000-0000-0000-0000-000000000000|||",
-      "lib_symbol_issues|584200|1701800|8def737e-361f-4a54-bd4e-42347e26dcff|00000000-0000-0000-0000-000000000000|||",
+      "lib_symbol_issues|1485900|292100|e0a68723-43d8-43d8-bd70-532b49f45831|00000000-0000-0000-0000-000000000000|||",
+      "lib_symbol_issues|1485900|685800|32578e4c-7337-4645-9caa-0ed38b1797b1|00000000-0000-0000-0000-000000000000|||",
+      "lib_symbol_issues|2044700|342900|98caa5bf-7090-4cff-aa22-eba4866a50bb|00000000-0000-0000-0000-000000000000|||",
+      "lib_symbol_issues|2044700|495300|aa7009bf-6852-4d02-9402-972117ba5a11|00000000-0000-0000-0000-000000000000|||",
+      "lib_symbol_issues|2298700|342900|b4df1175-5775-48ce-9387-20f7c250ed3b|00000000-0000-0000-0000-000000000000|||",
+      "lib_symbol_issues|2298700|495300|7db62743-3818-4eb3-b498-e8ee92e90df4|00000000-0000-0000-0000-000000000000|||",
+      "lib_symbol_issues|596900|1308100|51102368-b4a9-44e3-8cb0-ce8a598215e0|00000000-0000-0000-0000-000000000000|||",
+      "lib_symbol_issues|596900|1701800|8def737e-361f-4a54-bd4e-42347e26dcff|00000000-0000-0000-0000-000000000000|||",
       "lib_symbol_issues|660400|431800|070bed5a-88eb-4fe4-931e-b54b4b7bcd60|00000000-0000-0000-0000-000000000000|||",
       "no_connect_connected|1104900|914400|f02a8118-cff1-4178-ba7d-33cebe6d5d3c|bfebcf3f-8178-48d0-ba0b-cb1efb6365d2|/06fd3a42-664d-41bc-bf0f-b5ee0ddcc902/9cd55a57-0ec8-481d-b571-b5fdbe353ce7||",
       "no_connect_connected|876300|914400|5e729cf9-e79d-4f78-af9f-d34537f9d25a|cb8c88d9-84f2-45f7-833d-62dc0b10bdde|/06fd3a42-664d-41bc-bf0f-b5ee0ddcc902/9cd55a57-0ec8-481d-b571-b5fdbe353ce7||"
@@ -709,24 +706,24 @@
       "controller"
     ],
     [
-      "9cd55a57-0ec8-481d-b571-b5fdbe353ce7",
-      "converter"
-    ],
-    [
-      "92f2c78d-fd2c-4f90-b3c1-261313d81f32",
-      "sensors"
+      "247e6d75-274c-459f-88ee-3ee86ec1b962",
+      "power_regulation"
     ],
     [
       "d2872b58-d342-47d2-86ca-67a04f8e2122",
       "gate_driver"
     ],
     [
-      "3521ffae-6721-4a9d-861c-ca3039bccb82",
-      "comm_can"
+      "92f2c78d-fd2c-4f90-b3c1-261313d81f32",
+      "sensors"
     ],
     [
-      "247e6d75-274c-459f-88ee-3ee86ec1b962",
-      "power_regulation"
+      "9cd55a57-0ec8-481d-b571-b5fdbe353ce7",
+      "converter"
+    ],
+    [
+      "3521ffae-6721-4a9d-861c-ca3039bccb82",
+      "comm_can"
     ],
     [
       "e1f5a50e-a1f9-4d2e-b822-1c90ec1f58b5",

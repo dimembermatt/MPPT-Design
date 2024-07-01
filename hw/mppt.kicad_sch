@@ -187,6 +187,17 @@
 		)
 		(uuid "e415993e-c3fd-4eff-86ca-903f1f42d8bd")
 	)
+	(label "LKO_SCL"
+		(at 120.65 128.27 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "0081f278-192d-4db3-8f06-a27677ba2fc5")
+	)
 	(label "V_{ARR+}"
 		(at 82.55 127 180)
 		(fields_autoplaced yes)
@@ -264,6 +275,17 @@
 		)
 		(uuid "19def986-d628-46ec-88a4-8fbeb9ac4749")
 	)
+	(label "~{LKO_LDAC}"
+		(at 120.65 133.35 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "1d3999b6-abd6-4ac9-bb59-c062ef0c8a92")
+	)
 	(label "V_{DCO+}"
 		(at 82.55 134.62 180)
 		(fields_autoplaced yes)
@@ -296,6 +318,17 @@
 			(justify right bottom)
 		)
 		(uuid "284d3601-5934-4379-b9e7-f62a9b5ec149")
+	)
+	(label "LKO_SCL"
+		(at 25.4 53.34 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "2c3f3fd6-0878-4d92-b317-94667560909a")
 	)
 	(label "V_{ARR-}"
 		(at 120.65 78.74 0)
@@ -418,6 +451,17 @@
 		)
 		(uuid "4c3554ac-8d32-4ef5-9199-4363a236d974")
 	)
+	(label "~{LKO_CLR}"
+		(at 25.4 55.88 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "565c7d7b-6459-42e3-aa3a-499c754cd952")
+	)
 	(label "ISO_EN"
 		(at 63.5 46.99 0)
 		(fields_autoplaced yes)
@@ -429,6 +473,17 @@
 		)
 		(uuid "5a7ce6fd-d831-49f5-b404-9ac87a3308c7")
 	)
+	(label "~{LKO_LDAC}"
+		(at 25.4 58.42 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "5e02b955-710f-46dc-bb5b-ea0c7fa07198")
+	)
 	(label "V_{DCO+}"
 		(at 120.65 88.9 0)
 		(fields_autoplaced yes)
@@ -439,6 +494,17 @@
 			(justify left bottom)
 		)
 		(uuid "6081af22-4d51-49ce-b35e-816ebd0cb8af")
+	)
+	(label "~{LKO_CLR}"
+		(at 120.65 130.81 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "65e7c27b-8482-4211-8f0b-85cb258ce2ed")
 	)
 	(label "EN_OUT_LD"
 		(at 63.5 43.18 0)
@@ -572,6 +638,17 @@
 		)
 		(uuid "993abee7-426c-4661-9377-bdd3231f1beb")
 	)
+	(label "LKO_SDA"
+		(at 120.65 125.73 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "9c14dfff-83ec-47b5-bbb8-9e8098a3ba2e")
+	)
 	(label "V_{DCI+}"
 		(at 82.55 129.54 180)
 		(fields_autoplaced yes)
@@ -637,6 +714,17 @@
 			(justify right bottom)
 		)
 		(uuid "b81deb4d-0353-4b05-b722-c57e69e9c59f")
+	)
+	(label "LKO_SDA"
+		(at 25.4 50.8 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "ba3cff23-afc7-44a0-b6dd-3988faaf9b31")
 	)
 	(label "CAN_RX"
 		(at 25.4 60.96 180)
@@ -1400,7 +1488,7 @@
 		(instances
 			(project "mppt"
 				(path "/06fd3a42-664d-41bc-bf0f-b5ee0ddcc902"
-					(page "7")
+					(page "3")
 				)
 			)
 		)
@@ -1458,7 +1546,7 @@
 		(instances
 			(project "mppt"
 				(path "/06fd3a42-664d-41bc-bf0f-b5ee0ddcc902"
-					(page "6")
+					(page "7")
 				)
 			)
 		)
@@ -1641,6 +1729,46 @@
 				(justify left)
 			)
 			(uuid "ccab0149-b449-4e40-a89f-20b8fa54a026")
+		)
+		(pin "LKO_SCL" input
+			(at 120.65 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "67ddc386-0159-4b69-9f17-f4a783b1ba3e")
+		)
+		(pin "~{LKO_CLR}" input
+			(at 120.65 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "5625e9d5-ca86-4f59-a35d-82f2811f328c")
+		)
+		(pin "~{LKO_LDAC}" input
+			(at 120.65 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "a4e1962d-6430-47f9-a66c-f33720bbc627")
+		)
+		(pin "LKO_SDA" input
+			(at 120.65 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "f0b429f6-c7a0-46c2-9266-21127e9f0dc7")
 		)
 		(instances
 			(project "mppt"
@@ -1860,6 +1988,46 @@
 			)
 			(uuid "54df5b71-4969-4562-a13a-f7249f6af283")
 		)
+		(pin "LKO_SCL" output
+			(at 25.4 53.34 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "91de7c88-b04d-440c-9514-b74231eb35ca")
+		)
+		(pin "LKO_SDA" output
+			(at 25.4 50.8 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "434b14ed-cbe0-446c-8e01-6293ecdcb44c")
+		)
+		(pin "~{LKO_CLR}" output
+			(at 25.4 55.88 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "89060cda-09ab-4330-8e77-f9aad1b215d6")
+		)
+		(pin "~{LKO_LDAC}" output
+			(at 25.4 58.42 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "e97afc57-be09-4ed5-aec5-1c2206cc0fbc")
+		)
 		(instances
 			(project "mppt"
 				(path "/06fd3a42-664d-41bc-bf0f-b5ee0ddcc902"
@@ -2020,7 +2188,7 @@
 		(instances
 			(project "mppt"
 				(path "/06fd3a42-664d-41bc-bf0f-b5ee0ddcc902"
-					(page "4")
+					(page "5")
 				)
 			)
 		)
@@ -2148,7 +2316,7 @@
 		(instances
 			(project "mppt"
 				(path "/06fd3a42-664d-41bc-bf0f-b5ee0ddcc902"
-					(page "3")
+					(page "6")
 				)
 			)
 		)
@@ -2236,7 +2404,7 @@
 		(instances
 			(project "mppt"
 				(path "/06fd3a42-664d-41bc-bf0f-b5ee0ddcc902"
-					(page "5")
+					(page "4")
 				)
 			)
 		)
