@@ -1,8 +1,8 @@
 {
     "NAME": "Broad range MPPT",
-    "AUTHORS": ["Matthew Yu", "Jacob Pustilnik"],
+    "AUTHORS": ["Matthew Yu"],
     "DESCRIPTION": "MPPT Boost Converter v0.3.0",
-    "DATE_DESIGNED": "05/07/23",
+    "DATE_DESIGNED": "08/18/24",
     "DESIGN": {
         "input_source": {
             "source_model_type": "solar_cell",
@@ -10,7 +10,7 @@
             "num_cells": 100,
             "r_sh": 40,
             "r_s": 0.0035,
-            "inp_ripple (V)": 0.5,
+            "inp_ripple (V)": 1.0,
             "min_power": 150
         },
         "output_sink": {
@@ -20,6 +20,6 @@
             "out_ripple (V)": 1.0,
             "user_v_range": [80, 130]
         },
-        "safety_factor": 1.2
+        "safety_factor": 1.15
     }
 }

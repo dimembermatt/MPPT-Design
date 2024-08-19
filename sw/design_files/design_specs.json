@@ -1,8 +1,8 @@
 {
     "NAME": "Broad range MPPT",
-    "AUTHORS": ["Matthew Yu", "Jacob Pustilnik"],
+    "AUTHORS": ["Matthew Yu"],
     "DESCRIPTION": "MPPT Boost Converter v0.3.0",
-    "DATE_DESIGNED": "08/12/23",
+    "DATE_DESIGNED": "08/18/24",
     "DESIGN": {
         "input_source": {
             "source_model_type": "solar_cell",
